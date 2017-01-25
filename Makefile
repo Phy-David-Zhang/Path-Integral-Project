@@ -5,12 +5,15 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = PathIntegralProject
-SOURCEDIR     = .
+SOURCEDIR     = docs
 BUILDDIR      = _build
 
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+test:
+	sphinx-autobuild $(SOURCEDIR) _preview
 
 .PHONY: help Makefile
 
