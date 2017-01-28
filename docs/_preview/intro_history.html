@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction to Path Integral Project &mdash; Path Integral Project 0.1 documentation</title>
+  <title>A Brief History &mdash; Path Integral Project 0.1 documentation</title>
   
 
   
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
   
 
   
@@ -34,7 +36,9 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Path Integral Project 0.1 documentation" href="index.html"/>
-        <link rel="prev" title="Path Integral Project" href="index.html"/> 
+        <link rel="up" title="Introduction to Path Integral Project" href="intro.html"/>
+        <link rel="next" title="Why Path Integral?" href="intro_why.html"/>
+        <link rel="prev" title="What is Path Integral Project?" href="intro_what.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -87,16 +91,13 @@
             
             
                 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to Path Integral Project</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#what-is-path-integral-project">What is Path Integral Project?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#a-brief-history">A Brief History</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#why-path-integral">Why Path Integral?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#canonical-quantisation">Canonical Quantisation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#comments-on-delta-function">Comments on Delta Function</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="intro_what.html">What is Path Integral Project?</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">A Brief History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro_why.html">Why Path Integral?</a></li>
 </ul>
 </li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
 </ul>
 
             
@@ -141,13 +142,15 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Introduction to Path Integral Project</li>
+          <li><a href="intro.html">Introduction to Path Integral Project</a> &raquo;</li>
+        
+      <li>A Brief History</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/intro.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/intro_history.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -160,36 +163,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="introduction-to-path-integral-project">
-<h1>Introduction to Path Integral Project<a class="headerlink" href="#introduction-to-path-integral-project" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="what-is-path-integral-project">
-<h2>What is Path Integral Project?<a class="headerlink" href="#what-is-path-integral-project" title="Permalink to this headline">¶</a></h2>
-<p>I promise, this might be the most comprehensible introduction of Quantum
-Field Theory existed, ever. Indeed, the Quantum Field Theory can be one
-of the most powerful but complicated advanced physical theory ever
-existed. And, I was one of the many victims of this complication.</p>
-<p>However, we want to put this situation to an end. Instead of directly
-throwing piles of academic illustration, we hope to clarify all the
-logic during the construction of Quantum Field Theory. Moreover, it is
-also expected that a mathematically acceptable Quantum Field Theory to
-be established if possible.</p>
-<p>Accordingly, the Path Integral Project emerges. This project will do a
-profound investigation towards the construction of a mathematically
-rigorous Quantum Field Theory, and to see if any amendments during this
-process will provide hint towards a valid quantised gravitational
-theory.</p>
-<p>Excited? Then just follow my pace to the next section. Welcome to the
-world of quantum field theory.</p>
-</div>
-<div class="section" id="a-brief-history">
-<h2>A Brief History<a class="headerlink" href="#a-brief-history" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="a-brief-history">
+<h1>A Brief History<a class="headerlink" href="#a-brief-history" title="Permalink to this headline">¶</a></h1>
 <p>Unlike other Quantum Field Theory textbook, our introduction to the
 history will not be so long. In this section, we only plan to introduce
 the part that has direct connection to the motivation of Quantum Field
 Theory.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The following context will call <a class="reference external" href="../../background/geometric-unit-system">Geometric Unit System</a> and <a class="reference external" href="../../background/einstein-summation-convention">Einstein Summation Convention</a>. Review the link if you have never heard of them — they are important!</p>
+<p class="last">The following context will call <a class="reference external" href="bg_geo_unit.html">Geometric Unit System</a> and <a class="reference external" href="bg_eins.html">Einstein Summation Convention</a>. Review the link if you have never heard of them — they are important!</p>
 </div>
 <p>Assuming that you already have the knowledge of Quantum Mechanics. At
 least you are able to recognise the most famous equation shown below</p>
@@ -197,11 +179,11 @@ least you are able to recognise the most famous equation shown below</p>
 \[\mathrm{i}\frac{\partial}{\partial t}\psi = -\frac{1}{2m}\nabla^2\psi + V\psi\]</div>
 <p>It is called a wave equation. Why? If you take</p>
 <div class="math">
-\[\psi = A\exp\{-\mathrm{i}\omega t + \mathrm{i}k\cdot x\}\]</div>
+\[\psi = A\exp\{-\mathrm{i}\omega t + \mathrm{i}\vec k\cdot \vec x\}\]</div>
 <p>into the equation, you will find that it is a solution of the
 Schrödinger equation as long as the following holds</p>
 <div class="math">
-\[\omega = \frac{k^2}{m} + V \label{difrel}\]</div>
+\[\omega = \frac{\vec k^2}{m} + V \label{difrel}\]</div>
 <p>Recall that we have the following relationship in Quantum Mechanics</p>
 <div class="math">
 \[\omega = E,\ \ \ \ \&nbsp; k^i = p^i\]</div>
@@ -209,7 +191,7 @@ Schrödinger equation as long as the following holds</p>
 <span class="math">\(i=1,2,3\)</span>. Now, we immediately find that the previous equation
 becomes</p>
 <div class="math">
-\[E = \frac{p^2}{m} + V\]</div>
+\[E = \frac{\vec p^2}{m} + V\]</div>
 <p>which is nothing but the energy-momentum relationship in Newtonian
 classical mechanics.</p>
 <div class="admonition warning">
@@ -220,11 +202,11 @@ classical mechanics.</p>
 Assuming that you already have the knowledge of Relativity. In Special
 Theory of Relativity, the energy-momentum relationship becomes</p>
 <div class="math">
-\[E^2 = p^2 + m^2\]</div>
+\[E^2 = \vec p^2 + m^2\]</div>
 <p>To achieve this result, simply reverse the previous steps. The above
 relationship should require</p>
 <div class="math">
-\[\omega^2 = k^2 + m^2\]</div>
+\[\omega^2 = \vec k^2 + m^2\]</div>
 <p>And this requires</p>
 <div class="math">
 \[(\partial_\mu\partial^\mu - m^2)\varphi = 0\]</div>
@@ -240,13 +222,13 @@ free (<span class="math">\(V=0\)</span>) particle is always positive. However, t
 relativistic version can not. The relativistic energy-momentum relation
 reveals that</p>
 <div class="math">
-\[E = \pm\sqrt{p^2+m^2}\]</div>
+\[E = \pm\sqrt{\vec p^2+m^2}\]</div>
 <p>where we discover that there are both positive and negative solutions
 are possible. This issue is not paramount in classical theory, since the
 energy of a classical particle can only varies continuously, and there
 is a gap of <span class="math">\(2m\)</span> between the lowest positive energy <span class="math">\(E=m\)</span>
-(where <span class="math">\(p=0\)</span>) and the greatest negative value <span class="math">\(E=-m\)</span> (where
-<span class="math">\(p=0\)</span>). Thus, a classical particle can have either positive or
+(where <span class="math">\(\vec p=0\)</span>) and the greatest negative value <span class="math">\(E=-m\)</span> (where
+<span class="math">\(\vec p=0\)</span>). Thus, a classical particle can have either positive or
 negative energy — the only matter is to set an initial sign.</p>
 <p>However, recall that quantised particles can jump between discrete
 energy levels. Hence, it is just a matter of probability for them to
@@ -289,73 +271,6 @@ Then, similar to the Quantum Mechanics, path integral is used to
 quantise the classical field.</p>
 <p>Now, if you can follow the pace, welcome to the next section.</p>
 </div>
-<div class="section" id="why-path-integral">
-<h2>Why Path Integral?<a class="headerlink" href="#why-path-integral" title="Permalink to this headline">¶</a></h2>
-<p>If you have any previous touch with Quantum Field Theory, you may know
-that there is a much more popular way to quantise the classical fields —
-canonical quantisation. However, in this introduction, we will not
-mention a word about it. If you are curious about the reason, this
-section will tell you why. However, if you are just a new learner, you
-can well skip this, it won’t affect.</p>
-<div class="section" id="canonical-quantisation">
-<h3>Canonical Quantisation<a class="headerlink" href="#canonical-quantisation" title="Permalink to this headline">¶</a></h3>
-<p>Take the scalar field for example. The canonical quantisation claims the
-following “quantisation condition”</p>
-<div class="math">
-\[[\varphi(\vec x, t), \pi(\vec x', t)] = \mathrm i\delta(\vec x-\vec x')\]</div>
-<p>This is convenient since similar commutation relation has been studied
-thoroughly in Quantum Mechanics. However, it is this very first
-assumption that ruins the whole field theory.</p>
-<p>To see this, let’s first review what the Quantum Mechanics claims. In
-Quantum Mechanics, we have the following commutation relation</p>
-<div class="math">
-\[[x_i, p_j] = \mathrm i\delta_{ij}\]</div>
-<p>There is nothing wrong here if both <span class="math">\(x_i\)</span> and <span class="math">\(p_i\)</span> are
-operators, and the product refers to operator composition. As an
-example, explicitly write an representation as
-<span class="math">\(p_i = -\mathrm i\partial_i\)</span> will satisfy the above relation.</p>
-<p>However, although many physicists claim that the commutation relation of
-fields is nothing but a continuous version of the point particle one, it
-is still mathematically impossible for such a “continuous” commutation
-relation to hold.</p>
-<p>This can be seen through the following argument: field <span class="math">\(\varphi\)</span>
-and <span class="math">\(\pi\)</span> are both scalar field; according to the definition of
-scalar field product and subtraction, <span class="math">\(\varphi\pi\)</span> and
-<span class="math">\(\pi\varphi\)</span> will both be scalar field, so will their commutator
-<span class="math">\([\varphi, \pi]\)</span>. Thus, the left hand side of the commutation
-relation will be a scalar field (or more specifically, operator valued
-scalar field).</p>
-<p>However, the right hand side is not a scalar field. Instead, according
-to the most moderate point of view, <span class="math">\(\delta(\vec x - \vec x')\)</span>
-should be at most a generalized function. Therefore, the two sides of
-the equation can never be equal.</p>
-</div>
-<div class="section" id="comments-on-delta-function">
-<h3>Comments on Delta Function<a class="headerlink" href="#comments-on-delta-function" title="Permalink to this headline">¶</a></h3>
-<p>The delta function is always a subtle object in Physics. First invented
-by Dirac in early 20th century, it has showed it magic in Quantum
-Mechanics for a countless of times. Hence, although the expression of
-Dirac delta function had been repeatedly refused, mathematicians were
-eventually forced to investigate this strange “function” seriously.</p>
-<p>Indeed, there has been several successful interpretation of delta
-function, such as generalized function theory and Dirac delta measure in
-measure theory. However, these implementation can only hold if the delta
-function is inside the integral, no matter what the integral means.</p>
-<p>This condition can be fully comply in Quantum Mechanics, which explains
-why the delta function achieves that much. However, in canonical
-quantisation, the commutation relation will require delta function to
-appear barely outside. A <a class="reference external" href="&#64;waiting">further investigation</a> reveals
-that finally it is this carelessness that finally leads to the annoying
-infinities in S-matrix, and hence brings difficulties in quantising
-gravity.</p>
-<p>Finally, we want to emphasise that the success of delta function in
-Quantum Mechanics does not mean that it will succeed in Quantum Field
-Theory too. The fact is: it fails. Therefore, in our introduction to
-Quantum Field Theory, canonical quantisation is avoided and any further
-usage of delta function will be carefully treated.</p>
-</div>
-</div>
-</div>
 
 
            </div>
@@ -367,8 +282,10 @@ usage of delta function will be carefully treated.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="intro_why.html" class="btn btn-neutral float-right" title="Why Path Integral?" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="index.html" class="btn btn-neutral" title="Path Integral Project" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="intro_what.html" class="btn btn-neutral" title="What is Path Integral Project?" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -8,10 +8,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; Path Integral Project 0.1 documentation</title>
+  <title>Geometric Unit System &mdash; Path Integral Project 0.1 documentation</title>
   
 
   
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
   
 
   
@@ -32,8 +34,10 @@
   
         <link rel="index" title="Index"
               href="genindex.html"/>
-        <link rel="search" title="Search" href="#"/>
-    <link rel="top" title="Path Integral Project 0.1 documentation" href="index.html"/> 
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Path Integral Project 0.1 documentation" href="index.html"/>
+        <link rel="up" title="Background Knowledge" href="background.html"/>
+        <link rel="prev" title="Einstein Summation Convention" href="bg_eins.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -71,7 +75,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -85,8 +89,13 @@
           
             
             
-                <ul>
+                <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="background.html">Background Knowledge</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bg_eins.html">Einstein Summation Convention</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Geometric Unit System</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -131,10 +140,16 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+          <li><a href="background.html">Background Knowledge</a> &raquo;</li>
+        
+      <li>Geometric Unit System</li>
     
     
       <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bg_geo_unit.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -146,19 +161,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="geometric-unit-system">
+<h1>Geometric Unit System<a class="headerlink" href="#geometric-unit-system" title="Permalink to this headline">¶</a></h1>
+<p>This is an introduction to the geometric unit used widely in the
+theoretical contexts of Physics.</p>
+<p>In Physics, there are many important constants, such as light speed in
+vacuum <span class="math">\(c\)</span>, (reduced) Plank constant <span class="math">\(\hbar\)</span>, absolute
+permittivity <span class="math">\(\varepsilon_0\)</span>, etc. If we include all these
+constants in an equation, the expression can be cumbersome. To solve
+this problem, the simplest way is to introduce the following convention</p>
+<div class="math">
+\[c=1,\ \ \ \ \ \hbar=1\]</div>
+<p>Therefore, all multiplication of these constants in the equation will
+disappear. But wait! You may immediately notice a problem: the
+dimension! Yes, it seems that the above equation violates a fundamental
+requirement — balance of dimension. The left hand side is a physical
+constant with dimension, but the right hand side is a pure number.</p>
+<p>Well, this in fact does not matter so much. You can view it as a
+redefinition of units. For example, to make light speed <span class="math">\(c=1\)</span>, all
+we need to do is to redefine the time unit as the time within which
+light travels a unit length. This is called <strong>Geometric Unit System</strong>.
+As a result, the convention <span class="math">\(c=1\)</span> will be equivalent to
+<span class="math">\([L]=[T]\)</span>, where <span class="math">\([L]\)</span> stands for the length dimension and
+<span class="math">\([T]\)</span> for time dimension. Similarly, it is easy to figure out that
+<span class="math">\(\hbar=1\)</span> leads to <span class="math">\([L]=[M]^{-1}\)</span>.</p>
+<p>Hope you get the point. Now you should not feel unfamiliar with
+sentences like “momentum has a dimension of <span class="math">\([L]^{-1}\)</span>”. The
+theory of dimension analysis guarantees that there will not be a problem
+with this convention as long as you do a correct calculation.</p>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
            <div class="articleComments">
@@ -166,6 +198,13 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="bg_eins.html" class="btn btn-neutral" title="Einstein Summation Convention" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -205,7 +244,6 @@
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -221,14 +259,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>

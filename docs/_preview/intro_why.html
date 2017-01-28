@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Why Path Integral? &mdash; Path Integral Project 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Path Integral Project 0.1 documentation" href="index.html"/>
+        <link rel="up" title="Introduction to Path Integral Project" href="intro.html"/>
+        <link rel="next" title="Background Knowledge" href="background.html"/>
+        <link rel="prev" title="A Brief History" href="intro_history.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" style="font-size: 1.15em"> Path Integral Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <!--
+              <div class="version">
+                0.1
+              </div>
+              -->
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="intro_what.html">What is Path Integral Project?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro_history.html">A Brief History</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Why Path Integral?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#canonical-quantisation">Canonical Quantisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comments-on-delta-function">Comments on Delta Function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Path Integral Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="intro.html">Introduction to Path Integral Project</a> &raquo;</li>
+        
+      <li>Why Path Integral?</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/intro_why.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="why-path-integral">
+<h1>Why Path Integral?<a class="headerlink" href="#why-path-integral" title="Permalink to this headline">¶</a></h1>
+<p>If you have any previous touch with Quantum Field Theory, you may know
+that there is a much more popular way to quantise the classical fields —
+canonical quantisation. However, in this introduction, we will not
+mention a word about it. If you are curious about the reason, this
+section will tell you why. However, if you are just a new learner, you
+can well skip this, it won’t affect.</p>
+<div class="section" id="canonical-quantisation">
+<h2>Canonical Quantisation<a class="headerlink" href="#canonical-quantisation" title="Permalink to this headline">¶</a></h2>
+<p>Take the scalar field for example. The canonical quantisation claims the
+following “quantisation condition”</p>
+<div class="math">
+\[[\varphi(\vec x, t), \pi(\vec x', t)] = \mathrm i\delta(\vec x-\vec x')\]</div>
+<p>This is convenient since similar commutation relation has been studied
+thoroughly in Quantum Mechanics. However, it is this very first
+assumption that ruins the whole field theory.</p>
+<p>To see this, let’s first review what the Quantum Mechanics claims. In
+Quantum Mechanics, we have the following commutation relation</p>
+<div class="math">
+\[[x_i, p_j] = \mathrm i\delta_{ij}\]</div>
+<p>There is nothing wrong here if both <span class="math">\(x_i\)</span> and <span class="math">\(p_i\)</span> are
+operators, and the product refers to operator composition. As an
+example, explicitly write an representation as
+<span class="math">\(p_i = -\mathrm i\partial_i\)</span> will satisfy the above relation.</p>
+<p>However, although many physicists claim that the commutation relation of
+fields is nothing but a continuous version of the point particle one, it
+is still mathematically impossible for such a “continuous” commutation
+relation to hold.</p>
+<p>This can be seen through the following argument: field <span class="math">\(\varphi\)</span>
+and <span class="math">\(\pi\)</span> are both scalar field; according to the definition of
+scalar field product and subtraction, <span class="math">\(\varphi\pi\)</span> and
+<span class="math">\(\pi\varphi\)</span> will both be scalar field, so will their commutator
+<span class="math">\([\varphi, \pi]\)</span>. Thus, the left hand side of the commutation
+relation will be a scalar field (or more specifically, operator valued
+scalar field).</p>
+<p>However, the right hand side is not a scalar field. Instead, according
+to the most moderate point of view, <span class="math">\(\delta(\vec x - \vec x')\)</span>
+should be at most a generalized function. Therefore, the two sides of
+the equation can never be equal.</p>
+</div>
+<div class="section" id="comments-on-delta-function">
+<h2>Comments on Delta Function<a class="headerlink" href="#comments-on-delta-function" title="Permalink to this headline">¶</a></h2>
+<p>The delta function is always a subtle object in Physics. First invented
+by Dirac in early 20th century, it has showed it magic in Quantum
+Mechanics for a countless of times. Hence, although the expression of
+Dirac delta function had been repeatedly refused, mathematicians were
+eventually forced to investigate this strange “function” seriously.</p>
+<p>Indeed, there has been several successful interpretation of delta
+function, such as generalized function theory and Dirac delta measure in
+measure theory. However, these implementation can only hold if the delta
+function is inside the integral, no matter what the integral means.</p>
+<p>This condition can be fully comply in Quantum Mechanics, which explains
+why the delta function achieves that much. However, in canonical
+quantisation, the commutation relation will require delta function to
+appear barely outside. A <a class="reference external" href="&#64;waiting">further investigation</a> reveals
+that finally it is this carelessness that finally leads to the annoying
+infinities in S-matrix, and hence brings difficulties in quantising
+gravity.</p>
+<p>Finally, we want to emphasise that the success of delta function in
+Quantum Mechanics does not mean that it will succeed in Quantum Field
+Theory too. The fact is: it fails. Therefore, in our introduction to
+Quantum Field Theory, canonical quantisation is avoided and any further
+usage of delta function will be carefully treated.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="background.html" class="btn btn-neutral float-right" title="Background Knowledge" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="intro_history.html" class="btn btn-neutral" title="A Brief History" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Zhang Chang-kai.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -13,7 +13,7 @@ help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 test:
-	sphinx-autobuild $(SOURCEDIR) _preview
+	sphinx-autobuild $(SOURCEDIR) $(SOURCEDIR)/_preview
 
 .PHONY: help Makefile
 
