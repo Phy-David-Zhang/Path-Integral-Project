@@ -97,6 +97,7 @@
 <li class="toctree-l2"><a class="reference internal" href="intro_why.html">Why Path Integral?</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
 </ul>
 
@@ -165,110 +166,62 @@
             
   <div class="section" id="a-brief-history">
 <h1>A Brief History<a class="headerlink" href="#a-brief-history" title="Permalink to this headline">¶</a></h1>
-<p>Unlike other Quantum Field Theory textbook, our introduction to the
-history will not be so long. In this section, we only plan to introduce
-the part that has direct connection to the motivation of Quantum Field
-Theory.</p>
+<p>Unlike other Quantum Field Theory textbook, our introduction to the history will not be so long. In this section, we only plan to introduce the part that has direct connection to the motivation of Quantum Field Theory.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The following context will call <a class="reference external" href="bg_geo_unit.html">Geometric Unit System</a> and <a class="reference external" href="bg_eins.html">Einstein Summation Convention</a>. Review the link if you have never heard of them — they are important!</p>
+<p class="last">The following context will call <a class="reference external" href="../../background/geometric-unit-system">Geometric Unit System</a> and <a class="reference external" href="../../background/einstein-summation-convention">Einstein Summation Convention</a>. Review the link if you have never heard of them — they are important!</p>
 </div>
-<p>Assuming that you already have the knowledge of Quantum Mechanics. At
-least you are able to recognise the most famous equation shown below</p>
+<p>Assuming that you already have the knowledge of Quantum Mechanics. At least you are able to recognise the most famous equation shown below</p>
 <div class="math">
 \[\mathrm{i}\frac{\partial}{\partial t}\psi = -\frac{1}{2m}\nabla^2\psi + V\psi\]</div>
 <p>It is called a wave equation. Why? If you take</p>
 <div class="math">
 \[\psi = A\exp\{-\mathrm{i}\omega t + \mathrm{i}\vec k\cdot \vec x\}\]</div>
-<p>into the equation, you will find that it is a solution of the
-Schrödinger equation as long as the following holds</p>
-<div class="math">
-\[\omega = \frac{\vec k^2}{m} + V \label{difrel}\]</div>
+<p>into the equation, you will find that it is a solution of the Schrödinger equation as long as the following holds</p>
 <p>Recall that we have the following relationship in Quantum Mechanics</p>
 <div class="math">
-\[\omega = E,\ \ \ \ \&nbsp; k^i = p^i\]</div>
-<p>where <span class="math">\(E\)</span> is the energy and <span class="math">\(p^i\)</span> is the momentum with
-<span class="math">\(i=1,2,3\)</span>. Now, we immediately find that the previous equation
-becomes</p>
+\[\omega = E,\ \ \ \ \  k^i = p^i\]</div>
+<p>where <span class="math">\(E\)</span> is the energy and <span class="math">\(p^i\)</span> is the momentum with <span class="math">\(i=1,2,3\)</span>. Now, we immediately find that the previous equation becomes</p>
 <div class="math">
 \[E = \frac{\vec p^2}{m} + V\]</div>
-<p>which is nothing but the energy-momentum relationship in Newtonian
-classical mechanics.</p>
+<p>which is nothing but the energy-momentum relationship in Newtonian classical mechanics.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Now we release symbol <span class="math">\(\psi\)</span>. This indicates that <span class="math">\(\psi\)</span> in the following context will have a different meaning.</p>
 </div>
-<p>So now we are going to think: what if we want it to be relativistic?
-Assuming that you already have the knowledge of Relativity. In Special
-Theory of Relativity, the energy-momentum relationship becomes</p>
+<p>So now we are going to think: what if we want it to be relativistic? Assuming that you already have the knowledge of Relativity. In Special Theory of Relativity, the energy-momentum relationship becomes</p>
 <div class="math">
 \[E^2 = \vec p^2 + m^2\]</div>
-<p>To achieve this result, simply reverse the previous steps. The above
-relationship should require</p>
-<div class="math">
-\[\omega^2 = \vec k^2 + m^2\]</div>
+<p>To achieve this result, simply reverse the previous steps. The above relationship should require</p>
 <p>And this requires</p>
 <div class="math">
 \[(\partial_\mu\partial^\mu - m^2)\varphi = 0\]</div>
-<p>where the <a class="reference external" href="&#64;waiting">signature of metric</a> here is <span class="math">\(+2\)</span>. This is
-the famous “Klein-Gordon equation” — the relativistic version of
-Schrödinger equation. The quotes here indicates that it still has some
-subtle difference with the <em>real</em> Klein-Gordon equation, as we are going
-to see next.</p>
-<p>It seems that it is so easy to combine Quantum Mechanics and Special
-Theory of Relativity. Nonetheless, things are not so trivial. The
-Newtonian energy-momentum relation can guarantee that the energy of a
-free (<span class="math">\(V=0\)</span>) particle is always positive. However, the
-relativistic version can not. The relativistic energy-momentum relation
-reveals that</p>
+<p>where the <a class="reference external" href="&#64;waiting">signature of metric</a> here is <span class="math">\(+2\)</span>. This is the famous “Klein-Gordon equation” — the relativistic version of Schrödinger equation. The quotes here indicates that it still has some subtle difference with the <em>real</em> Klein-Gordon equation, as we are going to see next.</p>
+<p>It seems that it is so easy to combine Quantum Mechanics and Special Theory of Relativity. Nonetheless, things are not so trivial. The Newtonian energy-momentum relation can guarantee that the energy of a free (<span class="math">\(V=0\)</span>) particle is always positive. However, the relativistic version can not. The relativistic energy-momentum relation reveals that</p>
 <div class="math">
 \[E = \pm\sqrt{\vec p^2+m^2}\]</div>
-<p>where we discover that there are both positive and negative solutions
-are possible. This issue is not paramount in classical theory, since the
-energy of a classical particle can only varies continuously, and there
-is a gap of <span class="math">\(2m\)</span> between the lowest positive energy <span class="math">\(E=m\)</span>
-(where <span class="math">\(\vec p=0\)</span>) and the greatest negative value <span class="math">\(E=-m\)</span> (where
-<span class="math">\(\vec p=0\)</span>). Thus, a classical particle can have either positive or
-negative energy — the only matter is to set an initial sign.</p>
-<p>However, recall that quantised particles can jump between discrete
-energy levels. Hence, it is just a matter of probability for them to
-jump from a positive energy to a negative one and … fall all the way
-down to minus infinity. This then becomes a major difficulty of
-“Klein-Gordon equation”.</p>
-<p>Also, let’s investigate the continuity equation. In Quantum Mechanics,
-there is</p>
+<p>where we discover that there are both positive and negative solutions are possible. This issue is not paramount in classical theory, since the energy of a classical particle can only varies continuously, and there is a gap of <span class="math">\(2m\)</span> between the lowest positive energy <span class="math">\(E=m\)</span> (where <span class="math">\(\vec p=0\)</span>) and the greatest negative value <span class="math">\(E=-m\)</span> (where <span class="math">\(\vec p=0\)</span>). Thus, a classical particle can have either positive or negative energy — the only matter is to set an initial sign.</p>
+<p>However, recall that quantised particles can jump between discrete energy levels. Hence, it is just a matter of probability for them to jump from a positive energy to a negative one and … fall all the way down to minus infinity. This then becomes a major difficulty of “Klein-Gordon equation”.</p>
+<p>Also, let’s investigate the continuity equation. In Quantum Mechanics, there is</p>
 <div class="math">
-\[\begin{split}\mathrm{i}\frac{\partial}{\partial t}\varphi &amp;= -\frac{1}{2m}\nabla^2\varphi + V\varphi\\
--\mathrm{i}\frac{\partial}{\partial t}\varphi^* &amp;= -\frac{1}{2m}\nabla^2\varphi^* + V\varphi^*\end{split}\]</div>
-<p>The first equation is the Schrödinger equation and the second equation
-is nothing other than the complex conjugate of the first one.</p>
-<p>Now, we apply <span class="math">\(\varphi^*\)</span> to the first equation and
-<span class="math">\(\varphi\)</span> to the second one, and let the first one subtract the
-second</p>
+\[\begin{split}\mathrm{i}\frac{\partial}{\partial t}\varphi = -\frac{1}{2m}\nabla^2\varphi + V\varphi\\
+-\mathrm{i}\frac{\partial}{\partial t}\varphi^* = -\frac{1}{2m}\nabla^2\varphi^* + V\varphi^*\end{split}\]</div>
+<p>The first equation is the Schrödinger equation and the second equation is nothing other than the complex conjugate of the first one.</p>
+<p>Now, we apply <span class="math">\(\varphi^*\)</span> to the first equation and <span class="math">\(\varphi\)</span> to the second one, and let the first one subtract the second</p>
 <div class="math">
 \[\varphi^*\mathrm{i}\frac{\partial}{\partial t}\varphi + \varphi\mathrm{i}\frac{\partial}{\partial t}\varphi^* = \varphi\frac{1}{2m}\nabla^2\varphi^* - \varphi^*\frac{1}{2m}\nabla^2\varphi\]</div>
 <p>which, after a transform, becomes</p>
 <div class="math">
 \[\mathrm{i}\frac{\partial}{\partial t}\varphi\varphi^* = \frac{1}{2m}\nabla(\varphi\nabla\varphi^* - \varphi^*\nabla\varphi)\]</div>
-<p>To gain the continuity equation, the only thing to do is to identify the
-probability density and probability current as</p>
+<p>To gain the continuity equation, the only thing to do is to identify the probability density and probability current as</p>
 <div class="math">
 \[\rho = \varphi\varphi^*,\ \ \ \ \ \vec{j} = {1\over2m\mathrm i}(\varphi\nabla\varphi^* - \varphi^*\nabla\varphi)\]</div>
-<p>The probability density is the square of the wave function, and will
-always be positive due to the property of square. Everything works fine
-here.</p>
-<p>However, if you derive the continuity equation corresponding to the
-“Klein-Gordon equation”, you will find that the “probability density”
-now becomes</p>
+<p>The probability density is the square of the wave function, and will always be positive due to the property of square. Everything works fine here.</p>
+<p>However, if you derive the continuity equation corresponding to the “Klein-Gordon equation”, you will find that the “probability density” now becomes</p>
 <div class="math">
 \[\rho \sim \varphi^*\frac{\partial}{\partial t}\varphi - \varphi\frac{\partial}{\partial t}\varphi^*\]</div>
-<p>The minus sign indicates that it might be negative(!), which destroys
-the probabilistic interpretation of quantum theory. This is another
-major difficulty of “Klein-Gordon equation”.</p>
-<p>To solve the difficulties, physicists decided to reinterpret symbol
-<span class="math">\(\varphi\)</span> here as <strong>classical field</strong>, instead of wave function.
-Then, similar to the Quantum Mechanics, path integral is used to
-quantise the classical field.</p>
+<p>The minus sign indicates that it might be negative(!), which destroys the probabilistic interpretation of quantum theory. This is another major difficulty of “Klein-Gordon equation”.</p>
+<p>To solve the difficulties, physicists decided to reinterpret symbol <span class="math">\(\varphi\)</span> here as <strong>classical field</strong>, instead of wave function. Then, similar to the Quantum Mechanics, path integral is used to quantise the classical field.</p>
 <p>Now, if you can follow the pace, welcome to the next section.</p>
 </div>
 

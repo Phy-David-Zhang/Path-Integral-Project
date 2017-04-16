@@ -37,6 +37,7 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Path Integral Project 0.1 documentation" href="index.html"/>
         <link rel="up" title="Background Knowledge" href="background.html"/>
+        <link rel="next" title="Basic Differential Geometry" href="bg_diff_geo.html"/>
         <link rel="prev" title="Einstein Summation Convention" href="bg_eins.html"/> 
 
   
@@ -91,9 +92,14 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="background.html">Background Knowledge</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="bg_eins.html">Einstein Summation Convention</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Geometric Unit System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_diff_geo.html">Basic Differential Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_lag_dyn.html">Lagrangian Dynamics of Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_linalg.html">Basic Linear Algebra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_liegp.html">Basics of Lie Group Theory</a></li>
 </ul>
 </li>
 </ul>
@@ -163,32 +169,13 @@
             
   <div class="section" id="geometric-unit-system">
 <h1>Geometric Unit System<a class="headerlink" href="#geometric-unit-system" title="Permalink to this headline">¶</a></h1>
-<p>This is an introduction to the geometric unit used widely in the
-theoretical contexts of Physics.</p>
-<p>In Physics, there are many important constants, such as light speed in
-vacuum <span class="math">\(c\)</span>, (reduced) Plank constant <span class="math">\(\hbar\)</span>, absolute
-permittivity <span class="math">\(\varepsilon_0\)</span>, etc. If we include all these
-constants in an equation, the expression can be cumbersome. To solve
-this problem, the simplest way is to introduce the following convention</p>
+<p>This is an introduction to the geometric unit used widely in the theoretical contexts of Physics.</p>
+<p>In Physics, there are many important constants, such as light speed in vacuum <span class="math">\(c\)</span>, (reduced) Plank constant <span class="math">\(\hbar\)</span>, absolute permittivity <span class="math">\(\varepsilon_0\)</span>, etc. If we include all these constants in an equation, the expression can be cumbersome. To solve this problem, the simplest way is to introduce the following convention</p>
 <div class="math">
 \[c=1,\ \ \ \ \ \hbar=1\]</div>
-<p>Therefore, all multiplication of these constants in the equation will
-disappear. But wait! You may immediately notice a problem: the
-dimension! Yes, it seems that the above equation violates a fundamental
-requirement — balance of dimension. The left hand side is a physical
-constant with dimension, but the right hand side is a pure number.</p>
-<p>Well, this in fact does not matter so much. You can view it as a
-redefinition of units. For example, to make light speed <span class="math">\(c=1\)</span>, all
-we need to do is to redefine the time unit as the time within which
-light travels a unit length. This is called <strong>Geometric Unit System</strong>.
-As a result, the convention <span class="math">\(c=1\)</span> will be equivalent to
-<span class="math">\([L]=[T]\)</span>, where <span class="math">\([L]\)</span> stands for the length dimension and
-<span class="math">\([T]\)</span> for time dimension. Similarly, it is easy to figure out that
-<span class="math">\(\hbar=1\)</span> leads to <span class="math">\([L]=[M]^{-1}\)</span>.</p>
-<p>Hope you get the point. Now you should not feel unfamiliar with
-sentences like “momentum has a dimension of <span class="math">\([L]^{-1}\)</span>”. The
-theory of dimension analysis guarantees that there will not be a problem
-with this convention as long as you do a correct calculation.</p>
+<p>Therefore, all multiplication of these constants in the equation will disappear. But wait! You may immediately notice a problem: the dimension! Yes, it seems that the above equation violates a fundamental requirement — balance of dimension. The left hand side is a physical constant with dimension, but the right hand side is a pure number.</p>
+<p>Well, this in fact does not matter so much. You can view it as a redefinition of units. For example, to make light speed <span class="math">\(c=1\)</span>, all we need to do is to redefine the time unit as the time within which light travels a unit length. This is called <strong>Geometric Unit System</strong>. As a result, the convention <span class="math">\(c=1\)</span> will be equivalent to <span class="math">\([L]=[T]\)</span>, where <span class="math">\([L]\)</span> stands for the length dimension and <span class="math">\([T]\)</span> for time dimension. Similarly, it is easy to figure out that <span class="math">\(\hbar=1\)</span> leads to <span class="math">\([L]=[M]^{-1}\)</span>.</p>
+<p>Hope you get the point. Now you should not feel unfamiliar with sentences like “momentum has a dimension of <span class="math">\([L]^{-1}\)</span>”. The theory of dimension analysis guarantees that there will not be a problem with this convention as long as you do a correct calculation.</p>
 </div>
 
 
@@ -200,6 +187,8 @@ with this convention as long as you do a correct calculation.</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bg_diff_geo.html" class="btn btn-neutral float-right" title="Basic Differential Geometry" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="bg_eins.html" class="btn btn-neutral" title="Einstein Summation Convention" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

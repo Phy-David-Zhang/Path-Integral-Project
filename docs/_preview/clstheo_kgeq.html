@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Solution of Klein-Gordon Equation &mdash; Path Integral Project 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Path Integral Project 0.1 documentation" href="index.html"/>
+        <link rel="up" title="Classical Theory" href="clstheo.html"/>
+        <link rel="next" title="The Symmetry of Fields" href="clstheo_sym_field.html"/>
+        <link rel="prev" title="Classical Theory: Scalar Field" href="clstheo_scalar.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" style="font-size: 1.15em"> Path Integral Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <!--
+              <div class="version">
+                0.1
+              </div>
+              -->
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="clstheo.html">Classical Theory</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="clstheo_scalar.html">Classical Theory: Scalar Field</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Solution of Klein-Gordon Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clstheo_sym_field.html">The Symmetry of Fields</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Path Integral Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="clstheo.html">Classical Theory</a> &raquo;</li>
+        
+      <li>Solution of Klein-Gordon Equation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/clstheo_kgeq.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="solution-of-klein-gordon-equation">
+<h1>Solution of Klein-Gordon Equation<a class="headerlink" href="#solution-of-klein-gordon-equation" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This section is important to the canonical quantisation method, and will not influence the overall logic. You may skip this if you wish.</p>
+</div>
+<p>In this section, we look at the general solution of the Klein-Gordon equation. We do this for <span class="math">\(\varphi\)</span>, and similar procedure can be easily carried out for <span class="math">\(\varphi^*\)</span>.</p>
+<p>For any possible field <span class="math">\(\varphi\)</span>, we can perform Fourier expansion as</p>
+<div class="math">
+\[\varphi = \int{\mathrm d^4k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Well, you may notice that here we do not take the symmetric form of the Fourier transformation. Although personally I prefer the symmetric form, but trust me, it can make all the successive discussions awful.</p>
+</div>
+<p>Take the above expression back into the equation, we get the dispersion relation</p>
+<div class="math">
+\[k^2 + m^2 = 0\]</div>
+<p>This relation serves as a constraint to the wave number <span class="math">\(k^\mu\)</span>. Thus, to gain the solution, all we need to do is to switch the integral measure to <a class="reference external" href="&#64;waiting">delta measure</a></p>
+<div class="math">
+\[\varphi(x) = \int{\mathrm d^4k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot2\pi\delta(k^2+m^2)\]</div>
+<p>Factor <span class="math">\(2\pi\)</span> is necessary since we are going to perform the integral once, like</p>
+<div class="math">
+\[\begin{split}\varphi(x) &amp;= \int{\mathrm d\omega \mathrm d^3k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot2\pi\delta(-\omega^2 + \vec k^2 + m^2)\\
+&amp;= \int{\mathrm d\omega^2 \mathrm d^3k\over2\omega(2\pi)^3}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot\delta(-\omega^2 + \vec k^2 + m^2)\\
+&amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}a(k)\exp\{\mathrm i(\omega_k t - \vec k \vec x\} + \int{\mathrm d^3k\over(-2\omega_k)(2\pi)^3}a(k)\exp\{\mathrm i(-\omega_k t - \vec k \vec x\}\\
+&amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}a(k)\exp\{\mathrm i(\omega_k t - \vec k \vec x\} + \int{\mathrm d^3k\over(2\omega_k)(2\pi)^3}a(-k)\exp\{\mathrm i(-\omega_k t + \vec k \vec x\}\\
+&amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}\left[a(k)\exp\{-\mathrm i(k^\mu x_\mu\} + a(-k)\exp\{\mathrm i(k^\mu x_\mu\} \right]\end{split}\]</div>
+<p>where <span class="math">\(\omega_k = \sqrt{\vec k^2 + m^2}\)</span>. The fourth equality is nothing other than reversing the direction of <span class="math">\(\vec k\)</span>. Hence, we get the general form of the solution of Klein-Gordon equation.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="clstheo_sym_field.html" class="btn btn-neutral float-right" title="The Symmetry of Fields" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="clstheo_scalar.html" class="btn btn-neutral" title="Classical Theory: Scalar Field" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Zhang Chang-kai.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

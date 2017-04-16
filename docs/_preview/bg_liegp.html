@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Basics of Lie Group Theory &mdash; Path Integral Project 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Path Integral Project 0.1 documentation" href="index.html"/>
+        <link rel="up" title="Background Knowledge" href="background.html"/>
+        <link rel="prev" title="Basic Linear Algebra" href="bg_linalg.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" style="font-size: 1.15em"> Path Integral Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <!--
+              <div class="version">
+                0.1
+              </div>
+              -->
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="background.html">Background Knowledge</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bg_eins.html">Einstein Summation Convention</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_geo_unit.html">Geometric Unit System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_diff_geo.html">Basic Differential Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_lag_dyn.html">Lagrangian Dynamics of Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_linalg.html">Basic Linear Algebra</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Basics of Lie Group Theory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#group-and-lie-group">Group and Lie Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generator-and-exponential-map">Generator and Exponential Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#special-lie-groups">Special Lie Groups</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Path Integral Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="background.html">Background Knowledge</a> &raquo;</li>
+        
+      <li>Basics of Lie Group Theory</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bg_liegp.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basics-of-lie-group-theory">
+<h1>Basics of Lie Group Theory<a class="headerlink" href="#basics-of-lie-group-theory" title="Permalink to this headline">¶</a></h1>
+<p>This section is a very basic introduction of Lie Group &amp; Lie Algebra theory. Again, we would like to mention that there Lie Group &amp; Lie Algebra is a tremendously abundant, and this section concerns only tips of the tips. The aim of this introduction is simply to provide you with an overall view of how Lie Group &amp; Lie Algebra is implemented into physical theories. Therefore, we strongly recommend a more detailed investigation on this branch of Mathematics if possible.</p>
+<div class="section" id="group-and-lie-group">
+<h2>Group and Lie Group<a class="headerlink" href="#group-and-lie-group" title="Permalink to this headline">¶</a></h2>
+<p>Group structure is an algebraic structure on a set, namely</p>
+<blockquote>
+<div><p><strong>Definition.</strong> Group <span class="math">\(G\)</span> is a set equipped with a binary operation <strong>multiplication</strong>: <span class="math">\(\cdot: G\times G\rightarrow G\)</span> satisfying</p>
+<ol class="arabic simple">
+<li>Associativity: <span class="math">\((gh)k = g(hk)\)</span></li>
+<li>Identity Element: <span class="math">\(\exists e, eg = ge = g\)</span></li>
+<li>Inverse Element: <span class="math">\(\forall g, \exists g^{-1}, gg^{-1} = g^{-1}g =e\)</span></li>
+</ol>
+</div></blockquote>
+<p>Translate to human language: group is a set; you can perform multiplication of any two element of the set, and the multiplication satisfies three conditions.</p>
+<p>The reason to invoke group into Physics lies on its similarity to the symmetry. Take translational symmetry for instance. The three translation operation clearly satisfies the associativity. There exists an identity translation (no translation). And for every translation there exists an inverse operation that transforms everything back. Similar argument also holds for rotation and other symmetries.</p>
+<p>But a simple group structure does not provide enough tools for our analysis. We clearly are not satisfied with description as &#8220;translation <span class="math">\(a\)</span>” and &#8220;translation <span class="math">\(b\)</span>”. We hope that we can say &#8220;translation of <span class="math">\(5\)</span> units&#8221;. How can we do that? You got it! We need a manifold.</p>
+<p>Now, <strong>Lie group</strong> debuts. Lie group is nothing more complex than a set that is both a group and a manifold. The manifold provides the coordinates for each of the group element, and we can use a variety of tools provided by Differential Geometry.</p>
+</div>
+<div class="section" id="generator-and-exponential-map">
+<h2>Generator and Exponential Map<a class="headerlink" href="#generator-and-exponential-map" title="Permalink to this headline">¶</a></h2>
+<p>One of a very important tool provided by the Differential Geometry is the possibility to analyse the group element through generators. Take the 3D translation as an example. With a differential structure in hand, we can express some group element like &#8220;translation of 5 units along x axis&#8221;. Here, the group element is designated by a parameter &#8220;5 units&#8221; and a <em>direction</em> &#8220;x axis&#8221;. The generator is nothing other than the <em>direction</em> here. Therefore, every group element can be written as a parameter with a <em>direction</em>.</p>
+<blockquote>
+<div>Mathematically speaking, the generator is the element of the vector space at identity element of the Lie group. If you can not understand the previous statement, a review of linear structure on manifolds will be beneficial. There is no intention to expand here.</div></blockquote>
+<p>Next, we are going to explicitly illustrate how to the generator <em>generate</em> the group element. Suppose we now have a infinitesimal transformation</p>
+<div class="math">
+\[1+\epsilon A\]</div>
+<p>where <span class="math">\(1\)</span> means the identity element, <span class="math">\(\epsilon\)</span> is a first order infinitesimal parameter and <span class="math">\(A\)</span> is the generator. To generate the element <span class="math">\(g\)</span> with <em>direction</em> <span class="math">\(A\)</span> and parameter <span class="math">\(t\)</span>, divide <span class="math">\(t\)</span> by <span class="math">\(n\)</span> and ask <span class="math">\(n\rightarrow\infty\)</span>. Therefore, the infinitesimal parameter <span class="math">\(\epsilon=t/n\)</span>. Then, apply the transformation <span class="math">\(n\)</span> times to get</p>
+<div class="math">
+\[g = \lim_{n\rightarrow\infty}(1+\frac{t}{n}A)^n\equiv\exp\{tA\}\]</div>
+<p>Symbol <span class="math">\(\equiv\)</span> means &#8220;denoted by&#8221;. The expression <span class="math">\(\exp\{tA\}\)</span> is called the <strong>exponential map</strong> of element <span class="math">\(g\)</span>. The reason for this denotation will be apparent if you notice a conclusion in Calculus</p>
+<div class="math">
+\[\exp\{x\} = (1 + \frac{x}{n})^n\]</div>
+<p>It seems that we have got nothing but a denotation. However, the following theorem will show the power of the exponential map</p>
+<blockquote>
+<div><strong>Theorem.</strong> For matrix group, thre is <span class="math">\(\exp = \mathrm{Exp}\)</span>.</div></blockquote>
+<p>In the above theorem, map <span class="math">\(\mathrm{Exp}\)</span> is defined as</p>
+<div class="math">
+\[\mathrm{Exp}(tA) = 1 + tA + \frac{t^2A^2}{2!} + \ldots = \sum_{k=0}^{\infty}\frac{t^kA^k}{k!}\]</div>
+<p>and the matrix group means the group with all elements being square matrix. Notice that most group that are of great concern is the matrix group. There is no doubt that this theorem will provide great convenience.</p>
+<blockquote>
+<div>The trick of expanding the definition of function of real number to function of other object using the Taylor expansion is widely used in Mathematics. Thus, if you see some function that is originally only defined on numbers but actually acts on something else, you should then regard the definition of the function as the corresponding Taylor expansion.</div></blockquote>
+</div>
+<div class="section" id="special-lie-groups">
+<h2>Special Lie Groups<a class="headerlink" href="#special-lie-groups" title="Permalink to this headline">¶</a></h2>
+<p>This section will introduce several crucial matrix Lie groups that are widely used in physical theories. In fact, in frontier research, there are numerous kinds of Lie groups that frequently appear in the theories. This section will only introduce two of them &#8212; <strong>orthogonal group</strong> (including <strong>Lorentz group</strong>) and <strong>unitary group</strong>.</p>
+<p><strong>General Linear Group</strong> <span class="math">\(\mathrm{GL}(n)\)</span></p>
+<p>We start from the most basic matrix Lie group &#8212; <span class="math">\(n\)</span>-dim General Linear Group, or <span class="math">\(\mathrm{GL}(n)\)</span>, which consists of all bijective linear map from an <span class="math">\(n\)</span>-dim vector space <span class="math">\(V\)</span> to itself, with group multiplication defined as the map composition. If we select a basis of space <span class="math">\(V\)</span>, then the map will become an invertible square matrix of order <span class="math">\(n\)</span>, or square matrix <span class="math">\(A\)</span> of order <span class="math">\(n\)</span> with <span class="math">\(\det(A)\neq0\)</span>.</p>
+<p>There is something &#8220;general&#8221;, then there must be something &#8220;special&#8221;. Yes, if we ask <span class="math">\(\det(A)=1\)</span>, then the matrices form the <span class="math">\(n\)</span>-dim <strong>Special Linear Group</strong>, or <span class="math">\(\mathrm{SL}(n)\)</span>. Moreover, this definition is not only suitable for General Linear Group only. Actually, when we say &#8220;special ... group&#8221;, it just means &#8221;... group&#8221; with the determinant of the group element being <span class="math">\(1\)</span> specifically.</p>
+<p><strong>Orthogonal Group</strong> <span class="math">\(\mathrm{O}(n)\)</span> and <span class="math">\(\mathrm{O}(m,n)\)</span></p>
+<p>When defining <span class="math">\(\mathrm{GL}(n)\)</span>, we have no restriction on the vector space <span class="math">\(V\)</span>. Now, if there is also a metric defined on <span class="math">\(V\)</span>, then we can add more restriction to the transformation &#8212; preserve the &#8220;length&#8221;. More specifically, suppose space <span class="math">\(V\)</span> has a Euclidean metric <span class="math">\(\delta_{\mu\nu}\)</span>. Thus, the preservation of &#8220;length&#8221; can be expressed as</p>
+<div class="math">
+\[\delta_{\mu\nu}Z^\mu_\rho Z^\nu_\sigma v^\rho v^\sigma = \delta_{\mu\nu}v^\mu v^\nu\]</div>
+<p>or written in matrix form</p>
+<div class="math">
+\[v^{\mathrm{T}}Z^{\mathrm{T}}Zv = v^{\mathrm{T}} v = v^{\mathrm{T}}Iv\]</div>
+<p>where <span class="math">\(I\)</span> is the identity matrix. Thus, the preservation of &#8220;length&#8221; will be equivalent to</p>
+<div class="math">
+\[Z^{\mathrm{T}}Z = I\]</div>
+<p>All this kind of matrices form the <span class="math">\(n\)</span>-dim Orthogonal Group, or <span class="math">\(\mathrm{O}(n)\)</span>. And from the illustration of the previous section, you should be able to understand what is <strong>Special Orthogonal Group</strong>, or <span class="math">\(\mathrm{SO}(n)\)</span>.</p>
+<p>The story does not end here. Just now we ask the space <span class="math">\(V\)</span> to have a Euclidean metric. Now we want to ask the metric to be more general &#8212; not necessary to be positively definite. More specifically, the diagonal elements of the metric can have <span class="math">\(m\)</span> occurrences as <span class="math">\(-1\)</span> and <span class="math">\(n\)</span> occurrences as <span class="math">\(1\)</span>. Also ask the matrix to preserve the &#8220;length&#8221;. This kind of matrices form group <span class="math">\(\mathrm{O}(m,n)\)</span>. A famous example of this kind of group is <span class="math">\(\mathrm{O}(1,3)\)</span>. It has a dedicated name <strong>Lorentz Group</strong>, and it can be so vital that we decide to open a new section for it.</p>
+<p><strong>Lorentz Group</strong> <span class="math">\(\mathrm{L}\)</span> or <span class="math">\(\mathrm{O}(1,3)\)</span></p>
+<p>As is introduced in the previous section, the Lorentz Group is the linear group whose vector space <span class="math">\(V\)</span> has a Minkowski metric <span class="math">\(\eta_{\mu\nu}\)</span>. Yes, it is the Minkowski metric that makes it so significant in the physical theories.</p>
+<p>The Lorentz Group has quite a complicated structure which we have no intention to address. But we would like to mention one important thing: the Lorentz Group can be divided into four branches, using the <span class="math">\(\varLambda^0_0\)</span> element (the leftmost and uppermost element) and determinant (either <span class="math">\(+1\)</span> or <span class="math">\(-1\)</span>). We use <span class="math">\(+/-\)</span> and <span class="math">\(\uparrow/\downarrow\)</span> to denote the four branches, e.g. <span class="math">\(\mathrm{L}^\uparrow_+\)</span> means <span class="math">\(\varLambda^0_0\geqslant1\)</span> and <span class="math">\(\det(\varLambda)=+1\)</span>.</p>
+<p>Although there are a massive amount of properties revealed, we stop here &#8212; many interesting facts about the Lorentz Group and its representation will be discussed in the introduction of representation theory.</p>
+<p><strong>Unitary Group</strong> <span class="math">\(\mathrm{U}(n)\)</span></p>
+<p>All our previous groups are based on the vector space <span class="math">\(V\)</span> which is <em>real</em>. Now we ask it to be complex. Then we get the complex General Linear Group <span class="math">\(\mathrm{GL}(n,\mathbb{C})\)</span>. Similarly, if there is an inner product (just like the metric in real space) defined on the complex vector space, we can ask the transformation to preserve &#8220;length&#8221;. Thus, we get the unitary group <span class="math">\(\mathrm{U}(n)\)</span>. Again, we stop here. If you want to know more about the Unitary Group and its similarity or distinction with Orthogonal Group, please refer to the references concerning Lie Group &amp; Lie Algebra.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="bg_linalg.html" class="btn btn-neutral" title="Basic Linear Algebra" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Zhang Chang-kai.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

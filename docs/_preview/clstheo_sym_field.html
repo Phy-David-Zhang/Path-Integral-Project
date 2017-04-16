@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>The Symmetry of Fields &mdash; Path Integral Project 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Path Integral Project 0.1 documentation" href="index.html"/>
+        <link rel="up" title="Classical Theory" href="clstheo.html"/>
+        <link rel="next" title="Background Knowledge" href="background.html"/>
+        <link rel="prev" title="Solution of Klein-Gordon Equation" href="clstheo_kgeq.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" style="font-size: 1.15em"> Path Integral Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <!--
+              <div class="version">
+                0.1
+              </div>
+              -->
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="clstheo.html">Classical Theory</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="clstheo_scalar.html">Classical Theory: Scalar Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clstheo_kgeq.html">Solution of Klein-Gordon Equation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">The Symmetry of Fields</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Path Integral Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="clstheo.html">Classical Theory</a> &raquo;</li>
+        
+      <li>The Symmetry of Fields</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/clstheo_sym_field.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="the-symmetry-of-fields">
+<h1>The Symmetry of Fields<a class="headerlink" href="#the-symmetry-of-fields" title="Permalink to this headline">¶</a></h1>
+<p>To extend our investigation towards spinor field and vector field, it is inevitable to introduce the change of components of fields under Lorentz transformation. This context, however, can be as complicated as a combination of Differential Geometry, Lie Group and Lie Algebra theory and Fibre Bundle theory. It would be much better if you are able to fully review these contexts. But anyway, we still try to provide a very basic introduction either to make our logic coherent or to provide motivation as you are studying those enigmatic mathematical theories.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To understand this section, you at least need to know <a class="reference external" href="../../Background/Basic%20Differential%20Geometry">some very basic Differential Geometry</a> and <a class="reference external" href="../../Background/Basic%20Linear%20Algebra">basic Linear Algebra</a>.</p>
+</div>
+<p>Currently, we are talking about classical fields. The classical field is a kind of physical object. Therefore, despite that we can develop some tools (e.g. coordinate system or basis) to describe it, it should in a whole remain unchanged after certain manual transformation (e.g. re-selection of the basis).</p>
+<p>However, this does not mean that the components of the field will remain invariant. In fact, except for the scalar field (we will analyse this later), many other types of fields will encounter a component change after the change of basis or coordinate system. Hence, based on the behaviour of the variation of components, we can classify the physical fields.</p>
+<p>A conclusion is needed: it is possible to naturally set up an <span class="math">\(n\)</span>-dim vector space associated to every point in an <span class="math">\(n\)</span>-dim manifold. The basis of this specific vector space is called <strong>tetrad</strong> (or <span class="math">\(n\)</span>-<strong>frame</strong>, <strong>veirbein</strong> in some references).</p>
+<blockquote>
+<div>We are not going to elucidate this conclusion since it would be a harangue. If you are interested, please referred to textbooks on Differential Geometry for further details.</div></blockquote>
+<p>In Quantum Field Theory, we care about three types of fields &#8212; scalar field, spinor field and vector field. Please notice that the term &#8220;scalar&#8221; and &#8220;vector&#8221; here are domain specific, which means that they might have a similar but essentially different meaning in other contexts.</p>
+<p><strong>Scalar field</strong> is a kind of field which does not change under any transformation of tetrad; <strong>spinor field</strong> transforms according to spinor representation of the Lorentz group, and <strong>vector field</strong> transforms according to the vector representation.</p>
+<p>I know you don&#8217;t understand. But don&#8217;t worry, it is going to be illustrated next.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="background.html" class="btn btn-neutral float-right" title="Background Knowledge" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="clstheo_kgeq.html" class="btn btn-neutral" title="Solution of Klein-Gordon Equation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Zhang Chang-kai.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

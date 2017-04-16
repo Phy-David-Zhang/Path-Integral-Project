@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Basic Linear Algebra &mdash; Path Integral Project 0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Path Integral Project 0.1 documentation" href="index.html"/>
+        <link rel="up" title="Background Knowledge" href="background.html"/>
+        <link rel="next" title="Basics of Lie Group Theory" href="bg_liegp.html"/>
+        <link rel="prev" title="Lagrangian Dynamics of Fields" href="bg_lag_dyn.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" style="font-size: 1.15em"> Path Integral Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <!--
+              <div class="version">
+                0.1
+              </div>
+              -->
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="background.html">Background Knowledge</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bg_eins.html">Einstein Summation Convention</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_geo_unit.html">Geometric Unit System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_diff_geo.html">Basic Differential Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_lag_dyn.html">Lagrangian Dynamics of Fields</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Basic Linear Algebra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bg_liegp.html">Basics of Lie Group Theory</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Path Integral Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="background.html">Background Knowledge</a> &raquo;</li>
+        
+      <li>Basic Linear Algebra</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bg_linalg.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basic-linear-algebra">
+<h1>Basic Linear Algebra<a class="headerlink" href="#basic-linear-algebra" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div>There is no intention to introduce Linear Algebra in this section. We have assumed that you have already accomplished training on Linear Algebra. This section serves just as a brief review of the vector space.</div></blockquote>
+<p>The following is the definition of a vector space, or linear space in some references.</p>
+<blockquote>
+<div><p><strong>Definition.</strong> The vector space <span class="math">\(V\)</span> over field <span class="math">\(F\)</span> is a set with two binary operation: <strong>addition</strong> <span class="math">\(+:V\times V\rightarrow V\)</span> and <strong>scalar multiplication</strong> <span class="math">\(\cdot:F\times V\rightarrow V\)</span> satisfying</p>
+<ol class="arabic simple">
+<li>Commutativity: <span class="math">\(v+u=u+v\)</span></li>
+<li>Associativity of addition: <span class="math">\((v+u)+w = v+(u+w)\)</span></li>
+<li>Additive identity: <span class="math">\(\exists 0, \forall v\in V, 0+v=v+0=v\)</span></li>
+<li>Additive inverse: <span class="math">\(\exists (-v), v + (-v) = 0\)</span></li>
+<li>Associativity of scalar multiplication: <span class="math">\(\beta(\alpha v) = (\beta\alpha)v\)</span></li>
+<li>Compatibility of addition and scalar multiplication: <span class="math">\((\alpha+\beta)v = \alpha v + \beta v\)</span>, <span class="math">\(\alpha(v+u) = \alpha v + \alpha u\)</span></li>
+<li>Scalar multiplicative identity: <span class="math">\(\exists 1, 1\cdot v = v\)</span></li>
+</ol>
+</div></blockquote>
+<p>There is no need to be so keen on the definition of vector space, but there does exist some important facts worth noticing. From the definition can we discover that the vector space is actually a very general concept &#8212; it would be more appropriate to call it a paradigm. Thus, when facing vector space, one should be very careful to distinguish the general vector space and some specific vector spaces.</p>
+<p>As an example, the real number set over real number field with addition and scalar multiplication as the ordinary addition and multiplication of real numbers forms a vector space. In this case, all real numbers are vectors of real number set &#8212; this is somehow different from our previous intuition, since a real number is widely referred as &#8220;scalar&#8221; instead of a vector.</p>
+<p>As another example, the tensor space of any type is a vector space. But in many applicative contexts, the tensor of order one is specifically referred as vector.</p>
+<p>The reason for this section is to remind you that there might be multiple meanings corresponding to the term &#8220;vector&#8221;. Thus, sometimes if you find the argument containing &#8220;vector&#8221; incomprehensible, please remember that there might be the problem of the ambiguity of the term &#8220;vector&#8221;.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bg_liegp.html" class="btn btn-neutral float-right" title="Basics of Lie Group Theory" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bg_lag_dyn.html" class="btn btn-neutral" title="Lagrangian Dynamics of Fields" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Zhang Chang-kai.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

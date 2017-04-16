@@ -9,4 +9,5 @@ Contents
    :maxdepth: 2
 
    intro.rst
+   clstheo.rst
    background.rst
