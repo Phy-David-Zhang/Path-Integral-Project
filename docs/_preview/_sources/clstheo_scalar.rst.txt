@@ -1,7 +1,7 @@
 Classical Theory: Scalar Field
 ------------------------------
 
-.. note:: This context will require knowledge on Lagrangian dynamics of fields. If you have not yet cover that in your previous learning, you will find `Lagrangian Form of Fields <@waiting>`__ helpful.
+.. note:: This context will require knowledge on Lagrangian dynamics of fields. If you have not yet cover that in your previous learning, you will find `Lagrangian Form of Fields <./bg_lag_dyn.html>`__ helpful.
 
 The Lagrangian of a scalar field is usually written as
 

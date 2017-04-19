@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>What is Path Integral Project? &mdash; Path Integral Project 0.1 documentation</title>
+  <title>What is Path Integral Project? &mdash; Path Integral Project 0.2 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Path Integral Project 0.1 documentation" href="index.html"/> 
+    <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -65,7 +65,7 @@
             
               <!--
               <div class="version">
-                0.1
+                0.2
               </div>
               -->
             
@@ -166,7 +166,7 @@
 <p>Unlike other Quantum Field Theory textbook, our introduction to the history will not be so long. In this section, we only plan to introduce the part that has direct connection to the motivation of Quantum Field Theory.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The following context will call <a class="reference external" href="../../background/geometric-unit-system">Geometric Unit System</a> and <a class="reference external" href="../../background/einstein-summation-convention">Einstein Summation Convention</a>. Review the link if you have never heard of them — they are important!</p>
+<p class="last">The following context will call <a class="reference external" href="./bg_geo_unit.html">Geometric Unit System</a> and <a class="reference external" href="./bg_eins.html">Einstein Summation Convention</a>. Review the link if you have never heard of them — they are important!</p>
 </div>
 <p>Assuming that you already have the knowledge of Quantum Mechanics. At least you are able to recognise the most famous equation shown below</p>
 <div class="math">
@@ -250,7 +250,7 @@
 <h1>Classical Theory: Scalar Field<a class="headerlink" href="#classical-theory-scalar-field" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">This context will require knowledge on Lagrangian dynamics of fields. If you have not yet cover that in your previous learning, you will find <a class="reference external" href="&#64;waiting">Lagrangian Form of Fields</a> helpful.</p>
+<p class="last">This context will require knowledge on Lagrangian dynamics of fields. If you have not yet cover that in your previous learning, you will find <a class="reference external" href="./bg_lag_dyn.html">Lagrangian Form of Fields</a> helpful.</p>
 </div>
 <p>The Lagrangian of a scalar field is usually written as</p>
 <div class="math">
@@ -302,7 +302,7 @@
 <p>To extend our investigation towards spinor field and vector field, it is inevitable to introduce the change of components of fields under Lorentz transformation. This context, however, can be as complicated as a combination of Differential Geometry, Lie Group and Lie Algebra theory and Fibre Bundle theory. It would be much better if you are able to fully review these contexts. But anyway, we still try to provide a very basic introduction either to make our logic coherent or to provide motivation as you are studying those enigmatic mathematical theories.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">To understand this section, you at least need to know <a class="reference external" href="../../Background/Basic%20Differential%20Geometry">some very basic Differential Geometry</a> and <a class="reference external" href="../../Background/Basic%20Linear%20Algebra">basic Linear Algebra</a>.</p>
+<p class="last">To understand this section, you at least need to know <a class="reference external" href="./bg_diff_geo.html">some very basic Differential Geometry</a> and <a class="reference external" href="./bg_linalg.html">basic Linear Algebra</a>.</p>
 </div>
 <p>Currently, we are talking about classical fields. The classical field is a kind of physical object. Therefore, despite that we can develop some tools (e.g. coordinate system or basis) to describe it, it should in a whole remain unchanged after certain manual transformation (e.g. re-selection of the basis).</p>
 <p>However, this does not mean that the components of the field will remain invariant. In fact, except for the scalar field (we will analyse this later), many other types of fields will encounter a component change after the change of basis or coordinate system. Hence, based on the behaviour of the variation of components, we can classify the physical fields.</p>
@@ -312,6 +312,174 @@
 <p>In Quantum Field Theory, we care about three types of fields &#8212; scalar field, spinor field and vector field. Please notice that the term &#8220;scalar&#8221; and &#8220;vector&#8221; here are domain specific, which means that they might have a similar but essentially different meaning in other contexts.</p>
 <p><strong>Scalar field</strong> is a kind of field which does not change under any transformation of tetrad; <strong>spinor field</strong> transforms according to spinor representation of the Lorentz group, and <strong>vector field</strong> transforms according to the vector representation.</p>
 <p>I know you don&#8217;t understand. But don&#8217;t worry, it is going to be illustrated next.</p>
+</div>
+<div class="section" id="representation-of-lorentz-group">
+<h1>Representation of Lorentz Group<a class="headerlink" href="#representation-of-lorentz-group" title="Permalink to this headline">¶</a></h1>
+<p>This section introduces some very basic representation theory of Lorentz Group. In fact, the representation theory of Lorentz Group can be abundant, and here we only care about the non-trivial and pragmatic parts, namely the spinor representation and vector representation.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Before Continuing, you need to cover at least <a class="reference external" href="./bg_liegp.html">Basic Group Theory</a>.</p>
+</div>
+<p>Usually, a Lorentz transformation can be divided to boost and rotation. The boost along the <span class="math">\(x\)</span>-axis can be written as</p>
+<div class="math">
+\[\begin{split}K_x =
+\left[
+\begin{matrix}
+\mathrm{ch}\lambda &amp; \mathrm{sh}\lambda &amp; 0 &amp; 0\\
+\mathrm{sh}\lambda &amp; \mathrm{ch}\lambda &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{matrix}
+\right]\end{split}\]</div>
+<p>where <span class="math">\(\mathrm{ch}\lambda\)</span> is the hyperbolic cosine and <span class="math">\(\mathrm{sh}\lambda\)</span> is the hyperbolic sine. It is easy to verify that this is equivalent to the normal form of Lorentz transformation once notice that <span class="math">\(\mathrm{ch}\lambda = \gamma, \mathrm{sh}\lambda = \gamma v, \mathrm{th}\lambda = v\)</span>. Also, for the rotation along the <span class="math">\(z\)</span>-axis, we have</p>
+<div class="math">
+\[\begin{split}J_z =
+\left[
+\begin{matrix}
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; \cos\eta&amp; \sin\eta &amp; 0\\
+0 &amp; -\sin\eta &amp; \cos\eta &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{matrix}
+\right]\end{split}\]</div>
+<p>which should be familiar to all. You should be able to write down the boosts and rotations along the other axis. All the Lorentz transformation can be formed by these boosts and rotations.</p>
+<p>We now want to find out the generators of the above boost. According to the form of infinitesimal transformation, the generator should be the first order derivative of the transformation at identity point, namely</p>
+<div class="math">
+\[\begin{split}\vec K_x = \left.\frac{\partial K_x}{\partial\lambda}\right|_{\lambda=0} =
+\left[
+\begin{matrix}
+0 &amp; 1 &amp; 0 &amp; 0\\
+1 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{matrix}
+\right]\end{split}\]</div>
+<p>You are encouraged to write down the generators for the other boosts and rotations. Moreover, you can also calculate explicitly <span class="math">\(\exp\{\lambda\vec K_x\}\)</span> as described in Basic Group Theory and verify that it equals <span class="math">\(K_x(\lambda)\)</span>.</p>
+<p>Now that we have the generators, the infinitesimal transformation will have the form</p>
+<div class="math">
+\[1 + \eta_x\vec K_x + \eta_y \vec K_y + ...\]</div>
+<p>To simplify the formulation, we introduce a anti-symmetric lists of matrix <span class="math">\(L_{\mu\nu}\)</span> as</p>
+<div class="math">
+\[\begin{split}L_{01} &amp;= -L_{10} = \mathrm{i}\vec K_x,\ \ \ L_{02} = -L_{20} = \mathrm{i}\vec K_y,\ \ \ L_{03} = -L_{30} = \mathrm{i}\vec K_z\\
+L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\vec J_x,\ \ \ L_{13} = -L_{31} = \mathrm{i}\vec J_y\\\end{split}\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Anti-symmetric means <span class="math">\(L_{\mu\nu} = -L_{\nu\mu}\)</span>, which implies the diagonal elements <span class="math">\(L_{ii} = 0\)</span>.</p>
+</div>
+<p>Therefore, the infinitesimal transformation is simplified to</p>
+<div class="math">
+\[1 - \frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\]</div>
+<p>where <span class="math">\(\epsilon^{\mu\nu}\)</span> is the corresponding parameters (<span class="math">\(\epsilon^{01} = \eta_x\)</span> for example), and it is also anti-symmetric. The <span class="math">\(1/2\)</span> is necessary because we need to eliminate the factor <span class="math">\(2\)</span> in <span class="math">\(\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}\)</span>.</p>
+<p>Consequently, all Lorentz transformation can be written under the form</p>
+<div class="math">
+\[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\}\]</div>
+<p>This formula is called the <strong>vector representation</strong> of the Lorentz Group. This is the default representation for the tetrad.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Rigorously speaking, the representation should be a map from the group element to the automorphism of a vector space. Thus, the above equation should be viewed as a map to map the group element (LHS) to an automorphism (RHS).</p>
+</div>
+<p>As we know, the generators <span class="math">\(L_{\mu\nu}\)</span> can be viewed as a &#8220;basis&#8221; of the Lorentz group. However, this is not the only &#8220;basis&#8221;. Next, we are going to find out another one.</p>
+<p>Before continuing, let&#8217;s first define four matrices <span class="math">\(\gamma_\mu, \mu=0,1,2,3\)</span> that satisfy</p>
+<div class="math">
+\[\{\gamma_\mu, \gamma_\nu\} = \gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = 2\eta_{\mu\nu}\]</div>
+<p>where <span class="math">\(\eta_{\mu\nu}\)</span> is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group</p>
+<div class="math">
+\[S_{\mu\nu} = \frac{1}{4}\mathrm{i}[\gamma_\mu, \gamma_\nu]\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Why? Well, we are not able to explain now since it needs Lie algebra theory. Go and find a reference about Lie algebra if you really wonder why.</p>
+</div>
+<p>Therefore, we can express the Lorentz transformation as</p>
+<div class="math">
+\[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}\}\]</div>
+<p>This formulation is called <strong>spinor representation</strong> of the Lorentz group.</p>
+<p>Finished. But I do want to add that the representation theory of Lorentz group is quite a enchanting theory. So I suggest a careful review on this theory if you are able. It will greatly deepen your understanding through the algebraic structure of the physical field.</p>
+</div>
+<div class="section" id="scalar-spinor-and-vector-tensor-field">
+<h1>Scalar, Spinor and Vector (Tensor) Field<a class="headerlink" href="#scalar-spinor-and-vector-tensor-field" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please make sure you have covered the previous section <a class="reference external" href="./repr_lg.html">Representation of Lorentz Group</a>.</p>
+</div>
+<p>This section will tell you how to define the scalar, spinor and vector (tensor) field. But before that, it is suggested to cover <a class="reference external" href="./bg_linalg.html">Basic Linear Algebra</a> for clarification of possible ambiguity of &#8220;vector&#8221;. To avoid this ambiguity, we use term <strong>linear space</strong> for the <em>vector space</em> in <a class="reference external" href="./bg_linalg.html">Linear Algebra</a>.</p>
+<div class="section" id="physical-field">
+<h2>Physical Field<a class="headerlink" href="#physical-field" title="Permalink to this headline">¶</a></h2>
+<p>In Quantum Field Theory, <strong>field</strong> is a central concept. In general, field is a map from the spacetime point to some object (numbers, arrows, etc.). All fields can form a linear space if the <em>object</em> also forms a linear space (as a practice, think about how to define that space). Although looked trivial, there is one thing that makes this concept intriguing &#8212; spacetime point. Spacetime point can be too abstract for analysis such that, like what we do in Group Theory, we should set up a manifold for it. With a manifold, every spacetime point has its unique coordinates, which is a powerful tool for analysis.</p>
+<p>However, the choice of coordinate system is artificial, and a law of nature should never depend on such an artificial object. Thus, it is crucial that the field should not vary after a change of coordinate system (and anything possibly related, basis of the field for example).</p>
+<p>But that does not mean that the components of the field will also be invariant. In fact, <strong>based on the different behaviour of the field components under transformations, we divide the physical field into several types</strong> &#8212; scalar field, spinor field and vector (tensor) field. Specifically, any field (as an element of a linear space) can be written as</p>
+<div class="math">
+\[\phi = \phi_i \cdot e^i\]</div>
+<p>where <span class="math">\(\phi_i\)</span> is the components of the field and <span class="math">\(e^i\)</span> is a basis for the linear space. Now, if we perform a transformation <span class="math">\(g\)</span> to the basis, the components should transform inversely in order to make the combination invariant, i.e.</p>
+<div class="math">
+\[\phi = g^{-1}(\phi_i)\cdot g(e^i)\]</div>
+<p>Nonetheless, the above expression is meaningless. As we have pointed out, the transformation is usually constructed using Lie group. And in Quantum Field Theory, it is Lorentz Group. However, we find that the expression <span class="math">\(g^{-1}(\phi_i)\)</span> and <span class="math">\(g(e^i)\)</span> undefined, since there is no definition indicating how to apply an element of Lie group to the components and basis of the field. Thus, to let the expression make sense, we need additional information of how the group element acts on the components and the basis. This designation is called <strong>representation</strong> of Lie group.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Important Notice: the dot in the previous two equations may not have the significance of certain &#8220;product&#8221;. You will see this later.</p>
+</div>
+<p>A simple example is when the Lie group is <span class="math">\(\mathrm{GL}(n)\)</span>. Then a trivial representation is just to define the action as the matrix multiplication. In Quantum Field Theory, the representation of Lorentz Group on the basis is always this trivial one, but that on the components can be various. Therefore, we give this representation a name: <strong>field representation</strong>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Just a reminder, although you might not notice, you are actually using the idea of Fibre Bundle. If you would like, try to find some basic tutorial on principal bundle and fibre bundle associated to a principal bundle. And you will then be able to feel the elegance.</p>
+</div>
+</div>
+<div class="section" id="scalar-field">
+<h2>Scalar Field<a class="headerlink" href="#scalar-field" title="Permalink to this headline">¶</a></h2>
+<p>The scalar field is the field whose field representation is scalar representation. The <strong>scalar representation</strong> is defined as</p>
+<div class="math">
+\[\varLambda(\phi_i) = \phi_i\]</div>
+<p>which means the components of the field does not change at all under the transformation.</p>
+</div>
+<div class="section" id="vector-field">
+<h2>Vector Field<a class="headerlink" href="#vector-field" title="Permalink to this headline">¶</a></h2>
+<p>The vector field is the field whose field representation is vector representation. Thus, the components transform as</p>
+<div class="math">
+\[\varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^jA_j\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To understand the above equation, you need <a class="reference external" href="./bg_liegp.html">Basic Group Theory</a> and <a class="reference external" href="./repr_lg.html">Representation of Lorentz Group</a>.</p>
+</div>
+<p>First let&#8217;s examine the above expression. First, you have to recall what is the exponential map. Remember that the result of the exponential map (<span class="math">\(\exp\{...\}\)</span>) is a matrix, and thus <span class="math">\(\exp\{...{\}_i}^j\phi_j\)</span> is nothing but a matrix multiply a column vector.</p>
+<p>Next, remember that we have said the transformation of the basis follows the trivial representation which is defined just as the matrix product</p>
+<div class="math">
+\[\varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^je_j\]</div>
+<p>Therefore we have</p>
+<div class="math">
+\[A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k = A^j\cdot e_j\]</div>
+<p>Now you can see why we write a dot <span class="math">\(\cdot\)</span> between the components and the basis &#8212; under vector representation (where some triviality applies), the <span class="math">\(\cdot\)</span> in the above derivation can be &#8220;viewed&#8221; as the matrix product. However, this &#8220;view&#8221; will fail in some other non-trivial situations &#8212; as described any minute next.</p>
+</div>
+<div class="section" id="spinor-field">
+<h2>Spinor Field<a class="headerlink" href="#spinor-field" title="Permalink to this headline">¶</a></h2>
+<p>The spinor field is the field whose field representation is spinor representation. The <strong>spinor representation</strong> is define as</p>
+<div class="math">
+\[\varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\}\]</div>
+<p>Just like what we have done in the previous section, write down explicitly</p>
+<div class="math">
+\[A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k =  A^j\cdot e_j ???\]</div>
+<p>We see that the parameters <span class="math">\(\epsilon^{\mu\nu}\)</span> are the same in the two sides of “<span class="math">\(\cdot\)</span>”, but the &#8220;basis&#8221; is different. Thus, if we still view <span class="math">\(\cdot\)</span> as the matrix product, the equality will no longer hold.</p>
+<p>Hence, we need a new definition in this case, which means under the new product, there is</p>
+<div class="math">
+\[\exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\} \rightarrow \text{identity matrix}\]</div>
+<p>In Fibre Bundle theory, we achieve this by introducing an equivalence class. Yes, it looks like that we are &#8220;brute-forcely&#8221; identify the the above result as an identity matrix. But as a matter of fact, there is no preliminary intentions to make <span class="math">\(\cdot\)</span> here as a product &#8212; it just looks like that in vector field. In Fibre Bundle theory, fields of all kinds are described universally using the equivalence class.</p>
+</div>
+<div class="section" id="tensor-field">
+<h2>Tensor Field<a class="headerlink" href="#tensor-field" title="Permalink to this headline">¶</a></h2>
+<p>The tensor of order <span class="math">\(n\)</span> is nothing but a quantity <span class="math">\(T_{\mu_1\cdots \mu_n}\)</span> of <span class="math">\(n\)</span> indices with each of them transforming like the vector. For instance, if you put two vectors <span class="math">\(A_\mu\)</span> and <span class="math">\(B_\nu\)</span> together, i.e. <span class="math">\(A_\mu B_\nu\)</span>, the result will be a tensor.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Actually it is a tough decision for me to write down the above &#8220;non-sense&#8221;. Yes, rigorously speaking, the above descriptions are total non-sense &#8212; but they appear in many textbooks. In fact, there is no indices which are able to &#8220;transform like vector&#8221;, and there is no way to &#8220;put vectors together&#8221; (It has its name &#8212; tensor product!). Unfortunately it will make our introduction to QFT too cumbersome so we decide not to cover Tensor Analysis. However! You are strongly suggested to try your best to cover that &#8212; it is as essential, and beautiful, and powerful as any other wonderful theories you met before.</p>
+</div>
+<p>Although we do not cover Tensor Analysis, we will provide a list for you to determine whether you have mastered it.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Tensor of type <span class="math">\((k, l)\)</span> is a multi-linear map from the Cartesian product of <span class="math">\(k\)</span> dual vector spaces and <span class="math">\(l\)</span> vector spaces.</li>
+<li>The tensor product of a tensor of type <span class="math">\((k, l)\)</span> and a tensor of type <span class="math">\((k', l')\)</span> is a tensor of type <span class="math">\((k+k', l+l')\)</span>.</li>
+<li>The dimension of the space of tensor of type <span class="math">\((k, l)\)</span> is <span class="math">\(n^{(k+l)}\)</span>, where <span class="math">\(n\)</span> is the dimension of the vector space in the definition of the tensor.</li>
+<li>The act of the tensor on a vector (or dual vector) is equivalent to the composite of tensor product and tensor contraction.</li>
+</ul>
+</div></blockquote>
+<p>You should be able to understand in detail the above statements before you can say you have mastered Tensor Analysis.</p>
+</div>
 </div>
 <div class="section" id="geometric-unit-system">
 <h1>Geometric Unit System<a class="headerlink" href="#geometric-unit-system" title="Permalink to this headline">¶</a></h1>
@@ -536,7 +704,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.1',
+            VERSION:'0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

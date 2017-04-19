@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Representation of Lorentz Group &mdash; Path Integral Project 0.2 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
+        <link rel="up" title="Classical Theory" href="clstheo.html"/>
+        <link rel="next" title="Scalar, Spinor and Vector (Tensor) Field" href="field.html"/>
+        <link rel="prev" title="The Symmetry of Fields" href="clstheo_sym_field.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" style="font-size: 1.15em"> Path Integral Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <!--
+              <div class="version">
+                0.2
+              </div>
+              -->
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="clstheo.html">Classical Theory</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="clstheo_scalar.html">Classical Theory: Scalar Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clstheo_kgeq.html">Solution of Klein-Gordon Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clstheo_sym_field.html">The Symmetry of Fields</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Representation of Lorentz Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="field.html">Scalar, Spinor and Vector (Tensor) Field</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Path Integral Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="clstheo.html">Classical Theory</a> &raquo;</li>
+        
+      <li>Representation of Lorentz Group</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/repr_lg.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="representation-of-lorentz-group">
+<h1>Representation of Lorentz Group<a class="headerlink" href="#representation-of-lorentz-group" title="Permalink to this headline">¶</a></h1>
+<p>This section introduces some very basic representation theory of Lorentz Group. In fact, the representation theory of Lorentz Group can be abundant, and here we only care about the non-trivial and pragmatic parts, namely the spinor representation and vector representation.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Before Continuing, you need to cover at least <a class="reference external" href="./bg_liegp.html">Basic Group Theory</a>.</p>
+</div>
+<p>Usually, a Lorentz transformation can be divided to boost and rotation. The boost along the <span class="math">\(x\)</span>-axis can be written as</p>
+<div class="math">
+\[\begin{split}K_x =
+\left[
+\begin{matrix}
+\mathrm{ch}\lambda &amp; \mathrm{sh}\lambda &amp; 0 &amp; 0\\
+\mathrm{sh}\lambda &amp; \mathrm{ch}\lambda &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{matrix}
+\right]\end{split}\]</div>
+<p>where <span class="math">\(\mathrm{ch}\lambda\)</span> is the hyperbolic cosine and <span class="math">\(\mathrm{sh}\lambda\)</span> is the hyperbolic sine. It is easy to verify that this is equivalent to the normal form of Lorentz transformation once notice that <span class="math">\(\mathrm{ch}\lambda = \gamma, \mathrm{sh}\lambda = \gamma v, \mathrm{th}\lambda = v\)</span>. Also, for the rotation along the <span class="math">\(z\)</span>-axis, we have</p>
+<div class="math">
+\[\begin{split}J_z =
+\left[
+\begin{matrix}
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; \cos\eta&amp; \sin\eta &amp; 0\\
+0 &amp; -\sin\eta &amp; \cos\eta &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{matrix}
+\right]\end{split}\]</div>
+<p>which should be familiar to all. You should be able to write down the boosts and rotations along the other axis. All the Lorentz transformation can be formed by these boosts and rotations.</p>
+<p>We now want to find out the generators of the above boost. According to the form of infinitesimal transformation, the generator should be the first order derivative of the transformation at identity point, namely</p>
+<div class="math">
+\[\begin{split}\vec K_x = \left.\frac{\partial K_x}{\partial\lambda}\right|_{\lambda=0} =
+\left[
+\begin{matrix}
+0 &amp; 1 &amp; 0 &amp; 0\\
+1 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{matrix}
+\right]\end{split}\]</div>
+<p>You are encouraged to write down the generators for the other boosts and rotations. Moreover, you can also calculate explicitly <span class="math">\(\exp\{\lambda\vec K_x\}\)</span> as described in Basic Group Theory and verify that it equals <span class="math">\(K_x(\lambda)\)</span>.</p>
+<p>Now that we have the generators, the infinitesimal transformation will have the form</p>
+<div class="math">
+\[1 + \eta_x\vec K_x + \eta_y \vec K_y + ...\]</div>
+<p>To simplify the formulation, we introduce a anti-symmetric lists of matrix <span class="math">\(L_{\mu\nu}\)</span> as</p>
+<div class="math">
+\[\begin{split}L_{01} &amp;= -L_{10} = \mathrm{i}\vec K_x,\ \ \ L_{02} = -L_{20} = \mathrm{i}\vec K_y,\ \ \ L_{03} = -L_{30} = \mathrm{i}\vec K_z\\
+L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\vec J_x,\ \ \ L_{13} = -L_{31} = \mathrm{i}\vec J_y\\\end{split}\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Anti-symmetric means <span class="math">\(L_{\mu\nu} = -L_{\nu\mu}\)</span>, which implies the diagonal elements <span class="math">\(L_{ii} = 0\)</span>.</p>
+</div>
+<p>Therefore, the infinitesimal transformation is simplified to</p>
+<div class="math">
+\[1 - \frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\]</div>
+<p>where <span class="math">\(\epsilon^{\mu\nu}\)</span> is the corresponding parameters (<span class="math">\(\epsilon^{01} = \eta_x\)</span> for example), and it is also anti-symmetric. The <span class="math">\(1/2\)</span> is necessary because we need to eliminate the factor <span class="math">\(2\)</span> in <span class="math">\(\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}\)</span>.</p>
+<p>Consequently, all Lorentz transformation can be written under the form</p>
+<div class="math">
+\[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\}\]</div>
+<p>This formula is called the <strong>vector representation</strong> of the Lorentz Group. This is the default representation for the tetrad.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Rigorously speaking, the representation should be a map from the group element to the automorphism of a vector space. Thus, the above equation should be viewed as a map to map the group element (LHS) to an automorphism (RHS).</p>
+</div>
+<p>As we know, the generators <span class="math">\(L_{\mu\nu}\)</span> can be viewed as a &#8220;basis&#8221; of the Lorentz group. However, this is not the only &#8220;basis&#8221;. Next, we are going to find out another one.</p>
+<p>Before continuing, let&#8217;s first define four matrices <span class="math">\(\gamma_\mu, \mu=0,1,2,3\)</span> that satisfy</p>
+<div class="math">
+\[\{\gamma_\mu, \gamma_\nu\} = \gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = 2\eta_{\mu\nu}\]</div>
+<p>where <span class="math">\(\eta_{\mu\nu}\)</span> is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group</p>
+<div class="math">
+\[S_{\mu\nu} = \frac{1}{4}\mathrm{i}[\gamma_\mu, \gamma_\nu]\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Why? Well, we are not able to explain now since it needs Lie algebra theory. Go and find a reference about Lie algebra if you really wonder why.</p>
+</div>
+<p>Therefore, we can express the Lorentz transformation as</p>
+<div class="math">
+\[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}\}\]</div>
+<p>This formulation is called <strong>spinor representation</strong> of the Lorentz group.</p>
+<p>Finished. But I do want to add that the representation theory of Lorentz group is quite a enchanting theory. So I suggest a careful review on this theory if you are able. It will greatly deepen your understanding through the algebraic structure of the physical field.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="field.html" class="btn btn-neutral float-right" title="Scalar, Spinor and Vector (Tensor) Field" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="clstheo_sym_field.html" class="btn btn-neutral" title="The Symmetry of Fields" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Zhang Chang-kai.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

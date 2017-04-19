@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Scalar, Spinor and Vector (Tensor) Field &mdash; Path Integral Project 0.2 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
+        <link rel="up" title="Classical Theory" href="clstheo.html"/>
+        <link rel="next" title="Background Knowledge" href="background.html"/>
+        <link rel="prev" title="Representation of Lorentz Group" href="repr_lg.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" style="font-size: 1.15em"> Path Integral Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <!--
+              <div class="version">
+                0.2
+              </div>
+              -->
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="clstheo.html">Classical Theory</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="clstheo_scalar.html">Classical Theory: Scalar Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clstheo_kgeq.html">Solution of Klein-Gordon Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clstheo_sym_field.html">The Symmetry of Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repr_lg.html">Representation of Lorentz Group</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Scalar, Spinor and Vector (Tensor) Field</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#physical-field">Physical Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scalar-field">Scalar Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vector-field">Vector Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spinor-field">Spinor Field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tensor-field">Tensor Field</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Path Integral Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="clstheo.html">Classical Theory</a> &raquo;</li>
+        
+      <li>Scalar, Spinor and Vector (Tensor) Field</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/field.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="scalar-spinor-and-vector-tensor-field">
+<h1>Scalar, Spinor and Vector (Tensor) Field<a class="headerlink" href="#scalar-spinor-and-vector-tensor-field" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please make sure you have covered the previous section <a class="reference external" href="./repr_lg.html">Representation of Lorentz Group</a>.</p>
+</div>
+<p>This section will tell you how to define the scalar, spinor and vector (tensor) field. But before that, it is suggested to cover <a class="reference external" href="./bg_linalg.html">Basic Linear Algebra</a> for clarification of possible ambiguity of &#8220;vector&#8221;. To avoid this ambiguity, we use term <strong>linear space</strong> for the <em>vector space</em> in <a class="reference external" href="./bg_linalg.html">Linear Algebra</a>.</p>
+<div class="section" id="physical-field">
+<h2>Physical Field<a class="headerlink" href="#physical-field" title="Permalink to this headline">¶</a></h2>
+<p>In Quantum Field Theory, <strong>field</strong> is a central concept. In general, field is a map from the spacetime point to some object (numbers, arrows, etc.). All fields can form a linear space if the <em>object</em> also forms a linear space (as a practice, think about how to define that space). Although looked trivial, there is one thing that makes this concept intriguing &#8212; spacetime point. Spacetime point can be too abstract for analysis such that, like what we do in Group Theory, we should set up a manifold for it. With a manifold, every spacetime point has its unique coordinates, which is a powerful tool for analysis.</p>
+<p>However, the choice of coordinate system is artificial, and a law of nature should never depend on such an artificial object. Thus, it is crucial that the field should not vary after a change of coordinate system (and anything possibly related, basis of the field for example).</p>
+<p>But that does not mean that the components of the field will also be invariant. In fact, <strong>based on the different behaviour of the field components under transformations, we divide the physical field into several types</strong> &#8212; scalar field, spinor field and vector (tensor) field. Specifically, any field (as an element of a linear space) can be written as</p>
+<div class="math">
+\[\phi = \phi_i \cdot e^i\]</div>
+<p>where <span class="math">\(\phi_i\)</span> is the components of the field and <span class="math">\(e^i\)</span> is a basis for the linear space. Now, if we perform a transformation <span class="math">\(g\)</span> to the basis, the components should transform inversely in order to make the combination invariant, i.e.</p>
+<div class="math">
+\[\phi = g^{-1}(\phi_i)\cdot g(e^i)\]</div>
+<p>Nonetheless, the above expression is meaningless. As we have pointed out, the transformation is usually constructed using Lie group. And in Quantum Field Theory, it is Lorentz Group. However, we find that the expression <span class="math">\(g^{-1}(\phi_i)\)</span> and <span class="math">\(g(e^i)\)</span> undefined, since there is no definition indicating how to apply an element of Lie group to the components and basis of the field. Thus, to let the expression make sense, we need additional information of how the group element acts on the components and the basis. This designation is called <strong>representation</strong> of Lie group.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Important Notice: the dot in the previous two equations may not have the significance of certain &#8220;product&#8221;. You will see this later.</p>
+</div>
+<p>A simple example is when the Lie group is <span class="math">\(\mathrm{GL}(n)\)</span>. Then a trivial representation is just to define the action as the matrix multiplication. In Quantum Field Theory, the representation of Lorentz Group on the basis is always this trivial one, but that on the components can be various. Therefore, we give this representation a name: <strong>field representation</strong>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Just a reminder, although you might not notice, you are actually using the idea of Fibre Bundle. If you would like, try to find some basic tutorial on principal bundle and fibre bundle associated to a principal bundle. And you will then be able to feel the elegance.</p>
+</div>
+</div>
+<div class="section" id="scalar-field">
+<h2>Scalar Field<a class="headerlink" href="#scalar-field" title="Permalink to this headline">¶</a></h2>
+<p>The scalar field is the field whose field representation is scalar representation. The <strong>scalar representation</strong> is defined as</p>
+<div class="math">
+\[\varLambda(\phi_i) = \phi_i\]</div>
+<p>which means the components of the field does not change at all under the transformation.</p>
+</div>
+<div class="section" id="vector-field">
+<h2>Vector Field<a class="headerlink" href="#vector-field" title="Permalink to this headline">¶</a></h2>
+<p>The vector field is the field whose field representation is vector representation. Thus, the components transform as</p>
+<div class="math">
+\[\varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^jA_j\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To understand the above equation, you need <a class="reference external" href="./bg_liegp.html">Basic Group Theory</a> and <a class="reference external" href="./repr_lg.html">Representation of Lorentz Group</a>.</p>
+</div>
+<p>First let&#8217;s examine the above expression. First, you have to recall what is the exponential map. Remember that the result of the exponential map (<span class="math">\(\exp\{...\}\)</span>) is a matrix, and thus <span class="math">\(\exp\{...{\}_i}^j\phi_j\)</span> is nothing but a matrix multiply a column vector.</p>
+<p>Next, remember that we have said the transformation of the basis follows the trivial representation which is defined just as the matrix product</p>
+<div class="math">
+\[\varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^je_j\]</div>
+<p>Therefore we have</p>
+<div class="math">
+\[A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k = A^j\cdot e_j\]</div>
+<p>Now you can see why we write a dot <span class="math">\(\cdot\)</span> between the components and the basis &#8212; under vector representation (where some triviality applies), the <span class="math">\(\cdot\)</span> in the above derivation can be &#8220;viewed&#8221; as the matrix product. However, this &#8220;view&#8221; will fail in some other non-trivial situations &#8212; as described any minute next.</p>
+</div>
+<div class="section" id="spinor-field">
+<h2>Spinor Field<a class="headerlink" href="#spinor-field" title="Permalink to this headline">¶</a></h2>
+<p>The spinor field is the field whose field representation is spinor representation. The <strong>spinor representation</strong> is define as</p>
+<div class="math">
+\[\varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\}\]</div>
+<p>Just like what we have done in the previous section, write down explicitly</p>
+<div class="math">
+\[A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k =  A^j\cdot e_j ???\]</div>
+<p>We see that the parameters <span class="math">\(\epsilon^{\mu\nu}\)</span> are the same in the two sides of “<span class="math">\(\cdot\)</span>”, but the &#8220;basis&#8221; is different. Thus, if we still view <span class="math">\(\cdot\)</span> as the matrix product, the equality will no longer hold.</p>
+<p>Hence, we need a new definition in this case, which means under the new product, there is</p>
+<div class="math">
+\[\exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\} \rightarrow \text{identity matrix}\]</div>
+<p>In Fibre Bundle theory, we achieve this by introducing an equivalence class. Yes, it looks like that we are &#8220;brute-forcely&#8221; identify the the above result as an identity matrix. But as a matter of fact, there is no preliminary intentions to make <span class="math">\(\cdot\)</span> here as a product &#8212; it just looks like that in vector field. In Fibre Bundle theory, fields of all kinds are described universally using the equivalence class.</p>
+</div>
+<div class="section" id="tensor-field">
+<h2>Tensor Field<a class="headerlink" href="#tensor-field" title="Permalink to this headline">¶</a></h2>
+<p>The tensor of order <span class="math">\(n\)</span> is nothing but a quantity <span class="math">\(T_{\mu_1\cdots \mu_n}\)</span> of <span class="math">\(n\)</span> indices with each of them transforming like the vector. For instance, if you put two vectors <span class="math">\(A_\mu\)</span> and <span class="math">\(B_\nu\)</span> together, i.e. <span class="math">\(A_\mu B_\nu\)</span>, the result will be a tensor.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Actually it is a tough decision for me to write down the above &#8220;non-sense&#8221;. Yes, rigorously speaking, the above descriptions are total non-sense &#8212; but they appear in many textbooks. In fact, there is no indices which are able to &#8220;transform like vector&#8221;, and there is no way to &#8220;put vectors together&#8221; (It has its name &#8212; tensor product!). Unfortunately it will make our introduction to QFT too cumbersome so we decide not to cover Tensor Analysis. However! You are strongly suggested to try your best to cover that &#8212; it is as essential, and beautiful, and powerful as any other wonderful theories you met before.</p>
+</div>
+<p>Although we do not cover Tensor Analysis, we will provide a list for you to determine whether you have mastered it.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Tensor of type <span class="math">\((k, l)\)</span> is a multi-linear map from the Cartesian product of <span class="math">\(k\)</span> dual vector spaces and <span class="math">\(l\)</span> vector spaces.</li>
+<li>The tensor product of a tensor of type <span class="math">\((k, l)\)</span> and a tensor of type <span class="math">\((k', l')\)</span> is a tensor of type <span class="math">\((k+k', l+l')\)</span>.</li>
+<li>The dimension of the space of tensor of type <span class="math">\((k, l)\)</span> is <span class="math">\(n^{(k+l)}\)</span>, where <span class="math">\(n\)</span> is the dimension of the vector space in the definition of the tensor.</li>
+<li>The act of the tensor on a vector (or dual vector) is equivalent to the composite of tensor product and tensor contraction.</li>
+</ul>
+</div></blockquote>
+<p>You should be able to understand in detail the above statements before you can say you have mastered Tensor Analysis.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="background.html" class="btn btn-neutral float-right" title="Background Knowledge" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="repr_lg.html" class="btn btn-neutral" title="Representation of Lorentz Group" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Zhang Chang-kai.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

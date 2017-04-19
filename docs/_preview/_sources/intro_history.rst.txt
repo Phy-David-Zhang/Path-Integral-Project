@@ -3,7 +3,7 @@ A Brief History
 
 Unlike other Quantum Field Theory textbook, our introduction to the history will not be so long. In this section, we only plan to introduce the part that has direct connection to the motivation of Quantum Field Theory.
 
-.. note:: The following context will call `Geometric Unit System <../../background/geometric-unit-system>`__ and `Einstein Summation Convention <../../background/einstein-summation-convention>`__. Review the link if you have never heard of them — they are important!
+.. note:: The following context will call `Geometric Unit System <./bg_geo_unit.html>`__ and `Einstein Summation Convention <./bg_eins.html>`__. Review the link if you have never heard of them — they are important!
 
 Assuming that you already have the knowledge of Quantum Mechanics. At least you are able to recognise the most famous equation shown below
 
