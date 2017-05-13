@@ -90,6 +90,9 @@
                 <ul>
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pathintgl.html">Path Integral</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quanfield.html">Quantum Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mathsup.html">Math Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
 </ul>
 
@@ -381,7 +384,7 @@ L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\v
 <p>As we know, the generators <span class="math">\(L_{\mu\nu}\)</span> can be viewed as a &#8220;basis&#8221; of the Lorentz group. However, this is not the only &#8220;basis&#8221;. Next, we are going to find out another one.</p>
 <p>Before continuing, let&#8217;s first define four matrices <span class="math">\(\gamma_\mu, \mu=0,1,2,3\)</span> that satisfy</p>
 <div class="math">
-\[\{\gamma_\mu, \gamma_\nu\} = \gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = 2\eta_{\mu\nu}\]</div>
+\[\{\gamma_\mu, \gamma_\nu\} = \gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = -2\eta_{\mu\nu}\]</div>
 <p>where <span class="math">\(\eta_{\mu\nu}\)</span> is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group</p>
 <div class="math">
 \[S_{\mu\nu} = \frac{1}{4}\mathrm{i}[\gamma_\mu, \gamma_\nu]\]</div>
@@ -480,6 +483,282 @@ L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\v
 </div></blockquote>
 <p>You should be able to understand in detail the above statements before you can say you have mastered Tensor Analysis.</p>
 </div>
+</div>
+<div class="section" id="quantum-mechanics">
+<h1>Quantum Mechanics<a class="headerlink" href="#quantum-mechanics" title="Permalink to this headline">¶</a></h1>
+<p>Well, we have no intentions to go over much about Quantum Mechanics. You are supposed to master the basics of Quantum Mechanics before continuing.</p>
+<p>Beginning this section, we will gradually step into the path integral approach to a quantum theory. As all our contemporaries, we start from the path integral formalism of Quantum Mechanics, and then transit to Quantum Field Theory.</p>
+<p>To make sure that you are fully prepared, please review the following list and see if you can identify all of them</p>
+<blockquote>
+<div><ul class="simple">
+<li>Schrodinger Equation (Time Dependent and Time Independent)</li>
+<li>Typical Solutions of Schrodinger Equation (e.g. harmonic oscillators)</li>
+<li>States, observables, and their implementations (Hilbert space and operators) and interpretations (e.g. expectation values).</li>
+<li>Dirac Notation</li>
+<li>The three pictures of Quantum Mechanics, and their relationships.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="path-integral-and-propagator">
+<h1>Path Integral and Propagator<a class="headerlink" href="#path-integral-and-propagator" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This section requires knowledge on Green&#8217;s function. Although we will briefly review some basics, you are still suggested to pick up a textbook on Mathematical Methods of Physics for a careful review.</p>
+</div>
+<p>In this section, you will make your first acquaintance with path integral. In quantum theory, path integral is a method of constructing the <strong>propagator</strong>. So we begin with the propagator.</p>
+<div class="section" id="schrodingers-equation-and-propagator">
+<h2>Schrödinger’s Equation and Propagator<a class="headerlink" href="#schrodingers-equation-and-propagator" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The symbols invoked in this section (e.g. <span class="math">\(\psi\)</span>) have a dedicated meaning, which will be different from other sections in this project.</p>
+</div>
+<p>First, we need to recall <strong>Green&#8217;s function</strong>. Mathematically, Green&#8217;s function <span class="math">\(G(x;x')\)</span> of an operator <span class="math">\(L\)</span> is defined as</p>
+<div class="math">
+\[LG(x;x') = \delta(x;x')\]</div>
+<p>This method is very useful to solve equations like</p>
+<div class="math">
+\[L\varphi(x) = J(x)\]</div>
+<p>since if we know the Green&#8217;s function <span class="math">\(G(x;x')\)</span> of <span class="math">\(L\)</span>, the solution is simply</p>
+<div class="math">
+\[\varphi(x) = \int G(x;x') J(x')\,\mathrm{d}x'\]</div>
+<p>One can easily verify if notice</p>
+<div class="math">
+\[\begin{split}L\varphi(x) &amp;= L\int G(x;x') J(x')\,\mathrm{d}x' \\
+&amp;= \int LG(x;x') J(x')\,\mathrm{d}x' = \int \delta(x;x') J(x')\,\mathrm{d}x' = J(x)\end{split}\]</div>
+<p>where the second equality is due to the fact that <span class="math">\(L\)</span> consists only operation on <span class="math">\(x\)</span> and is totally irrelevant to <span class="math">\(x'\)</span>.</p>
+<p>In Quantum Mechanics, we have the Schrödinger’s equation</p>
+<div class="math">
+\[\left[\mathrm{i}\frac{\partial}{\partial t} + \frac{1}{2m}\nabla^2\right]|\psi\rangle = 0\]</div>
+<p>All within the bracket can be viewed as an operator, and thus possesses a Green&#8217;s function</p>
+<div class="math">
+\[\left[\mathrm{i}\frac{\partial}{\partial t} + \frac{1}{2m}\nabla^2\right]K(t,x;t',x') = \delta(x;x')\delta(t;t')\]</div>
+<p>With this propagator, we can calculate the state of anytime after from an initial state</p>
+<div class="math">
+\[|\psi(t')\rangle = \int K(x,t;x',t')|\psi(t)\rangle\mathrm{d}x\mathrm{d}t\]</div>
+<p>Therefore, the initial state <span class="math">\(|\psi(t)\rangle\)</span> <em>propagates</em> to the final state <span class="math">\(|\psi(t')\rangle\)</span> with the help of <span class="math">\(K(x,t;x',t')\)</span>. As a consequence, <span class="math">\(K(x,t;x',t')\)</span> is called the <strong>propagator</strong>.</p>
+</div>
+<div class="section" id="path-integral">
+<h2>Path Integral<a class="headerlink" href="#path-integral" title="Permalink to this headline">¶</a></h2>
+<p>The previous argument is only one way to construct Quantum Mechanics, i.e. suppose the Schrödinger equation holds -&gt; derivation of the propagator. In 1948, Feynman proposed another way of reasoning: path integral -&gt; propagator -&gt; Schrödinger equation.</p>
+<p>Feynman suggest the propagator takes the form</p>
+<div class="math">
+\[K = \int \mathcal{D}x \exp\{\mathrm{i}S[x]\}\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Rigorously speaking, we should use <span class="math">\(\propto\)</span> instead of <span class="math">\(=\)</span> in the above equation, since the RHS may produce annoying constant factors. However, this factor can be eliminated through normalisation. Therefore, all the subsequent path integral will automatically carry this normalisation process.</p>
+</div>
+<p>where <span class="math">\(S[x]\)</span> is the action of the system, and <span class="math">\(\int\mathcal{D}x\)</span> is the so-called path integral. Next, we carefully examine the above equation.</p>
+<p>Take 1D free particle for example. The Lagrangian of 1D free particle is</p>
+<div class="math">
+\[L = \frac{1}{2}m\dot{x}^2\]</div>
+<p>Thus, the action is</p>
+<div class="math">
+\[S[x] = \int\mathrm{d}t\,\frac{1}{2}m\dot{x}^2\]</div>
+<p>Suppose we now work on the start point <span class="math">\(x, t\)</span> and end point <span class="math">\(x', t'\)</span>. The path integral requires &#8220;integrating along all paths&#8221;. However, the &#8220;all path&#8221; can be hard to manipulate, since it is something uncountable. More specifically, it should be something like</p>
+<div class="math">
+\[\int [...]\mathrm{d}[x(t_1)]\int [...]\mathrm{d}[x(t_2)]\int [...]\mathrm{d}[x(t_3)]...\]</div>
+<p>where every point within interval <span class="math">\((t,t')\)</span> needs an integration. This is clearly impossible since there are uncountable elements within <span class="math">\((t,t')\)</span>. Hence, we come up with the idea of a kind of &#8220;sampling&#8221;.</p>
+<p>For an arbitrary large number (<span class="math">\(n\)</span>) of points within <span class="math">\((t,t')\)</span> (the &#8220;sample&#8221; of <span class="math">\(n\)</span> points), the following formula</p>
+<div class="math">
+\[\int [...]\mathrm{d}[x(t_1)] \int [...]\mathrm{d}[x(t_2)] ... \int [...]\mathrm{d}[x(t_n)]\]</div>
+<p>exists, we <em>define</em> this result as the integration of all path, i.e. the path integral of <span class="math">\([...]\)</span>. The fact that the size of the &#8220;sample&#8221; can be <em>arbitrarily</em> large insures that the integral actually goes over <em>every path</em>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The trick to turn some infinite objects to something arbitrary can be very common in Mathematics. For instance, the concept <em>infinitely large</em> can be in fact <em>arbitrarily large</em> or <em>no upper bound</em>. The limit in Mathematics also follows similar idea.</p>
+</div>
+<p>To formally implement this, insert <span class="math">\(n\)</span> points into <span class="math">\((t,t')\)</span> and perform <span class="math">\(n\)</span> integrations</p>
+<div class="math">
+\[\prod_{i=1}^{n}\int\exp\{\mathrm{i}\frac{1}{2}m\frac{[x(t_i)-x(t_{i-1})]^2}{\epsilon}\}\mathrm{d}[x(t_i)]\]</div>
+<p>where we also expand the integration in the action into discrete form, and <span class="math">\(\epsilon = (t'-t)/(n+1)\)</span> is the size of each small interval. Then, ask the &#8220;sample size&#8221; <span class="math">\(n\)</span> to go to infinity</p>
+<div class="math">
+\[\lim_{n\rightarrow\infty}\int C(\epsilon)\prod_{i=1}^{n}\mathrm{d}[x(t_i)]\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{1}{2}m\frac{[x(t_i)-x(t_{i-1})]^2}{\epsilon}\}\]</div>
+<p>where we also adjust the order and introduce a normalisation factor <span class="math">\(C(\epsilon)\)</span> to ensure the convergence. You should be able to prove this adjustment once notice that all <span class="math">\(x(t_i)\)</span> are independent variables. The above formula is the definition of the path integral</p>
+<div class="math">
+\[\int\mathcal{D}x\exp\{\mathrm{i}\int\mathrm{d}t\frac{1}{2}m\dot{x}\}\]</div>
+<p>As a practice, you should try to write down the definition of a general path integral</p>
+<div class="math">
+\[\int\mathcal{D}x\exp\{\mathrm{i}\int\mathrm{d}t L\}\]</div>
+<p>You may find the above elucidation hard to comprehend. That&#8217;s normal. Try to draw some diagrams or analyse step by step. It might help.</p>
+</div>
+</div>
+<div class="section" id="evaluation-of-path-integral">
+<h1>Evaluation of Path Integral<a class="headerlink" href="#evaluation-of-path-integral" title="Permalink to this headline">¶</a></h1>
+<p>This section will tell you how to explicitly calculate the propagator using path integral. Take the free particle for example (you should try to generalise the calculation into other situations). The propagator of the free particle is</p>
+<div class="math">
+\[K = \lim_{n\rightarrow\infty}\int C(\epsilon)\prod_{i=1}^{n}\mathrm{d}[x(t_i)]\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{1}{2}m\frac{[x(t_i)-x(t_{i-1})]^2}{\epsilon}\}\]</div>
+<p>To simplify the expression, denote <span class="math">\(x_i\equiv x(t_i)\)</span> and let <span class="math">\(m=2\)</span>. As a result, the integral simplifies to</p>
+<div class="math">
+\[K = \lim_{n\rightarrow\infty}\int C(\epsilon)\prod_{i=1}^{n}\mathrm{d}x_i\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{(x_i-x_{i-1})^2}{\epsilon}\}\]</div>
+<p>Before trying to actually evaluate the above expression, we should first find out the normalisation factor <span class="math">\(C(\epsilon)\)</span>.</p>
+<div class="section" id="determination-of-normalisation-factor">
+<h2>Determination of Normalisation Factor<a class="headerlink" href="#determination-of-normalisation-factor" title="Permalink to this headline">¶</a></h2>
+<p>The normalisation factor can be constrained under the infinitesimal evolvement. Suppose we now work on the interval <span class="math">\((t, t+\epsilon)\)</span> where <span class="math">\(\epsilon\)</span> is an infinitesimal time step. Therefore, the normalisation condition requires</p>
+<div class="math">
+\[K(t; t+\epsilon) = \int c\,\mathrm{d}y \exp\{-\frac{(y-x)^2}{\mathrm{i}\epsilon}\} = 1\]</div>
+<p>where <span class="math">\(y\)</span> is the position at <span class="math">\(t+\epsilon\)</span> and <span class="math">\(x\)</span> is the position at <span class="math">\(t\)</span>. Perform the integration and we get</p>
+<div class="math">
+\[c\cdot \sqrt{\mathrm{i}\pi\epsilon} = 1 \ \ \Rightarrow\ \ c = \frac{1}{\sqrt{\mathrm{i}\pi\epsilon}}\]</div>
+<p>This normalisation factor emerges whenever we the time moves forward the amount <span class="math">\(\epsilon\)</span>. In our previous expression, we insert <span class="math">\(n\)</span> point into the interval <span class="math">\((t,t')\)</span> which means we move forward <span class="math">\(n+1\)</span> steps. Therefore</p>
+<div class="math">
+\[C(\epsilon) = c^{n+1} = (\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\]</div>
+<p>The normalisation factor of the other forms of Lagrangian can be derived through a similar way.</p>
+</div>
+<div class="section" id="expand-according-to-classical-path">
+<h2>Expand according to Classical Path<a class="headerlink" href="#expand-according-to-classical-path" title="Permalink to this headline">¶</a></h2>
+<p>Usually, the path integral will have an upper and lower boundary, i.e. <span class="math">\(x'\)</span> and <span class="math">\(x_0\)</span>, which brings some trouble during the evaluation. Hence, we want to eliminate this trouble. The best way is to introduce a <em>relative</em> variable, i.e. select a certain path <span class="math">\(x_c\)</span> with <span class="math">\(x_c(t_0) = x_0\)</span> and <span class="math">\(x_c(t') = x'\)</span> and perform the path integral according to <span class="math">\(y\equiv x - x_c\)</span>. Of course, you can choose whatever path <span class="math">\(x_c\)</span> you like, but there is one path that will make the evaluation less miserable &#8212; the classical path.</p>
+<p>According to the variation principle, the classical path is defined as the path which satisfies</p>
+<div class="math">
+\[\left.\frac{\delta S}{\delta x}\right|_{x=x_c} = 0\]</div>
+<p>Expand the action according to the classical path and we get</p>
+<div class="math">
+\[S = S_c + \left.\frac{\delta S}{\delta x}\right|_{x=x_c} y + \left.\frac{\delta^2 S}{\delta x^2}\right|_{x=x_c}y^2\]</div>
+<p>This is nothing but a functional version of Taylor expansion. The expansion ends at second order since for most systems, the Lagrangian is quadratic. It is clear that the second term is zero. For the third term, it is exactly the same as <span class="math">\(S_c\)</span> for free particle situation. Therefore, we separate the action into the addition of a classical action and an action of <span class="math">\(y\)</span> which satisfies <span class="math">\(y_0 = y' = 0\)</span>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The above derivation will invoke functional Taylor expansion. If you can not yet accept this, it won&#8217;t be miserable just to substitute <span class="math">\(x = x_c + y\)</span> into the original path integral and get the same result.</p>
+</div>
+</div>
+<div class="section" id="evaluation-by-quadratic-form">
+<h2>Evaluation by Quadratic Form<a class="headerlink" href="#evaluation-by-quadratic-form" title="Permalink to this headline">¶</a></h2>
+<p>Our path integral now becomes</p>
+<div class="math">
+\[K = K_c \cdot \lim_{n\rightarrow\infty}\int (\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\prod_{i=1}^{n}\mathrm{d}y_i\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{(y_i-y_{i-1})^2}{\epsilon}\}\]</div>
+<p>where</p>
+<div class="math">
+\[K_c = \exp\{\mathrm{i}S_c\}\]</div>
+<p>is the &#8220;classical&#8221; part of the propagator.</p>
+<p>A naive way of evaluating this integral is to follow the definition &#8212; perform <span class="math">\(n\)</span> integration and then take the limit. However, recall that most of the physical models, the Lagrangian is quadratic. This provides another way of evaluating the path integral, which brings much ease.</p>
+<p>To begin with, expand the summation</p>
+<div class="math">
+\[\begin{split}&amp;y_1^2 + y_1^2 - 2y_1y_2 + y_2^2 + y_2^2 - 2y_2 y_3 + y_3^2 + ...\\
+=\ &amp;2y_1^2 - y_1y_2 - y_1y_2 + 2y_2^2 - 2y_2 y_3 - 2y_2 y_3 + ...\end{split}\]</div>
+<p>The reason for a rearrangement of the terms can be seen if we write the expansion in matrix form</p>
+<div class="math">
+\[\begin{split}[y_1\ y_2\ y_3 \ldots y_n]
+\left[
+\begin{matrix}
+2 &amp; -1 &amp;  &amp;  &amp; &amp; \\
+-1 &amp; 2 &amp; -1 &amp;  &amp; &amp; \\
+&amp; -1 &amp; 2 &amp; &amp; &amp; \\
+&amp; &amp; &amp; \ddots &amp; &amp; \\
+&amp; &amp; &amp; &amp; &amp; -1\\
+&amp; &amp; &amp; &amp; -1 &amp; 2
+\end{matrix}
+\right]
+\left[
+\begin{matrix}
+y_1\\
+y_2\\
+y_3\\
+\vdots\\
+y_n\\
+\end{matrix}
+\right]
+\equiv \eta^T M \eta\end{split}\]</div>
+<p>where <span class="math">\(\eta\)</span> is an <span class="math">\(n\)</span>-dim vector and <span class="math">\(M\)</span> is the matrix in the middle. Therefore, the integral becomes</p>
+<div class="math">
+\[\lim_{n\rightarrow\infty}(\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\int \mathrm{d}\eta\exp\{-\eta^T A \eta\}\]</div>
+<p>where <span class="math">\(\mathrm d\eta\)</span> is just the abbreviation of <span class="math">\(\prod\mathrm dy\)</span> and <span class="math">\(A\equiv M/\mathrm i\epsilon\)</span>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It is a fairly common thing to transform something with multiple summation into the matrix form. You are suggested to have the vigilance about the summation which is possible to be transformed to matrix form since it may bring surprising extra clearance.</p>
+</div>
+<p>The integral is nothing other than a multi-dimensional Gaussian integral. We will directly invoke the result of the integral as there have been numerous materials on how to do the multi-dimensional Gaussian integral online. The result is</p>
+<div class="math">
+\[\int \mathrm{d}\eta\exp\{-\eta^T A \eta\} = \sqrt{\frac{\pi^n}{\det(A)_n}}\]</div>
+<p>This inspires us to calculate the determinant of the matrix <span class="math">\(M\)</span> (and thus matrix <span class="math">\(A\)</span>). To do this, expand the determinant along the first row and we get the following recurrence relation</p>
+<div class="math">
+\[\det(M)_{n+1} = 2\det(M)_n - \det(M)_{n-1}\]</div>
+<p>It is easy to see that this recurrence relation implies that the sequence <span class="math">\(\det(M)_n\)</span> is actually a arithmetic sequence. Therefore, an evaluation of the first two elements of the sequence will bring you</p>
+<div class="math">
+\[\det(M)_n = n+1\]</div>
+<p>Thus</p>
+<div class="math">
+\[\det(A)_n = \det(M/\mathrm i\epsilon)_n = (n+1)/(\mathrm i\epsilon)^n\]</div>
+<p>with which the integral is evaluated</p>
+<div class="math">
+\[\int \mathrm{d}\eta\exp\{-\eta^T A \eta\} = \sqrt{\frac{(\mathrm i\epsilon\pi)^n}{n+1}}\]</div>
+<p>Combine with the other factors and we have</p>
+<div class="math">
+\[K = K_c\cdot\lim_{n\rightarrow\infty}(\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\sqrt{\frac{(\mathrm i\epsilon\pi)^n}{n+1}} = K_c\cdot\lim_{n\rightarrow\infty}\sqrt{\frac{1}{\mathrm i\pi\epsilon(n+1)}}\]</div>
+<p>Now, an important thing to notice is that <span class="math">\(\epsilon(n+1)\)</span> is actually <span class="math">\(\Delta t = t'-t_0\)</span>. Thus, we have the final formula of the propagator</p>
+<div class="math">
+\[K = \frac{1}{\sqrt{\mathrm i\pi\Delta t}}\exp\{\mathrm iS_c\}\]</div>
+<p>You are suggested to explicitly calculate the classical action <span class="math">\(S_c\)</span> (notice that the classical path of a free particle is just a straight line) and compare this result with the one you may encounter in your previous Quantum Mechanics course.</p>
+<p>Originally, we stop here. However, you might be pretty surprised about our later contexts if we do so. Hence, ... we decide to surprise you now.</p>
+<blockquote>
+<div>The modern path integral formalism of quantum theory has NOTHING to do with doing the path integral.</div></blockquote>
+<p>Yes, this is true and IMPORTANT. To make this less surprising, recall that we do not do the actual integral of the action in the Lagrangian formalism. Instead, we try to <strong>transform the integration problem into differentiation problem</strong>. So the existence of this section is nothing but to convince you that the integral truly exists and is well-defined.</p>
+<p>Please do not feel to be cheated. Whenever you feel doubtful about our following derivation about the path integral, please remember to come here again to gain some confidence.</p>
+</div>
+</div>
+<div class="section" id="path-integral-of-fields">
+<h1>Path Integral of Fields<a class="headerlink" href="#path-integral-of-fields" title="Permalink to this headline">¶</a></h1>
+<p>In previous sections, path integral in Quantum Mechanics has been constructed and evaluated. So we are now sure that the path integral for particles can be well-defined. Thus, to construct Quantum Field Theory, all we need to do is to construct the path integral of physical fields.</p>
+<p>However, this is not something direct and intuitive. As is shown in previous sections, the object to be integrated in Quantum Mechanics, namely <span class="math">\(x(t)\)</span> has only one parameter <span class="math">\(t\)</span>, i.e. it is 1-dimensional. However, we now need to work on fields <span class="math">\(\Phi(x)\)</span> where <span class="math">\(x\)</span> is 4-dimensional (and probably <span class="math">\(d\)</span>-dimensional in the future). This can cause the functional determinant to be divergent and the path integral will go to zero after taking the limit.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There is no intention to demonstrate explicitly how the determinant goes divergent. But it won&#8217;t be much too complicated just to simply repeat the evaluation process shown in the previous section for, say, 2D field and see its divergence.</p>
+</div>
+<p>In this case, methods must be addressed to solve the divergent problem. A straight-forward way is to reduce the path integral of field with multi-dimensional parameters to products of that in 1-dimensional, which is a solved problem. To achieve this, define the path integral of fields as (take 2-dim for example)</p>
+<div class="math">
+\[\begin{split}W &amp;= \int \mathcal{D}\Phi(x,y)\exp\{\mathrm{i}S[\Phi, \partial_\mu\Phi\} \\
+&amp;= \int \mathcal{D}\Phi_x(y)\exp\{\mathrm{i}S[\Phi, \partial_y\Phi\}\int \mathcal{D}\Phi_y(x)\exp\{\mathrm{i}S[\Phi, \partial_x\Phi\}\end{split}\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The second example of <a class="reference external" href="./ms_func_img.html">Function and Image Element</a> will be helpful for understanding the above expression.</p>
+</div>
+<p>Hence, now the path integral will become the product of two path integrals with finite result. However, this path integral can be different from the <em>intuitive one</em>. How can we say that this <em>new</em> path integral will hold for our initial idea about the path integral? Well, please recall that we have mentioned at the end of the previous section that the path integral formalism pragmatically has nothing to do with the actual path integral. The only purpose of this section is to <strong>demonstrate that the path integral can be finite</strong>. As for how the path integral is used in Quantum Field Theory, well, keep going, and you will understand.</p>
+</div>
+<div class="section" id="sketch-of-path-integral-formalism">
+<h1>Sketch of Path Integral Formalism<a class="headerlink" href="#sketch-of-path-integral-formalism" title="Permalink to this headline">¶</a></h1>
+<p>Before we step into the path integral formalism, we give an overall sketch as well as some <em>rules</em> of our construction here. Beware, that the <em>rules</em> are not necessarily accepted or respected by all the academics.</p>
+<div class="section" id="sketch-of-theoretical-construction">
+<h2>Sketch of Theoretical Construction<a class="headerlink" href="#sketch-of-theoretical-construction" title="Permalink to this headline">¶</a></h2>
+<p>The construction will start from analyzing the general path integral of scalar field from some <em>stable state</em> to itself (usually it is <em>vacuum state</em> <span class="math">\(|0\rangle\)</span>)</p>
+<div class="math">
+\[\langle 0|0\rangle = N\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi[\partial^2-m^2]\varphi\} = 1\]</div>
+<p>where <span class="math">\(N\)</span> is a normalization factor. The last equality comes from the property <em>stable</em>, which means it will not change under the situation of free field, which will determine the normalization factor. Now, we construct a quantity called <strong>generating functional</strong> by adding an arbitrary <em>potential</em> <span class="math">\(J\)</span></p>
+<blockquote>
+<div><p><strong>Stage 1</strong></p>
+<div class="math">
+\[\begin{split}W_0[J] = \langle 0|0\rangle |_J &amp;= N\int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2-m^2]\varphi - J\varphi\}\\
+&amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_FJ\}\end{split}\]</div>
+</div></blockquote>
+<p>The above generating functional includes merely the scalar field without any other <em>actual</em> interaction terms (the <span class="math">\(J\)</span> term is an auxiliary term with no physical significance). If the Lagrangian includes the interaction terms <span class="math">\(\mathcal{L}_{\text{int}}\)</span>, the generating functional will be</p>
+<blockquote>
+<div><p><strong>Stage 2</strong></p>
+<div class="math">
+\[\begin{split}W[J] &amp;= \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\} W_0[J] \\
+&amp;= \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_FJ\}\end{split}\]</div>
+</div></blockquote>
+<p>As is indicated, this expression deals with some <em>stable state</em>. Now we hope to generalized it into other ordinary states, like from state <span class="math">\(\alpha\)</span> to state <span class="math">\(\beta\)</span>. This forms the well-renowned <strong>S-matrix</strong> (scattering matrix)</p>
+<blockquote>
+<div><p><strong>Stage 3</strong></p>
+<div class="math">
+\[S = \langle \beta|\alpha\rangle = S[J]|_{J=0} = \left.\exp\{\mathrm{i}\int\varphi_{\text{as}}(\partial^2 - m^2)\frac{\delta}{\delta J}\}W[J]\right|_{J=0}\]</div>
+</div></blockquote>
+<p>where <span class="math">\(\varphi_{\text{as}}\)</span> is the asymptotic field corresponding to the initial and final state. The last equality is the famous <strong>LSZ reduction formula</strong>.</p>
+<p>The theoretical construction will end at S-matrix. For a connection with the experiment, scattering <strong>cross-section</strong> can be derived through the S-matrix, which is directly measurable in the scattering experiment.</p>
+</div>
+<div class="section" id="some-rules">
+<h2>Some Rules<a class="headerlink" href="#some-rules" title="Permalink to this headline">¶</a></h2>
+<p>It has been <a class="reference external" href="./intro_why.html">stated before</a> that we will not introduce any contents from canonical quantization into our construction of the path integral formalism. Therefore, actually we are not able to have concepts like <em>state</em> which is widely used in quantum theory. In this case, we <em>have to</em> use some configuration of fields as <em>state</em> (like asymptotic field). But this would imply that there must be some subtle identical relationship between field and state, which somehow rejected by canonical quantum field theory.</p>
+<p>As a matter of fact, the problem caused by the lack of field operator and successive state only arises when constructing S-matrix, which means that stage 1 and stage 2 will not be affected anyway. In our philosophy, the path integral formalism, as a parallel companion of canonical quantization, should be <em>free</em> from the concepts in canonical form. Therefore, we will try our best not to invoke concepts like field operator and the corresponding state, or at least push them as <em>later</em> as possible.</p>
+</div>
+</div>
+<div class="section" id="function-and-image-element">
+<h1>Function and Image Element<a class="headerlink" href="#function-and-image-element" title="Permalink to this headline">¶</a></h1>
+<p>This section is fairly important &#8212; it introduces some important concepts in ... functions. Alright, we just want to tell you that the function and its image elements are not the same thing. Well, you may find this ostensible. However, the denotations of function and its image elements can be really misleading. You may clearly identify that something like <span class="math">\(f\)</span> and <span class="math">\(f(x_0)\)</span> are different things. But can you always notice that <span class="math">\(f\)</span> and <span class="math">\(f(x)\)</span> are different things, especially when <span class="math">\(x\)</span> is some <em>variable</em> instead of <em>constant</em> like <span class="math">\(x_0\)</span>?</p>
+<p>There are no intentions to detailedly discuss the issue, since it will finally becomes a philosophical war between objective and formal Mathematics. Here, we directly take the view of objective Mathematics. Under this philosophy, the function <span class="math">\(f\)</span> is a mathematical object which is a subset of the Cartesian product of domain and image (satisfying some conditions); while <span class="math">\(f(x)\)</span> is an element of image (no matter whether <span class="math">\(x\)</span> is a constant or not). Therefore, they are <em>essentially</em> different objects.</p>
+<p>To help understand this, especially the differences it causes in Quantum Field Theory, we set up the following examples</p>
+<blockquote>
+<div><p><strong>Example 1.</strong> In Lagrangian formalism and Path Integral Formalism respectively, two kinds of functional derivatives are invoked &#8212; <span class="math">\(\delta/\delta f\)</span> and <span class="math">\(\delta/\delta f(x)\)</span>. The former is the derivative with respect to the function <span class="math">\(f\)</span>, and the latter is the derivative with respect to the element <span class="math">\(f(x)\)</span>. You will see in that it is the definition of the latter one which causes the famous infinity problem in Quantum Field Theory; while nothing happens to the former one.</p>
+<p><strong>Example 2.</strong> In some cases, we will write something like</p>
+<div class="math">
+\[f_x(y)=f(x,y)\]</div>
+<p>Although there is a equality sign in the equation, there are essential difference between <span class="math">\(f_x\)</span> and <span class="math">\(f\)</span> &#8212; the former is a family of functions of <span class="math">\(y\)</span> (labelled by <span class="math">\(x\)</span>) and the latter is a function of two variable <span class="math">\(x\)</span> and <span class="math">\(y\)</span>. The equality essentially means solely that the <em>value</em> is the same.</p>
+</div></blockquote>
 </div>
 <div class="section" id="geometric-unit-system">
 <h1>Geometric Unit System<a class="headerlink" href="#geometric-unit-system" title="Permalink to this headline">¶</a></h1>

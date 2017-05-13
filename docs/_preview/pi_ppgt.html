@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Path Integral and Propagator &mdash; Path Integral Project 0.2 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
+        <link rel="up" title="Path Integral" href="pathintgl.html"/>
+        <link rel="next" title="Evaluation of Path Integral" href="pi_eval.html"/>
+        <link rel="prev" title="Quantum Mechanics" href="pi_qm.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" style="font-size: 1.15em"> Path Integral Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <!--
+              <div class="version">
+                0.2
+              </div>
+              -->
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="pathintgl.html">Path Integral</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pi_qm.html">Quantum Mechanics</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Path Integral and Propagator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#schrodingers-equation-and-propagator">Schrödinger’s Equation and Propagator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#path-integral">Path Integral</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pi_eval.html">Evaluation of Path Integral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pi_fields.html">Path Integral of Fields</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quanfield.html">Quantum Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mathsup.html">Math Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Path Integral Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="pathintgl.html">Path Integral</a> &raquo;</li>
+        
+      <li>Path Integral and Propagator</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pi_ppgt.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="path-integral-and-propagator">
+<h1>Path Integral and Propagator<a class="headerlink" href="#path-integral-and-propagator" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This section requires knowledge on Green&#8217;s function. Although we will briefly review some basics, you are still suggested to pick up a textbook on Mathematical Methods of Physics for a careful review.</p>
+</div>
+<p>In this section, you will make your first acquaintance with path integral. In quantum theory, path integral is a method of constructing the <strong>propagator</strong>. So we begin with the propagator.</p>
+<div class="section" id="schrodingers-equation-and-propagator">
+<h2>Schrödinger’s Equation and Propagator<a class="headerlink" href="#schrodingers-equation-and-propagator" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The symbols invoked in this section (e.g. <span class="math">\(\psi\)</span>) have a dedicated meaning, which will be different from other sections in this project.</p>
+</div>
+<p>First, we need to recall <strong>Green&#8217;s function</strong>. Mathematically, Green&#8217;s function <span class="math">\(G(x;x')\)</span> of an operator <span class="math">\(L\)</span> is defined as</p>
+<div class="math">
+\[LG(x;x') = \delta(x;x')\]</div>
+<p>This method is very useful to solve equations like</p>
+<div class="math">
+\[L\varphi(x) = J(x)\]</div>
+<p>since if we know the Green&#8217;s function <span class="math">\(G(x;x')\)</span> of <span class="math">\(L\)</span>, the solution is simply</p>
+<div class="math">
+\[\varphi(x) = \int G(x;x') J(x')\,\mathrm{d}x'\]</div>
+<p>One can easily verify if notice</p>
+<div class="math">
+\[\begin{split}L\varphi(x) &amp;= L\int G(x;x') J(x')\,\mathrm{d}x' \\
+&amp;= \int LG(x;x') J(x')\,\mathrm{d}x' = \int \delta(x;x') J(x')\,\mathrm{d}x' = J(x)\end{split}\]</div>
+<p>where the second equality is due to the fact that <span class="math">\(L\)</span> consists only operation on <span class="math">\(x\)</span> and is totally irrelevant to <span class="math">\(x'\)</span>.</p>
+<p>In Quantum Mechanics, we have the Schrödinger’s equation</p>
+<div class="math">
+\[\left[\mathrm{i}\frac{\partial}{\partial t} + \frac{1}{2m}\nabla^2\right]|\psi\rangle = 0\]</div>
+<p>All within the bracket can be viewed as an operator, and thus possesses a Green&#8217;s function</p>
+<div class="math">
+\[\left[\mathrm{i}\frac{\partial}{\partial t} + \frac{1}{2m}\nabla^2\right]K(t,x;t',x') = \delta(x;x')\delta(t;t')\]</div>
+<p>With this propagator, we can calculate the state of anytime after from an initial state</p>
+<div class="math">
+\[|\psi(t')\rangle = \int K(x,t;x',t')|\psi(t)\rangle\mathrm{d}x\mathrm{d}t\]</div>
+<p>Therefore, the initial state <span class="math">\(|\psi(t)\rangle\)</span> <em>propagates</em> to the final state <span class="math">\(|\psi(t')\rangle\)</span> with the help of <span class="math">\(K(x,t;x',t')\)</span>. As a consequence, <span class="math">\(K(x,t;x',t')\)</span> is called the <strong>propagator</strong>.</p>
+</div>
+<div class="section" id="path-integral">
+<h2>Path Integral<a class="headerlink" href="#path-integral" title="Permalink to this headline">¶</a></h2>
+<p>The previous argument is only one way to construct Quantum Mechanics, i.e. suppose the Schrödinger equation holds -&gt; derivation of the propagator. In 1948, Feynman proposed another way of reasoning: path integral -&gt; propagator -&gt; Schrödinger equation.</p>
+<p>Feynman suggest the propagator takes the form</p>
+<div class="math">
+\[K = \int \mathcal{D}x \exp\{\mathrm{i}S[x]\}\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Rigorously speaking, we should use <span class="math">\(\propto\)</span> instead of <span class="math">\(=\)</span> in the above equation, since the RHS may produce annoying constant factors. However, this factor can be eliminated through normalisation. Therefore, all the subsequent path integral will automatically carry this normalisation process.</p>
+</div>
+<p>where <span class="math">\(S[x]\)</span> is the action of the system, and <span class="math">\(\int\mathcal{D}x\)</span> is the so-called path integral. Next, we carefully examine the above equation.</p>
+<p>Take 1D free particle for example. The Lagrangian of 1D free particle is</p>
+<div class="math">
+\[L = \frac{1}{2}m\dot{x}^2\]</div>
+<p>Thus, the action is</p>
+<div class="math">
+\[S[x] = \int\mathrm{d}t\,\frac{1}{2}m\dot{x}^2\]</div>
+<p>Suppose we now work on the start point <span class="math">\(x, t\)</span> and end point <span class="math">\(x', t'\)</span>. The path integral requires &#8220;integrating along all paths&#8221;. However, the &#8220;all path&#8221; can be hard to manipulate, since it is something uncountable. More specifically, it should be something like</p>
+<div class="math">
+\[\int [...]\mathrm{d}[x(t_1)]\int [...]\mathrm{d}[x(t_2)]\int [...]\mathrm{d}[x(t_3)]...\]</div>
+<p>where every point within interval <span class="math">\((t,t')\)</span> needs an integration. This is clearly impossible since there are uncountable elements within <span class="math">\((t,t')\)</span>. Hence, we come up with the idea of a kind of &#8220;sampling&#8221;.</p>
+<p>For an arbitrary large number (<span class="math">\(n\)</span>) of points within <span class="math">\((t,t')\)</span> (the &#8220;sample&#8221; of <span class="math">\(n\)</span> points), the following formula</p>
+<div class="math">
+\[\int [...]\mathrm{d}[x(t_1)] \int [...]\mathrm{d}[x(t_2)] ... \int [...]\mathrm{d}[x(t_n)]\]</div>
+<p>exists, we <em>define</em> this result as the integration of all path, i.e. the path integral of <span class="math">\([...]\)</span>. The fact that the size of the &#8220;sample&#8221; can be <em>arbitrarily</em> large insures that the integral actually goes over <em>every path</em>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The trick to turn some infinite objects to something arbitrary can be very common in Mathematics. For instance, the concept <em>infinitely large</em> can be in fact <em>arbitrarily large</em> or <em>no upper bound</em>. The limit in Mathematics also follows similar idea.</p>
+</div>
+<p>To formally implement this, insert <span class="math">\(n\)</span> points into <span class="math">\((t,t')\)</span> and perform <span class="math">\(n\)</span> integrations</p>
+<div class="math">
+\[\prod_{i=1}^{n}\int\exp\{\mathrm{i}\frac{1}{2}m\frac{[x(t_i)-x(t_{i-1})]^2}{\epsilon}\}\mathrm{d}[x(t_i)]\]</div>
+<p>where we also expand the integration in the action into discrete form, and <span class="math">\(\epsilon = (t'-t)/(n+1)\)</span> is the size of each small interval. Then, ask the &#8220;sample size&#8221; <span class="math">\(n\)</span> to go to infinity</p>
+<div class="math">
+\[\lim_{n\rightarrow\infty}\int C(\epsilon)\prod_{i=1}^{n}\mathrm{d}[x(t_i)]\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{1}{2}m\frac{[x(t_i)-x(t_{i-1})]^2}{\epsilon}\}\]</div>
+<p>where we also adjust the order and introduce a normalisation factor <span class="math">\(C(\epsilon)\)</span> to ensure the convergence. You should be able to prove this adjustment once notice that all <span class="math">\(x(t_i)\)</span> are independent variables. The above formula is the definition of the path integral</p>
+<div class="math">
+\[\int\mathcal{D}x\exp\{\mathrm{i}\int\mathrm{d}t\frac{1}{2}m\dot{x}\}\]</div>
+<p>As a practice, you should try to write down the definition of a general path integral</p>
+<div class="math">
+\[\int\mathcal{D}x\exp\{\mathrm{i}\int\mathrm{d}t L\}\]</div>
+<p>You may find the above elucidation hard to comprehend. That&#8217;s normal. Try to draw some diagrams or analyse step by step. It might help.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pi_eval.html" class="btn btn-neutral float-right" title="Evaluation of Path Integral" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pi_qm.html" class="btn btn-neutral" title="Quantum Mechanics" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Zhang Chang-kai.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

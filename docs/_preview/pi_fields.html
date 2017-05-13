@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Path Integral of Fields &mdash; Path Integral Project 0.2 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
+        <link rel="up" title="Path Integral" href="pathintgl.html"/>
+        <link rel="next" title="Quantum Theory" href="quanfield.html"/>
+        <link rel="prev" title="Evaluation of Path Integral" href="pi_eval.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" style="font-size: 1.15em"> Path Integral Project
+          
+
+          
+          </a>
+
+          
+            
+            
+              <!--
+              <div class="version">
+                0.2
+              </div>
+              -->
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="pathintgl.html">Path Integral</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pi_qm.html">Quantum Mechanics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pi_ppgt.html">Path Integral and Propagator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pi_eval.html">Evaluation of Path Integral</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Path Integral of Fields</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quanfield.html">Quantum Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mathsup.html">Math Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Path Integral Project</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="pathintgl.html">Path Integral</a> &raquo;</li>
+        
+      <li>Path Integral of Fields</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pi_fields.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="path-integral-of-fields">
+<h1>Path Integral of Fields<a class="headerlink" href="#path-integral-of-fields" title="Permalink to this headline">¶</a></h1>
+<p>In previous sections, path integral in Quantum Mechanics has been constructed and evaluated. So we are now sure that the path integral for particles can be well-defined. Thus, to construct Quantum Field Theory, all we need to do is to construct the path integral of physical fields.</p>
+<p>However, this is not something direct and intuitive. As is shown in previous sections, the object to be integrated in Quantum Mechanics, namely <span class="math">\(x(t)\)</span> has only one parameter <span class="math">\(t\)</span>, i.e. it is 1-dimensional. However, we now need to work on fields <span class="math">\(\Phi(x)\)</span> where <span class="math">\(x\)</span> is 4-dimensional (and probably <span class="math">\(d\)</span>-dimensional in the future). This can cause the functional determinant to be divergent and the path integral will go to zero after taking the limit.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There is no intention to demonstrate explicitly how the determinant goes divergent. But it won&#8217;t be much too complicated just to simply repeat the evaluation process shown in the previous section for, say, 2D field and see its divergence.</p>
+</div>
+<p>In this case, methods must be addressed to solve the divergent problem. A straight-forward way is to reduce the path integral of field with multi-dimensional parameters to products of that in 1-dimensional, which is a solved problem. To achieve this, define the path integral of fields as (take 2-dim for example)</p>
+<div class="math">
+\[\begin{split}W &amp;= \int \mathcal{D}\Phi(x,y)\exp\{\mathrm{i}S[\Phi, \partial_\mu\Phi\} \\
+&amp;= \int \mathcal{D}\Phi_x(y)\exp\{\mathrm{i}S[\Phi, \partial_y\Phi\}\int \mathcal{D}\Phi_y(x)\exp\{\mathrm{i}S[\Phi, \partial_x\Phi\}\end{split}\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The second example of <a class="reference external" href="./ms_func_img.html">Function and Image Element</a> will be helpful for understanding the above expression.</p>
+</div>
+<p>Hence, now the path integral will become the product of two path integrals with finite result. However, this path integral can be different from the <em>intuitive one</em>. How can we say that this <em>new</em> path integral will hold for our initial idea about the path integral? Well, please recall that we have mentioned at the end of the previous section that the path integral formalism pragmatically has nothing to do with the actual path integral. The only purpose of this section is to <strong>demonstrate that the path integral can be finite</strong>. As for how the path integral is used in Quantum Field Theory, well, keep going, and you will understand.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="quanfield.html" class="btn btn-neutral float-right" title="Quantum Theory" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pi_eval.html" class="btn btn-neutral" title="Evaluation of Path Integral" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Zhang Chang-kai.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
