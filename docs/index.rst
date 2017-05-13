@@ -10,4 +10,7 @@ Contents
 
    intro.rst
    clstheo.rst
+   pathintgl.rst
+   quanfield.rst
+   mathsup.rst
    background.rst

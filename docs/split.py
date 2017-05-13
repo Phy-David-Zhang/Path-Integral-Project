@@ -18,6 +18,21 @@ clstheo = {
     "Scalar, Spinor and Vector (Tensor) Field": "field.rst"
 }
 
+pathintgl = {
+    "Quantum Mechanics": "pi_qm.rst",
+    "Path Integral and Propagator": "pi_ppgt.rst",
+    "Evaluation of Path Integral": "pi_eval.rst",
+    "Path Integral of Fields": "pi_fields.rst"
+}
+
+quanfield = {
+    "Sketch of Path Integral Formalism": "qft_sketch.rst"
+}
+
+mathsup = {
+    "Function and Image Element": "ms_func_img.rst"
+}
+
 backgd = {
     "Geometric Unit System": "bg_geo_unit.rst",
     "Einstein Summation Convention": "bg_eins.rst",
@@ -31,7 +46,7 @@ backgd = {
 total = {}
 
 # join chapter:file data
-for chap in [intro, clstheo, backgd]:
+for chap in [intro, clstheo, pathintgl, quanfield, mathsup, backgd]:
     total.update(chap)
 
 # preopen source file for the first close file

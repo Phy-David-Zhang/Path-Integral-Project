@@ -12,6 +12,10 @@ with open("raw_source.md", 'r') as mdsrc:
                 or line.startswith(r'\end{aligned'):
                 output.write("$$\n")
                 continue
+            if line.startswith(r'> \begin{aligned') \
+                or line.startswith(r'> \end{aligned'):
+                output.write("$$\n")
+                continue
             # transform !! to .. note::
             if line.startswith(r"!!"):
                 output.write(line.replace("!!", ".. note::"))
