@@ -98,7 +98,7 @@ Before continuing, let's first define four matrices :math:`\gamma_\mu, \mu=0,1,2
 .. math::
 
 
-   \{\gamma_\mu, \gamma_\nu\} = \gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = 2\eta_{\mu\nu}
+   \{\gamma_\mu, \gamma_\nu\} = \gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = -2\eta_{\mu\nu}
 
 where :math:`\eta_{\mu\nu}` is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group
 
