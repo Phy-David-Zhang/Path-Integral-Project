@@ -1,0 +1,48 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction to Path Integral Project}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}What is Path Integral Project?}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}A Brief History}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Why Path Integral?}{3}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Canonical Quantisation}{3}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Comments on Delta Function}{4}{subsection.1.3.2}
+\contentsline {chapter}{\numberline {2}Classical Theory}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Classical Theory: Scalar Field}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Solution of Klein-Gordon Equation}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}The Symmetry of Fields}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Representation of Lorentz Group}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}Scalar, Spinor and Vector (Tensor) Field}{9}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Physical Field}{9}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Scalar Field}{10}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Vector Field}{10}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Spinor Field}{10}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Tensor Field}{11}{subsection.2.5.5}
+\contentsline {chapter}{\numberline {3}Path Integral}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Quantum Mechanics}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Path Integral and Propagator}{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Schr\IeC {\"o}dinger\IeC {\textquoteright }s Equation and Propagator}{13}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Path Integral}{14}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Evaluation of Path Integral}{16}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Determination of Normalisation Factor}{16}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Expand according to Classical Path}{16}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Evaluation by Quadratic Form}{17}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Path Integral of Fields}{18}{section.3.4}
+\contentsline {chapter}{\numberline {4}Quantum Theory}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Sketch of Path Integral Formalism}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Sketch of Theoretical Construction}{21}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Some Rules}{22}{subsection.4.1.2}
+\contentsline {chapter}{\numberline {5}Math Support}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Function and Image Element}{23}{section.5.1}
+\contentsline {chapter}{\numberline {6}Background Knowledge}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}Einstein Summation Convention}{25}{section.6.1}
+\contentsline {section}{\numberline {6.2}Geometric Unit System}{25}{section.6.2}
+\contentsline {section}{\numberline {6.3}Basic Differential Geometry}{26}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Get Started: Motivation}{26}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Prerequisites: Topology}{26}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Set up a Coordinate System}{26}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Spacetime Geometry}{27}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}Lagrangian Dynamics of Fields}{27}{section.6.4}
+\contentsline {section}{\numberline {6.5}Basic Linear Algebra}{28}{section.6.5}
+\contentsline {section}{\numberline {6.6}Basics of Lie Group Theory}{29}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Group and Lie Group}{29}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Generator and Exponential Map}{29}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}Special Lie Groups}{30}{subsection.6.6.3}
