@@ -140,7 +140,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'PathIntegralProject.tex', u'Path Integral Project Documentation',
+    (master_doc, 'PathIntegralProject.tex', u'Path Integral Project',
      u'Zhang Chang-kai', 'manual'),
 ]
 
