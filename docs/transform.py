@@ -3,6 +3,11 @@
 
 # read in source.md and remove script for mathjax
 
+# import regular expression module
+import re
+
+warnpat = re.compile(r'^!')
+
 # open and manipulate file
 with open("raw_source.md", 'r') as mdsrc:
     with open("source.md", 'wb') as output:
@@ -22,10 +27,9 @@ with open("raw_source.md", 'r') as mdsrc:
                 continue
             # transform ! to .. warning::
             if line.startswith(r"!"):
-                output.write(line.replace("!", ".. warning::"))
+                output.write(warnpat.sub(".. warning::", line))
                 continue
             # delete scripts for mathjax in markdown
             if not line.startswith('<script type="text/x-mathjax-config">') \
                 and not line.startswith('<script type="text/javascript"'):
                 output.write(line)
-

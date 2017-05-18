@@ -15,7 +15,9 @@ clstheo = {
     "Solution of Klein-Gordon Equation": "clstheo_kgeq.rst",
     "The Symmetry of Fields": "clstheo_sym_field.rst",
     "Representation of Lorentz Group": "repr_lg.rst",
-    "Scalar, Spinor and Vector (Tensor) Field": "field.rst"
+    "Scalar, Spinor and Vector (Tensor) Field": "field.rst",
+    "Dirac Equation": "dirac.rst",
+    "Maxwell’s Equations": "maxwell.rst"
 }
 
 pathintgl = {
@@ -26,11 +28,18 @@ pathintgl = {
 }
 
 quanfield = {
-    "Sketch of Path Integral Formalism": "qft_sketch.rst"
+    "Sketch of Path Integral Formalism": "qft_sketch.rst",
+    "Free Scalar Field Theory": "qft_free_sc.rst",
+    "Two Significant Identities": "qft_ids.rst",
+    "Scalar Field Theory with Interaction": "qft_interact.rst",
+    "Scattering Matrix": "qft_smatrix.rst",
+    "Correlation Function": "qft_corr.rst",
+    "First Glance at Infinities": "qft_infty.rst"
 }
 
 mathsup = {
-    "Function and Image Element": "ms_func_img.rst"
+    "Function and Image Element": "ms_func_img.rst",
+    "Functional Derivative": "ms_func_deriv.rst"
 }
 
 backgd = {
