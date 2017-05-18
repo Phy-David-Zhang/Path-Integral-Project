@@ -307,45 +307,45 @@ $$
 1 + \eta_x\vec K_x + \eta_y \vec K_y + ...
 $$
 
-To simplify the formulation, we introduce a anti-symmetric lists of matrix $L_{\mu\nu}$ as
+To simplify the formulation, we introduce a anti-symmetric lists of matrix $L_{ab}$ as
 
 $$
 L_{01} &= -L_{10} = \mathrm{i}\vec K_x,\ \ \ L_{02} = -L_{20} = \mathrm{i}\vec K_y,\ \ \ L_{03} = -L_{30} = \mathrm{i}\vec K_z\\
 L_{12} &= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\vec J_x,\ \ \ L_{13} = -L_{31} = \mathrm{i}\vec J_y\\
 $$
 
-.. note:: Anti-symmetric means $L_{\mu\nu} = -L_{\nu\mu}$, which implies the diagonal elements $L_{ii} = 0$.
+.. note:: Anti-symmetric means $L_{ab} = -L_{ba}$, which implies the diagonal elements $L_{ii} = 0$.
 
 Therefore, the infinitesimal transformation is simplified to 
 
 $$
-1 - \frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}
+1 - \frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}
 $$
 
-where $\epsilon^{\mu\nu}$ is the corresponding parameters ($\epsilon^{01} = \eta_x$ for example), and it is also anti-symmetric. The $1/2$ is necessary because we need to eliminate the factor $2$ in $\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}$.
+where $\epsilon^{ab}$ is the corresponding parameters ($\epsilon^{01} = \eta_x$ for example), and it is also anti-symmetric. The $1/2$ is necessary because we need to eliminate the factor $2$ in $\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}$.
 
 Consequently, all Lorentz transformation can be written under the form
 
 $$
-\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\}
+\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\}
 $$
 
 This formula is called the **vector representation** of the Lorentz Group. This is the default representation for the tetrad.
 
 .. note:: Rigorously speaking, the representation should be a map from the group element to the automorphism of a vector space. Thus, the above equation should be viewed as a map to map the group element (LHS) to an automorphism (RHS).
 
-As we know, the generators $L_{\mu\nu}$ can be viewed as a "basis" of the Lorentz group. However, this is not the only "basis". Next, we are going to find out another one.
+As we know, the generators $L_{ab}$ can be viewed as a "basis" of the Lorentz group. However, this is not the only "basis". Next, we are going to find out another one.
 
-Before continuing, let's first define four matrices $\gamma_\mu, \mu=0,1,2,3$ that satisfy
-
-$$
-\{\gamma_\mu, \gamma_\nu\} = \gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = -2\eta_{\mu\nu}
-$$
-
-where $\eta_{\mu\nu}$ is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group
+Before continuing, let's first define four matrices $\gamma_a, a=0,1,2,3$ that satisfy
 
 $$
-S_{\mu\nu} = \frac{1}{4}\mathrm{i}[\gamma_\mu, \gamma_\nu]
+\{\gamma_a, \gamma_b\} = \gamma_a\gamma_b + \gamma_b\gamma_a = -2\eta_{ab}
+$$
+
+where $\eta_{ab}$ is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group
+
+$$
+S_{ab} = \frac{1}{4}\mathrm{i}[\gamma_a, \gamma_b]
 $$
 
 .. note:: Why? Well, we are not able to explain now since it needs Lie algebra theory. Go and find a reference about Lie algebra if you really wonder why.
@@ -353,7 +353,7 @@ $$
 Therefore, we can express the Lorentz transformation as
 
 $$
-\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}\}
+\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}\}
 $$
 
 This formulation is called **spinor representation** of the Lorentz group.
@@ -407,7 +407,7 @@ which means the components of the field does not change at all under the transfo
 The vector field is the field whose field representation is vector representation. Thus, the components transform as 
 
 $$
-\varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^jA_j
+\varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^jA_j
 $$
 
 .. note:: To understand the above equation, you need [Basic Group Theory](./bg_liegp.html) and [Representation of Lorentz Group](./repr_lg.html).
@@ -417,13 +417,13 @@ First let's examine the above expression. First, you have to recall what is the 
 Next, remember that we have said the transformation of the basis follows the trivial representation which is defined just as the matrix product
 
 $$
-\varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^je_j
+\varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^je_j
 $$
 
 Therefore we have
 
 $$
-A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k = A^j\cdot e_j
+A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k = A^j\cdot e_j
 $$
 
 Now you can see why we write a dot $\cdot$ between the components and the basis --- under vector representation (where some triviality applies), the $\cdot$ in the above derivation can be "viewed" as the matrix product. However, this "view" will fail in some other non-trivial situations --- as described any minute next.
@@ -433,21 +433,21 @@ Now you can see why we write a dot $\cdot$ between the components and the basis 
 The spinor field is the field whose field representation is spinor representation. The **spinor representation** is define as
 
 $$
-\varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\}
+\varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\}
 $$
 
 Just like what we have done in the previous section, write down explicitly 
 
 $$
-A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k =  A^j\cdot e_j ???
+A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k =  A^j\cdot e_j ???
 $$
 
-We see that the parameters $\epsilon^{\mu\nu}$ are the same in the two sides of “$\cdot$”, but the "basis" is different. Thus, if we still view $\cdot$ as the matrix product, the equality will no longer hold. 
+We see that the parameters $\epsilon^{ab}$ are the same in the two sides of “$\cdot$”, but the "basis" is different. Thus, if we still view $\cdot$ as the matrix product, the equality will no longer hold. 
 
 Hence, we need a new definition in this case, which means under the new product, there is
 
 $$
-\exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\} \rightarrow \text{identity matrix}
+\exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\} \rightarrow \text{identity matrix}
 $$
 
 In Fibre Bundle theory, we achieve this by introducing an equivalence class. Yes, it looks like that we are "brute-forcely" identify the the above result as an identity matrix. But as a matter of fact, there is no preliminary intentions to make $\cdot$ here as a product --- it just looks like that in vector field. In Fibre Bundle theory, fields of all kinds are described universally using the equivalence class.
@@ -468,6 +468,123 @@ Although we do not cover Tensor Analysis, we will provide a list for you to dete
 You should be able to understand in detail the above statements before you can say you have mastered Tensor Analysis.
 
 
+
+
+## Dirac Equation
+
+.. note:: It is the time to invoke our [convention of indices](#) here. In short, the Greek letter indices are the abstract or/and spacetime indices, Latin letter indices are specific, internal or ordinary indices.
+
+Unlike to the Klein-Gordon equation, Dirac equation is an equation of spinor field. Under the requirement of Physics, the equation of spinor field should satisfy the following conditions
+- It can imply Klein-Gordon equation
+- It remains unchanged under the Lorentz transformation
+  The first requirement is due to the fact that the Klein-Gordon equation will imply the relativistic energy-momentum relation. Historically, Dirac put forward the equation under the consideration of performing the formal square root of the Klein-Gordon equation. The Dirac equation reads
+
+$$
+\mathrm{i}\gamma^\mu\!\partial_\mu\psi - m\psi = 0
+$$
+
+where $\gamma_\mu = \gamma^a e_a^\mu$ and $e_a^\mu$ is the tetrad. Next we briefly confirm that the equation does comply with the requirements.
+
+It is easy to see that the first requirement is met once notice
+
+$$
+(\mathrm{i}\gamma^\mu\!\partial_\mu + m)(\mathrm{i}\gamma^\nu\!\partial_\nu - m)\psi = -(\gamma^\mu\gamma^\nu\partial_\mu\partial_\nu + m^2)&\psi\\
+= (g^{\mu\nu}\partial_\mu\partial_\nu - m^2)\psi = (\partial^\mu\partial_\mu - m^2)&\psi = 0
+$$
+
+The second condition requires 
+
+$$
+\mathrm{i}\gamma'^\mu\!\partial_\mu\psi' - m\psi' = 0
+$$
+
+where $\psi' = S\psi$, $S$ is the matrix of spinor representation of Lorentz transformation and $\psi$ satisfies the Dirac equation. This could be achieved if
+
+$$
+S\gamma'^\mu S^{-1} = \gamma^\mu
+$$
+
+We shall not prove the above identity but to provide a sketch of the proof. Since $\gamma^\mu = \gamma^a e_a^\mu$, the above equation would require
+
+$$
+S\gamma^a S^{-1} = \varLambda^a_b\gamma^b
+$$
+
+This relation can be verified if take $S$ and $\varLambda$ to be infinitesimal transformation. And you will find the following trick useful
+
+$$
+[A, BC] = \{A,B\}C - \{B, A\}C
+$$
+
+Next, we construct the Lagrangian of the spinor field. An intuitive construction is just to multiply the Dirac equation by the Hermitian conjugate $\psi^\dagger$ of the spinor field
+
+$$
+\mathcal{L}_{\text{tmp}} = -\psi^\dagger(\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi
+$$
+
+However, this Lagrangian is not invariant under the Lorentz transformation, since
+
+$$
+\mathcal{L'}_{\text{tmp}} = -\psi^\dagger [S^\dagger S](\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi
+$$
+
+The representation $S$ is not necessarily unitary and thus $S^\dagger S$ is not necessarily identity. Therefore, we construct the Dirac conjugate of spinor field as
+
+$$
+\bar{\psi} = \psi^\dagger\gamma^0
+$$
+
+and construct the Lagrangian as
+
+$$
+\mathcal{L} = -\bar{\psi}(\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi
+$$
+
+Now you can verify that this Lagrangian is Lorentz invariant if notice
+
+$$
+\gamma^0\cdot\gamma^0 = I,\ \ \ \gamma^0 S^\dagger\gamma^0 = S^{-1}
+$$
+
+The theory of spinor field is somehow abundant, and this section only covers very basic conclusion about it. Therefore, you are suggested to refer to other textbooks about the Quantum Field Theory or spinor geometry for further information about spinor field theory.
+
+
+## Maxwell’s Equations
+
+This is only a summary of the Maxwell’s equations under the language of Differential Geometry. There is no intention to introduce in detail — you are expected to cover them in your Electrodynamics courses.
+
+First, we have the electromagnetic tensor $F_{\mu\nu}$ satisfying
+
+$$
+E_i = F_{0i}, \ \ \ \ \ B_i = -\frac{1}{2}\varepsilon_{ijk}F^{jk}
+$$
+
+The Maxwell’s equations can be expressed using $F_{\mu\nu}$ as
+
+$$
+\partial^\mu &F_{\mu\nu} = 0\\
+\partial_{[\mu} &F_{\rho\sigma]} = 0
+$$
+
+You can verify that the above equations indeed imply the ordinary form of Maxwell’s equation. The second equality should imply that the tensor $F_{\mu\nu}$ can be expressed as
+
+$$
+F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu
+$$
+
+where $A_\mu$ is a “vector” (dual vector or 1-form to be precise). It is easily identified that $A_\mu$ represents the electromagnetic potential. With the above construction, the second equation of the Maxwell’s equations automatically holds, and hence the Maxwell’s equations is reduced to 
+
+$$
+\partial^\mu F_{\mu\nu} = 0
+$$
+
+It is easily verified that the Lagrangian of the electromagnetic field is
+
+$$
+\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+$$
+
+If you find any of the above content unfamiliar, please find and review a textbook about Electrodynamics, and make sure you have fully understood all the contents before proceeding.
 
 
 ## Quantum Mechanics
@@ -812,17 +929,17 @@ Before we step into the path integral formalism, we give an overall sketch as we
 
 ### Sketch of Theoretical Construction
 
-The construction will start from analyzing the general path integral of scalar field from some *stable state* to itself (usually it is *vacuum state* $|0\rangle$)
+The construction will start from analyzing the general path integral of scalar field from some *stable state* to itself (usually it is *vacuum state* $|\Omega\rangle$)
 
 $$
-\langle 0|0\rangle = N\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi[\partial^2-m^2]\varphi\} = 1
+\langle \Omega|\Omega\rangle = N\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi[\partial^2-m^2]\varphi\} = 1
 $$
 
 where $N$ is a normalization factor. The last equality comes from the property *stable*, which means it will not change under the situation of free field, which will determine the normalization factor. Now, we construct a quantity called **generating functional** by adding an arbitrary *potential* $J$
 
 > **Stage 1**
 $$
-> W_0[J] = \langle 0|0\rangle |_J &= N\int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2-m^2]\varphi - J\varphi\}\\
+> W_0[J] = \langle\Omega|\Omega\rangle |_J &= N\int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2-m^2]\varphi - J\varphi\}\\
 > &= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_FJ\}
 $$
 
@@ -847,9 +964,309 @@ The theoretical construction will end at S-matrix. For a connection with the exp
 
 ### Some Rules
 
-It has been [stated before](./intro_why.html) that we will not introduce any contents from canonical quantization into our construction of the path integral formalism. Therefore, actually we are not able to have concepts like *state* which is widely used in quantum theory. In this case, we *have to* use some configuration of fields as *state* (like asymptotic field). But this would imply that there must be some subtle identical relationship between field and state, which somehow rejected by canonical quantum field theory.  
+It has been [stated before](./intro_why.html) that we will not introduce any contents from canonical quantization into our construction of the path integral formalism. Therefore, actually we are not able to have concepts like *state* which is widely used in quantum theory. In this case, we *have to* use some configuration of fields as *state* (like asymptotic field). But this would imply that there must be some subtle identical relationship between field and state, which is somehow rejected by canonical quantum field theory.  
 
 As a matter of fact, the problem caused by the lack of field operator and successive state only arises when constructing S-matrix, which means that stage 1 and stage 2 will not be affected anyway. In our philosophy, the path integral formalism, as a parallel companion of canonical quantization, should be *free* from the concepts in canonical form. Therefore, we will try our best not to invoke concepts like field operator and the corresponding state, or at least push them as *later* as possible.
+
+
+## Free Scalar Field Theory
+
+This section will introduce the free scalar field theory, i.e. stage 1 mentioned in the sketch. Our main goal here is to derive the generating functional of the free scalar field. 
+
+First we need a vacuum state as the initial and final state --- just like the start and end point in path integral of Quantum Mechanics. However, the vacuum is not so straight-forward in Quantum Field Theory. We hereby *define* the vacuum state $|\Omega\rangle$ as the configuration of field with the lowest possible energy, which is the general starting point of the term *vacuum*.
+
+.. note:: In canonical quantization, there is an annihilation operator $a$ and thus the vacuum state can be defined as $a|\Omega\rangle=0$. However, now we do not have any operators. Therefore, we *define* the state using the property it needs to satisfy.
+
+Now, we express the probability of the free field from vacuum state to vacuum state in terms of path integral. The probability should be unity since there are no interactions. Therefore
+
+$$
+W = \langle\Omega|\Omega\rangle = \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi\} = 1
+$$
+
+where we now know the normalization factor $\mathcal{N}$. We hope that you still remember the Lagrangian for scalar field (If you don't, go and review [this](./clstheo_scalar.html)). The scalar field is real here, and it won't be miserable to generalize this into complex situation.
+
+This formulation does not tell us anything except for a normalization factor, since it is trivial --- from vacuum to vacuum with no interaction. Now, we want to add some interactions. To achieve this, we introduce an auxiliary potential $J$ and the Lagrangian becomes
+
+$$
+\mathcal{L} = -\varphi(\partial^2\!\!-\!m^2)\varphi + J\varphi
+$$
+
+and the path integral becomes
+
+$$
+W[J] = \langle\Omega|\Omega\rangle|_J = \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi-2J\varphi\}
+$$
+
+Now, we perform the path integral. As what we have done in Quantum Mechanics, expand the path integral according to the classical path. The classical path $\varphi_0$ satisfies
+
+$$
+(\partial^2\!\!-\!m^2)\varphi_0 = J,\ \ \text{i.e.}\ \ \varphi_0 = \int \Delta_F J
+$$
+
+where $\Delta_F$ is the Green's function satisfying
+
+$$
+(\partial^2\!\!-\!m^2)\Delta_F(x;x') = -\delta(x;x')
+$$
+
+.. warning:: Please be very careful about the minus sign in the right hand side of the above equation!
+
+Consequently, we perform translation $\varphi\mapsto\varphi + \varphi_0$. In path integral, a definite path $\varphi_0$ acts just like a constant (expand the path integral according to the definition and you will see why). A brief calculation will give
+
+$$
+W[J] &= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\cdot \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi\}\\
+&= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}
+$$
+
+Since this is the case of free field, we rewrite the conclusion as
+
+$$
+W_0[J] = \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}
+$$
+
+which is the desired result as it is in the sketch.
+
+.. note:: In the following context, the generating functional is always assumed to be normalised, and we will neglect the normalization factor.
+
+
+## Two Significant Identities
+
+In this section, you are going to meet two significant identities which play central roles in the following constructions. These identities are
+
+$$
+\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \int\mathcal{D}\varphi\ \varphi(x)\exp\{\mathrm{i}S\}\\
+(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = J(x)W_0[J]
+$$
+
+.. note:: To understand this section, you will find [Functional Derivative](./ms_func_deriv.html) helpful.
+
+### First Identity
+
+The first identity can be verified through a calculation of functional derivative of $W_0[J]$ with respect to $J(x)$. Specifically, we have
+
+$$
+\frac{\delta}{\delta J(x)}W_0[J] &= \int\mathcal{D}\varphi\frac{\delta}{\delta J(x)}\left[\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi + \mathrm{i}\int J\varphi\}\right]\\
+&= \int\mathcal{D}\varphi\frac{\delta}{\delta J(x)}\left[\mathrm{i}\int J\varphi\}\right]\exp\{\mathrm{i}S\} = \int\mathcal{D}\varphi\ \mathrm{i}\varphi(x)\exp\{\mathrm{i}S\}
+$$
+
+The right hand side of the identity is sometimes interpreted as the *average value* of the field $\varphi(x)$ due to its formal similarities with the definition of average value in statistical mechanics.
+
+### Second Identity
+
+The second identity can be gained through a direct calculation. Specifically, there is
+
+$$
+\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}\exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\} = -\left[\int\Delta_F J(x)\right]\ W_0[J]
+$$
+
+Therefore
+
+$$
+(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = -\left[\int(\partial^2\!\!-\!m^2)\Delta_F J(x)\right]\ W_0[J] = J(x)W_0[J]
+$$
+
+You are strongly suggested to remember the two identities since they are the very foundations of the following constructions of interaction theory and S-matrix.
+
+
+## Scalar Field Theory with Interaction
+
+This section introduces the self-interaction theory of scalar field. As usual, the interaction is implemented as an additional interaction term $\mathcal{L}_{\text{int}}$ in Lagrangian. The interaction discussed here is assumed to satisfy the following condition
+
+- It is the self-interaction, i.e. $\mathcal{L}_{\text{int}} = \mathcal{L}_{\text{int}}[\varphi]$
+- It has the form of polynomials.
+
+Similarly, the construction starts from the generating functional. The generating functional of an interaction theory is
+
+$$
+W[J] &= \int\mathcal{D}\varphi\exp\{\mathrm iS\} = \int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\! + \!\mathcal{L}_{\text{int}}[\varphi]\}\\
+&= \int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}[\varphi]\}\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}
+$$
+
+Next, we expand the first exponential (the one with interaction) according to definition
+
+$$
+W[J] = \int\mathcal{D}\varphi\sum_{n=0}^\infty\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}[\varphi]\}\right]^n\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}
+$$
+
+Now, recall our [first identity](./qft_ids.html)
+
+$$
+\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \int\mathcal{D}\varphi\ \varphi(x)\exp\{\mathrm{i}S\}
+$$
+
+Therefore, each $\varphi(x)$ in $\mathcal{L}_{\text{int}}[\varphi]$ can be *replaced* with $\delta/\mathrm{i}\delta J(x)$, as long as $\mathcal{L}_{\text{int}}[\varphi]$ is a pure polynomial of $\varphi$. In this case, we can write
+
+$$
+W[J] = \int\mathcal{D}\varphi\sum_{n=0}^\infty\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\right]^n\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\\
+= \sum_{n=0}^\infty\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\right]^n\int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}
+$$
+
+where expression $\mathcal{L}_{\text{int}}\!\!\left[\delta/\mathrm{i}\delta J\right]$ represents the the expression where all $\varphi$ in $\mathcal{L}_{\text{int}}$ is replaced with $\delta/\mathrm{i}\delta J(x)$. The terms after the replacement no longer contain $\varphi$ and thus can be moved out of the path integral. And we find now that the path integral gives the generating functional $W_0[J]$ of free field. Transform back into the exponential form and we get
+
+$$
+W[J] = \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\} W_0[J]
+$$
+
+which is the result of second stage of our construction. The interaction of other kinds of fields (except for vector field in gauge theories) can be performed through similar manner.
+
+
+## Scattering Matrix
+
+Scattering matrix, or **S-matrix**, is one of the major and core concept in both Particle and High Energy Physics --- since this is the most straight-forward way to verify the form of interaction. 
+
+The S-matrix is defined as an *infinite dimensional matrix* with each matrix element $S_{\beta\alpha}$ being the probability of the state evolving from $\alpha$ to $\beta$, i.e.
+
+$$
+S_{\beta\alpha} = \langle\beta|\alpha\rangle
+$$
+
+.. note:: As a matter of fact, the S-matrix is not a typical "matrix". It is just a quantity with each one of them can be labelled by two indices. Also, in canonical quantization, S-matrix is actually an operator which, if it is finite dimensional, can be expressed as a matrix (but in Quantum Field Theory it is not). Therefore, when you see some concept which is a *matrix*, it might not mean to be a typical matrix, but some operator or quantity of two indices.
+
+In Quantum Field Theory (as well as Particle Physics), we are especially interested in the following situation
+
+> Two or more beams of free particle are generated and targeted at some point, interact with each other at the limited region near the point, then leave the interaction region, become free particles again and finally detected by the particle detectors.
+
+The key point in the above picture is that the interaction only happens at a restricted region, and the particles are free outside the region. This approximation can be pretty accurate if the region is selected wisely so that the particles are separated by a considerably long distance. And it is prevalently implemented in many particle colliders.
+
+The above picture suggests us write the field in the path integral as the addition of an "interact field" $\varphi$ and a free asymptotic field $\varphi_{\text{as}}$, i.e. perform the following variable translation in the path integral
+
+$$
+\varphi \mapsto \varphi + \varphi_{as}
+$$
+
+where the asymptotic field $\varphi_{\text{as}}$ satisfies
+
+$$
+(\partial^2\!\!-\!m^2)\varphi_{\text{as}} = 0
+$$
+
+Therefore, the S-matrix with auxiliary field $J$ supplied is
+
+$$
+S_0[J] = \int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2\!\!-\!m^2]\varphi - J\varphi - J\varphi_{\text{as}}\} = \exp\{\mathrm{i}\varphi_{\text{as}}J\}W_0[J]
+$$
+
+Similar formula also holds for situation with interaction. Then, just as what we have done in the last section, expand the exponential as Taylor series
+
+$$
+S[J] = \sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm{i}\varphi_{\text{as}}J\right]^nW[J]
+$$
+
+Recall we have our [second identity](./qft_ids.html)
+
+$$
+(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = J(x)W_0[J]
+$$
+
+This inspires us that we can replace every $J$ in the Taylor series with $(\partial^2\!\!-\!m^2)\delta/\mathrm{i}\delta J$. Hence
+
+$$
+S[J] = \sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]^nW[J] = \exp\{\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\}W[J]
+$$
+
+To obtain the S-matrix, simply set the auxiliary field $J$ as zero
+
+$$
+S = \left.\exp\{\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\}W[J]\right|_{J=0}
+$$
+
+This is the so-called **LSZ reduction formula**, which gives the S-matrix with inbound and outbound state designated by asymptotic field $\varphi_{\text{as}}$ from the generating functional. 
+
+
+## Correlation Function
+
+In both stage 2 and stage 3, we will encounter the following functional derivative
+
+$$
+\tau(x_1,\ldots,x_n) := \left.\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_1)}\cdots\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_n)}W_0[J]\right|_{J=0}
+$$
+
+Thus, we give this quantity a name **correlation function**, or $n$**-point (Green's) function**. The origin of this name comes from the similarity of its formulation in canonical quantization and hence this name may look strange here.
+
+It is not so straight-forward about the $n$-point function, and thus we hope to reduce the formula. To do this, let us first evaluate the 2-point function
+
+$$
+\tau(x_1,x_2) &= \left.\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_1)}\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_2)}\exp\{-\frac{1}{2}\mathrm i\!\!\int\!\! J\Delta_FJ\}\right|_{J=0} \\
+&= \left.\mathrm{i}\frac{\delta}{\delta J(x_1)}\int\!\!\Delta_F(x_2;)J\exp\{-\frac{1}{2}\mathrm i\!\!\int \!\!J\Delta_FJ\}\right|_{J=0}\\
+&=\left.\mathrm i\Delta_F(x_1;x_2)W_0[J]\right|_{J=0} + \left.(\int\Delta_F J)^2W_0[J]\right|_{J=0} = \mathrm i\Delta_F(x_1;x_2)
+$$
+
+It is nothing other than $\mathrm{i}$ times the ordinary Green's function. Next, 3-point function
+
+$$
+\tau(x_1,x_2,x_3)\sim \left.\Delta_F\int\Delta_FJ\right|_{J=0} + \left.(\int\Delta_FJ)^3\right|_{J=0} = 0
+$$
+
+And 4-point function
+
+$$
+\tau(x_1,x_2.x_3,x_4) &= \mathrm{i}\Delta_F(x_1;x_2)\mathrm{i}\Delta_F(x_3;x_4)\\
+&+ \mathrm{i}\Delta_F(x_1;x_3)\mathrm{i}\Delta_F(x_2;x_4) \\
+&+ \mathrm{i}\Delta_F(x_2;x_3)\mathrm{i}\Delta_F(x_1;x_4)\\
+&= (1\sim2)(3\sim4) + (1\sim3)(2\sim4) + (2\sim3)(1\sim4)
+$$
+
+where we have used $(1\sim2)$ to represent $\tau(x_1,x_2)$. Therefore, we can see the regularity --- the $n$-point function is either $0$ or some combination of two point functions. Specifically, we have by induction
+
+- The odd-point function is $0$.
+- The even-point function is
+
+$$
+\tau(x_1,\ldots, x_{2n}) = \sum_{\text{perms}}(p_1\sim p_2)\ldots(p_{2n-1}\sim p_{2n})
+$$
+
+which means the summation over all the permutations $p$. This is the so-called **Wick's Theorem** --- transforming the $n$-point function into the combination of 2-point function.
+
+You are suggested to show yourself that the S-matrix can be written using correlation function as
+
+$$
+S = \sum_{n=0}^\infty\frac{\mathrm i^n}{n!}\prod_x\varphi(x)\prod_x(\partial^2\!\!-\!m^2)\tau(x_1,\ldots,x_n)
+$$
+
+where $x$ takes over $x_1,\ldots,x_n$. This formula is the so-called **perturbative expansion** of the S-matrix.
+
+
+## First Glance at Infinities
+
+This section will show you how the infinities emerge in Quantum Field Theory through a resonated toy of physicists --- $\varphi^4$ theory. The interaction term of $\varphi^4$ theory is
+
+$$
+\mathcal{L}_{\text{int}} = -\frac{1}{4!}g\varphi^4
+$$
+
+Recall that the generating functional of interaction theory is
+
+$$
+W[J] = \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\} W_0[J]
+$$
+
+Suppose the interaction is weak enough for us to neglect all terms of order higher than one. Therefore, the generating functional up to the first order is
+
+$$
+W_\uparrow^{(1)}[J] = (1 - \mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\})W_0[J] = (1 - \frac{\mathrm{i}g}{4!}\int\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]^4\})W_0[J]
+$$
+
+Notice that in this case the four functional derivatives are at the same point $x$. Therefore, a calculation similar to the previous section will show
+
+$$
+\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}W_0[J] = \tau(x,x) =  \mathrm i\Delta(x;x)\ \ ???
+$$
+
+We see that the right hand side contains the value of Green's function at *zero*, which is clearly infinity. With higher order terms which contains even more derivatives, there might be even more infinities.
+
+To deal with this infinities, we use a mathematical technique called **renormalization**. Looking back to where the infinities come and we find
+
+$$
+\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}(-\int\Delta_F(x;y)J(y)\mathrm{d}y)
+$$
+
+makes no sense, since the functional derivative requires that $\Delta_F(x;y)$ be a function, but it is essentially a distribution (or generalized function). But things are not so bad. The Green's function is a distribution which usually has a function correspondence, and for most of the physical equations that we care, it has. 
+
+Nonetheless, the function corresponding to $\Delta(x;y)$ **has no definition** on $x=y$. Therefore, the above expression hopes to get something **undefined**. This makes things much easier. If it is undefined, the most straight-forward way is to place an additional definition. 
+
+The renormalization procedure does exactly this stuff. Usually, we will impose some conditions (such as define the *physical mass* as the square-root of minus zero-point of two-point convex function) so that the value $\Delta(x;x)$ can be defined. 
+
+You are not expected to understand the harangue in the bracket in previous paragraph. The renormalization is a big topic and we will open a new chapter later for a systematically discussion. 
 
 
 ## Function and Image Element
@@ -867,6 +1284,27 @@ $$
 f_x(y)=f(x,y)
 $$
 > Although there is a equality sign in the equation, there are essential difference between $f_x$ and $f$ --- the former is a family of functions of $y$ (labelled by $x$) and the latter is a function of two variable $x$ and $y$. The equality essentially means solely that the *value* is the same.
+
+
+## Functional Derivative
+
+The functional derivative we talk about here is not the same as the variation used widely in Lagrangian formalism --- although they look so much alike formally. To make sure you will not mistake them, we first illustrate what is the variation of a functional.
+
+The variation of a functional $F[\phi]$ whose domain is a Banach space $B$ (a linear space where you can talk about the "length" --- norm of its element) is usually implemented as **Gâteaux derivative**
+
+$$
+\frac{\delta F[\phi]}{\delta\phi} := (\forall \eta) :: \lim_{\varepsilon\rightarrow 0}\frac{F[\phi+\varepsilon\eta]-F[\phi]}{\varepsilon}
+$$
+
+which very much resembles the directional derivative in ordinary Calculus. Please notice that the $\eta$ here is just an arbitrary element of the Banach space, and in its application it is any physical field.
+
+The variation is the "derivative" of the argument $\phi$ itself, without any designation of it value at some point $\phi(x)$; while functional derivative is defined differently. The functional derivative of $F[\phi(x)]$ with respect to **value** $\phi(y)$ is 
+
+$$
+\frac{\delta F[\phi(x)]}{\delta\phi(y)} = \lim_{\varepsilon\rightarrow 0}\frac{F[\phi(x)+\varepsilon\delta(x;y)]-F[\phi(x)]}{\varepsilon}
+$$
+
+Therefore, you shall now see the differences between the variation and the functional derivative --- the variation performs "derivative" on $\phi$ itself, while the functional derivative does so on the value $\phi(y)$. And thus a delta function has to be invoked to deal with the different points $x$ and $y$. You will see in chapter Quantum Theory that it is this delta function which brings the infinities into the S-matrix.
 
 ## Geometric Unit System
 
