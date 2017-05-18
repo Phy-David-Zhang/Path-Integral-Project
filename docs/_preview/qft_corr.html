@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Quantum Theory &mdash; Path Integral Project 0.2 documentation</title>
+  <title>Correlation Function &mdash; Path Integral Project 0.2 documentation</title>
   
 
   
@@ -36,8 +36,9 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
-        <link rel="next" title="Sketch of Path Integral Formalism" href="qft_sketch.html"/>
-        <link rel="prev" title="Path Integral of Fields" href="pi_fields.html"/> 
+        <link rel="up" title="Quantum Theory" href="quanfield.html"/>
+        <link rel="next" title="First Glance at Infinities" href="qft_infty.html"/>
+        <link rel="prev" title="Scattering Matrix" href="qft_smatrix.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -93,13 +94,13 @@
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pathintgl.html">Path Integral</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quantum Theory</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="quanfield.html">Quantum Theory</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="qft_sketch.html">Sketch of Path Integral Formalism</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_free_sc.html">Free Scalar Field Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_ids.html">Two Significant Identities</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_interact.html">Scalar Field Theory with Interaction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_smatrix.html">Scattering Matrix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="qft_corr.html">Correlation Function</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Correlation Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_infty.html">First Glance at Infinities</a></li>
 </ul>
 </li>
@@ -149,13 +150,15 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Quantum Theory</li>
+          <li><a href="quanfield.html">Quantum Theory</a> &raquo;</li>
+        
+      <li>Correlation Function</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/quanfield.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/qft_corr.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -168,19 +171,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="quantum-theory">
-<h1>Quantum Theory<a class="headerlink" href="#quantum-theory" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="qft_sketch.html">Sketch of Path Integral Formalism</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_free_sc.html">Free Scalar Field Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_ids.html">Two Significant Identities</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_interact.html">Scalar Field Theory with Interaction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_smatrix.html">Scattering Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_corr.html">Correlation Function</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_infty.html">First Glance at Infinities</a></li>
+  <div class="section" id="correlation-function">
+<h1>Correlation Function<a class="headerlink" href="#correlation-function" title="Permalink to this headline">¶</a></h1>
+<p>In both stage 2 and stage 3, we will encounter the following functional derivative</p>
+<div class="math">
+\[\tau(x_1,\ldots,x_n) := \left.\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_1)}\cdots\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_n)}W_0[J]\right|_{J=0}\]</div>
+<p>Thus, we give this quantity a name <strong>correlation function</strong>, or <span class="math">\(n\)</span><strong>-point (Green&#8217;s) function</strong>. The origin of this name comes from the similarity of its formulation in canonical quantization and hence this name may look strange here.</p>
+<p>It is not so straight-forward about the <span class="math">\(n\)</span>-point function, and thus we hope to reduce the formula. To do this, let us first evaluate the 2-point function</p>
+<div class="math">
+\[\begin{split}\tau(x_1,x_2) &amp;= \left.\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_1)}\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_2)}\exp\{-\frac{1}{2}\mathrm i\!\!\int\!\! J\Delta_FJ\}\right|_{J=0} \\
+&amp;= \left.\mathrm{i}\frac{\delta}{\delta J(x_1)}\int\!\!\Delta_F(x_2;)J\exp\{-\frac{1}{2}\mathrm i\!\!\int \!\!J\Delta_FJ\}\right|_{J=0}\\
+&amp;=\left.\mathrm i\Delta_F(x_1;x_2)W_0[J]\right|_{J=0} + \left.(\int\Delta_F J)^2W_0[J]\right|_{J=0} = \mathrm i\Delta_F(x_1;x_2)\end{split}\]</div>
+<p>It is nothing other than <span class="math">\(\mathrm{i}\)</span> times the ordinary Green&#8217;s function. Next, 3-point function</p>
+<div class="math">
+\[\tau(x_1,x_2,x_3)\sim \left.\Delta_F\int\Delta_FJ\right|_{J=0} + \left.(\int\Delta_FJ)^3\right|_{J=0} = 0\]</div>
+<p>And 4-point function</p>
+<div class="math">
+\[\begin{split}\tau(x_1,x_2.x_3,x_4) &amp;= \mathrm{i}\Delta_F(x_1;x_2)\mathrm{i}\Delta_F(x_3;x_4)\\
+&amp;+ \mathrm{i}\Delta_F(x_1;x_3)\mathrm{i}\Delta_F(x_2;x_4) \\
+&amp;+ \mathrm{i}\Delta_F(x_2;x_3)\mathrm{i}\Delta_F(x_1;x_4)\\
+&amp;= (1\sim2)(3\sim4) + (1\sim3)(2\sim4) + (2\sim3)(1\sim4)\end{split}\]</div>
+<p>where we have used <span class="math">\((1\sim2)\)</span> to represent <span class="math">\(\tau(x_1,x_2)\)</span>. Therefore, we can see the regularity &#8212; the <span class="math">\(n\)</span>-point function is either <span class="math">\(0\)</span> or some combination of two point functions. Specifically, we have by induction</p>
+<ul class="simple">
+<li>The odd-point function is <span class="math">\(0\)</span>.</li>
+<li>The even-point function is</li>
 </ul>
-</div>
+<div class="math">
+\[\tau(x_1,\ldots, x_{2n}) = \sum_{\text{perms}}(p_1\sim p_2)\ldots(p_{2n-1}\sim p_{2n})\]</div>
+<p>which means the summation over all the permutations <span class="math">\(p\)</span>. This is the so-called <strong>Wick&#8217;s Theorem</strong> &#8212; transforming the <span class="math">\(n\)</span>-point function into the combination of 2-point function.</p>
+<p>You are suggested to show yourself that the S-matrix can be written using correlation function as</p>
+<div class="math">
+\[S = \sum_{n=0}^\infty\frac{\mathrm i^n}{n!}\prod_x\varphi(x)\prod_x(\partial^2\!\!-\!m^2)\tau(x_1,\ldots,x_n)\]</div>
+<p>where <span class="math">\(x\)</span> takes over <span class="math">\(x_1,\ldots,x_n\)</span>. This formula is the so-called <strong>perturbative expansion</strong> of the S-matrix.</p>
 </div>
 
 
@@ -193,10 +215,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="qft_sketch.html" class="btn btn-neutral float-right" title="Sketch of Path Integral Formalism" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="qft_infty.html" class="btn btn-neutral float-right" title="First Glance at Infinities" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pi_fields.html" class="btn btn-neutral" title="Path Integral of Fields" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="qft_smatrix.html" class="btn btn-neutral" title="Scattering Matrix" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

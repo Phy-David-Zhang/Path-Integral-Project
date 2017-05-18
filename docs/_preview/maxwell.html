@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Function and Image Element &mdash; Path Integral Project 0.2 documentation</title>
+  <title>Maxwell’s Equations &mdash; Path Integral Project 0.2 documentation</title>
   
 
   
@@ -36,9 +36,9 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
-        <link rel="up" title="Math Support" href="mathsup.html"/>
-        <link rel="next" title="Functional Derivative" href="ms_func_deriv.html"/>
-        <link rel="prev" title="Math Support" href="mathsup.html"/> 
+        <link rel="up" title="Classical Theory" href="clstheo.html"/>
+        <link rel="next" title="Path Integral" href="pathintgl.html"/>
+        <link rel="prev" title="Dirac Equation" href="dirac.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,14 +92,19 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pathintgl.html">Path Integral</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quanfield.html">Quantum Theory</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="mathsup.html">Math Support</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Function and Image Element</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ms_func_deriv.html">Functional Derivative</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="clstheo.html">Classical Theory</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="clstheo_scalar.html">Classical Theory: Scalar Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clstheo_kgeq.html">Solution of Klein-Gordon Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clstheo_sym_field.html">The Symmetry of Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repr_lg.html">Representation of Lorentz Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="field.html">Scalar, Spinor and Vector (Tensor) Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dirac.html">Dirac Equation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Maxwell’s Equations</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="pathintgl.html">Path Integral</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quanfield.html">Quantum Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mathsup.html">Math Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
 </ul>
 
@@ -145,15 +150,15 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-          <li><a href="mathsup.html">Math Support</a> &raquo;</li>
+          <li><a href="clstheo.html">Classical Theory</a> &raquo;</li>
         
-      <li>Function and Image Element</li>
+      <li>Maxwell’s Equations</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/ms_func_img.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/maxwell.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -166,18 +171,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="function-and-image-element">
-<h1>Function and Image Element<a class="headerlink" href="#function-and-image-element" title="Permalink to this headline">¶</a></h1>
-<p>This section is fairly important &#8212; it introduces some important concepts in ... functions. Alright, we just want to tell you that the function and its image elements are not the same thing. Well, you may find this ostensible. However, the denotations of function and its image elements can be really misleading. You may clearly identify that something like <span class="math">\(f\)</span> and <span class="math">\(f(x_0)\)</span> are different things. But can you always notice that <span class="math">\(f\)</span> and <span class="math">\(f(x)\)</span> are different things, especially when <span class="math">\(x\)</span> is some <em>variable</em> instead of <em>constant</em> like <span class="math">\(x_0\)</span>?</p>
-<p>There are no intentions to detailedly discuss the issue, since it will finally becomes a philosophical war between objective and formal Mathematics. Here, we directly take the view of objective Mathematics. Under this philosophy, the function <span class="math">\(f\)</span> is a mathematical object which is a subset of the Cartesian product of domain and image (satisfying some conditions); while <span class="math">\(f(x)\)</span> is an element of image (no matter whether <span class="math">\(x\)</span> is a constant or not). Therefore, they are <em>essentially</em> different objects.</p>
-<p>To help understand this, especially the differences it causes in Quantum Field Theory, we set up the following examples</p>
-<blockquote>
-<div><p><strong>Example 1.</strong> In Lagrangian formalism and Path Integral Formalism respectively, two kinds of functional derivatives are invoked &#8212; <span class="math">\(\delta/\delta f\)</span> and <span class="math">\(\delta/\delta f(x)\)</span>. The former is the derivative with respect to the function <span class="math">\(f\)</span>, and the latter is the derivative with respect to the element <span class="math">\(f(x)\)</span>. You will see in that it is the definition of the latter one which causes the famous infinity problem in Quantum Field Theory; while nothing happens to the former one.</p>
-<p><strong>Example 2.</strong> In some cases, we will write something like</p>
+  <div class="section" id="maxwells-equations">
+<h1>Maxwell’s Equations<a class="headerlink" href="#maxwells-equations" title="Permalink to this headline">¶</a></h1>
+<p>This is only a summary of the Maxwell’s equations under the language of Differential Geometry. There is no intention to introduce in detail — you are expected to cover them in your Electrodynamics courses.</p>
+<p>First, we have the electromagnetic tensor <span class="math">\(F_{\mu\nu}\)</span> satisfying</p>
 <div class="math">
-\[f_x(y)=f(x,y)\]</div>
-<p>Although there is a equality sign in the equation, there are essential difference between <span class="math">\(f_x\)</span> and <span class="math">\(f\)</span> &#8212; the former is a family of functions of <span class="math">\(y\)</span> (labelled by <span class="math">\(x\)</span>) and the latter is a function of two variable <span class="math">\(x\)</span> and <span class="math">\(y\)</span>. The equality essentially means solely that the <em>value</em> is the same.</p>
-</div></blockquote>
+\[E_i = F_{0i}, \ \ \ \ \ B_i = -\frac{1}{2}\varepsilon_{ijk}F^{jk}\]</div>
+<p>The Maxwell’s equations can be expressed using <span class="math">\(F_{\mu\nu}\)</span> as</p>
+<div class="math">
+\[\begin{split}\partial^\mu &amp;F_{\mu\nu} = 0\\
+\partial_{[\mu} &amp;F_{\rho\sigma]} = 0\end{split}\]</div>
+<p>You can verify that the above equations indeed imply the ordinary form of Maxwell’s equation. The second equality should imply that the tensor <span class="math">\(F_{\mu\nu}\)</span> can be expressed as</p>
+<div class="math">
+\[F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu\]</div>
+<p>where <span class="math">\(A_\mu\)</span> is a “vector” (dual vector or 1-form to be precise). It is easily identified that <span class="math">\(A_\mu\)</span> represents the electromagnetic potential. With the above construction, the second equation of the Maxwell’s equations automatically holds, and hence the Maxwell’s equations is reduced to</p>
+<div class="math">
+\[\partial^\mu F_{\mu\nu} = 0\]</div>
+<p>It is easily verified that the Lagrangian of the electromagnetic field is</p>
+<div class="math">
+\[\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}\]</div>
+<p>If you find any of the above content unfamiliar, please find and review a textbook about Electrodynamics, and make sure you have fully understood all the contents before proceeding.</p>
 </div>
 
 
@@ -190,10 +203,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ms_func_deriv.html" class="btn btn-neutral float-right" title="Functional Derivative" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pathintgl.html" class="btn btn-neutral float-right" title="Path Integral" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="mathsup.html" class="btn btn-neutral" title="Math Support" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="dirac.html" class="btn btn-neutral" title="Dirac Equation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

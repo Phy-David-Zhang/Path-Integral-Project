@@ -37,7 +37,7 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
         <link rel="up" title="Quantum Theory" href="quanfield.html"/>
-        <link rel="next" title="Math Support" href="mathsup.html"/>
+        <link rel="next" title="Free Scalar Field Theory" href="qft_free_sc.html"/>
         <link rel="prev" title="Quantum Theory" href="quanfield.html"/> 
 
   
@@ -100,6 +100,12 @@
 <li class="toctree-l3"><a class="reference internal" href="#some-rules">Some Rules</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="qft_free_sc.html">Free Scalar Field Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qft_ids.html">Two Significant Identities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qft_interact.html">Scalar Field Theory with Interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qft_smatrix.html">Scattering Matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qft_corr.html">Correlation Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qft_infty.html">First Glance at Infinities</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="mathsup.html">Math Support</a></li>
@@ -174,14 +180,14 @@
 <p>Before we step into the path integral formalism, we give an overall sketch as well as some <em>rules</em> of our construction here. Beware, that the <em>rules</em> are not necessarily accepted or respected by all the academics.</p>
 <div class="section" id="sketch-of-theoretical-construction">
 <h2>Sketch of Theoretical Construction<a class="headerlink" href="#sketch-of-theoretical-construction" title="Permalink to this headline">¶</a></h2>
-<p>The construction will start from analyzing the general path integral of scalar field from some <em>stable state</em> to itself (usually it is <em>vacuum state</em> <span class="math">\(|0\rangle\)</span>)</p>
+<p>The construction will start from analyzing the general path integral of scalar field from some <em>stable state</em> to itself (usually it is <em>vacuum state</em> <span class="math">\(|\Omega\rangle\)</span>)</p>
 <div class="math">
-\[\langle 0|0\rangle = N\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi[\partial^2-m^2]\varphi\} = 1\]</div>
+\[\langle \Omega|\Omega\rangle = N\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi[\partial^2-m^2]\varphi\} = 1\]</div>
 <p>where <span class="math">\(N\)</span> is a normalization factor. The last equality comes from the property <em>stable</em>, which means it will not change under the situation of free field, which will determine the normalization factor. Now, we construct a quantity called <strong>generating functional</strong> by adding an arbitrary <em>potential</em> <span class="math">\(J\)</span></p>
 <blockquote>
 <div><p><strong>Stage 1</strong></p>
 <div class="math">
-\[\begin{split}W_0[J] = \langle 0|0\rangle |_J &amp;= N\int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2-m^2]\varphi - J\varphi\}\\
+\[\begin{split}W_0[J] = \langle\Omega|\Omega\rangle |_J &amp;= N\int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2-m^2]\varphi - J\varphi\}\\
 &amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_FJ\}\end{split}\]</div>
 </div></blockquote>
 <p>The above generating functional includes merely the scalar field without any other <em>actual</em> interaction terms (the <span class="math">\(J\)</span> term is an auxiliary term with no physical significance). If the Lagrangian includes the interaction terms <span class="math">\(\mathcal{L}_{\text{int}}\)</span>, the generating functional will be</p>
@@ -202,7 +208,7 @@
 </div>
 <div class="section" id="some-rules">
 <h2>Some Rules<a class="headerlink" href="#some-rules" title="Permalink to this headline">¶</a></h2>
-<p>It has been <a class="reference external" href="./intro_why.html">stated before</a> that we will not introduce any contents from canonical quantization into our construction of the path integral formalism. Therefore, actually we are not able to have concepts like <em>state</em> which is widely used in quantum theory. In this case, we <em>have to</em> use some configuration of fields as <em>state</em> (like asymptotic field). But this would imply that there must be some subtle identical relationship between field and state, which somehow rejected by canonical quantum field theory.</p>
+<p>It has been <a class="reference external" href="./intro_why.html">stated before</a> that we will not introduce any contents from canonical quantization into our construction of the path integral formalism. Therefore, actually we are not able to have concepts like <em>state</em> which is widely used in quantum theory. In this case, we <em>have to</em> use some configuration of fields as <em>state</em> (like asymptotic field). But this would imply that there must be some subtle identical relationship between field and state, which is somehow rejected by canonical quantum field theory.</p>
 <p>As a matter of fact, the problem caused by the lack of field operator and successive state only arises when constructing S-matrix, which means that stage 1 and stage 2 will not be affected anyway. In our philosophy, the path integral formalism, as a parallel companion of canonical quantization, should be <em>free</em> from the concepts in canonical form. Therefore, we will try our best not to invoke concepts like field operator and the corresponding state, or at least push them as <em>later</em> as possible.</p>
 </div>
 </div>
@@ -217,7 +223,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="mathsup.html" class="btn btn-neutral float-right" title="Math Support" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="qft_free_sc.html" class="btn btn-neutral float-right" title="Free Scalar Field Theory" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="quanfield.html" class="btn btn-neutral" title="Quantum Theory" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

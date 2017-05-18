@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Quantum Theory &mdash; Path Integral Project 0.2 documentation</title>
+  <title>First Glance at Infinities &mdash; Path Integral Project 0.2 documentation</title>
   
 
   
@@ -36,8 +36,9 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
-        <link rel="next" title="Sketch of Path Integral Formalism" href="qft_sketch.html"/>
-        <link rel="prev" title="Path Integral of Fields" href="pi_fields.html"/> 
+        <link rel="up" title="Quantum Theory" href="quanfield.html"/>
+        <link rel="next" title="Math Support" href="mathsup.html"/>
+        <link rel="prev" title="Correlation Function" href="qft_corr.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -93,14 +94,14 @@
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pathintgl.html">Path Integral</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quantum Theory</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="quanfield.html">Quantum Theory</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="qft_sketch.html">Sketch of Path Integral Formalism</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_free_sc.html">Free Scalar Field Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_ids.html">Two Significant Identities</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_interact.html">Scalar Field Theory with Interaction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_smatrix.html">Scattering Matrix</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_corr.html">Correlation Function</a></li>
-<li class="toctree-l2"><a class="reference internal" href="qft_infty.html">First Glance at Infinities</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">First Glance at Infinities</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="mathsup.html">Math Support</a></li>
@@ -149,13 +150,15 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Quantum Theory</li>
+          <li><a href="quanfield.html">Quantum Theory</a> &raquo;</li>
+        
+      <li>First Glance at Infinities</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/quanfield.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/qft_infty.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -168,19 +171,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="quantum-theory">
-<h1>Quantum Theory<a class="headerlink" href="#quantum-theory" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="qft_sketch.html">Sketch of Path Integral Formalism</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_free_sc.html">Free Scalar Field Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_ids.html">Two Significant Identities</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_interact.html">Scalar Field Theory with Interaction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_smatrix.html">Scattering Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_corr.html">Correlation Function</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_infty.html">First Glance at Infinities</a></li>
-</ul>
-</div>
+  <div class="section" id="first-glance-at-infinities">
+<h1>First Glance at Infinities<a class="headerlink" href="#first-glance-at-infinities" title="Permalink to this headline">¶</a></h1>
+<p>This section will show you how the infinities emerge in Quantum Field Theory through a resonated toy of physicists &#8212; <span class="math">\(\varphi^4\)</span> theory. The interaction term of <span class="math">\(\varphi^4\)</span> theory is</p>
+<div class="math">
+\[\mathcal{L}_{\text{int}} = -\frac{1}{4!}g\varphi^4\]</div>
+<p>Recall that the generating functional of interaction theory is</p>
+<div class="math">
+\[W[J] = \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\} W_0[J]\]</div>
+<p>Suppose the interaction is weak enough for us to neglect all terms of order higher than one. Therefore, the generating functional up to the first order is</p>
+<div class="math">
+\[W_\uparrow^{(1)}[J] = (1 - \mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\})W_0[J] = (1 - \frac{\mathrm{i}g}{4!}\int\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]^4\})W_0[J]\]</div>
+<p>Notice that in this case the four functional derivatives are at the same point <span class="math">\(x\)</span>. Therefore, a calculation similar to the previous section will show</p>
+<div class="math">
+\[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}W_0[J] = \tau(x,x) =  \mathrm i\Delta(x;x)\ \ ???\]</div>
+<p>We see that the right hand side contains the value of Green&#8217;s function at <em>zero</em>, which is clearly infinity. With higher order terms which contains even more derivatives, there might be even more infinities.</p>
+<p>To deal with this infinities, we use a mathematical technique called <strong>renormalization</strong>. Looking back to where the infinities come and we find</p>
+<div class="math">
+\[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}(-\int\Delta_F(x;y)J(y)\mathrm{d}y)\]</div>
+<p>makes no sense, since the functional derivative requires that <span class="math">\(\Delta_F(x;y)\)</span> be a function, but it is essentially a distribution (or generalized function). But things are not so bad. The Green&#8217;s function is a distribution which usually has a function correspondence, and for most of the physical equations that we care, it has.</p>
+<p>Nonetheless, the function corresponding to <span class="math">\(\Delta(x;y)\)</span> <strong>has no definition</strong> on <span class="math">\(x=y\)</span>. Therefore, the above expression hopes to get something <strong>undefined</strong>. This makes things much easier. If it is undefined, the most straight-forward way is to place an additional definition.</p>
+<p>The renormalization procedure does exactly this stuff. Usually, we will impose some conditions (such as define the <em>physical mass</em> as the square-root of minus zero-point of two-point convex function) so that the value <span class="math">\(\Delta(x;x)\)</span> can be defined.</p>
+<p>You are not expected to understand the harangue in the bracket in previous paragraph. The renormalization is a big topic and we will open a new chapter later for a systematically discussion.</p>
 </div>
 
 
@@ -193,10 +205,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="qft_sketch.html" class="btn btn-neutral float-right" title="Sketch of Path Integral Formalism" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="mathsup.html" class="btn btn-neutral float-right" title="Math Support" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pi_fields.html" class="btn btn-neutral" title="Path Integral of Fields" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="qft_corr.html" class="btn btn-neutral" title="Correlation Function" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

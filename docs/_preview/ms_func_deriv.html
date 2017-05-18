@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Function and Image Element &mdash; Path Integral Project 0.2 documentation</title>
+  <title>Functional Derivative &mdash; Path Integral Project 0.2 documentation</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
         <link rel="up" title="Math Support" href="mathsup.html"/>
-        <link rel="next" title="Functional Derivative" href="ms_func_deriv.html"/>
-        <link rel="prev" title="Math Support" href="mathsup.html"/> 
+        <link rel="next" title="Background Knowledge" href="background.html"/>
+        <link rel="prev" title="Function and Image Element" href="ms_func_img.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -96,8 +96,8 @@
 <li class="toctree-l1"><a class="reference internal" href="pathintgl.html">Path Integral</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quanfield.html">Quantum Theory</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="mathsup.html">Math Support</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Function and Image Element</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ms_func_deriv.html">Functional Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ms_func_img.html">Function and Image Element</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Functional Derivative</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background Knowledge</a></li>
@@ -147,13 +147,13 @@
         
           <li><a href="mathsup.html">Math Support</a> &raquo;</li>
         
-      <li>Function and Image Element</li>
+      <li>Functional Derivative</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/ms_func_img.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/ms_func_deriv.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -166,18 +166,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="function-and-image-element">
-<h1>Function and Image Element<a class="headerlink" href="#function-and-image-element" title="Permalink to this headline">¶</a></h1>
-<p>This section is fairly important &#8212; it introduces some important concepts in ... functions. Alright, we just want to tell you that the function and its image elements are not the same thing. Well, you may find this ostensible. However, the denotations of function and its image elements can be really misleading. You may clearly identify that something like <span class="math">\(f\)</span> and <span class="math">\(f(x_0)\)</span> are different things. But can you always notice that <span class="math">\(f\)</span> and <span class="math">\(f(x)\)</span> are different things, especially when <span class="math">\(x\)</span> is some <em>variable</em> instead of <em>constant</em> like <span class="math">\(x_0\)</span>?</p>
-<p>There are no intentions to detailedly discuss the issue, since it will finally becomes a philosophical war between objective and formal Mathematics. Here, we directly take the view of objective Mathematics. Under this philosophy, the function <span class="math">\(f\)</span> is a mathematical object which is a subset of the Cartesian product of domain and image (satisfying some conditions); while <span class="math">\(f(x)\)</span> is an element of image (no matter whether <span class="math">\(x\)</span> is a constant or not). Therefore, they are <em>essentially</em> different objects.</p>
-<p>To help understand this, especially the differences it causes in Quantum Field Theory, we set up the following examples</p>
-<blockquote>
-<div><p><strong>Example 1.</strong> In Lagrangian formalism and Path Integral Formalism respectively, two kinds of functional derivatives are invoked &#8212; <span class="math">\(\delta/\delta f\)</span> and <span class="math">\(\delta/\delta f(x)\)</span>. The former is the derivative with respect to the function <span class="math">\(f\)</span>, and the latter is the derivative with respect to the element <span class="math">\(f(x)\)</span>. You will see in that it is the definition of the latter one which causes the famous infinity problem in Quantum Field Theory; while nothing happens to the former one.</p>
-<p><strong>Example 2.</strong> In some cases, we will write something like</p>
+  <div class="section" id="functional-derivative">
+<h1>Functional Derivative<a class="headerlink" href="#functional-derivative" title="Permalink to this headline">¶</a></h1>
+<p>The functional derivative we talk about here is not the same as the variation used widely in Lagrangian formalism &#8212; although they look so much alike formally. To make sure you will not mistake them, we first illustrate what is the variation of a functional.</p>
+<p>The variation of a functional <span class="math">\(F[\phi]\)</span> whose domain is a Banach space <span class="math">\(B\)</span> (a linear space where you can talk about the &#8220;length&#8221; &#8212; norm of its element) is usually implemented as <strong>Gâteaux derivative</strong></p>
 <div class="math">
-\[f_x(y)=f(x,y)\]</div>
-<p>Although there is a equality sign in the equation, there are essential difference between <span class="math">\(f_x\)</span> and <span class="math">\(f\)</span> &#8212; the former is a family of functions of <span class="math">\(y\)</span> (labelled by <span class="math">\(x\)</span>) and the latter is a function of two variable <span class="math">\(x\)</span> and <span class="math">\(y\)</span>. The equality essentially means solely that the <em>value</em> is the same.</p>
-</div></blockquote>
+\[\frac{\delta F[\phi]}{\delta\phi} := (\forall \eta) :: \lim_{\varepsilon\rightarrow 0}\frac{F[\phi+\varepsilon\eta]-F[\phi]}{\varepsilon}\]</div>
+<p>which very much resembles the directional derivative in ordinary Calculus. Please notice that the <span class="math">\(\eta\)</span> here is just an arbitrary element of the Banach space, and in its application it is any physical field.</p>
+<p>The variation is the &#8220;derivative&#8221; of the argument <span class="math">\(\phi\)</span> itself, without any designation of it value at some point <span class="math">\(\phi(x)\)</span>; while functional derivative is defined differently. The functional derivative of <span class="math">\(F[\phi(x)]\)</span> with respect to <strong>value</strong> <span class="math">\(\phi(y)\)</span> is</p>
+<div class="math">
+\[\frac{\delta F[\phi(x)]}{\delta\phi(y)} = \lim_{\varepsilon\rightarrow 0}\frac{F[\phi(x)+\varepsilon\delta(x;y)]-F[\phi(x)]}{\varepsilon}\]</div>
+<p>Therefore, you shall now see the differences between the variation and the functional derivative &#8212; the variation performs &#8220;derivative&#8221; on <span class="math">\(\phi\)</span> itself, while the functional derivative does so on the value <span class="math">\(\phi(y)\)</span>. And thus a delta function has to be invoked to deal with the different points <span class="math">\(x\)</span> and <span class="math">\(y\)</span>. You will see in chapter Quantum Theory that it is this delta function which brings the infinities into the S-matrix.</p>
 </div>
 
 
@@ -190,10 +189,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ms_func_deriv.html" class="btn btn-neutral float-right" title="Functional Derivative" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="background.html" class="btn btn-neutral float-right" title="Background Knowledge" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="mathsup.html" class="btn btn-neutral" title="Math Support" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ms_func_img.html" class="btn btn-neutral" title="Function and Image Element" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

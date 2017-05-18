@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Quantum Theory &mdash; Path Integral Project 0.2 documentation</title>
+  <title>Free Scalar Field Theory &mdash; Path Integral Project 0.2 documentation</title>
   
 
   
@@ -36,8 +36,9 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
-        <link rel="next" title="Sketch of Path Integral Formalism" href="qft_sketch.html"/>
-        <link rel="prev" title="Path Integral of Fields" href="pi_fields.html"/> 
+        <link rel="up" title="Quantum Theory" href="quanfield.html"/>
+        <link rel="next" title="Two Significant Identities" href="qft_ids.html"/>
+        <link rel="prev" title="Sketch of Path Integral Formalism" href="qft_sketch.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -93,9 +94,9 @@
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pathintgl.html">Path Integral</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quantum Theory</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="quanfield.html">Quantum Theory</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="qft_sketch.html">Sketch of Path Integral Formalism</a></li>
-<li class="toctree-l2"><a class="reference internal" href="qft_free_sc.html">Free Scalar Field Theory</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Free Scalar Field Theory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_ids.html">Two Significant Identities</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_interact.html">Scalar Field Theory with Interaction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_smatrix.html">Scattering Matrix</a></li>
@@ -149,13 +150,15 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Quantum Theory</li>
+          <li><a href="quanfield.html">Quantum Theory</a> &raquo;</li>
+        
+      <li>Free Scalar Field Theory</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/quanfield.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/qft_free_sc.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -168,18 +171,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="quantum-theory">
-<h1>Quantum Theory<a class="headerlink" href="#quantum-theory" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="qft_sketch.html">Sketch of Path Integral Formalism</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_free_sc.html">Free Scalar Field Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_ids.html">Two Significant Identities</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_interact.html">Scalar Field Theory with Interaction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_smatrix.html">Scattering Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_corr.html">Correlation Function</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_infty.html">First Glance at Infinities</a></li>
-</ul>
+  <div class="section" id="free-scalar-field-theory">
+<h1>Free Scalar Field Theory<a class="headerlink" href="#free-scalar-field-theory" title="Permalink to this headline">¶</a></h1>
+<p>This section will introduce the free scalar field theory, i.e. stage 1 mentioned in the sketch. Our main goal here is to derive the generating functional of the free scalar field.</p>
+<p>First we need a vacuum state as the initial and final state &#8212; just like the start and end point in path integral of Quantum Mechanics. However, the vacuum is not so straight-forward in Quantum Field Theory. We hereby <em>define</em> the vacuum state <span class="math">\(|\Omega\rangle\)</span> as the configuration of field with the lowest possible energy, which is the general starting point of the term <em>vacuum</em>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In canonical quantization, there is an annihilation operator <span class="math">\(a\)</span> and thus the vacuum state can be defined as <span class="math">\(a|\Omega\rangle=0\)</span>. However, now we do not have any operators. Therefore, we <em>define</em> the state using the property it needs to satisfy.</p>
+</div>
+<p>Now, we express the probability of the free field from vacuum state to vacuum state in terms of path integral. The probability should be unity since there are no interactions. Therefore</p>
+<div class="math">
+\[W = \langle\Omega|\Omega\rangle = \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi\} = 1\]</div>
+<p>where we now know the normalization factor <span class="math">\(\mathcal{N}\)</span>. We hope that you still remember the Lagrangian for scalar field (If you don&#8217;t, go and review <a class="reference external" href="./clstheo_scalar.html">this</a>). The scalar field is real here, and it won&#8217;t be miserable to generalize this into complex situation.</p>
+<p>This formulation does not tell us anything except for a normalization factor, since it is trivial &#8212; from vacuum to vacuum with no interaction. Now, we want to add some interactions. To achieve this, we introduce an auxiliary potential <span class="math">\(J\)</span> and the Lagrangian becomes</p>
+<div class="math">
+\[\mathcal{L} = -\varphi(\partial^2\!\!-\!m^2)\varphi + J\varphi\]</div>
+<p>and the path integral becomes</p>
+<div class="math">
+\[W[J] = \langle\Omega|\Omega\rangle|_J = \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi-2J\varphi\}\]</div>
+<p>Now, we perform the path integral. As what we have done in Quantum Mechanics, expand the path integral according to the classical path. The classical path <span class="math">\(\varphi_0\)</span> satisfies</p>
+<div class="math">
+\[(\partial^2\!\!-\!m^2)\varphi_0 = J,\ \ \text{i.e.}\ \ \varphi_0 = \int \Delta_F J\]</div>
+<p>where <span class="math">\(\Delta_F\)</span> is the Green&#8217;s function satisfying</p>
+<div class="math">
+\[(\partial^2\!\!-\!m^2)\Delta_F(x;x') = -\delta(x;x')\]</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Please be very careful about the minus sign in the right hand side of the above equation!</p>
+</div>
+<p>Consequently, we perform translation <span class="math">\(\varphi\mapsto\varphi + \varphi_0\)</span>. In path integral, a definite path <span class="math">\(\varphi_0\)</span> acts just like a constant (expand the path integral according to the definition and you will see why). A brief calculation will give</p>
+<div class="math">
+\[\begin{split}W[J] &amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\cdot \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi\}\\
+&amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\end{split}\]</div>
+<p>Since this is the case of free field, we rewrite the conclusion as</p>
+<div class="math">
+\[W_0[J] = \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\]</div>
+<p>which is the desired result as it is in the sketch.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In the following context, the generating functional is always assumed to be normalised, and we will neglect the normalization factor.</p>
 </div>
 </div>
 
@@ -193,10 +223,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="qft_sketch.html" class="btn btn-neutral float-right" title="Sketch of Path Integral Formalism" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="qft_ids.html" class="btn btn-neutral float-right" title="Two Significant Identities" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pi_fields.html" class="btn btn-neutral" title="Path Integral of Fields" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="qft_sketch.html" class="btn btn-neutral" title="Sketch of Path Integral Formalism" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Solution of Klein-Gordon Equation &mdash; Path Integral Project 0.2 documentation</title>
+  <title>Dirac Equation &mdash; Path Integral Project 0.2 documentation</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
         <link rel="up" title="Classical Theory" href="clstheo.html"/>
-        <link rel="next" title="The Symmetry of Fields" href="clstheo_sym_field.html"/>
-        <link rel="prev" title="Classical Theory: Scalar Field" href="clstheo_scalar.html"/> 
+        <link rel="next" title="Maxwell’s Equations" href="maxwell.html"/>
+        <link rel="prev" title="Scalar, Spinor and Vector (Tensor) Field" href="field.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -94,11 +94,11 @@
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="clstheo.html">Classical Theory</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="clstheo_scalar.html">Classical Theory: Scalar Field</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Solution of Klein-Gordon Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clstheo_kgeq.html">Solution of Klein-Gordon Equation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="clstheo_sym_field.html">The Symmetry of Fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="repr_lg.html">Representation of Lorentz Group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="field.html">Scalar, Spinor and Vector (Tensor) Field</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dirac.html">Dirac Equation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Dirac Equation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="maxwell.html">Maxwell’s Equations</a></li>
 </ul>
 </li>
@@ -152,13 +152,13 @@
         
           <li><a href="clstheo.html">Classical Theory</a> &raquo;</li>
         
-      <li>Solution of Klein-Gordon Equation</li>
+      <li>Dirac Equation</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/clstheo_kgeq.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/dirac.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -171,34 +171,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="solution-of-klein-gordon-equation">
-<h1>Solution of Klein-Gordon Equation<a class="headerlink" href="#solution-of-klein-gordon-equation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="dirac-equation">
+<h1>Dirac Equation<a class="headerlink" href="#dirac-equation" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">This section is important to the canonical quantisation method, and will not influence the overall logic. You may skip this if you wish.</p>
+<p class="last">It is the time to invoke our <a class="reference external" href="#">convention of indices</a> here. In short, the Greek letter indices are the abstract or/and spacetime indices, Latin letter indices are specific, internal or ordinary indices.</p>
 </div>
-<p>In this section, we look at the general solution of the Klein-Gordon equation. We do this for <span class="math">\(\varphi\)</span>, and similar procedure can be easily carried out for <span class="math">\(\varphi^*\)</span>.</p>
-<p>For any possible field <span class="math">\(\varphi\)</span>, we can perform Fourier expansion as</p>
+<p>Unlike to the Klein-Gordon equation, Dirac equation is an equation of spinor field. Under the requirement of Physics, the equation of spinor field should satisfy the following conditions
+- It can imply Klein-Gordon equation
+- It remains unchanged under the Lorentz transformation
+The first requirement is due to the fact that the Klein-Gordon equation will imply the relativistic energy-momentum relation. Historically, Dirac put forward the equation under the consideration of performing the formal square root of the Klein-Gordon equation. The Dirac equation reads</p>
 <div class="math">
-\[\varphi = \int{\mathrm d^4k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\]</div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Well, you may notice that here we do not take the symmetric form of the Fourier transformation. Although personally I prefer the symmetric form, but trust me, it can make all the successive discussions awful.</p>
-</div>
-<p>Take the above expression back into the equation, we get the dispersion relation</p>
+\[\mathrm{i}\gamma^\mu\!\partial_\mu\psi - m\psi = 0\]</div>
+<p>where <span class="math">\(\gamma_\mu = \gamma^a e_a^\mu\)</span> and <span class="math">\(e_a^\mu\)</span> is the tetrad. Next we briefly confirm that the equation does comply with the requirements.</p>
+<p>It is easy to see that the first requirement is met once notice</p>
 <div class="math">
-\[k^2 + m^2 = 0\]</div>
-<p>This relation serves as a constraint to the wave number <span class="math">\(k^\mu\)</span>. Thus, to gain the solution, all we need to do is to switch the integral measure to <a class="reference external" href="&#64;waiting">delta measure</a></p>
+\[\begin{split}(\mathrm{i}\gamma^\mu\!\partial_\mu + m)(\mathrm{i}\gamma^\nu\!\partial_\nu - m)\psi = -(\gamma^\mu\gamma^\nu\partial_\mu\partial_\nu + m^2)&amp;\psi\\
+= (g^{\mu\nu}\partial_\mu\partial_\nu - m^2)\psi = (\partial^\mu\partial_\mu - m^2)&amp;\psi = 0\end{split}\]</div>
+<p>The second condition requires</p>
 <div class="math">
-\[\varphi(x) = \int{\mathrm d^4k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot2\pi\delta(k^2+m^2)\]</div>
-<p>Factor <span class="math">\(2\pi\)</span> is necessary since we are going to perform the integral once, like</p>
+\[\mathrm{i}\gamma'^\mu\!\partial_\mu\psi' - m\psi' = 0\]</div>
+<p>where <span class="math">\(\psi' = S\psi\)</span>, <span class="math">\(S\)</span> is the matrix of spinor representation of Lorentz transformation and <span class="math">\(\psi\)</span> satisfies the Dirac equation. This could be achieved if</p>
 <div class="math">
-\[\begin{split}\varphi(x) &amp;= \int{\mathrm d\omega \mathrm d^3k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot2\pi\delta(-\omega^2 + \vec k^2 + m^2)\\
-&amp;= \int{\mathrm d\omega^2 \mathrm d^3k\over2\omega(2\pi)^3}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot\delta(-\omega^2 + \vec k^2 + m^2)\\
-&amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}a(k)\exp\{\mathrm i(\omega_k t - \vec k \vec x\} + \int{\mathrm d^3k\over(-2\omega_k)(2\pi)^3}a(k)\exp\{\mathrm i(-\omega_k t - \vec k \vec x\}\\
-&amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}a(k)\exp\{\mathrm i(\omega_k t - \vec k \vec x\} + \int{\mathrm d^3k\over(2\omega_k)(2\pi)^3}a(-k)\exp\{\mathrm i(-\omega_k t + \vec k \vec x\}\\
-&amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}\left[a(k)\exp\{-\mathrm i(k^\mu x_\mu\} + a(-k)\exp\{\mathrm i(k^\mu x_\mu\} \right]\end{split}\]</div>
-<p>where <span class="math">\(\omega_k = \sqrt{\vec k^2 + m^2}\)</span>. The fourth equality is nothing other than reversing the direction of <span class="math">\(\vec k\)</span>. Hence, we get the general form of the solution of Klein-Gordon equation.</p>
+\[S\gamma'^\mu S^{-1} = \gamma^\mu\]</div>
+<p>We shall not prove the above identity but to provide a sketch of the proof. Since <span class="math">\(\gamma^\mu = \gamma^a e_a^\mu\)</span>, the above equation would require</p>
+<div class="math">
+\[S\gamma^a S^{-1} = \varLambda^a_b\gamma^b\]</div>
+<p>This relation can be verified if take <span class="math">\(S\)</span> and <span class="math">\(\varLambda\)</span> to be infinitesimal transformation. And you will find the following trick useful</p>
+<div class="math">
+\[[A, BC] = \{A,B\}C - \{B, A\}C\]</div>
+<p>Next, we construct the Lagrangian of the spinor field. An intuitive construction is just to multiply the Dirac equation by the Hermitian conjugate <span class="math">\(\psi^\dagger\)</span> of the spinor field</p>
+<div class="math">
+\[\mathcal{L}_{\text{tmp}} = -\psi^\dagger(\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi\]</div>
+<p>However, this Lagrangian is not invariant under the Lorentz transformation, since</p>
+<div class="math">
+\[\mathcal{L'}_{\text{tmp}} = -\psi^\dagger [S^\dagger S](\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi\]</div>
+<p>The representation <span class="math">\(S\)</span> is not necessarily unitary and thus <span class="math">\(S^\dagger S\)</span> is not necessarily identity. Therefore, we construct the Dirac conjugate of spinor field as</p>
+<div class="math">
+\[\bar{\psi} = \psi^\dagger\gamma^0\]</div>
+<p>and construct the Lagrangian as</p>
+<div class="math">
+\[\mathcal{L} = -\bar{\psi}(\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi\]</div>
+<p>Now you can verify that this Lagrangian is Lorentz invariant if notice</p>
+<div class="math">
+\[\gamma^0\cdot\gamma^0 = I,\ \ \ \gamma^0 S^\dagger\gamma^0 = S^{-1}\]</div>
+<p>The theory of spinor field is somehow abundant, and this section only covers very basic conclusion about it. Therefore, you are suggested to refer to other textbooks about the Quantum Field Theory or spinor geometry for further information about spinor field theory.</p>
 </div>
 
 
@@ -211,10 +228,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="clstheo_sym_field.html" class="btn btn-neutral float-right" title="The Symmetry of Fields" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="maxwell.html" class="btn btn-neutral float-right" title="Maxwell’s Equations" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="clstheo_scalar.html" class="btn btn-neutral" title="Classical Theory: Scalar Field" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="field.html" class="btn btn-neutral" title="Scalar, Spinor and Vector (Tensor) Field" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

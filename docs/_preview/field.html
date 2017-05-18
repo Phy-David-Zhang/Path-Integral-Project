@@ -37,7 +37,7 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
         <link rel="up" title="Classical Theory" href="clstheo.html"/>
-        <link rel="next" title="Path Integral" href="pathintgl.html"/>
+        <link rel="next" title="Dirac Equation" href="dirac.html"/>
         <link rel="prev" title="Representation of Lorentz Group" href="repr_lg.html"/> 
 
   
@@ -105,6 +105,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#tensor-field">Tensor Field</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="dirac.html">Dirac Equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maxwell.html">Maxwell’s Equations</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pathintgl.html">Path Integral</a></li>
@@ -215,7 +217,7 @@
 <h2>Vector Field<a class="headerlink" href="#vector-field" title="Permalink to this headline">¶</a></h2>
 <p>The vector field is the field whose field representation is vector representation. Thus, the components transform as</p>
 <div class="math">
-\[\varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^jA_j\]</div>
+\[\varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^jA_j\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">To understand the above equation, you need <a class="reference external" href="./bg_liegp.html">Basic Group Theory</a> and <a class="reference external" href="./repr_lg.html">Representation of Lorentz Group</a>.</p>
@@ -223,24 +225,24 @@
 <p>First let&#8217;s examine the above expression. First, you have to recall what is the exponential map. Remember that the result of the exponential map (<span class="math">\(\exp\{...\}\)</span>) is a matrix, and thus <span class="math">\(\exp\{...{\}_i}^j\phi_j\)</span> is nothing but a matrix multiply a column vector.</p>
 <p>Next, remember that we have said the transformation of the basis follows the trivial representation which is defined just as the matrix product</p>
 <div class="math">
-\[\varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^je_j\]</div>
+\[\varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^je_j\]</div>
 <p>Therefore we have</p>
 <div class="math">
-\[A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k = A^j\cdot e_j\]</div>
+\[A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k = A^j\cdot e_j\]</div>
 <p>Now you can see why we write a dot <span class="math">\(\cdot\)</span> between the components and the basis &#8212; under vector representation (where some triviality applies), the <span class="math">\(\cdot\)</span> in the above derivation can be &#8220;viewed&#8221; as the matrix product. However, this &#8220;view&#8221; will fail in some other non-trivial situations &#8212; as described any minute next.</p>
 </div>
 <div class="section" id="spinor-field">
 <h2>Spinor Field<a class="headerlink" href="#spinor-field" title="Permalink to this headline">¶</a></h2>
 <p>The spinor field is the field whose field representation is spinor representation. The <strong>spinor representation</strong> is define as</p>
 <div class="math">
-\[\varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\}\]</div>
+\[\varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\}\]</div>
 <p>Just like what we have done in the previous section, write down explicitly</p>
 <div class="math">
-\[A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k =  A^j\cdot e_j ???\]</div>
-<p>We see that the parameters <span class="math">\(\epsilon^{\mu\nu}\)</span> are the same in the two sides of “<span class="math">\(\cdot\)</span>”, but the &#8220;basis&#8221; is different. Thus, if we still view <span class="math">\(\cdot\)</span> as the matrix product, the equality will no longer hold.</p>
+\[A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k =  A^j\cdot e_j ???\]</div>
+<p>We see that the parameters <span class="math">\(\epsilon^{ab}\)</span> are the same in the two sides of “<span class="math">\(\cdot\)</span>”, but the &#8220;basis&#8221; is different. Thus, if we still view <span class="math">\(\cdot\)</span> as the matrix product, the equality will no longer hold.</p>
 <p>Hence, we need a new definition in this case, which means under the new product, there is</p>
 <div class="math">
-\[\exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\} \rightarrow \text{identity matrix}\]</div>
+\[\exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\} \rightarrow \text{identity matrix}\]</div>
 <p>In Fibre Bundle theory, we achieve this by introducing an equivalence class. Yes, it looks like that we are &#8220;brute-forcely&#8221; identify the the above result as an identity matrix. But as a matter of fact, there is no preliminary intentions to make <span class="math">\(\cdot\)</span> here as a product &#8212; it just looks like that in vector field. In Fibre Bundle theory, fields of all kinds are described universally using the equivalence class.</p>
 </div>
 <div class="section" id="tensor-field">
@@ -273,7 +275,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pathintgl.html" class="btn btn-neutral float-right" title="Path Integral" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="dirac.html" class="btn btn-neutral float-right" title="Dirac Equation" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="repr_lg.html" class="btn btn-neutral" title="Representation of Lorentz Group" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

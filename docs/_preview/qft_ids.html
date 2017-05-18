@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Quantum Theory &mdash; Path Integral Project 0.2 documentation</title>
+  <title>Two Significant Identities &mdash; Path Integral Project 0.2 documentation</title>
   
 
   
@@ -36,8 +36,9 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Path Integral Project 0.2 documentation" href="index.html"/>
-        <link rel="next" title="Sketch of Path Integral Formalism" href="qft_sketch.html"/>
-        <link rel="prev" title="Path Integral of Fields" href="pi_fields.html"/> 
+        <link rel="up" title="Quantum Theory" href="quanfield.html"/>
+        <link rel="next" title="Scalar Field Theory with Interaction" href="qft_interact.html"/>
+        <link rel="prev" title="Free Scalar Field Theory" href="qft_free_sc.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -93,10 +94,14 @@
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction to Path Integral Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clstheo.html">Classical Theory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pathintgl.html">Path Integral</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quantum Theory</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="quanfield.html">Quantum Theory</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="qft_sketch.html">Sketch of Path Integral Formalism</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_free_sc.html">Free Scalar Field Theory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="qft_ids.html">Two Significant Identities</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Two Significant Identities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#first-identity">First Identity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#second-identity">Second Identity</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="qft_interact.html">Scalar Field Theory with Interaction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_smatrix.html">Scattering Matrix</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qft_corr.html">Correlation Function</a></li>
@@ -149,13 +154,15 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Quantum Theory</li>
+          <li><a href="quanfield.html">Quantum Theory</a> &raquo;</li>
+        
+      <li>Two Significant Identities</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/quanfield.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/qft_ids.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -168,18 +175,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="quantum-theory">
-<h1>Quantum Theory<a class="headerlink" href="#quantum-theory" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="qft_sketch.html">Sketch of Path Integral Formalism</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_free_sc.html">Free Scalar Field Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_ids.html">Two Significant Identities</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_interact.html">Scalar Field Theory with Interaction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_smatrix.html">Scattering Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_corr.html">Correlation Function</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qft_infty.html">First Glance at Infinities</a></li>
-</ul>
+  <div class="section" id="two-significant-identities">
+<h1>Two Significant Identities<a class="headerlink" href="#two-significant-identities" title="Permalink to this headline">¶</a></h1>
+<p>In this section, you are going to meet two significant identities which play central roles in the following constructions. These identities are</p>
+<div class="math">
+\[\begin{split}\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \int\mathcal{D}\varphi\ \varphi(x)\exp\{\mathrm{i}S\}\\
+(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = J(x)W_0[J]\end{split}\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To understand this section, you will find <a class="reference external" href="./ms_func_deriv.html">Functional Derivative</a> helpful.</p>
+</div>
+<div class="section" id="first-identity">
+<h2>First Identity<a class="headerlink" href="#first-identity" title="Permalink to this headline">¶</a></h2>
+<p>The first identity can be verified through a calculation of functional derivative of <span class="math">\(W_0[J]\)</span> with respect to <span class="math">\(J(x)\)</span>. Specifically, we have</p>
+<div class="math">
+\[\begin{split}\frac{\delta}{\delta J(x)}W_0[J] &amp;= \int\mathcal{D}\varphi\frac{\delta}{\delta J(x)}\left[\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi + \mathrm{i}\int J\varphi\}\right]\\
+&amp;= \int\mathcal{D}\varphi\frac{\delta}{\delta J(x)}\left[\mathrm{i}\int J\varphi\}\right]\exp\{\mathrm{i}S\} = \int\mathcal{D}\varphi\ \mathrm{i}\varphi(x)\exp\{\mathrm{i}S\}\end{split}\]</div>
+<p>The right hand side of the identity is sometimes interpreted as the <em>average value</em> of the field <span class="math">\(\varphi(x)\)</span> due to its formal similarities with the definition of average value in statistical mechanics.</p>
+</div>
+<div class="section" id="second-identity">
+<h2>Second Identity<a class="headerlink" href="#second-identity" title="Permalink to this headline">¶</a></h2>
+<p>The second identity can be gained through a direct calculation. Specifically, there is</p>
+<div class="math">
+\[\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}\exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\} = -\left[\int\Delta_F J(x)\right]\ W_0[J]\]</div>
+<p>Therefore</p>
+<div class="math">
+\[(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = -\left[\int(\partial^2\!\!-\!m^2)\Delta_F J(x)\right]\ W_0[J] = J(x)W_0[J]\]</div>
+<p>You are strongly suggested to remember the two identities since they are the very foundations of the following constructions of interaction theory and S-matrix.</p>
 </div>
 </div>
 
@@ -193,10 +215,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="qft_sketch.html" class="btn btn-neutral float-right" title="Sketch of Path Integral Formalism" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="qft_interact.html" class="btn btn-neutral float-right" title="Scalar Field Theory with Interaction" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pi_fields.html" class="btn btn-neutral" title="Path Integral of Fields" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="qft_free_sc.html" class="btn btn-neutral" title="Free Scalar Field Theory" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

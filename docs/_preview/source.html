@@ -361,40 +361,40 @@
 <p>Now that we have the generators, the infinitesimal transformation will have the form</p>
 <div class="math">
 \[1 + \eta_x\vec K_x + \eta_y \vec K_y + ...\]</div>
-<p>To simplify the formulation, we introduce a anti-symmetric lists of matrix <span class="math">\(L_{\mu\nu}\)</span> as</p>
+<p>To simplify the formulation, we introduce a anti-symmetric lists of matrix <span class="math">\(L_{ab}\)</span> as</p>
 <div class="math">
 \[\begin{split}L_{01} &amp;= -L_{10} = \mathrm{i}\vec K_x,\ \ \ L_{02} = -L_{20} = \mathrm{i}\vec K_y,\ \ \ L_{03} = -L_{30} = \mathrm{i}\vec K_z\\
 L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\vec J_x,\ \ \ L_{13} = -L_{31} = \mathrm{i}\vec J_y\\\end{split}\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Anti-symmetric means <span class="math">\(L_{\mu\nu} = -L_{\nu\mu}\)</span>, which implies the diagonal elements <span class="math">\(L_{ii} = 0\)</span>.</p>
+<p class="last">Anti-symmetric means <span class="math">\(L_{ab} = -L_{ba}\)</span>, which implies the diagonal elements <span class="math">\(L_{ii} = 0\)</span>.</p>
 </div>
 <p>Therefore, the infinitesimal transformation is simplified to</p>
 <div class="math">
-\[1 - \frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\]</div>
-<p>where <span class="math">\(\epsilon^{\mu\nu}\)</span> is the corresponding parameters (<span class="math">\(\epsilon^{01} = \eta_x\)</span> for example), and it is also anti-symmetric. The <span class="math">\(1/2\)</span> is necessary because we need to eliminate the factor <span class="math">\(2\)</span> in <span class="math">\(\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}\)</span>.</p>
+\[1 - \frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\]</div>
+<p>where <span class="math">\(\epsilon^{ab}\)</span> is the corresponding parameters (<span class="math">\(\epsilon^{01} = \eta_x\)</span> for example), and it is also anti-symmetric. The <span class="math">\(1/2\)</span> is necessary because we need to eliminate the factor <span class="math">\(2\)</span> in <span class="math">\(\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}\)</span>.</p>
 <p>Consequently, all Lorentz transformation can be written under the form</p>
 <div class="math">
-\[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\}\]</div>
+\[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\}\]</div>
 <p>This formula is called the <strong>vector representation</strong> of the Lorentz Group. This is the default representation for the tetrad.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Rigorously speaking, the representation should be a map from the group element to the automorphism of a vector space. Thus, the above equation should be viewed as a map to map the group element (LHS) to an automorphism (RHS).</p>
 </div>
-<p>As we know, the generators <span class="math">\(L_{\mu\nu}\)</span> can be viewed as a &#8220;basis&#8221; of the Lorentz group. However, this is not the only &#8220;basis&#8221;. Next, we are going to find out another one.</p>
-<p>Before continuing, let&#8217;s first define four matrices <span class="math">\(\gamma_\mu, \mu=0,1,2,3\)</span> that satisfy</p>
+<p>As we know, the generators <span class="math">\(L_{ab}\)</span> can be viewed as a &#8220;basis&#8221; of the Lorentz group. However, this is not the only &#8220;basis&#8221;. Next, we are going to find out another one.</p>
+<p>Before continuing, let&#8217;s first define four matrices <span class="math">\(\gamma_a, a=0,1,2,3\)</span> that satisfy</p>
 <div class="math">
-\[\{\gamma_\mu, \gamma_\nu\} = \gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = -2\eta_{\mu\nu}\]</div>
-<p>where <span class="math">\(\eta_{\mu\nu}\)</span> is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group</p>
+\[\{\gamma_a, \gamma_b\} = \gamma_a\gamma_b + \gamma_b\gamma_a = -2\eta_{ab}\]</div>
+<p>where <span class="math">\(\eta_{ab}\)</span> is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group</p>
 <div class="math">
-\[S_{\mu\nu} = \frac{1}{4}\mathrm{i}[\gamma_\mu, \gamma_\nu]\]</div>
+\[S_{ab} = \frac{1}{4}\mathrm{i}[\gamma_a, \gamma_b]\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Why? Well, we are not able to explain now since it needs Lie algebra theory. Go and find a reference about Lie algebra if you really wonder why.</p>
 </div>
 <p>Therefore, we can express the Lorentz transformation as</p>
 <div class="math">
-\[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}\}\]</div>
+\[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}\}\]</div>
 <p>This formulation is called <strong>spinor representation</strong> of the Lorentz group.</p>
 <p>Finished. But I do want to add that the representation theory of Lorentz group is quite a enchanting theory. So I suggest a careful review on this theory if you are able. It will greatly deepen your understanding through the algebraic structure of the physical field.</p>
 </div>
@@ -437,7 +437,7 @@ L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\v
 <h2>Vector Field<a class="headerlink" href="#vector-field" title="Permalink to this headline">¶</a></h2>
 <p>The vector field is the field whose field representation is vector representation. Thus, the components transform as</p>
 <div class="math">
-\[\varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^jA_j\]</div>
+\[\varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^jA_j\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">To understand the above equation, you need <a class="reference external" href="./bg_liegp.html">Basic Group Theory</a> and <a class="reference external" href="./repr_lg.html">Representation of Lorentz Group</a>.</p>
@@ -445,24 +445,24 @@ L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\v
 <p>First let&#8217;s examine the above expression. First, you have to recall what is the exponential map. Remember that the result of the exponential map (<span class="math">\(\exp\{...\}\)</span>) is a matrix, and thus <span class="math">\(\exp\{...{\}_i}^j\phi_j\)</span> is nothing but a matrix multiply a column vector.</p>
 <p>Next, remember that we have said the transformation of the basis follows the trivial representation which is defined just as the matrix product</p>
 <div class="math">
-\[\varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^je_j\]</div>
+\[\varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^je_j\]</div>
 <p>Therefore we have</p>
 <div class="math">
-\[A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k = A^j\cdot e_j\]</div>
+\[A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k = A^j\cdot e_j\]</div>
 <p>Now you can see why we write a dot <span class="math">\(\cdot\)</span> between the components and the basis &#8212; under vector representation (where some triviality applies), the <span class="math">\(\cdot\)</span> in the above derivation can be &#8220;viewed&#8221; as the matrix product. However, this &#8220;view&#8221; will fail in some other non-trivial situations &#8212; as described any minute next.</p>
 </div>
 <div class="section" id="spinor-field">
 <h2>Spinor Field<a class="headerlink" href="#spinor-field" title="Permalink to this headline">¶</a></h2>
 <p>The spinor field is the field whose field representation is spinor representation. The <strong>spinor representation</strong> is define as</p>
 <div class="math">
-\[\varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\}\]</div>
+\[\varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\}\]</div>
 <p>Just like what we have done in the previous section, write down explicitly</p>
 <div class="math">
-\[A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k =  A^j\cdot e_j ???\]</div>
-<p>We see that the parameters <span class="math">\(\epsilon^{\mu\nu}\)</span> are the same in the two sides of “<span class="math">\(\cdot\)</span>”, but the &#8220;basis&#8221; is different. Thus, if we still view <span class="math">\(\cdot\)</span> as the matrix product, the equality will no longer hold.</p>
+\[A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k =  A^j\cdot e_j ???\]</div>
+<p>We see that the parameters <span class="math">\(\epsilon^{ab}\)</span> are the same in the two sides of “<span class="math">\(\cdot\)</span>”, but the &#8220;basis&#8221; is different. Thus, if we still view <span class="math">\(\cdot\)</span> as the matrix product, the equality will no longer hold.</p>
 <p>Hence, we need a new definition in this case, which means under the new product, there is</p>
 <div class="math">
-\[\exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\} \rightarrow \text{identity matrix}\]</div>
+\[\exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\} \rightarrow \text{identity matrix}\]</div>
 <p>In Fibre Bundle theory, we achieve this by introducing an equivalence class. Yes, it looks like that we are &#8220;brute-forcely&#8221; identify the the above result as an identity matrix. But as a matter of fact, there is no preliminary intentions to make <span class="math">\(\cdot\)</span> here as a product &#8212; it just looks like that in vector field. In Fibre Bundle theory, fields of all kinds are described universally using the equivalence class.</p>
 </div>
 <div class="section" id="tensor-field">
@@ -483,6 +483,73 @@ L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\v
 </div></blockquote>
 <p>You should be able to understand in detail the above statements before you can say you have mastered Tensor Analysis.</p>
 </div>
+</div>
+<div class="section" id="dirac-equation">
+<h1>Dirac Equation<a class="headerlink" href="#dirac-equation" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It is the time to invoke our <a class="reference external" href="#">convention of indices</a> here. In short, the Greek letter indices are the abstract or/and spacetime indices, Latin letter indices are specific, internal or ordinary indices.</p>
+</div>
+<p>Unlike to the Klein-Gordon equation, Dirac equation is an equation of spinor field. Under the requirement of Physics, the equation of spinor field should satisfy the following conditions
+- It can imply Klein-Gordon equation
+- It remains unchanged under the Lorentz transformation
+The first requirement is due to the fact that the Klein-Gordon equation will imply the relativistic energy-momentum relation. Historically, Dirac put forward the equation under the consideration of performing the formal square root of the Klein-Gordon equation. The Dirac equation reads</p>
+<div class="math">
+\[\mathrm{i}\gamma^\mu\!\partial_\mu\psi - m\psi = 0\]</div>
+<p>where <span class="math">\(\gamma_\mu = \gamma^a e_a^\mu\)</span> and <span class="math">\(e_a^\mu\)</span> is the tetrad. Next we briefly confirm that the equation does comply with the requirements.</p>
+<p>It is easy to see that the first requirement is met once notice</p>
+<div class="math">
+\[\begin{split}(\mathrm{i}\gamma^\mu\!\partial_\mu + m)(\mathrm{i}\gamma^\nu\!\partial_\nu - m)\psi = -(\gamma^\mu\gamma^\nu\partial_\mu\partial_\nu + m^2)&amp;\psi\\
+= (g^{\mu\nu}\partial_\mu\partial_\nu - m^2)\psi = (\partial^\mu\partial_\mu - m^2)&amp;\psi = 0\end{split}\]</div>
+<p>The second condition requires</p>
+<div class="math">
+\[\mathrm{i}\gamma'^\mu\!\partial_\mu\psi' - m\psi' = 0\]</div>
+<p>where <span class="math">\(\psi' = S\psi\)</span>, <span class="math">\(S\)</span> is the matrix of spinor representation of Lorentz transformation and <span class="math">\(\psi\)</span> satisfies the Dirac equation. This could be achieved if</p>
+<div class="math">
+\[S\gamma'^\mu S^{-1} = \gamma^\mu\]</div>
+<p>We shall not prove the above identity but to provide a sketch of the proof. Since <span class="math">\(\gamma^\mu = \gamma^a e_a^\mu\)</span>, the above equation would require</p>
+<div class="math">
+\[S\gamma^a S^{-1} = \varLambda^a_b\gamma^b\]</div>
+<p>This relation can be verified if take <span class="math">\(S\)</span> and <span class="math">\(\varLambda\)</span> to be infinitesimal transformation. And you will find the following trick useful</p>
+<div class="math">
+\[[A, BC] = \{A,B\}C - \{B, A\}C\]</div>
+<p>Next, we construct the Lagrangian of the spinor field. An intuitive construction is just to multiply the Dirac equation by the Hermitian conjugate <span class="math">\(\psi^\dagger\)</span> of the spinor field</p>
+<div class="math">
+\[\mathcal{L}_{\text{tmp}} = -\psi^\dagger(\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi\]</div>
+<p>However, this Lagrangian is not invariant under the Lorentz transformation, since</p>
+<div class="math">
+\[\mathcal{L'}_{\text{tmp}} = -\psi^\dagger [S^\dagger S](\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi\]</div>
+<p>The representation <span class="math">\(S\)</span> is not necessarily unitary and thus <span class="math">\(S^\dagger S\)</span> is not necessarily identity. Therefore, we construct the Dirac conjugate of spinor field as</p>
+<div class="math">
+\[\bar{\psi} = \psi^\dagger\gamma^0\]</div>
+<p>and construct the Lagrangian as</p>
+<div class="math">
+\[\mathcal{L} = -\bar{\psi}(\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi\]</div>
+<p>Now you can verify that this Lagrangian is Lorentz invariant if notice</p>
+<div class="math">
+\[\gamma^0\cdot\gamma^0 = I,\ \ \ \gamma^0 S^\dagger\gamma^0 = S^{-1}\]</div>
+<p>The theory of spinor field is somehow abundant, and this section only covers very basic conclusion about it. Therefore, you are suggested to refer to other textbooks about the Quantum Field Theory or spinor geometry for further information about spinor field theory.</p>
+</div>
+<div class="section" id="maxwells-equations">
+<h1>Maxwell’s Equations<a class="headerlink" href="#maxwells-equations" title="Permalink to this headline">¶</a></h1>
+<p>This is only a summary of the Maxwell’s equations under the language of Differential Geometry. There is no intention to introduce in detail — you are expected to cover them in your Electrodynamics courses.</p>
+<p>First, we have the electromagnetic tensor <span class="math">\(F_{\mu\nu}\)</span> satisfying</p>
+<div class="math">
+\[E_i = F_{0i}, \ \ \ \ \ B_i = -\frac{1}{2}\varepsilon_{ijk}F^{jk}\]</div>
+<p>The Maxwell’s equations can be expressed using <span class="math">\(F_{\mu\nu}\)</span> as</p>
+<div class="math">
+\[\begin{split}\partial^\mu &amp;F_{\mu\nu} = 0\\
+\partial_{[\mu} &amp;F_{\rho\sigma]} = 0\end{split}\]</div>
+<p>You can verify that the above equations indeed imply the ordinary form of Maxwell’s equation. The second equality should imply that the tensor <span class="math">\(F_{\mu\nu}\)</span> can be expressed as</p>
+<div class="math">
+\[F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu\]</div>
+<p>where <span class="math">\(A_\mu\)</span> is a “vector” (dual vector or 1-form to be precise). It is easily identified that <span class="math">\(A_\mu\)</span> represents the electromagnetic potential. With the above construction, the second equation of the Maxwell’s equations automatically holds, and hence the Maxwell’s equations is reduced to</p>
+<div class="math">
+\[\partial^\mu F_{\mu\nu} = 0\]</div>
+<p>It is easily verified that the Lagrangian of the electromagnetic field is</p>
+<div class="math">
+\[\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}\]</div>
+<p>If you find any of the above content unfamiliar, please find and review a textbook about Electrodynamics, and make sure you have fully understood all the contents before proceeding.</p>
 </div>
 <div class="section" id="quantum-mechanics">
 <h1>Quantum Mechanics<a class="headerlink" href="#quantum-mechanics" title="Permalink to this headline">¶</a></h1>
@@ -715,14 +782,14 @@ y_n\\
 <p>Before we step into the path integral formalism, we give an overall sketch as well as some <em>rules</em> of our construction here. Beware, that the <em>rules</em> are not necessarily accepted or respected by all the academics.</p>
 <div class="section" id="sketch-of-theoretical-construction">
 <h2>Sketch of Theoretical Construction<a class="headerlink" href="#sketch-of-theoretical-construction" title="Permalink to this headline">¶</a></h2>
-<p>The construction will start from analyzing the general path integral of scalar field from some <em>stable state</em> to itself (usually it is <em>vacuum state</em> <span class="math">\(|0\rangle\)</span>)</p>
+<p>The construction will start from analyzing the general path integral of scalar field from some <em>stable state</em> to itself (usually it is <em>vacuum state</em> <span class="math">\(|\Omega\rangle\)</span>)</p>
 <div class="math">
-\[\langle 0|0\rangle = N\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi[\partial^2-m^2]\varphi\} = 1\]</div>
+\[\langle \Omega|\Omega\rangle = N\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi[\partial^2-m^2]\varphi\} = 1\]</div>
 <p>where <span class="math">\(N\)</span> is a normalization factor. The last equality comes from the property <em>stable</em>, which means it will not change under the situation of free field, which will determine the normalization factor. Now, we construct a quantity called <strong>generating functional</strong> by adding an arbitrary <em>potential</em> <span class="math">\(J\)</span></p>
 <blockquote>
 <div><p><strong>Stage 1</strong></p>
 <div class="math">
-\[\begin{split}W_0[J] = \langle 0|0\rangle |_J &amp;= N\int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2-m^2]\varphi - J\varphi\}\\
+\[\begin{split}W_0[J] = \langle\Omega|\Omega\rangle |_J &amp;= N\int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2-m^2]\varphi - J\varphi\}\\
 &amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_FJ\}\end{split}\]</div>
 </div></blockquote>
 <p>The above generating functional includes merely the scalar field without any other <em>actual</em> interaction terms (the <span class="math">\(J\)</span> term is an auxiliary term with no physical significance). If the Lagrangian includes the interaction terms <span class="math">\(\mathcal{L}_{\text{int}}\)</span>, the generating functional will be</p>
@@ -743,9 +810,198 @@ y_n\\
 </div>
 <div class="section" id="some-rules">
 <h2>Some Rules<a class="headerlink" href="#some-rules" title="Permalink to this headline">¶</a></h2>
-<p>It has been <a class="reference external" href="./intro_why.html">stated before</a> that we will not introduce any contents from canonical quantization into our construction of the path integral formalism. Therefore, actually we are not able to have concepts like <em>state</em> which is widely used in quantum theory. In this case, we <em>have to</em> use some configuration of fields as <em>state</em> (like asymptotic field). But this would imply that there must be some subtle identical relationship between field and state, which somehow rejected by canonical quantum field theory.</p>
+<p>It has been <a class="reference external" href="./intro_why.html">stated before</a> that we will not introduce any contents from canonical quantization into our construction of the path integral formalism. Therefore, actually we are not able to have concepts like <em>state</em> which is widely used in quantum theory. In this case, we <em>have to</em> use some configuration of fields as <em>state</em> (like asymptotic field). But this would imply that there must be some subtle identical relationship between field and state, which is somehow rejected by canonical quantum field theory.</p>
 <p>As a matter of fact, the problem caused by the lack of field operator and successive state only arises when constructing S-matrix, which means that stage 1 and stage 2 will not be affected anyway. In our philosophy, the path integral formalism, as a parallel companion of canonical quantization, should be <em>free</em> from the concepts in canonical form. Therefore, we will try our best not to invoke concepts like field operator and the corresponding state, or at least push them as <em>later</em> as possible.</p>
 </div>
+</div>
+<div class="section" id="free-scalar-field-theory">
+<h1>Free Scalar Field Theory<a class="headerlink" href="#free-scalar-field-theory" title="Permalink to this headline">¶</a></h1>
+<p>This section will introduce the free scalar field theory, i.e. stage 1 mentioned in the sketch. Our main goal here is to derive the generating functional of the free scalar field.</p>
+<p>First we need a vacuum state as the initial and final state &#8212; just like the start and end point in path integral of Quantum Mechanics. However, the vacuum is not so straight-forward in Quantum Field Theory. We hereby <em>define</em> the vacuum state <span class="math">\(|\Omega\rangle\)</span> as the configuration of field with the lowest possible energy, which is the general starting point of the term <em>vacuum</em>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In canonical quantization, there is an annihilation operator <span class="math">\(a\)</span> and thus the vacuum state can be defined as <span class="math">\(a|\Omega\rangle=0\)</span>. However, now we do not have any operators. Therefore, we <em>define</em> the state using the property it needs to satisfy.</p>
+</div>
+<p>Now, we express the probability of the free field from vacuum state to vacuum state in terms of path integral. The probability should be unity since there are no interactions. Therefore</p>
+<div class="math">
+\[W = \langle\Omega|\Omega\rangle = \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi\} = 1\]</div>
+<p>where we now know the normalization factor <span class="math">\(\mathcal{N}\)</span>. We hope that you still remember the Lagrangian for scalar field (If you don&#8217;t, go and review <a class="reference external" href="./clstheo_scalar.html">this</a>). The scalar field is real here, and it won&#8217;t be miserable to generalize this into complex situation.</p>
+<p>This formulation does not tell us anything except for a normalization factor, since it is trivial &#8212; from vacuum to vacuum with no interaction. Now, we want to add some interactions. To achieve this, we introduce an auxiliary potential <span class="math">\(J\)</span> and the Lagrangian becomes</p>
+<div class="math">
+\[\mathcal{L} = -\varphi(\partial^2\!\!-\!m^2)\varphi + J\varphi\]</div>
+<p>and the path integral becomes</p>
+<div class="math">
+\[W[J] = \langle\Omega|\Omega\rangle|_J = \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi-2J\varphi\}\]</div>
+<p>Now, we perform the path integral. As what we have done in Quantum Mechanics, expand the path integral according to the classical path. The classical path <span class="math">\(\varphi_0\)</span> satisfies</p>
+<div class="math">
+\[(\partial^2\!\!-\!m^2)\varphi_0 = J,\ \ \text{i.e.}\ \ \varphi_0 = \int \Delta_F J\]</div>
+<p>where <span class="math">\(\Delta_F\)</span> is the Green&#8217;s function satisfying</p>
+<div class="math">
+\[(\partial^2\!\!-\!m^2)\Delta_F(x;x') = -\delta(x;x')\]</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Please be very careful about the minus sign in the right hand side of the above equation!</p>
+</div>
+<p>Consequently, we perform translation <span class="math">\(\varphi\mapsto\varphi + \varphi_0\)</span>. In path integral, a definite path <span class="math">\(\varphi_0\)</span> acts just like a constant (expand the path integral according to the definition and you will see why). A brief calculation will give</p>
+<div class="math">
+\[\begin{split}W[J] &amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\cdot \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi\}\\
+&amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\end{split}\]</div>
+<p>Since this is the case of free field, we rewrite the conclusion as</p>
+<div class="math">
+\[W_0[J] = \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\]</div>
+<p>which is the desired result as it is in the sketch.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In the following context, the generating functional is always assumed to be normalised, and we will neglect the normalization factor.</p>
+</div>
+</div>
+<div class="section" id="two-significant-identities">
+<h1>Two Significant Identities<a class="headerlink" href="#two-significant-identities" title="Permalink to this headline">¶</a></h1>
+<p>In this section, you are going to meet two significant identities which play central roles in the following constructions. These identities are</p>
+<div class="math">
+\[\begin{split}\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \int\mathcal{D}\varphi\ \varphi(x)\exp\{\mathrm{i}S\}\\
+(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = J(x)W_0[J]\end{split}\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To understand this section, you will find <a class="reference external" href="./ms_func_deriv.html">Functional Derivative</a> helpful.</p>
+</div>
+<div class="section" id="first-identity">
+<h2>First Identity<a class="headerlink" href="#first-identity" title="Permalink to this headline">¶</a></h2>
+<p>The first identity can be verified through a calculation of functional derivative of <span class="math">\(W_0[J]\)</span> with respect to <span class="math">\(J(x)\)</span>. Specifically, we have</p>
+<div class="math">
+\[\begin{split}\frac{\delta}{\delta J(x)}W_0[J] &amp;= \int\mathcal{D}\varphi\frac{\delta}{\delta J(x)}\left[\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi + \mathrm{i}\int J\varphi\}\right]\\
+&amp;= \int\mathcal{D}\varphi\frac{\delta}{\delta J(x)}\left[\mathrm{i}\int J\varphi\}\right]\exp\{\mathrm{i}S\} = \int\mathcal{D}\varphi\ \mathrm{i}\varphi(x)\exp\{\mathrm{i}S\}\end{split}\]</div>
+<p>The right hand side of the identity is sometimes interpreted as the <em>average value</em> of the field <span class="math">\(\varphi(x)\)</span> due to its formal similarities with the definition of average value in statistical mechanics.</p>
+</div>
+<div class="section" id="second-identity">
+<h2>Second Identity<a class="headerlink" href="#second-identity" title="Permalink to this headline">¶</a></h2>
+<p>The second identity can be gained through a direct calculation. Specifically, there is</p>
+<div class="math">
+\[\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}\exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\} = -\left[\int\Delta_F J(x)\right]\ W_0[J]\]</div>
+<p>Therefore</p>
+<div class="math">
+\[(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = -\left[\int(\partial^2\!\!-\!m^2)\Delta_F J(x)\right]\ W_0[J] = J(x)W_0[J]\]</div>
+<p>You are strongly suggested to remember the two identities since they are the very foundations of the following constructions of interaction theory and S-matrix.</p>
+</div>
+</div>
+<div class="section" id="scalar-field-theory-with-interaction">
+<h1>Scalar Field Theory with Interaction<a class="headerlink" href="#scalar-field-theory-with-interaction" title="Permalink to this headline">¶</a></h1>
+<p>This section introduces the self-interaction theory of scalar field. As usual, the interaction is implemented as an additional interaction term <span class="math">\(\mathcal{L}_{\text{int}}\)</span> in Lagrangian. The interaction discussed here is assumed to satisfy the following condition</p>
+<ul class="simple">
+<li>It is the self-interaction, i.e. <span class="math">\(\mathcal{L}_{\text{int}} = \mathcal{L}_{\text{int}}[\varphi]\)</span></li>
+<li>It has the form of polynomials.</li>
+</ul>
+<p>Similarly, the construction starts from the generating functional. The generating functional of an interaction theory is</p>
+<div class="math">
+\[\begin{split}W[J] &amp;= \int\mathcal{D}\varphi\exp\{\mathrm iS\} = \int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\! + \!\mathcal{L}_{\text{int}}[\varphi]\}\\
+&amp;= \int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}[\varphi]\}\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\end{split}\]</div>
+<p>Next, we expand the first exponential (the one with interaction) according to definition</p>
+<div class="math">
+\[W[J] = \int\mathcal{D}\varphi\sum_{n=0}^\infty\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}[\varphi]\}\right]^n\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\]</div>
+<p>Now, recall our <a class="reference external" href="./qft_ids.html">first identity</a></p>
+<div class="math">
+\[\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \int\mathcal{D}\varphi\ \varphi(x)\exp\{\mathrm{i}S\}\]</div>
+<p>Therefore, each <span class="math">\(\varphi(x)\)</span> in <span class="math">\(\mathcal{L}_{\text{int}}[\varphi]\)</span> can be <em>replaced</em> with <span class="math">\(\delta/\mathrm{i}\delta J(x)\)</span>, as long as <span class="math">\(\mathcal{L}_{\text{int}}[\varphi]\)</span> is a pure polynomial of <span class="math">\(\varphi\)</span>. In this case, we can write</p>
+<div class="math">
+\[\begin{split}W[J] = \int\mathcal{D}\varphi\sum_{n=0}^\infty\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\right]^n\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\\
+= \sum_{n=0}^\infty\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\right]^n\int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\end{split}\]</div>
+<p>where expression <span class="math">\(\mathcal{L}_{\text{int}}\!\!\left[\delta/\mathrm{i}\delta J\right]\)</span> represents the the expression where all <span class="math">\(\varphi\)</span> in <span class="math">\(\mathcal{L}_{\text{int}}\)</span> is replaced with <span class="math">\(\delta/\mathrm{i}\delta J(x)\)</span>. The terms after the replacement no longer contain <span class="math">\(\varphi\)</span> and thus can be moved out of the path integral. And we find now that the path integral gives the generating functional <span class="math">\(W_0[J]\)</span> of free field. Transform back into the exponential form and we get</p>
+<div class="math">
+\[W[J] = \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\} W_0[J]\]</div>
+<p>which is the result of second stage of our construction. The interaction of other kinds of fields (except for vector field in gauge theories) can be performed through similar manner.</p>
+</div>
+<div class="section" id="scattering-matrix">
+<h1>Scattering Matrix<a class="headerlink" href="#scattering-matrix" title="Permalink to this headline">¶</a></h1>
+<p>Scattering matrix, or <strong>S-matrix</strong>, is one of the major and core concept in both Particle and High Energy Physics &#8212; since this is the most straight-forward way to verify the form of interaction.</p>
+<p>The S-matrix is defined as an <em>infinite dimensional matrix</em> with each matrix element <span class="math">\(S_{\beta\alpha}\)</span> being the probability of the state evolving from <span class="math">\(\alpha\)</span> to <span class="math">\(\beta\)</span>, i.e.</p>
+<div class="math">
+\[S_{\beta\alpha} = \langle\beta|\alpha\rangle\]</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">As a matter of fact, the S-matrix is not a typical &#8220;matrix&#8221;. It is just a quantity with each one of them can be labelled by two indices. Also, in canonical quantization, S-matrix is actually an operator which, if it is finite dimensional, can be expressed as a matrix (but in Quantum Field Theory it is not). Therefore, when you see some concept which is a <em>matrix</em>, it might not mean to be a typical matrix, but some operator or quantity of two indices.</p>
+</div>
+<p>In Quantum Field Theory (as well as Particle Physics), we are especially interested in the following situation</p>
+<blockquote>
+<div>Two or more beams of free particle are generated and targeted at some point, interact with each other at the limited region near the point, then leave the interaction region, become free particles again and finally detected by the particle detectors.</div></blockquote>
+<p>The key point in the above picture is that the interaction only happens at a restricted region, and the particles are free outside the region. This approximation can be pretty accurate if the region is selected wisely so that the particles are separated by a considerably long distance. And it is prevalently implemented in many particle colliders.</p>
+<p>The above picture suggests us write the field in the path integral as the addition of an &#8220;interact field&#8221; <span class="math">\(\varphi\)</span> and a free asymptotic field <span class="math">\(\varphi_{\text{as}}\)</span>, i.e. perform the following variable translation in the path integral</p>
+<div class="math">
+\[\varphi \mapsto \varphi + \varphi_{as}\]</div>
+<p>where the asymptotic field <span class="math">\(\varphi_{\text{as}}\)</span> satisfies</p>
+<div class="math">
+\[(\partial^2\!\!-\!m^2)\varphi_{\text{as}} = 0\]</div>
+<p>Therefore, the S-matrix with auxiliary field <span class="math">\(J\)</span> supplied is</p>
+<div class="math">
+\[S_0[J] = \int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2\!\!-\!m^2]\varphi - J\varphi - J\varphi_{\text{as}}\} = \exp\{\mathrm{i}\varphi_{\text{as}}J\}W_0[J]\]</div>
+<p>Similar formula also holds for situation with interaction. Then, just as what we have done in the last section, expand the exponential as Taylor series</p>
+<div class="math">
+\[S[J] = \sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm{i}\varphi_{\text{as}}J\right]^nW[J]\]</div>
+<p>Recall we have our <a class="reference external" href="./qft_ids.html">second identity</a></p>
+<div class="math">
+\[(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = J(x)W_0[J]\]</div>
+<p>This inspires us that we can replace every <span class="math">\(J\)</span> in the Taylor series with <span class="math">\((\partial^2\!\!-\!m^2)\delta/\mathrm{i}\delta J\)</span>. Hence</p>
+<div class="math">
+\[S[J] = \sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]^nW[J] = \exp\{\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\}W[J]\]</div>
+<p>To obtain the S-matrix, simply set the auxiliary field <span class="math">\(J\)</span> as zero</p>
+<div class="math">
+\[S = \left.\exp\{\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\}W[J]\right|_{J=0}\]</div>
+<p>This is the so-called <strong>LSZ reduction formula</strong>, which gives the S-matrix with inbound and outbound state designated by asymptotic field <span class="math">\(\varphi_{\text{as}}\)</span> from the generating functional.</p>
+</div>
+<div class="section" id="correlation-function">
+<h1>Correlation Function<a class="headerlink" href="#correlation-function" title="Permalink to this headline">¶</a></h1>
+<p>In both stage 2 and stage 3, we will encounter the following functional derivative</p>
+<div class="math">
+\[\tau(x_1,\ldots,x_n) := \left.\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_1)}\cdots\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_n)}W_0[J]\right|_{J=0}\]</div>
+<p>Thus, we give this quantity a name <strong>correlation function</strong>, or <span class="math">\(n\)</span><strong>-point (Green&#8217;s) function</strong>. The origin of this name comes from the similarity of its formulation in canonical quantization and hence this name may look strange here.</p>
+<p>It is not so straight-forward about the <span class="math">\(n\)</span>-point function, and thus we hope to reduce the formula. To do this, let us first evaluate the 2-point function</p>
+<div class="math">
+\[\begin{split}\tau(x_1,x_2) &amp;= \left.\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_1)}\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_2)}\exp\{-\frac{1}{2}\mathrm i\!\!\int\!\! J\Delta_FJ\}\right|_{J=0} \\
+&amp;= \left.\mathrm{i}\frac{\delta}{\delta J(x_1)}\int\!\!\Delta_F(x_2;)J\exp\{-\frac{1}{2}\mathrm i\!\!\int \!\!J\Delta_FJ\}\right|_{J=0}\\
+&amp;=\left.\mathrm i\Delta_F(x_1;x_2)W_0[J]\right|_{J=0} + \left.(\int\Delta_F J)^2W_0[J]\right|_{J=0} = \mathrm i\Delta_F(x_1;x_2)\end{split}\]</div>
+<p>It is nothing other than <span class="math">\(\mathrm{i}\)</span> times the ordinary Green&#8217;s function. Next, 3-point function</p>
+<div class="math">
+\[\tau(x_1,x_2,x_3)\sim \left.\Delta_F\int\Delta_FJ\right|_{J=0} + \left.(\int\Delta_FJ)^3\right|_{J=0} = 0\]</div>
+<p>And 4-point function</p>
+<div class="math">
+\[\begin{split}\tau(x_1,x_2.x_3,x_4) &amp;= \mathrm{i}\Delta_F(x_1;x_2)\mathrm{i}\Delta_F(x_3;x_4)\\
+&amp;+ \mathrm{i}\Delta_F(x_1;x_3)\mathrm{i}\Delta_F(x_2;x_4) \\
+&amp;+ \mathrm{i}\Delta_F(x_2;x_3)\mathrm{i}\Delta_F(x_1;x_4)\\
+&amp;= (1\sim2)(3\sim4) + (1\sim3)(2\sim4) + (2\sim3)(1\sim4)\end{split}\]</div>
+<p>where we have used <span class="math">\((1\sim2)\)</span> to represent <span class="math">\(\tau(x_1,x_2)\)</span>. Therefore, we can see the regularity &#8212; the <span class="math">\(n\)</span>-point function is either <span class="math">\(0\)</span> or some combination of two point functions. Specifically, we have by induction</p>
+<ul class="simple">
+<li>The odd-point function is <span class="math">\(0\)</span>.</li>
+<li>The even-point function is</li>
+</ul>
+<div class="math">
+\[\tau(x_1,\ldots, x_{2n}) = \sum_{\text{perms}}(p_1\sim p_2)\ldots(p_{2n-1}\sim p_{2n})\]</div>
+<p>which means the summation over all the permutations <span class="math">\(p\)</span>. This is the so-called <strong>Wick&#8217;s Theorem</strong> &#8212; transforming the <span class="math">\(n\)</span>-point function into the combination of 2-point function.</p>
+<p>You are suggested to show yourself that the S-matrix can be written using correlation function as</p>
+<div class="math">
+\[S = \sum_{n=0}^\infty\frac{\mathrm i^n}{n!}\prod_x\varphi(x)\prod_x(\partial^2\!\!-\!m^2)\tau(x_1,\ldots,x_n)\]</div>
+<p>where <span class="math">\(x\)</span> takes over <span class="math">\(x_1,\ldots,x_n\)</span>. This formula is the so-called <strong>perturbative expansion</strong> of the S-matrix.</p>
+</div>
+<div class="section" id="first-glance-at-infinities">
+<h1>First Glance at Infinities<a class="headerlink" href="#first-glance-at-infinities" title="Permalink to this headline">¶</a></h1>
+<p>This section will show you how the infinities emerge in Quantum Field Theory through a resonated toy of physicists &#8212; <span class="math">\(\varphi^4\)</span> theory. The interaction term of <span class="math">\(\varphi^4\)</span> theory is</p>
+<div class="math">
+\[\mathcal{L}_{\text{int}} = -\frac{1}{4!}g\varphi^4\]</div>
+<p>Recall that the generating functional of interaction theory is</p>
+<div class="math">
+\[W[J] = \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\} W_0[J]\]</div>
+<p>Suppose the interaction is weak enough for us to neglect all terms of order higher than one. Therefore, the generating functional up to the first order is</p>
+<div class="math">
+\[W_\uparrow^{(1)}[J] = (1 - \mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\})W_0[J] = (1 - \frac{\mathrm{i}g}{4!}\int\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]^4\})W_0[J]\]</div>
+<p>Notice that in this case the four functional derivatives are at the same point <span class="math">\(x\)</span>. Therefore, a calculation similar to the previous section will show</p>
+<div class="math">
+\[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}W_0[J] = \tau(x,x) =  \mathrm i\Delta(x;x)\ \ ???\]</div>
+<p>We see that the right hand side contains the value of Green&#8217;s function at <em>zero</em>, which is clearly infinity. With higher order terms which contains even more derivatives, there might be even more infinities.</p>
+<p>To deal with this infinities, we use a mathematical technique called <strong>renormalization</strong>. Looking back to where the infinities come and we find</p>
+<div class="math">
+\[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}(-\int\Delta_F(x;y)J(y)\mathrm{d}y)\]</div>
+<p>makes no sense, since the functional derivative requires that <span class="math">\(\Delta_F(x;y)\)</span> be a function, but it is essentially a distribution (or generalized function). But things are not so bad. The Green&#8217;s function is a distribution which usually has a function correspondence, and for most of the physical equations that we care, it has.</p>
+<p>Nonetheless, the function corresponding to <span class="math">\(\Delta(x;y)\)</span> <strong>has no definition</strong> on <span class="math">\(x=y\)</span>. Therefore, the above expression hopes to get something <strong>undefined</strong>. This makes things much easier. If it is undefined, the most straight-forward way is to place an additional definition.</p>
+<p>The renormalization procedure does exactly this stuff. Usually, we will impose some conditions (such as define the <em>physical mass</em> as the square-root of minus zero-point of two-point convex function) so that the value <span class="math">\(\Delta(x;x)\)</span> can be defined.</p>
+<p>You are not expected to understand the harangue in the bracket in previous paragraph. The renormalization is a big topic and we will open a new chapter later for a systematically discussion.</p>
 </div>
 <div class="section" id="function-and-image-element">
 <h1>Function and Image Element<a class="headerlink" href="#function-and-image-element" title="Permalink to this headline">¶</a></h1>
@@ -759,6 +1015,18 @@ y_n\\
 \[f_x(y)=f(x,y)\]</div>
 <p>Although there is a equality sign in the equation, there are essential difference between <span class="math">\(f_x\)</span> and <span class="math">\(f\)</span> &#8212; the former is a family of functions of <span class="math">\(y\)</span> (labelled by <span class="math">\(x\)</span>) and the latter is a function of two variable <span class="math">\(x\)</span> and <span class="math">\(y\)</span>. The equality essentially means solely that the <em>value</em> is the same.</p>
 </div></blockquote>
+</div>
+<div class="section" id="functional-derivative">
+<h1>Functional Derivative<a class="headerlink" href="#functional-derivative" title="Permalink to this headline">¶</a></h1>
+<p>The functional derivative we talk about here is not the same as the variation used widely in Lagrangian formalism &#8212; although they look so much alike formally. To make sure you will not mistake them, we first illustrate what is the variation of a functional.</p>
+<p>The variation of a functional <span class="math">\(F[\phi]\)</span> whose domain is a Banach space <span class="math">\(B\)</span> (a linear space where you can talk about the &#8220;length&#8221; &#8212; norm of its element) is usually implemented as <strong>Gâteaux derivative</strong></p>
+<div class="math">
+\[\frac{\delta F[\phi]}{\delta\phi} := (\forall \eta) :: \lim_{\varepsilon\rightarrow 0}\frac{F[\phi+\varepsilon\eta]-F[\phi]}{\varepsilon}\]</div>
+<p>which very much resembles the directional derivative in ordinary Calculus. Please notice that the <span class="math">\(\eta\)</span> here is just an arbitrary element of the Banach space, and in its application it is any physical field.</p>
+<p>The variation is the &#8220;derivative&#8221; of the argument <span class="math">\(\phi\)</span> itself, without any designation of it value at some point <span class="math">\(\phi(x)\)</span>; while functional derivative is defined differently. The functional derivative of <span class="math">\(F[\phi(x)]\)</span> with respect to <strong>value</strong> <span class="math">\(\phi(y)\)</span> is</p>
+<div class="math">
+\[\frac{\delta F[\phi(x)]}{\delta\phi(y)} = \lim_{\varepsilon\rightarrow 0}\frac{F[\phi(x)+\varepsilon\delta(x;y)]-F[\phi(x)]}{\varepsilon}\]</div>
+<p>Therefore, you shall now see the differences between the variation and the functional derivative &#8212; the variation performs &#8220;derivative&#8221; on <span class="math">\(\phi\)</span> itself, while the functional derivative does so on the value <span class="math">\(\phi(y)\)</span>. And thus a delta function has to be invoked to deal with the different points <span class="math">\(x\)</span> and <span class="math">\(y\)</span>. You will see in chapter Quantum Theory that it is this delta function which brings the infinities into the S-matrix.</p>
 </div>
 <div class="section" id="geometric-unit-system">
 <h1>Geometric Unit System<a class="headerlink" href="#geometric-unit-system" title="Permalink to this headline">¶</a></h1>

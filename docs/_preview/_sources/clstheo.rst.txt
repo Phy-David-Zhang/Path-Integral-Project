@@ -9,3 +9,5 @@ Classical Theory
 	clstheo_sym_field
 	repr_lg
 	field
+	dirac
+	maxwell
