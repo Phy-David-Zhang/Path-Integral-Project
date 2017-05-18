@@ -5,3 +5,4 @@ Math Support
 	:maxdepth: 1
 	
 	ms_func_img
+	ms_func_deriv
