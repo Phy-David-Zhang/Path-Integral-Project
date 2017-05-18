@@ -6,12 +6,12 @@ Before we step into the path integral formalism, we give an overall sketch as we
 Sketch of Theoretical Construction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The construction will start from analyzing the general path integral of scalar field from some *stable state* to itself (usually it is *vacuum state* :math:`|0\rangle`)
+The construction will start from analyzing the general path integral of scalar field from some *stable state* to itself (usually it is *vacuum state* :math:`|\Omega\rangle`)
 
 .. math::
 
 
-   \langle 0|0\rangle = N\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi[\partial^2-m^2]\varphi\} = 1
+   \langle \Omega|\Omega\rangle = N\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi[\partial^2-m^2]\varphi\} = 1
 
 where :math:`N` is a normalization factor. The last equality comes from the property *stable*, which means it will not change under the situation of free field, which will determine the normalization factor. Now, we construct a quantity called **generating functional** by adding an arbitrary *potential* :math:`J`
 
@@ -20,7 +20,7 @@ where :math:`N` is a normalization factor. The last equality comes from the prop
     .. math::
 
 
-       W_0[J] = \langle 0|0\rangle |_J &= N\int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2-m^2]\varphi - J\varphi\}\\
+       W_0[J] = \langle\Omega|\Omega\rangle |_J &= N\int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2-m^2]\varphi - J\varphi\}\\
        &= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_FJ\}
 
 The above generating functional includes merely the scalar field without any other *actual* interaction terms (the :math:`J` term is an auxiliary term with no physical significance). If the Lagrangian includes the interaction terms :math:`\mathcal{L}_{\text{int}}`, the generating functional will be
@@ -49,7 +49,7 @@ The theoretical construction will end at S-matrix. For a connection with the exp
 Some Rules
 ~~~~~~~~~~
 
-It has been `stated before <./intro_why.html>`__ that we will not introduce any contents from canonical quantization into our construction of the path integral formalism. Therefore, actually we are not able to have concepts like *state* which is widely used in quantum theory. In this case, we *have to* use some configuration of fields as *state* (like asymptotic field). But this would imply that there must be some subtle identical relationship between field and state, which somehow rejected by canonical quantum field theory.
+It has been `stated before <./intro_why.html>`__ that we will not introduce any contents from canonical quantization into our construction of the path integral formalism. Therefore, actually we are not able to have concepts like *state* which is widely used in quantum theory. In this case, we *have to* use some configuration of fields as *state* (like asymptotic field). But this would imply that there must be some subtle identical relationship between field and state, which is somehow rejected by canonical quantum field theory.
 
 As a matter of fact, the problem caused by the lack of field operator and successive state only arises when constructing S-matrix, which means that stage 1 and stage 2 will not be affected anyway. In our philosophy, the path integral formalism, as a parallel companion of canonical quantization, should be *free* from the concepts in canonical form. Therefore, we will try our best not to invoke concepts like field operator and the corresponding state, or at least push them as *later* as possible.
 

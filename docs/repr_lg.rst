@@ -61,7 +61,7 @@ Now that we have the generators, the infinitesimal transformation will have the 
 
    1 + \eta_x\vec K_x + \eta_y \vec K_y + ...
 
-To simplify the formulation, we introduce a anti-symmetric lists of matrix :math:`L_{\mu\nu}` as
+To simplify the formulation, we introduce a anti-symmetric lists of matrix :math:`L_{ab}` as
 
 .. math::
 
@@ -69,43 +69,43 @@ To simplify the formulation, we introduce a anti-symmetric lists of matrix :math
    L_{01} &= -L_{10} = \mathrm{i}\vec K_x,\ \ \ L_{02} = -L_{20} = \mathrm{i}\vec K_y,\ \ \ L_{03} = -L_{30} = \mathrm{i}\vec K_z\\
    L_{12} &= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\vec J_x,\ \ \ L_{13} = -L_{31} = \mathrm{i}\vec J_y\\
 
-.. note:: Anti-symmetric means :math:`L_{\mu\nu} = -L_{\nu\mu}`, which implies the diagonal elements :math:`L_{ii} = 0`.
+.. note:: Anti-symmetric means :math:`L_{ab} = -L_{ba}`, which implies the diagonal elements :math:`L_{ii} = 0`.
 
 Therefore, the infinitesimal transformation is simplified to
 
 .. math::
 
 
-   1 - \frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}
+   1 - \frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}
 
-where :math:`\epsilon^{\mu\nu}` is the corresponding parameters (:math:`\epsilon^{01} = \eta_x` for example), and it is also anti-symmetric. The :math:`1/2` is necessary because we need to eliminate the factor :math:`2` in :math:`\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}`.
+where :math:`\epsilon^{ab}` is the corresponding parameters (:math:`\epsilon^{01} = \eta_x` for example), and it is also anti-symmetric. The :math:`1/2` is necessary because we need to eliminate the factor :math:`2` in :math:`\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}`.
 
 Consequently, all Lorentz transformation can be written under the form
 
 .. math::
 
 
-   \varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\}
+   \varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\}
 
 This formula is called the **vector representation** of the Lorentz Group. This is the default representation for the tetrad.
 
 .. note:: Rigorously speaking, the representation should be a map from the group element to the automorphism of a vector space. Thus, the above equation should be viewed as a map to map the group element (LHS) to an automorphism (RHS).
 
-As we know, the generators :math:`L_{\mu\nu}` can be viewed as a "basis" of the Lorentz group. However, this is not the only "basis". Next, we are going to find out another one.
+As we know, the generators :math:`L_{ab}` can be viewed as a "basis" of the Lorentz group. However, this is not the only "basis". Next, we are going to find out another one.
 
-Before continuing, let's first define four matrices :math:`\gamma_\mu, \mu=0,1,2,3` that satisfy
-
-.. math::
-
-
-   \{\gamma_\mu, \gamma_\nu\} = \gamma_\mu\gamma_\nu + \gamma_\nu\gamma_\mu = -2\eta_{\mu\nu}
-
-where :math:`\eta_{\mu\nu}` is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group
+Before continuing, let's first define four matrices :math:`\gamma_a, a=0,1,2,3` that satisfy
 
 .. math::
 
 
-   S_{\mu\nu} = \frac{1}{4}\mathrm{i}[\gamma_\mu, \gamma_\nu]
+   \{\gamma_a, \gamma_b\} = \gamma_a\gamma_b + \gamma_b\gamma_a = -2\eta_{ab}
+
+where :math:`\eta_{ab}` is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group
+
+.. math::
+
+
+   S_{ab} = \frac{1}{4}\mathrm{i}[\gamma_a, \gamma_b]
 
 .. note:: Why? Well, we are not able to explain now since it needs Lie algebra theory. Go and find a reference about Lie algebra if you really wonder why.
 
@@ -114,7 +114,7 @@ Therefore, we can express the Lorentz transformation as
 .. math::
 
 
-   \varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}\}
+   \varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}\}
 
 This formulation is called **spinor representation** of the Lorentz group.
 

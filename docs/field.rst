@@ -54,7 +54,7 @@ The vector field is the field whose field representation is vector representatio
 .. math::
 
 
-   \varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^jA_j
+   \varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^jA_j
 
 .. note:: To understand the above equation, you need `Basic Group Theory <./bg_liegp.html>`__ and `Representation of Lorentz Group <./repr_lg.html>`__.
 
@@ -65,14 +65,14 @@ Next, remember that we have said the transformation of the basis follows the tri
 .. math::
 
 
-   \varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^je_j
+   \varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^je_j
 
 Therefore we have
 
 .. math::
 
 
-   A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k = A^j\cdot e_j
+   A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k = A^j\cdot e_j
 
 Now you can see why we write a dot :math:`\cdot` between the components and the basis --- under vector representation (where some triviality applies), the :math:`\cdot` in the above derivation can be "viewed" as the matrix product. However, this "view" will fail in some other non-trivial situations --- as described any minute next.
 
@@ -84,23 +84,23 @@ The spinor field is the field whose field representation is spinor representatio
 .. math::
 
 
-   \varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\}
+   \varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\}
 
 Just like what we have done in the previous section, write down explicitly
 
 .. math::
 
 
-   A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}{\}_j}^k e_k =  A^j\cdot e_j ???
+   A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k =  A^j\cdot e_j ???
 
-We see that the parameters :math:`\epsilon^{\mu\nu}` are the same in the two sides of “\ :math:`\cdot`\ ”, but the "basis" is different. Thus, if we still view :math:`\cdot` as the matrix product, the equality will no longer hold.
+We see that the parameters :math:`\epsilon^{ab}` are the same in the two sides of “\ :math:`\cdot`\ ”, but the "basis" is different. Thus, if we still view :math:`\cdot` as the matrix product, the equality will no longer hold.
 
 Hence, we need a new definition in this case, which means under the new product, there is
 
 .. math::
 
 
-   \exp\{\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}S_{\mu\nu}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{\mu\nu}L_{\mu\nu}\} \rightarrow \text{identity matrix}
+   \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\} \rightarrow \text{identity matrix}
 
 In Fibre Bundle theory, we achieve this by introducing an equivalence class. Yes, it looks like that we are "brute-forcely" identify the the above result as an identity matrix. But as a matter of fact, there is no preliminary intentions to make :math:`\cdot` here as a product --- it just looks like that in vector field. In Fibre Bundle theory, fields of all kinds are described universally using the equivalence class.
 
