@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.4)  17 MAY 2017 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.4)  18 MAY 2017 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1171,40 +1171,49 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 485.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [11] [12
+)
+
+LaTeX Warning: Hyper reference `dirac:' on page 11 undefined on input line 505.
+
+
+[11] [12] [13] [14
 
 ]
 Chapter 3.
-[13] [14] [15] [16] [17] [18] [19] [20
+[15] [16] [17] [18] [19] [20] [21] [22
 
 ]
 Chapter 4.
-[21] [22]
-Chapter 5.
-[23
-
-] [24
+[23] [24] [25] [26] [27] [28] [29] [30
 
 ]
+Chapter 5.
+[31] [32]
 Chapter 6.
-[25] [26] [27] [28] [29] [30] (./PathIntegralProject.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1163.
- [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1163.
+[33
+
+] [34] [35] [36] [37] [38] (./PathIntegralProject.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1521.
+ [39]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1521.
 
 (./PathIntegralProject.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1163.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1521.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1521.
 
 Package rerunfilecheck Info: File `PathIntegralProject.out' has not changed.
-(rerunfilecheck)             Checksum: C61CC2D2EAFF9B9BF71FFBCFCE4C441B;4744.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1163.
+(rerunfilecheck)             Checksum: 7487814DB2C2CA147F6B5F45BB298956;6308.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1521.
  ) 
 Here is how much of TeX's memory you used:
- 13784 strings out of 493014
- 191129 string characters out of 6133352
- 288029 words of memory out of 5000000
- 16930 multiletter control sequences out of 15000+600000
+ 13833 strings out of 493014
+ 191948 string characters out of 6133352
+ 291042 words of memory out of 5000000
+ 16960 multiletter control sequences out of 15000+600000
  48944 words of font info for 63 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  37i,23n,45p,735b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1225,10 +1234,10 @@ f-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on PathIntegralProject.pdf (35 pages, 271661 bytes).
+Output written on PathIntegralProject.pdf (43 pages, 302754 bytes).
 PDF statistics:
- 411 PDF objects out of 1000 (max. 8388607)
- 349 compressed objects within 4 object streams
- 95 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 499 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 114 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 
