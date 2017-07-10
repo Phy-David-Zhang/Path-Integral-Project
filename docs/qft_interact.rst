@@ -19,7 +19,7 @@ Next, we expand the first exponential (the one with interaction) according to de
 .. math::
 
 
-   W[J] = \int\mathcal{D}\varphi\sum_{n=0}^\infty\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}[\varphi]\}\right]^n\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}
+   W[J] = \int\mathcal{D}\varphi\sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}[\varphi]\}\right]^n\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}
 
 Now, recall our `first identity <./qft_ids.html>`__
 
@@ -34,7 +34,7 @@ Therefore, each :math:`\varphi(x)` in :math:`\mathcal{L}_{\text{int}}[\varphi]` 
 
 
    W[J] = \int\mathcal{D}\varphi\sum_{n=0}^\infty\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\right]^n\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\\
-   = \sum_{n=0}^\infty\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\right]^n\int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}
+   = \sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\right]^n\int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}
 
 where expression :math:`\mathcal{L}_{\text{int}}\!\!\left[\delta/\mathrm{i}\delta J\right]` represents the the expression where all :math:`\varphi` in :math:`\mathcal{L}_{\text{int}}` is replaced with :math:`\delta/\mathrm{i}\delta J(x)`. The terms after the replacement no longer contain :math:`\varphi` and thus can be moved out of the path integral. And we find now that the path integral gives the generating functional :math:`W_0[J]` of free field. Transform back into the exponential form and we get
 
