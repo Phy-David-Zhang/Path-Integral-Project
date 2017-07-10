@@ -7,5 +7,6 @@ Introduction to Path Integral Project
 	intro_what
 	intro_history
 	intro_why
+	theo_what
 
 
