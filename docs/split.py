@@ -7,7 +7,8 @@
 intro = {
     "What is Path Integral Project?": "intro_what.rst",
     "A Brief History": "intro_history.rst",
-    "Why Path Integral?": "intro_why.rst"
+    "Why Path Integral?": "intro_why.rst",
+    "Theory of What?": "theo_what.rst"
 }
 
 clstheo = {
