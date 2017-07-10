@@ -5,55 +5,60 @@
 \contentsline {section}{\numberline {1.3}Why Path Integral?}{3}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Canonical Quantisation}{3}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Comments on Delta Function}{4}{subsection.1.3.2}
-\contentsline {chapter}{\numberline {2}Classical Theory}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Classical Theory: Scalar Field}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Solution of Klein-Gordon Equation}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}The Symmetry of Fields}{6}{section.2.3}
-\contentsline {section}{\numberline {2.4}Representation of Lorentz Group}{7}{section.2.4}
-\contentsline {section}{\numberline {2.5}Scalar, Spinor and Vector (Tensor) Field}{9}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Physical Field}{9}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Scalar Field}{10}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Vector Field}{10}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}Spinor Field}{10}{subsection.2.5.4}
-\contentsline {subsection}{\numberline {2.5.5}Tensor Field}{11}{subsection.2.5.5}
-\contentsline {section}{\numberline {2.6}Dirac Equation}{11}{section.2.6}
-\contentsline {section}{\numberline {2.7}Maxwell\IeC {\textquoteright }s Equations}{12}{section.2.7}
-\contentsline {chapter}{\numberline {3}Path Integral}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Quantum Mechanics}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}Path Integral and Propagator}{15}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Schr\IeC {\"o}dinger\IeC {\textquoteright }s Equation and Propagator}{15}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Path Integral}{16}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Evaluation of Path Integral}{18}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Determination of Normalisation Factor}{18}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Expand according to Classical Path}{18}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Evaluation by Quadratic Form}{19}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Path Integral of Fields}{20}{section.3.4}
-\contentsline {chapter}{\numberline {4}Quantum Theory}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Sketch of Path Integral Formalism}{23}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Sketch of Theoretical Construction}{23}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Some Rules}{24}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Free Scalar Field Theory}{24}{section.4.2}
-\contentsline {section}{\numberline {4.3}Two Significant Identities}{25}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}First Identity}{25}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Second Identity}{26}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Scalar Field Theory with Interaction}{26}{section.4.4}
-\contentsline {section}{\numberline {4.5}Scattering Matrix}{27}{section.4.5}
-\contentsline {section}{\numberline {4.6}Correlation Function}{28}{section.4.6}
-\contentsline {section}{\numberline {4.7}First Glance at Infinities}{29}{section.4.7}
-\contentsline {chapter}{\numberline {5}Math Support}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}Function and Image Element}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}Functional Derivative}{31}{section.5.2}
-\contentsline {chapter}{\numberline {6}Background Knowledge}{33}{chapter.6}
-\contentsline {section}{\numberline {6.1}Einstein Summation Convention}{33}{section.6.1}
-\contentsline {section}{\numberline {6.2}Geometric Unit System}{33}{section.6.2}
-\contentsline {section}{\numberline {6.3}Basic Differential Geometry}{34}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Get Started: Motivation}{34}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Prerequisites: Topology}{34}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Set up a Coordinate System}{34}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Spacetime Geometry}{35}{subsection.6.3.4}
-\contentsline {section}{\numberline {6.4}Lagrangian Dynamics of Fields}{35}{section.6.4}
-\contentsline {section}{\numberline {6.5}Basic Linear Algebra}{36}{section.6.5}
-\contentsline {section}{\numberline {6.6}Basics of Lie Group Theory}{37}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Group and Lie Group}{37}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Generator and Exponential Map}{37}{subsection.6.6.2}
-\contentsline {subsection}{\numberline {6.6.3}Special Lie Groups}{38}{subsection.6.6.3}
+\contentsline {section}{\numberline {1.4}Theory of What?}{4}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Quantum Theory of Fields}{4}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Quantum Field Theory}{5}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Relativistic Quantum Mechanics}{5}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}So What?}{6}{subsection.1.4.4}
+\contentsline {chapter}{\numberline {2}Classical Theory}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Classical Theory: Scalar Field}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Solution of Klein-Gordon Equation}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}The Symmetry of Fields}{8}{section.2.3}
+\contentsline {section}{\numberline {2.4}Representation of Lorentz Group}{9}{section.2.4}
+\contentsline {section}{\numberline {2.5}Scalar, Spinor and Vector (Tensor) Field}{11}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Physical Field}{11}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Scalar Field}{12}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Vector Field}{12}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Spinor Field}{12}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Tensor Field}{13}{subsection.2.5.5}
+\contentsline {section}{\numberline {2.6}Dirac Equation}{13}{section.2.6}
+\contentsline {section}{\numberline {2.7}Maxwell\IeC {\textquoteright }s Equations}{14}{section.2.7}
+\contentsline {chapter}{\numberline {3}Path Integral}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Quantum Mechanics}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Path Integral and Propagator}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Schr\IeC {\"o}dinger\IeC {\textquoteright }s Equation and Propagator}{17}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Path Integral}{18}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Evaluation of Path Integral}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Determination of Normalisation Factor}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Expand according to Classical Path}{20}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Evaluation by Quadratic Form}{21}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Path Integral of Fields}{22}{section.3.4}
+\contentsline {chapter}{\numberline {4}Quantum Theory}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Sketch of Path Integral Formalism}{25}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Sketch of Theoretical Construction}{25}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Some Rules}{26}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Free Scalar Field Theory}{26}{section.4.2}
+\contentsline {section}{\numberline {4.3}Two Significant Identities}{27}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}First Identity}{27}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Second Identity}{28}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Scalar Field Theory with Interaction}{28}{section.4.4}
+\contentsline {section}{\numberline {4.5}Scattering Matrix}{29}{section.4.5}
+\contentsline {section}{\numberline {4.6}Correlation Function}{30}{section.4.6}
+\contentsline {section}{\numberline {4.7}First Glance at Infinities}{31}{section.4.7}
+\contentsline {chapter}{\numberline {5}Math Support}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Function and Image Element}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Functional Derivative}{33}{section.5.2}
+\contentsline {chapter}{\numberline {6}Background Knowledge}{35}{chapter.6}
+\contentsline {section}{\numberline {6.1}Einstein Summation Convention}{35}{section.6.1}
+\contentsline {section}{\numberline {6.2}Geometric Unit System}{35}{section.6.2}
+\contentsline {section}{\numberline {6.3}Basic Differential Geometry}{36}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Get Started: Motivation}{36}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Prerequisites: Topology}{36}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Set up a Coordinate System}{36}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Spacetime Geometry}{37}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}Lagrangian Dynamics of Fields}{37}{section.6.4}
+\contentsline {section}{\numberline {6.5}Basic Linear Algebra}{38}{section.6.5}
+\contentsline {section}{\numberline {6.6}Basics of Lie Group Theory}{39}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Group and Lie Group}{39}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Generator and Exponential Map}{39}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}Special Lie Groups}{40}{subsection.6.6.3}
