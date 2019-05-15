@@ -33,7 +33,7 @@ import os
 extensions = ['sphinx.ext.todo',
     'sphinx.ext.mathjax']
 
-mathjax_path = 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG'
+mathjax_path = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

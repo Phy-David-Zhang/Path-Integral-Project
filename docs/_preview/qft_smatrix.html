@@ -173,40 +173,40 @@
             
   <div class="section" id="scattering-matrix">
 <h1>Scattering Matrix<a class="headerlink" href="#scattering-matrix" title="Permalink to this headline">¶</a></h1>
-<p>Scattering matrix, or <strong>S-matrix</strong>, is one of the major and core concept in both Particle and High Energy Physics &#8212; since this is the most straight-forward way to verify the form of interaction.</p>
-<p>The S-matrix is defined as an <em>infinite dimensional matrix</em> with each matrix element <span class="math">\(S_{\beta\alpha}\)</span> being the probability of the state evolving from <span class="math">\(\alpha\)</span> to <span class="math">\(\beta\)</span>, i.e.</p>
-<div class="math">
+<p>Scattering matrix, or <strong>S-matrix</strong>, is one of the major and core concept in both Particle and High Energy Physics — since this is the most straight-forward way to verify the form of interaction.</p>
+<p>The S-matrix is defined as an <em>infinite dimensional matrix</em> with each matrix element <span class="math notranslate nohighlight">\(S_{\beta\alpha}\)</span> being the probability of the state evolving from <span class="math notranslate nohighlight">\(\alpha\)</span> to <span class="math notranslate nohighlight">\(\beta\)</span>, i.e.</p>
+<div class="math notranslate nohighlight">
 \[S_{\beta\alpha} = \langle\beta|\alpha\rangle\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">As a matter of fact, the S-matrix is not a typical &#8220;matrix&#8221;. It is just a quantity with each one of them can be labelled by two indices. Also, in canonical quantization, S-matrix is actually an operator which, if it is finite dimensional, can be expressed as a matrix (but in Quantum Field Theory it is not). Therefore, when you see some concept which is a <em>matrix</em>, it might not mean to be a typical matrix, but some operator or quantity of two indices.</p>
+<p class="last">As a matter of fact, the S-matrix is not a typical “matrix”. It is just a quantity with each one of them can be labelled by two indices. Also, in canonical quantization, S-matrix is actually an operator which, if it is finite dimensional, can be expressed as a matrix (but in Quantum Field Theory it is not). Therefore, when you see some concept which is a <em>matrix</em>, it might not mean to be a typical matrix, but some operator or quantity of two indices.</p>
 </div>
 <p>In Quantum Field Theory (as well as Particle Physics), we are especially interested in the following situation</p>
 <blockquote>
 <div>Two or more beams of free particle are generated and targeted at some point, interact with each other at the limited region near the point, then leave the interaction region, become free particles again and finally detected by the particle detectors.</div></blockquote>
 <p>The key point in the above picture is that the interaction only happens at a restricted region, and the particles are free outside the region. This approximation can be pretty accurate if the region is selected wisely so that the particles are separated by a considerably long distance. And it is prevalently implemented in many particle colliders.</p>
-<p>The above picture suggests us write the field in the path integral as the addition of an &#8220;interact field&#8221; <span class="math">\(\varphi\)</span> and a free asymptotic field <span class="math">\(\varphi_{\text{as}}\)</span>, i.e. perform the following variable translation in the path integral</p>
-<div class="math">
+<p>The above picture suggests us write the field in the path integral as the addition of an “interact field” <span class="math notranslate nohighlight">\(\varphi\)</span> and a free asymptotic field <span class="math notranslate nohighlight">\(\varphi_{\text{as}}\)</span>, i.e. perform the following variable translation in the path integral</p>
+<div class="math notranslate nohighlight">
 \[\varphi \mapsto \varphi + \varphi_{as}\]</div>
-<p>where the asymptotic field <span class="math">\(\varphi_{\text{as}}\)</span> satisfies</p>
-<div class="math">
+<p>where the asymptotic field <span class="math notranslate nohighlight">\(\varphi_{\text{as}}\)</span> satisfies</p>
+<div class="math notranslate nohighlight">
 \[(\partial^2\!\!-\!m^2)\varphi_{\text{as}} = 0\]</div>
-<p>Therefore, the S-matrix with auxiliary field <span class="math">\(J\)</span> supplied is</p>
-<div class="math">
+<p>Therefore, the S-matrix with auxiliary field <span class="math notranslate nohighlight">\(J\)</span> supplied is</p>
+<div class="math notranslate nohighlight">
 \[S_0[J] = \int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2\!\!-\!m^2]\varphi - J\varphi - J\varphi_{\text{as}}\} = \exp\{\mathrm{i}\varphi_{\text{as}}J\}W_0[J]\]</div>
 <p>Similar formula also holds for situation with interaction. Then, just as what we have done in the last section, expand the exponential as Taylor series</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[S[J] = \sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm{i}\varphi_{\text{as}}J\right]^nW[J]\]</div>
 <p>Recall we have our <a class="reference external" href="./qft_ids.html">second identity</a></p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = J(x)W_0[J]\]</div>
-<p>This inspires us that we can replace every <span class="math">\(J\)</span> in the Taylor series with <span class="math">\((\partial^2\!\!-\!m^2)\delta/\mathrm{i}\delta J\)</span>. Hence</p>
-<div class="math">
+<p>This inspires us that we can replace every <span class="math notranslate nohighlight">\(J\)</span> in the Taylor series with <span class="math notranslate nohighlight">\((\partial^2\!\!-\!m^2)\delta/\mathrm{i}\delta J\)</span>. Hence</p>
+<div class="math notranslate nohighlight">
 \[S[J] = \sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]^nW[J] = \exp\{\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\}W[J]\]</div>
-<p>To obtain the S-matrix, simply set the auxiliary field <span class="math">\(J\)</span> as zero</p>
-<div class="math">
+<p>To obtain the S-matrix, simply set the auxiliary field <span class="math notranslate nohighlight">\(J\)</span> as zero</p>
+<div class="math notranslate nohighlight">
 \[S = \left.\exp\{\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\}W[J]\right|_{J=0}\]</div>
-<p>This is the so-called <strong>LSZ reduction formula</strong>, which gives the S-matrix with inbound and outbound state designated by asymptotic field <span class="math">\(\varphi_{\text{as}}\)</span> from the generating functional.</p>
+<p>This is the so-called <strong>LSZ reduction formula</strong>, which gives the S-matrix with inbound and outbound state designated by asymptotic field <span class="math notranslate nohighlight">\(\varphi_{\text{as}}\)</span> from the generating functional.</p>
 </div>
 
 
@@ -263,7 +263,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

@@ -174,37 +174,37 @@
   <div class="section" id="free-scalar-field-theory">
 <h1>Free Scalar Field Theory<a class="headerlink" href="#free-scalar-field-theory" title="Permalink to this headline">¶</a></h1>
 <p>This section will introduce the free scalar field theory, i.e. stage 1 mentioned in the sketch. Our main goal here is to derive the generating functional of the free scalar field.</p>
-<p>First we need a vacuum state as the initial and final state &#8212; just like the start and end point in path integral of Quantum Mechanics. However, the vacuum is not so straight-forward in Quantum Field Theory. We hereby <em>define</em> the vacuum state <span class="math">\(|\Omega\rangle\)</span> as the configuration of field with the lowest possible energy, which is the general starting point of the term <em>vacuum</em>.</p>
+<p>First we need a vacuum state as the initial and final state — just like the start and end point in path integral of Quantum Mechanics. However, the vacuum is not so straight-forward in Quantum Field Theory. We hereby <em>define</em> the vacuum state <span class="math notranslate nohighlight">\(|\Omega\rangle\)</span> as the configuration of field with the lowest possible energy, which is the general starting point of the term <em>vacuum</em>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">In canonical quantization, there is an annihilation operator <span class="math">\(a\)</span> and thus the vacuum state can be defined as <span class="math">\(a|\Omega\rangle=0\)</span>. However, now we do not have any operators. Therefore, we <em>define</em> the state using the property it needs to satisfy.</p>
+<p class="last">In canonical quantization, there is an annihilation operator <span class="math notranslate nohighlight">\(a\)</span> and thus the vacuum state can be defined as <span class="math notranslate nohighlight">\(a|\Omega\rangle=0\)</span>. However, now we do not have any operators. Therefore, we <em>define</em> the state using the property it needs to satisfy.</p>
 </div>
 <p>Now, we express the probability of the free field from vacuum state to vacuum state in terms of path integral. The probability should be unity since there are no interactions. Therefore</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[W = \langle\Omega|\Omega\rangle = \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi\} = 1\]</div>
-<p>where we now know the normalization factor <span class="math">\(\mathcal{N}\)</span>. We hope that you still remember the Lagrangian for scalar field (If you don&#8217;t, go and review <a class="reference external" href="./clstheo_scalar.html">this</a>). The scalar field is real here, and it won&#8217;t be miserable to generalize this into complex situation.</p>
-<p>This formulation does not tell us anything except for a normalization factor, since it is trivial &#8212; from vacuum to vacuum with no interaction. Now, we want to add some interactions. To achieve this, we introduce an auxiliary potential <span class="math">\(J\)</span> and the Lagrangian becomes</p>
-<div class="math">
+<p>where we now know the normalization factor <span class="math notranslate nohighlight">\(\mathcal{N}\)</span>. We hope that you still remember the Lagrangian for scalar field (If you don’t, go and review <a class="reference external" href="./clstheo_scalar.html">this</a>). The scalar field is real here, and it won’t be miserable to generalize this into complex situation.</p>
+<p>This formulation does not tell us anything except for a normalization factor, since it is trivial — from vacuum to vacuum with no interaction. Now, we want to add some interactions. To achieve this, we introduce an auxiliary potential <span class="math notranslate nohighlight">\(J\)</span> and the Lagrangian becomes</p>
+<div class="math notranslate nohighlight">
 \[\mathcal{L} = -\varphi(\partial^2\!\!-\!m^2)\varphi + J\varphi\]</div>
 <p>and the path integral becomes</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[W[J] = \langle\Omega|\Omega\rangle|_J = \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi-2J\varphi\}\]</div>
-<p>Now, we perform the path integral. As what we have done in Quantum Mechanics, expand the path integral according to the classical path. The classical path <span class="math">\(\varphi_0\)</span> satisfies</p>
-<div class="math">
+<p>Now, we perform the path integral. As what we have done in Quantum Mechanics, expand the path integral according to the classical path. The classical path <span class="math notranslate nohighlight">\(\varphi_0\)</span> satisfies</p>
+<div class="math notranslate nohighlight">
 \[(\partial^2\!\!-\!m^2)\varphi_0 = J,\ \ \text{i.e.}\ \ \varphi_0 = \int \Delta_F J\]</div>
-<p>where <span class="math">\(\Delta_F\)</span> is the Green&#8217;s function satisfying</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\Delta_F\)</span> is the Green’s function satisfying</p>
+<div class="math notranslate nohighlight">
 \[(\partial^2\!\!-\!m^2)\Delta_F(x;x') = -\delta(x;x')\]</div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Please be very careful about the minus sign in the right hand side of the above equation!</p>
 </div>
-<p>Consequently, we perform translation <span class="math">\(\varphi\mapsto\varphi + \varphi_0\)</span>. In path integral, a definite path <span class="math">\(\varphi_0\)</span> acts just like a constant (expand the path integral according to the definition and you will see why). A brief calculation will give</p>
-<div class="math">
+<p>Consequently, we perform translation <span class="math notranslate nohighlight">\(\varphi\mapsto\varphi + \varphi_0\)</span>. In path integral, a definite path <span class="math notranslate nohighlight">\(\varphi_0\)</span> acts just like a constant (expand the path integral according to the definition and you will see why). A brief calculation will give</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}W[J] &amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\cdot \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi\}\\
 &amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\end{split}\]</div>
 <p>Since this is the case of free field, we rewrite the conclusion as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[W_0[J] = \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\]</div>
 <p>which is the desired result as it is in the sketch.</p>
 <div class="admonition note">
@@ -267,7 +267,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

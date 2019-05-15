@@ -176,82 +176,82 @@
 <h1>Path Integral and Propagator<a class="headerlink" href="#path-integral-and-propagator" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">This section requires knowledge on Green&#8217;s function. Although we will briefly review some basics, you are still suggested to pick up a textbook on Mathematical Methods of Physics for a careful review.</p>
+<p class="last">This section requires knowledge on Green’s function. Although we will briefly review some basics, you are still suggested to pick up a textbook on Mathematical Methods of Physics for a careful review.</p>
 </div>
 <p>In this section, you will make your first acquaintance with path integral. In quantum theory, path integral is a method of constructing the <strong>propagator</strong>. So we begin with the propagator.</p>
 <div class="section" id="schrodingers-equation-and-propagator">
 <h2>Schrödinger’s Equation and Propagator<a class="headerlink" href="#schrodingers-equation-and-propagator" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">The symbols invoked in this section (e.g. <span class="math">\(\psi\)</span>) have a dedicated meaning, which will be different from other sections in this project.</p>
+<p class="last">The symbols invoked in this section (e.g. <span class="math notranslate nohighlight">\(\psi\)</span>) have a dedicated meaning, which will be different from other sections in this project.</p>
 </div>
-<p>First, we need to recall <strong>Green&#8217;s function</strong>. Mathematically, Green&#8217;s function <span class="math">\(G(x;x')\)</span> of an operator <span class="math">\(L\)</span> is defined as</p>
-<div class="math">
+<p>First, we need to recall <strong>Green’s function</strong>. Mathematically, Green’s function <span class="math notranslate nohighlight">\(G(x;x')\)</span> of an operator <span class="math notranslate nohighlight">\(L\)</span> is defined as</p>
+<div class="math notranslate nohighlight">
 \[LG(x;x') = \delta(x;x')\]</div>
 <p>This method is very useful to solve equations like</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[L\varphi(x) = J(x)\]</div>
-<p>since if we know the Green&#8217;s function <span class="math">\(G(x;x')\)</span> of <span class="math">\(L\)</span>, the solution is simply</p>
-<div class="math">
+<p>since if we know the Green’s function <span class="math notranslate nohighlight">\(G(x;x')\)</span> of <span class="math notranslate nohighlight">\(L\)</span>, the solution is simply</p>
+<div class="math notranslate nohighlight">
 \[\varphi(x) = \int G(x;x') J(x')\,\mathrm{d}x'\]</div>
 <p>One can easily verify if notice</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}L\varphi(x) &amp;= L\int G(x;x') J(x')\,\mathrm{d}x' \\
 &amp;= \int LG(x;x') J(x')\,\mathrm{d}x' = \int \delta(x;x') J(x')\,\mathrm{d}x' = J(x)\end{split}\]</div>
-<p>where the second equality is due to the fact that <span class="math">\(L\)</span> consists only operation on <span class="math">\(x\)</span> and is totally irrelevant to <span class="math">\(x'\)</span>.</p>
+<p>where the second equality is due to the fact that <span class="math notranslate nohighlight">\(L\)</span> consists only operation on <span class="math notranslate nohighlight">\(x\)</span> and is totally irrelevant to <span class="math notranslate nohighlight">\(x'\)</span>.</p>
 <p>In Quantum Mechanics, we have the Schrödinger’s equation</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\left[\mathrm{i}\frac{\partial}{\partial t} + \frac{1}{2m}\nabla^2\right]|\psi\rangle = 0\]</div>
-<p>All within the bracket can be viewed as an operator, and thus possesses a Green&#8217;s function</p>
-<div class="math">
+<p>All within the bracket can be viewed as an operator, and thus possesses a Green’s function</p>
+<div class="math notranslate nohighlight">
 \[\left[\mathrm{i}\frac{\partial}{\partial t} + \frac{1}{2m}\nabla^2\right]K(t,x;t',x') = \delta(x;x')\delta(t;t')\]</div>
 <p>With this propagator, we can calculate the state of anytime after from an initial state</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[|\psi(t')\rangle = \int K(x,t;x',t')|\psi(t)\rangle\mathrm{d}x\mathrm{d}t\]</div>
-<p>Therefore, the initial state <span class="math">\(|\psi(t)\rangle\)</span> <em>propagates</em> to the final state <span class="math">\(|\psi(t')\rangle\)</span> with the help of <span class="math">\(K(x,t;x',t')\)</span>. As a consequence, <span class="math">\(K(x,t;x',t')\)</span> is called the <strong>propagator</strong>.</p>
+<p>Therefore, the initial state <span class="math notranslate nohighlight">\(|\psi(t)\rangle\)</span> <em>propagates</em> to the final state <span class="math notranslate nohighlight">\(|\psi(t')\rangle\)</span> with the help of <span class="math notranslate nohighlight">\(K(x,t;x',t')\)</span>. As a consequence, <span class="math notranslate nohighlight">\(K(x,t;x',t')\)</span> is called the <strong>propagator</strong>.</p>
 </div>
 <div class="section" id="path-integral">
 <h2>Path Integral<a class="headerlink" href="#path-integral" title="Permalink to this headline">¶</a></h2>
 <p>The previous argument is only one way to construct Quantum Mechanics, i.e. suppose the Schrödinger equation holds -&gt; derivation of the propagator. In 1948, Feynman proposed another way of reasoning: path integral -&gt; propagator -&gt; Schrödinger equation.</p>
 <p>Feynman suggest the propagator takes the form</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[K = \int \mathcal{D}x \exp\{\mathrm{i}S[x]\}\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Rigorously speaking, we should use <span class="math">\(\propto\)</span> instead of <span class="math">\(=\)</span> in the above equation, since the RHS may produce annoying constant factors. However, this factor can be eliminated through normalisation. Therefore, all the subsequent path integral will automatically carry this normalisation process.</p>
+<p class="last">Rigorously speaking, we should use <span class="math notranslate nohighlight">\(\propto\)</span> instead of <span class="math notranslate nohighlight">\(=\)</span> in the above equation, since the RHS may produce annoying constant factors. However, this factor can be eliminated through normalisation. Therefore, all the subsequent path integral will automatically carry this normalisation process.</p>
 </div>
-<p>where <span class="math">\(S[x]\)</span> is the action of the system, and <span class="math">\(\int\mathcal{D}x\)</span> is the so-called path integral. Next, we carefully examine the above equation.</p>
+<p>where <span class="math notranslate nohighlight">\(S[x]\)</span> is the action of the system, and <span class="math notranslate nohighlight">\(\int\mathcal{D}x\)</span> is the so-called path integral. Next, we carefully examine the above equation.</p>
 <p>Take 1D free particle for example. The Lagrangian of 1D free particle is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[L = \frac{1}{2}m\dot{x}^2\]</div>
 <p>Thus, the action is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[S[x] = \int\mathrm{d}t\,\frac{1}{2}m\dot{x}^2\]</div>
-<p>Suppose we now work on the start point <span class="math">\(x, t\)</span> and end point <span class="math">\(x', t'\)</span>. The path integral requires &#8220;integrating along all paths&#8221;. However, the &#8220;all path&#8221; can be hard to manipulate, since it is something uncountable. More specifically, it should be something like</p>
-<div class="math">
+<p>Suppose we now work on the start point <span class="math notranslate nohighlight">\(x, t\)</span> and end point <span class="math notranslate nohighlight">\(x', t'\)</span>. The path integral requires “integrating along all paths”. However, the “all path” can be hard to manipulate, since it is something uncountable. More specifically, it should be something like</p>
+<div class="math notranslate nohighlight">
 \[\int [...]\mathrm{d}[x(t_1)]\int [...]\mathrm{d}[x(t_2)]\int [...]\mathrm{d}[x(t_3)]...\]</div>
-<p>where every point within interval <span class="math">\((t,t')\)</span> needs an integration. This is clearly impossible since there are uncountable elements within <span class="math">\((t,t')\)</span>. Hence, we come up with the idea of a kind of &#8220;sampling&#8221;.</p>
-<p>For an arbitrary large number (<span class="math">\(n\)</span>) of points within <span class="math">\((t,t')\)</span> (the &#8220;sample&#8221; of <span class="math">\(n\)</span> points), the following formula</p>
-<div class="math">
+<p>where every point within interval <span class="math notranslate nohighlight">\((t,t')\)</span> needs an integration. This is clearly impossible since there are uncountable elements within <span class="math notranslate nohighlight">\((t,t')\)</span>. Hence, we come up with the idea of a kind of “sampling”.</p>
+<p>For an arbitrary large number (<span class="math notranslate nohighlight">\(n\)</span>) of points within <span class="math notranslate nohighlight">\((t,t')\)</span> (the “sample” of <span class="math notranslate nohighlight">\(n\)</span> points), the following formula</p>
+<div class="math notranslate nohighlight">
 \[\int [...]\mathrm{d}[x(t_1)] \int [...]\mathrm{d}[x(t_2)] ... \int [...]\mathrm{d}[x(t_n)]\]</div>
-<p>exists, we <em>define</em> this result as the integration of all path, i.e. the path integral of <span class="math">\([...]\)</span>. The fact that the size of the &#8220;sample&#8221; can be <em>arbitrarily</em> large insures that the integral actually goes over <em>every path</em>.</p>
+<p>exists, we <em>define</em> this result as the integration of all path, i.e. the path integral of <span class="math notranslate nohighlight">\([...]\)</span>. The fact that the size of the “sample” can be <em>arbitrarily</em> large insures that the integral actually goes over <em>every path</em>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The trick to turn some infinite objects to something arbitrary can be very common in Mathematics. For instance, the concept <em>infinitely large</em> can be in fact <em>arbitrarily large</em> or <em>no upper bound</em>. The limit in Mathematics also follows similar idea.</p>
 </div>
-<p>To formally implement this, insert <span class="math">\(n\)</span> points into <span class="math">\((t,t')\)</span> and perform <span class="math">\(n\)</span> integrations</p>
-<div class="math">
+<p>To formally implement this, insert <span class="math notranslate nohighlight">\(n\)</span> points into <span class="math notranslate nohighlight">\((t,t')\)</span> and perform <span class="math notranslate nohighlight">\(n\)</span> integrations</p>
+<div class="math notranslate nohighlight">
 \[\prod_{i=1}^{n}\int\exp\{\mathrm{i}\frac{1}{2}m\frac{[x(t_i)-x(t_{i-1})]^2}{\epsilon}\}\mathrm{d}[x(t_i)]\]</div>
-<p>where we also expand the integration in the action into discrete form, and <span class="math">\(\epsilon = (t'-t)/(n+1)\)</span> is the size of each small interval. Then, ask the &#8220;sample size&#8221; <span class="math">\(n\)</span> to go to infinity</p>
-<div class="math">
+<p>where we also expand the integration in the action into discrete form, and <span class="math notranslate nohighlight">\(\epsilon = (t'-t)/(n+1)\)</span> is the size of each small interval. Then, ask the “sample size” <span class="math notranslate nohighlight">\(n\)</span> to go to infinity</p>
+<div class="math notranslate nohighlight">
 \[\lim_{n\rightarrow\infty}\int C(\epsilon)\prod_{i=1}^{n}\mathrm{d}[x(t_i)]\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{1}{2}m\frac{[x(t_i)-x(t_{i-1})]^2}{\epsilon}\}\]</div>
-<p>where we also adjust the order and introduce a normalisation factor <span class="math">\(C(\epsilon)\)</span> to ensure the convergence. You should be able to prove this adjustment once notice that all <span class="math">\(x(t_i)\)</span> are independent variables. The above formula is the definition of the path integral</p>
-<div class="math">
+<p>where we also adjust the order and introduce a normalisation factor <span class="math notranslate nohighlight">\(C(\epsilon)\)</span> to ensure the convergence. You should be able to prove this adjustment once notice that all <span class="math notranslate nohighlight">\(x(t_i)\)</span> are independent variables. The above formula is the definition of the path integral</p>
+<div class="math notranslate nohighlight">
 \[\int\mathcal{D}x\exp\{\mathrm{i}\int\mathrm{d}t\frac{1}{2}m\dot{x}\}\]</div>
 <p>As a practice, you should try to write down the definition of a general path integral</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\int\mathcal{D}x\exp\{\mathrm{i}\int\mathrm{d}t L\}\]</div>
-<p>You may find the above elucidation hard to comprehend. That&#8217;s normal. Try to draw some diagrams or analyse step by step. It might help.</p>
+<p>You may find the above elucidation hard to comprehend. That’s normal. Try to draw some diagrams or analyse step by step. It might help.</p>
 </div>
 </div>
 
@@ -309,7 +309,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

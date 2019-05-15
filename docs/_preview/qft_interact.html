@@ -173,27 +173,27 @@
             
   <div class="section" id="scalar-field-theory-with-interaction">
 <h1>Scalar Field Theory with Interaction<a class="headerlink" href="#scalar-field-theory-with-interaction" title="Permalink to this headline">¶</a></h1>
-<p>This section introduces the self-interaction theory of scalar field. As usual, the interaction is implemented as an additional interaction term <span class="math">\(\mathcal{L}_{\text{int}}\)</span> in Lagrangian. The interaction discussed here is assumed to satisfy the following condition</p>
+<p>This section introduces the self-interaction theory of scalar field. As usual, the interaction is implemented as an additional interaction term <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}\)</span> in Lagrangian. The interaction discussed here is assumed to satisfy the following condition</p>
 <ul class="simple">
-<li>It is the self-interaction, i.e. <span class="math">\(\mathcal{L}_{\text{int}} = \mathcal{L}_{\text{int}}[\varphi]\)</span></li>
+<li>It is the self-interaction, i.e. <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}} = \mathcal{L}_{\text{int}}[\varphi]\)</span></li>
 <li>It has the form of polynomials.</li>
 </ul>
 <p>Similarly, the construction starts from the generating functional. The generating functional of an interaction theory is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}W[J] &amp;= \int\mathcal{D}\varphi\exp\{\mathrm iS\} = \int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\! + \!\mathcal{L}_{\text{int}}[\varphi]\}\\
 &amp;= \int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}[\varphi]\}\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\end{split}\]</div>
 <p>Next, we expand the first exponential (the one with interaction) according to definition</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[W[J] = \int\mathcal{D}\varphi\sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}[\varphi]\}\right]^n\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\]</div>
 <p>Now, recall our <a class="reference external" href="./qft_ids.html">first identity</a></p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \int\mathcal{D}\varphi\ \varphi(x)\exp\{\mathrm{i}S\}\]</div>
-<p>Therefore, each <span class="math">\(\varphi(x)\)</span> in <span class="math">\(\mathcal{L}_{\text{int}}[\varphi]\)</span> can be <em>replaced</em> with <span class="math">\(\delta/\mathrm{i}\delta J(x)\)</span>, as long as <span class="math">\(\mathcal{L}_{\text{int}}[\varphi]\)</span> is a pure polynomial of <span class="math">\(\varphi\)</span>. In this case, we can write</p>
-<div class="math">
+<p>Therefore, each <span class="math notranslate nohighlight">\(\varphi(x)\)</span> in <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}[\varphi]\)</span> can be <em>replaced</em> with <span class="math notranslate nohighlight">\(\delta/\mathrm{i}\delta J(x)\)</span>, as long as <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}[\varphi]\)</span> is a pure polynomial of <span class="math notranslate nohighlight">\(\varphi\)</span>. In this case, we can write</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}W[J] = \int\mathcal{D}\varphi\sum_{n=0}^\infty\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\right]^n\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\\
 = \sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\right]^n\int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\end{split}\]</div>
-<p>where expression <span class="math">\(\mathcal{L}_{\text{int}}\!\!\left[\delta/\mathrm{i}\delta J\right]\)</span> represents the the expression where all <span class="math">\(\varphi\)</span> in <span class="math">\(\mathcal{L}_{\text{int}}\)</span> is replaced with <span class="math">\(\delta/\mathrm{i}\delta J(x)\)</span>. The terms after the replacement no longer contain <span class="math">\(\varphi\)</span> and thus can be moved out of the path integral. And we find now that the path integral gives the generating functional <span class="math">\(W_0[J]\)</span> of free field. Transform back into the exponential form and we get</p>
-<div class="math">
+<p>where expression <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}\!\!\left[\delta/\mathrm{i}\delta J\right]\)</span> represents the the expression where all <span class="math notranslate nohighlight">\(\varphi\)</span> in <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}\)</span> is replaced with <span class="math notranslate nohighlight">\(\delta/\mathrm{i}\delta J(x)\)</span>. The terms after the replacement no longer contain <span class="math notranslate nohighlight">\(\varphi\)</span> and thus can be moved out of the path integral. And we find now that the path integral gives the generating functional <span class="math notranslate nohighlight">\(W_0[J]\)</span> of free field. Transform back into the exponential form and we get</p>
+<div class="math notranslate nohighlight">
 \[W[J] = \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\} W_0[J]\]</div>
 <p>which is the result of second stage of our construction. The interaction of other kinds of fields (except for vector field in gauge theories) can be performed through similar manner.</p>
 </div>
@@ -252,7 +252,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

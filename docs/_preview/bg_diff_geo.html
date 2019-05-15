@@ -181,18 +181,18 @@
 <p>Differential Geometry can be one of the most crucial foundations of theoretical Physics. Thus, we suggest everyone who aims at fundamental theoretical Physics to have a detailed review of Differential Geometry. We are not going to introduce thoroughly here, since that would make up another book. You can rely on this if you just want to understand our main context, nevertheless, you are strongly suggested to look for other Differential Geometry introductory for many other important details.</p>
 <div class="section" id="get-started-motivation">
 <h2>Get Started: Motivation<a class="headerlink" href="#get-started-motivation" title="Permalink to this headline">¶</a></h2>
-<p>In Calculus, we have studied many properties of functions, like continuity, differentiability and so on. However, these properties only apply to functions — whose domain is a number set (such as <span class="math">\(\mathbb R^n\)</span>). However, pragmatically we are dealing with ordinary maps — whose domain is an ordinary set (ranging from all particles of the desk in front of you to the spacetime of the universe). At this time, we find that we are lack of the structure (just like a kind of property) on that ordinary set. For example, you can not judge whether a map from the phone to its number is differentiable or not. Hence, extra structures are needed.</p>
-<p>How does this related to Physics? You may consider the electric potential <span class="math">\(\phi\)</span> which is a vector field in spacetime. The vector field is nothing but a map from the set of all points in spacetime to the real number set. And the set of all points in spacetime can be an example of the <em>ordinary set</em> in our previous illustration.</p>
+<p>In Calculus, we have studied many properties of functions, like continuity, differentiability and so on. However, these properties only apply to functions — whose domain is a number set (such as <span class="math notranslate nohighlight">\(\mathbb R^n\)</span>). However, pragmatically we are dealing with ordinary maps — whose domain is an ordinary set (ranging from all particles of the desk in front of you to the spacetime of the universe). At this time, we find that we are lack of the structure (just like a kind of property) on that ordinary set. For example, you can not judge whether a map from the phone to its number is differentiable or not. Hence, extra structures are needed.</p>
+<p>How does this related to Physics? You may consider the electric potential <span class="math notranslate nohighlight">\(\phi\)</span> which is a vector field in spacetime. The vector field is nothing but a map from the set of all points in spacetime to the real number set. And the set of all points in spacetime can be an example of the <em>ordinary set</em> in our previous illustration.</p>
 </div>
 <div class="section" id="prerequisites-topology">
 <h2>Prerequisites: Topology<a class="headerlink" href="#prerequisites-topology" title="Permalink to this headline">¶</a></h2>
-<p>The first structure we need is the topology. The topology of a set will help us define the continuity of the map. In Calculus, a function is continuous if the inverse image of any of the open interval in the image will be an open interval (You can prove that this is equivalent to the <span class="math">\(\varepsilon\)</span>-<span class="math">\(\delta\)</span> form in Calculus). Thus, if we want to define continuity of any map, the only structure we need is to define the “open interval” of the set.</p>
+<p>The first structure we need is the topology. The topology of a set will help us define the continuity of the map. In Calculus, a function is continuous if the inverse image of any of the open interval in the image will be an open interval (You can prove that this is equivalent to the <span class="math notranslate nohighlight">\(\varepsilon\)</span>-<span class="math notranslate nohighlight">\(\delta\)</span> form in Calculus). Thus, if we want to define continuity of any map, the only structure we need is to define the “open interval” of the set.</p>
 <p>This inspires us to manually designate some subsets of the set to be <strong>open</strong> (plus some conditions). And the continuity of the map can be defined in similar way. We are not going to expand here — it can be a long story. The only thing you need to remember is that we can now talk about the openness of the subset and the continuity of a map.</p>
 </div>
 <div class="section" id="set-up-a-coordinate-system">
 <h2>Set up a Coordinate System<a class="headerlink" href="#set-up-a-coordinate-system" title="Permalink to this headline">¶</a></h2>
-<p>Next we move on to the differentiability of a map. To do this, we equip every open subset with an open subset of a number set. To be more specific, construct a continuous bijection <span class="math">\(\psi_\alpha\)</span> for each subset <span class="math">\(U_\alpha\)</span> of set <span class="math">\(M\)</span> to an open subset of <span class="math">\(\mathbb R^n\)</span>.</p>
-<p>To see how this works, let’s look at map <span class="math">\(\psi_\alpha\)</span>. It maps the point <span class="math">\(p\)</span> of set <span class="math">\(M\)</span> into <span class="math">\(n\)</span> numbers in <span class="math">\(\mathbb R^n\)</span>. Or equivalently, it assigns <span class="math">\(n\)</span> numbers to point <span class="math">\(p\)</span>. Yes! Those numbers are nothing other than the <strong>coordinates</strong> of point <span class="math">\(p\)</span>. And, map <span class="math">\(\psi_\alpha\)</span> will then be the <strong>coordinate system</strong> on subset <span class="math">\(U_\alpha\)</span>. Set equipped with the coordinate system is called manifold.</p>
+<p>Next we move on to the differentiability of a map. To do this, we equip every open subset with an open subset of a number set. To be more specific, construct a continuous bijection <span class="math notranslate nohighlight">\(\psi_\alpha\)</span> for each subset <span class="math notranslate nohighlight">\(U_\alpha\)</span> of set <span class="math notranslate nohighlight">\(M\)</span> to an open subset of <span class="math notranslate nohighlight">\(\mathbb R^n\)</span>.</p>
+<p>To see how this works, let’s look at map <span class="math notranslate nohighlight">\(\psi_\alpha\)</span>. It maps the point <span class="math notranslate nohighlight">\(p\)</span> of set <span class="math notranslate nohighlight">\(M\)</span> into <span class="math notranslate nohighlight">\(n\)</span> numbers in <span class="math notranslate nohighlight">\(\mathbb R^n\)</span>. Or equivalently, it assigns <span class="math notranslate nohighlight">\(n\)</span> numbers to point <span class="math notranslate nohighlight">\(p\)</span>. Yes! Those numbers are nothing other than the <strong>coordinates</strong> of point <span class="math notranslate nohighlight">\(p\)</span>. And, map <span class="math notranslate nohighlight">\(\psi_\alpha\)</span> will then be the <strong>coordinate system</strong> on subset <span class="math notranslate nohighlight">\(U_\alpha\)</span>. Set equipped with the coordinate system is called manifold.</p>
 <p>Now, we can define the differentiability of the map between manifolds. Since every point has its coordinates, the map between points becomes functions between coordinates. Thus, the differentiability of the map can be defined as that of those functions, which is well-defined in Calculus.</p>
 <p>Another thing that we would like to mention is the separation of point and its coordinates. In many elementary Physics textbooks, point and coordinates are the <em>same thing</em>. But now, we strongly suggest to distinguish these two entities — you will benefit a lot if you take this seriously in the future.</p>
 </div>
@@ -200,17 +200,17 @@
 <h2>Spacetime Geometry<a class="headerlink" href="#spacetime-geometry" title="Permalink to this headline">¶</a></h2>
 <p>Here, we introduce briefly (<em>extremely briefly</em>) about the spacetime geometry. In fact, there is a spectacular construction of spacetime geometry in Differential Geometry theory. So if you are able, try to learn something about it. You will never regret.</p>
 <p>In 3 dimensional Euclidean space, we have Gougu Theorem</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\Delta s^2 = \Delta x^2 + \Delta y^2 + \Delta z^2\]</div>
 <p>In differential form, it is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\mathrm d s^2 = \mathrm d x^2 + \mathrm d y^2 + \mathrm d z^2\]</div>
-<p>Symbol <span class="math">\(\mathrm d s^2\)</span> here is called <strong>line element</strong>. You may notice that the coefficients of the three terms in right hand side are all <span class="math">\(1\)</span>. This is a typical characteristic of flat 3D Euclidean space. Now we think: what if the coefficients are not <span class="math">\(1\)</span>? In fact, the configuration of those coefficients labels a kind of <em>geometry</em>. As an important example, look at</p>
-<div class="math">
+<p>Symbol <span class="math notranslate nohighlight">\(\mathrm d s^2\)</span> here is called <strong>line element</strong>. You may notice that the coefficients of the three terms in right hand side are all <span class="math notranslate nohighlight">\(1\)</span>. This is a typical characteristic of flat 3D Euclidean space. Now we think: what if the coefficients are not <span class="math notranslate nohighlight">\(1\)</span>? In fact, the configuration of those coefficients labels a kind of <em>geometry</em>. As an important example, look at</p>
+<div class="math notranslate nohighlight">
 \[\mathrm d s^2 = -\mathrm d t^2 + \mathrm d x^2 + \mathrm d y^2 + \mathrm d z^2\]</div>
-<p>Clearly this is not the 4D Euclidean space, since there is a <span class="math">\(-1\)</span> here. Actually, this is <strong>Minkowski spacetime</strong> widely used in Special Relativity and Quantum Field Theory. You can also write other numbers or even functions for those coefficients. Certain functions will even let the spacetime to curve. But these are the content of General Relativity which we do not aim at here. (Again if you have time, take a look at it. It’s wonderful.)</p>
+<p>Clearly this is not the 4D Euclidean space, since there is a <span class="math notranslate nohighlight">\(-1\)</span> here. Actually, this is <strong>Minkowski spacetime</strong> widely used in Special Relativity and Quantum Field Theory. You can also write other numbers or even functions for those coefficients. Certain functions will even let the spacetime to curve. But these are the content of General Relativity which we do not aim at here. (Again if you have time, take a look at it. It’s wonderful.)</p>
 <p>We can write the Minkowski line element formally as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\mathrm d s^2 = [\mathrm d t\ \mathrm d x\ \mathrm d y\ \mathrm d z]
 \left[
 \begin{matrix}
@@ -228,7 +228,7 @@
 \mathrm d z\\
 \end{matrix}
 \right]\end{split}\]</div>
-<p>The <span class="math">\(4\times 4\)</span> matrix in the above equation, usually denoted by <span class="math">\(\eta_{\mu\nu}\)</span>, is called the <strong>metric</strong> of the spacetime. The sum of all the diagonal element (<span class="math">\(+2\)</span> in this case) is called the <strong>signature</strong> of the metric. Many textbooks of Quantum Field Theory uses Minkowski metric as <span class="math">\(\eta = \mathrm{diag}(1,-1,-1,-1)\)</span>, whose signature is <span class="math">\(-2\)</span>. However, to comply with the convention in the Theory of Relativity, we use the <span class="math">\(+2\)</span> metric.</p>
+<p>The <span class="math notranslate nohighlight">\(4\times 4\)</span> matrix in the above equation, usually denoted by <span class="math notranslate nohighlight">\(\eta_{\mu\nu}\)</span>, is called the <strong>metric</strong> of the spacetime. The sum of all the diagonal element (<span class="math notranslate nohighlight">\(+2\)</span> in this case) is called the <strong>signature</strong> of the metric. Many textbooks of Quantum Field Theory uses Minkowski metric as <span class="math notranslate nohighlight">\(\eta = \mathrm{diag}(1,-1,-1,-1)\)</span>, whose signature is <span class="math notranslate nohighlight">\(-2\)</span>. However, to comply with the convention in the Theory of Relativity, we use the <span class="math notranslate nohighlight">\(+2\)</span> metric.</p>
 </div>
 </div>
 
@@ -286,7 +286,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

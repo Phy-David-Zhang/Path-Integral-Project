@@ -177,28 +177,28 @@
 <p class="first admonition-title">Note</p>
 <p class="last">This section is important to the canonical quantisation method, and will not influence the overall logic. You may skip this if you wish.</p>
 </div>
-<p>In this section, we look at the general solution of the Klein-Gordon equation. We do this for <span class="math">\(\varphi\)</span>, and similar procedure can be easily carried out for <span class="math">\(\varphi^*\)</span>.</p>
-<p>For any possible field <span class="math">\(\varphi\)</span>, we can perform Fourier expansion as</p>
-<div class="math">
+<p>In this section, we look at the general solution of the Klein-Gordon equation. We do this for <span class="math notranslate nohighlight">\(\varphi\)</span>, and similar procedure can be easily carried out for <span class="math notranslate nohighlight">\(\varphi^*\)</span>.</p>
+<p>For any possible field <span class="math notranslate nohighlight">\(\varphi\)</span>, we can perform Fourier expansion as</p>
+<div class="math notranslate nohighlight">
 \[\varphi = \int{\mathrm d^4k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Well, you may notice that here we do not take the symmetric form of the Fourier transformation. Although personally I prefer the symmetric form, but trust me, it can make all the successive discussions awful.</p>
 </div>
 <p>Take the above expression back into the equation, we get the dispersion relation</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[k^2 + m^2 = 0\]</div>
-<p>This relation serves as a constraint to the wave number <span class="math">\(k^\mu\)</span>. Thus, to gain the solution, all we need to do is to switch the integral measure to <a class="reference external" href="&#64;waiting">delta measure</a></p>
-<div class="math">
+<p>This relation serves as a constraint to the wave number <span class="math notranslate nohighlight">\(k^\mu\)</span>. Thus, to gain the solution, all we need to do is to switch the integral measure to <a class="reference external" href="&#64;waiting">delta measure</a></p>
+<div class="math notranslate nohighlight">
 \[\varphi(x) = \int{\mathrm d^4k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot2\pi\delta(k^2+m^2)\]</div>
-<p>Factor <span class="math">\(2\pi\)</span> is necessary since we are going to perform the integral once, like</p>
-<div class="math">
+<p>Factor <span class="math notranslate nohighlight">\(2\pi\)</span> is necessary since we are going to perform the integral once, like</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\varphi(x) &amp;= \int{\mathrm d\omega \mathrm d^3k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot2\pi\delta(-\omega^2 + \vec k^2 + m^2)\\
 &amp;= \int{\mathrm d\omega^2 \mathrm d^3k\over2\omega(2\pi)^3}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot\delta(-\omega^2 + \vec k^2 + m^2)\\
 &amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}a(k)\exp\{\mathrm i(\omega_k t - \vec k \vec x\} + \int{\mathrm d^3k\over(-2\omega_k)(2\pi)^3}a(k)\exp\{\mathrm i(-\omega_k t - \vec k \vec x\}\\
 &amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}a(k)\exp\{\mathrm i(\omega_k t - \vec k \vec x\} + \int{\mathrm d^3k\over(2\omega_k)(2\pi)^3}a(-k)\exp\{\mathrm i(-\omega_k t + \vec k \vec x\}\\
 &amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}\left[a(k)\exp\{-\mathrm i(k^\mu x_\mu\} + a(-k)\exp\{\mathrm i(k^\mu x_\mu\} \right]\end{split}\]</div>
-<p>where <span class="math">\(\omega_k = \sqrt{\vec k^2 + m^2}\)</span>. The fourth equality is nothing other than reversing the direction of <span class="math">\(\vec k\)</span>. Hence, we get the general form of the solution of Klein-Gordon equation.</p>
+<p>where <span class="math notranslate nohighlight">\(\omega_k = \sqrt{\vec k^2 + m^2}\)</span>. The fourth equality is nothing other than reversing the direction of <span class="math notranslate nohighlight">\(\vec k\)</span>. Hence, we get the general form of the solution of Klein-Gordon equation.</p>
 </div>
 
 
@@ -255,7 +255,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

@@ -172,56 +172,56 @@
 <p class="last">The following context will call <a class="reference external" href="./bg_geo_unit.html">Geometric Unit System</a> and <a class="reference external" href="./bg_eins.html">Einstein Summation Convention</a>. Review the link if you have never heard of them — they are important!</p>
 </div>
 <p>Assuming that you already have the knowledge of Quantum Mechanics. At least you are able to recognise the most famous equation shown below</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\mathrm{i}\frac{\partial}{\partial t}\psi = -\frac{1}{2m}\nabla^2\psi + V\psi\]</div>
 <p>It is called a wave equation. Why? If you take</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\psi = A\exp\{-\mathrm{i}\omega t + \mathrm{i}\vec k\cdot \vec x\}\]</div>
 <p>into the equation, you will find that it is a solution of the Schrödinger equation as long as the following holds</p>
 <p>Recall that we have the following relationship in Quantum Mechanics</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\omega = E,\ \ \ \ \  k^i = p^i\]</div>
-<p>where <span class="math">\(E\)</span> is the energy and <span class="math">\(p^i\)</span> is the momentum with <span class="math">\(i=1,2,3\)</span>. Now, we immediately find that the previous equation becomes</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(E\)</span> is the energy and <span class="math notranslate nohighlight">\(p^i\)</span> is the momentum with <span class="math notranslate nohighlight">\(i=1,2,3\)</span>. Now, we immediately find that the previous equation becomes</p>
+<div class="math notranslate nohighlight">
 \[E = \frac{\vec p^2}{m} + V\]</div>
 <p>which is nothing but the energy-momentum relationship in Newtonian classical mechanics.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Now we release symbol <span class="math">\(\psi\)</span>. This indicates that <span class="math">\(\psi\)</span> in the following context will have a different meaning.</p>
+<p class="last">Now we release symbol <span class="math notranslate nohighlight">\(\psi\)</span>. This indicates that <span class="math notranslate nohighlight">\(\psi\)</span> in the following context will have a different meaning.</p>
 </div>
 <p>So now we are going to think: what if we want it to be relativistic? Assuming that you already have the knowledge of Relativity. In Special Theory of Relativity, the energy-momentum relationship becomes</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[E^2 = \vec p^2 + m^2\]</div>
 <p>To achieve this result, simply reverse the previous steps. The above relationship should require</p>
 <p>And this requires</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[(\partial_\mu\partial^\mu - m^2)\varphi = 0\]</div>
-<p>where the <a class="reference external" href="&#64;waiting">signature of metric</a> here is <span class="math">\(+2\)</span>. This is the famous “Klein-Gordon equation” — the relativistic version of Schrödinger equation. The quotes here indicates that it still has some subtle difference with the <em>real</em> Klein-Gordon equation, as we are going to see next.</p>
-<p>It seems that it is so easy to combine Quantum Mechanics and Special Theory of Relativity. Nonetheless, things are not so trivial. The Newtonian energy-momentum relation can guarantee that the energy of a free (<span class="math">\(V=0\)</span>) particle is always positive. However, the relativistic version can not. The relativistic energy-momentum relation reveals that</p>
-<div class="math">
+<p>where the <a class="reference external" href="&#64;waiting">signature of metric</a> here is <span class="math notranslate nohighlight">\(+2\)</span>. This is the famous “Klein-Gordon equation” — the relativistic version of Schrödinger equation. The quotes here indicates that it still has some subtle difference with the <em>real</em> Klein-Gordon equation, as we are going to see next.</p>
+<p>It seems that it is so easy to combine Quantum Mechanics and Special Theory of Relativity. Nonetheless, things are not so trivial. The Newtonian energy-momentum relation can guarantee that the energy of a free (<span class="math notranslate nohighlight">\(V=0\)</span>) particle is always positive. However, the relativistic version can not. The relativistic energy-momentum relation reveals that</p>
+<div class="math notranslate nohighlight">
 \[E = \pm\sqrt{\vec p^2+m^2}\]</div>
-<p>where we discover that there are both positive and negative solutions are possible. This issue is not paramount in classical theory, since the energy of a classical particle can only varies continuously, and there is a gap of <span class="math">\(2m\)</span> between the lowest positive energy <span class="math">\(E=m\)</span> (where <span class="math">\(\vec p=0\)</span>) and the greatest negative value <span class="math">\(E=-m\)</span> (where <span class="math">\(\vec p=0\)</span>). Thus, a classical particle can have either positive or negative energy — the only matter is to set an initial sign.</p>
+<p>where we discover that there are both positive and negative solutions are possible. This issue is not paramount in classical theory, since the energy of a classical particle can only varies continuously, and there is a gap of <span class="math notranslate nohighlight">\(2m\)</span> between the lowest positive energy <span class="math notranslate nohighlight">\(E=m\)</span> (where <span class="math notranslate nohighlight">\(\vec p=0\)</span>) and the greatest negative value <span class="math notranslate nohighlight">\(E=-m\)</span> (where <span class="math notranslate nohighlight">\(\vec p=0\)</span>). Thus, a classical particle can have either positive or negative energy — the only matter is to set an initial sign.</p>
 <p>However, recall that quantised particles can jump between discrete energy levels. Hence, it is just a matter of probability for them to jump from a positive energy to a negative one and … fall all the way down to minus infinity. This then becomes a major difficulty of “Klein-Gordon equation”.</p>
 <p>Also, let’s investigate the continuity equation. In Quantum Mechanics, there is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\mathrm{i}\frac{\partial}{\partial t}\varphi = -\frac{1}{2m}\nabla^2\varphi + V\varphi\\
 -\mathrm{i}\frac{\partial}{\partial t}\varphi^* = -\frac{1}{2m}\nabla^2\varphi^* + V\varphi^*\end{split}\]</div>
 <p>The first equation is the Schrödinger equation and the second equation is nothing other than the complex conjugate of the first one.</p>
-<p>Now, we apply <span class="math">\(\varphi^*\)</span> to the first equation and <span class="math">\(\varphi\)</span> to the second one, and let the first one subtract the second</p>
-<div class="math">
+<p>Now, we apply <span class="math notranslate nohighlight">\(\varphi^*\)</span> to the first equation and <span class="math notranslate nohighlight">\(\varphi\)</span> to the second one, and let the first one subtract the second</p>
+<div class="math notranslate nohighlight">
 \[\varphi^*\mathrm{i}\frac{\partial}{\partial t}\varphi + \varphi\mathrm{i}\frac{\partial}{\partial t}\varphi^* = \varphi\frac{1}{2m}\nabla^2\varphi^* - \varphi^*\frac{1}{2m}\nabla^2\varphi\]</div>
 <p>which, after a transform, becomes</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\mathrm{i}\frac{\partial}{\partial t}\varphi\varphi^* = \frac{1}{2m}\nabla(\varphi\nabla\varphi^* - \varphi^*\nabla\varphi)\]</div>
 <p>To gain the continuity equation, the only thing to do is to identify the probability density and probability current as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\rho = \varphi\varphi^*,\ \ \ \ \ \vec{j} = {1\over2m\mathrm i}(\varphi\nabla\varphi^* - \varphi^*\nabla\varphi)\]</div>
 <p>The probability density is the square of the wave function, and will always be positive due to the property of square. Everything works fine here.</p>
 <p>However, if you derive the continuity equation corresponding to the “Klein-Gordon equation”, you will find that the “probability density” now becomes</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\rho \sim \varphi^*\frac{\partial}{\partial t}\varphi - \varphi\frac{\partial}{\partial t}\varphi^*\]</div>
 <p>The minus sign indicates that it might be negative(!), which destroys the probabilistic interpretation of quantum theory. This is another major difficulty of “Klein-Gordon equation”.</p>
-<p>To solve the difficulties, physicists decided to reinterpret symbol <span class="math">\(\varphi\)</span> here as <strong>classical field</strong>, instead of wave function. Then, similar to the Quantum Mechanics, path integral is used to quantise the classical field.</p>
+<p>To solve the difficulties, physicists decided to reinterpret symbol <span class="math notranslate nohighlight">\(\varphi\)</span> here as <strong>classical field</strong>, instead of wave function. Then, similar to the Quantum Mechanics, path integral is used to quantise the classical field.</p>
 <p>Now, if you can follow the pace, welcome to the next section.</p>
 </div>
 <div class="section" id="why-path-integral">
@@ -230,16 +230,16 @@
 <div class="section" id="canonical-quantisation">
 <h2>Canonical Quantisation<a class="headerlink" href="#canonical-quantisation" title="Permalink to this headline">¶</a></h2>
 <p>Take the scalar field for example. The canonical quantisation claims the following “quantisation condition”</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[[\varphi(\vec x, t), \pi(\vec x', t)] = \mathrm i\delta(\vec x-\vec x')\]</div>
 <p>This is convenient since similar commutation relation has been studied thoroughly in Quantum Mechanics. However, it is this very first assumption that ruins the whole field theory.</p>
 <p>To see this, let’s first review what the Quantum Mechanics claims. In Quantum Mechanics, we have the following commutation relation</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[[x_i, p_j] = \mathrm i\delta_{ij}\]</div>
-<p>There is nothing wrong here if both <span class="math">\(x_i\)</span> and <span class="math">\(p_i\)</span> are operators, and the product refers to operator composition. As an example, explicitly write an representation as <span class="math">\(p_i = -\mathrm i\partial_i\)</span> will satisfy the above relation.</p>
+<p>There is nothing wrong here if both <span class="math notranslate nohighlight">\(x_i\)</span> and <span class="math notranslate nohighlight">\(p_i\)</span> are operators, and the product refers to operator composition. As an example, explicitly write an representation as <span class="math notranslate nohighlight">\(p_i = -\mathrm i\partial_i\)</span> will satisfy the above relation.</p>
 <p>However, although many physicists claim that the commutation relation of fields is nothing but a continuous version of the point particle one, it is still mathematically impossible for such a “continuous” commutation relation to hold.</p>
-<p>This can be seen through the following argument: field <span class="math">\(\varphi\)</span> and <span class="math">\(\pi\)</span> are both scalar field; according to the definition of scalar field product and subtraction, <span class="math">\(\varphi\pi\)</span> and <span class="math">\(\pi\varphi\)</span> will both be scalar field, so will their commutator <span class="math">\([\varphi, \pi]\)</span>. Thus, the left hand side of the commutation relation will be a scalar field (or more specifically, operator valued scalar field).</p>
-<p>However, the right hand side is not a scalar field. Instead, according to the most moderate point of view, <span class="math">\(\delta(\vec x - \vec x')\)</span> should be at most a generalized function. Therefore, the two sides of the equation can never be equal.</p>
+<p>This can be seen through the following argument: field <span class="math notranslate nohighlight">\(\varphi\)</span> and <span class="math notranslate nohighlight">\(\pi\)</span> are both scalar field; according to the definition of scalar field product and subtraction, <span class="math notranslate nohighlight">\(\varphi\pi\)</span> and <span class="math notranslate nohighlight">\(\pi\varphi\)</span> will both be scalar field, so will their commutator <span class="math notranslate nohighlight">\([\varphi, \pi]\)</span>. Thus, the left hand side of the commutation relation will be a scalar field (or more specifically, operator valued scalar field).</p>
+<p>However, the right hand side is not a scalar field. Instead, according to the most moderate point of view, <span class="math notranslate nohighlight">\(\delta(\vec x - \vec x')\)</span> should be at most a generalized function. Therefore, the two sides of the equation can never be equal.</p>
 </div>
 <div class="section" id="comments-on-delta-function">
 <h2>Comments on Delta Function<a class="headerlink" href="#comments-on-delta-function" title="Permalink to this headline">¶</a></h2>
@@ -251,35 +251,35 @@
 </div>
 <div class="section" id="theory-of-what">
 <h1>Theory of What?<a class="headerlink" href="#theory-of-what" title="Permalink to this headline">¶</a></h1>
-<p>Although philosophy is not a decisive factor of the effectiveness of a theory, it is still noticeable in the construction of a theoretical framework. This section embodies some of the author&#8217;s thoughts on the insights of Quantum Field Theory. The main task of this section is to answer a question: is Quantum Field Theory a quantum theory of field? And if not, what it is?</p>
+<p>Although philosophy is not a decisive factor of the effectiveness of a theory, it is still noticeable in the construction of a theoretical framework. This section embodies some of the author’s thoughts on the insights of Quantum Field Theory. The main task of this section is to answer a question: is Quantum Field Theory a quantum theory of field? And if not, what it is?</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">As a beginner, you may not be able to understand the following context quite well, and that&#8217;s completely normal. The only thing that we want you to remember, is that Quantum Field Theory actually describes particles, instead of fields.</p>
+<p class="last">As a beginner, you may not be able to understand the following context quite well, and that’s completely normal. The only thing that we want you to remember, is that Quantum Field Theory actually describes particles, instead of fields.</p>
 </div>
 <div class="section" id="quantum-theory-of-fields">
 <h2>Quantum Theory of Fields<a class="headerlink" href="#quantum-theory-of-fields" title="Permalink to this headline">¶</a></h2>
-<p>Before doing any reasoning, it is necessary to clarify what exactly is meant by calling a quantum theory of something. Let&#8217;s first look at Classical Mechanics and Quantum Mechanics, where they should be called a classical theory of particles and a quantum theory of particles respectively.</p>
-<p>To construct a classical theory of particles, we need at least two things: the state of particle and the propagation rule of the state. Routinely, the state of particle can be parameterized by the position <span class="math">\(q\)</span> and its time derivative <span class="math">\(\dot{q}\)</span>. And, the evolution rules are given by the Lagrangian formalism</p>
-<div class="math">
+<p>Before doing any reasoning, it is necessary to clarify what exactly is meant by calling a quantum theory of something. Let’s first look at Classical Mechanics and Quantum Mechanics, where they should be called a classical theory of particles and a quantum theory of particles respectively.</p>
+<p>To construct a classical theory of particles, we need at least two things: the state of particle and the propagation rule of the state. Routinely, the state of particle can be parameterized by the position <span class="math notranslate nohighlight">\(q\)</span> and its time derivative <span class="math notranslate nohighlight">\(\dot{q}\)</span>. And, the evolution rules are given by the Lagrangian formalism</p>
+<div class="math notranslate nohighlight">
 \[S = \int \mathcal{L}[q,\dot{q}]\,\mathrm{d}t\]</div>
 <p>When we transform the classical theory of particles to quantum theory, namely quantize the classical theory, we replace the state with quantum state and propagation with path integral. Specifically, in Quantum Mechanics, we have the quantized state of particle governed by</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[|q'\rangle = \int\mathrm{d}q\,|q\rangle \int_q^{q'}\mathcal{D}q\exp\{\mathrm{i}S\}\]</div>
-<p>Therefore, we can generalize to get the meaning of &#8220;quantum theory of <span class="math">\(X\)</span>” as follows. First, we need a classical theory of <span class="math">\(X\)</span>, with state <span class="math">\(\Omega(X)\)</span> governed by</p>
-<div class="math">
+<p>Therefore, we can generalize to get the meaning of “quantum theory of <span class="math notranslate nohighlight">\(X\)</span>” as follows. First, we need a classical theory of <span class="math notranslate nohighlight">\(X\)</span>, with state <span class="math notranslate nohighlight">\(\Omega(X)\)</span> governed by</p>
+<div class="math notranslate nohighlight">
 \[S = \int \mathcal{L}[\Omega(X)]\,\varepsilon\]</div>
-<p>where <span class="math">\(\varepsilon\)</span> is some measure. Then, a quantum theory of <span class="math">\(X\)</span> consists of a quantum state of <span class="math">\(X\)</span> governed by</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\varepsilon\)</span> is some measure. Then, a quantum theory of <span class="math notranslate nohighlight">\(X\)</span> consists of a quantum state of <span class="math notranslate nohighlight">\(X\)</span> governed by</p>
+<div class="math notranslate nohighlight">
 \[|X'\rangle = \int\mathrm{d}X\,|X\rangle \int_X^{X'}\mathcal{D}X\exp\{\mathrm{i}S\}\]</div>
-<p>According to this <em>definition</em>, the quantum theory of field should essentially consist of a quantum state of field <span class="math">\(|\varphi\rangle\)</span> governed by the path integral of field</p>
-<div class="math">
+<p>According to this <em>definition</em>, the quantum theory of field should essentially consist of a quantum state of field <span class="math notranslate nohighlight">\(|\varphi\rangle\)</span> governed by the path integral of field</p>
+<div class="math notranslate nohighlight">
 \[|\varphi'\rangle = \int\mathrm{d}\varphi\,|\varphi\rangle \int_\varphi^{\varphi'}\mathcal{D}\varphi\exp\{\mathrm{i}S\}\]</div>
-<p>This is what we hope a quantum theory of field should look like &#8212; by a direct analogy with what Quantum Mechanics looks like. Nonetheless, a typical Quantum Field Theory looks very different from the quantum theory of field as described above.</p>
+<p>This is what we hope a quantum theory of field should look like — by a direct analogy with what Quantum Mechanics looks like. Nonetheless, a typical Quantum Field Theory looks very different from the quantum theory of field as described above.</p>
 </div>
 <div class="section" id="quantum-field-theory">
 <h2>Quantum Field Theory<a class="headerlink" href="#quantum-field-theory" title="Permalink to this headline">¶</a></h2>
 <p>The most noticeable difference between the Quantum Field Theory and a quantum theory of field lies in the construction of quantum state. A typical quantum theory of field should be equipped with a state of field. However, in Quantum Field Theory, the state is actually an element of <strong>Fock space</strong> defined as follows.</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\mathcal{F} &amp;= \bigoplus_{n=0}^\infty\mathcal{H}^{\otimes n}\\
 &amp;= \mathbb{C}\ \ \ -\ \text{vacuum}\\
 &amp;\oplus \mathcal{H}\ \ \ -\ \text{one particle state}\\
@@ -287,21 +287,21 @@
 &amp;\oplus\ldots\oplus\\
 &amp;\oplus (\mathcal{H}\otimes\ldots\otimes\mathcal{H})\ \ \ -\ \text{many particle state}\\
 &amp;\oplus\ldots\\\end{split}\]</div>
-<p>where <span class="math">\(\mathcal{H}\)</span> is the Hilbert space of one particle state. Therefore, the Fock space is actually a direct sum of states with all possible particle numbers.</p>
-<p>The situation becomes somehow bizarre here &#8212; the state in Quantum <em>Field</em> Theory is actually the state of <em>particles</em>, instead of <em>fields</em>. This is exactly one of the sources of the complication of Quantum Field Theory &#8212; we use the field theory to describe the behaviour of particles.</p>
+<p>where <span class="math notranslate nohighlight">\(\mathcal{H}\)</span> is the Hilbert space of one particle state. Therefore, the Fock space is actually a direct sum of states with all possible particle numbers.</p>
+<p>The situation becomes somehow bizarre here — the state in Quantum <em>Field</em> Theory is actually the state of <em>particles</em>, instead of <em>fields</em>. This is exactly one of the sources of the complication of Quantum Field Theory — we use the field theory to describe the behaviour of particles.</p>
 <p>A probable cause of this situation may be found from the history. The motivation of Quantum Field Theory in history came from the efforts to make Quantum Mechanics relativistic. Therefore, relativistic Quantum Mechanics should provide an answer to this eccentricity.</p>
 </div>
 <div class="section" id="relativistic-quantum-mechanics">
 <h2>Relativistic Quantum Mechanics<a class="headerlink" href="#relativistic-quantum-mechanics" title="Permalink to this headline">¶</a></h2>
 <p>The relativistic Quantum Mechanics tries to make Quantum Mechanics and <em>Special</em> Relativity compatible. One of the central ideas of relativistic Quantum Mechanics is that the particle number can vary. Therefore, it is reasonable to construct such a Fock space which consists of all states of all possible particle number.</p>
-<p>To describe the change of particle number, we need creation <span class="math">\(a^\dagger_p\)</span> and annihilation <span class="math">\(a_p\)</span> operators, where <span class="math">\(a^\dagger_p\)</span> creates a particle of momentum <span class="math">\(p\)</span> and <span class="math">\(a_p\)</span> annihilates one. And interestingly, if we perform some formal Fourier transform for these operators</p>
-<div class="math">
+<p>To describe the change of particle number, we need creation <span class="math notranslate nohighlight">\(a^\dagger_p\)</span> and annihilation <span class="math notranslate nohighlight">\(a_p\)</span> operators, where <span class="math notranslate nohighlight">\(a^\dagger_p\)</span> creates a particle of momentum <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(a_p\)</span> annihilates one. And interestingly, if we perform some formal Fourier transform for these operators</p>
+<div class="math notranslate nohighlight">
 \[\int \mathrm{d}p\ (a^\dagger_p e^{\mathrm{i}px} + a_p e^{-\mathrm{i}px})\ \ \rightarrow\ \ \phi(x)\]</div>
-<p>It turns out to be some scalar field. However, this &#8220;field&#8221; has significant difference with the field in the quantum theory of field, although it has quite a lot fair reasons to be called a field.</p>
+<p>It turns out to be some scalar field. However, this “field” has significant difference with the field in the quantum theory of field, although it has quite a lot fair reasons to be called a field.</p>
 </div>
 <div class="section" id="so-what">
 <h2>So What?<a class="headerlink" href="#so-what" title="Permalink to this headline">¶</a></h2>
-<p>In the author&#8217;s point of view, it is not reasonable enough to make the two kinds of &#8220;field&#8221; identical. Unfortunately, it is in conventional Quantum Field Theory. And the author himself can not propose any better theories.</p>
+<p>In the author’s point of view, it is not reasonable enough to make the two kinds of “field” identical. Unfortunately, it is in conventional Quantum Field Theory. And the author himself can not propose any better theories.</p>
 <p>Therefore, in our introduction of Quantum Field Theory, we compromise. A quantum theory of field will first be constructed. Then it will be brute-forcely transformed to relativistic Quantum Mechanics in construction of scattering theory.</p>
 </div>
 </div>
@@ -312,17 +312,17 @@
 <p class="last">This context will require knowledge on Lagrangian dynamics of fields. If you have not yet cover that in your previous learning, you will find <a class="reference external" href="./bg_lag_dyn.html">Lagrangian Form of Fields</a> helpful.</p>
 </div>
 <p>The Lagrangian of a scalar field is usually written as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\mathcal L = -\partial_\mu\varphi^*\partial^\mu\varphi - m^2\varphi^*\varphi\]</div>
 <p>Alternatively, we can write</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\mathcal L = \varphi^*(\partial^\mu\partial_\mu - m^2)\varphi\]</div>
 <p>The equivalence between the two expression can be manifest once notice</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\partial_\mu(\varphi^*\partial^\mu\varphi) = \varphi^*\partial^\mu\partial_\mu \varphi + \partial_\mu\varphi^*\partial^\mu\varphi = 0\]</div>
 <p>The last equality is due to the fact that the left hand side is a surface term in the action integral.</p>
 <p>Using the Lagrange equation, we get the equations of motion of scalar field</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}(\partial^\mu\partial_\mu - m^2)\varphi = 0\\
 (\partial^\mu\partial_\mu - m^2)\varphi^* = 0\end{split}\]</div>
 <p>This is the “real” <strong>Klein-Gordon equation</strong> — the equation of scalar field.</p>
@@ -333,28 +333,28 @@
 <p class="first admonition-title">Note</p>
 <p class="last">This section is important to the canonical quantisation method, and will not influence the overall logic. You may skip this if you wish.</p>
 </div>
-<p>In this section, we look at the general solution of the Klein-Gordon equation. We do this for <span class="math">\(\varphi\)</span>, and similar procedure can be easily carried out for <span class="math">\(\varphi^*\)</span>.</p>
-<p>For any possible field <span class="math">\(\varphi\)</span>, we can perform Fourier expansion as</p>
-<div class="math">
+<p>In this section, we look at the general solution of the Klein-Gordon equation. We do this for <span class="math notranslate nohighlight">\(\varphi\)</span>, and similar procedure can be easily carried out for <span class="math notranslate nohighlight">\(\varphi^*\)</span>.</p>
+<p>For any possible field <span class="math notranslate nohighlight">\(\varphi\)</span>, we can perform Fourier expansion as</p>
+<div class="math notranslate nohighlight">
 \[\varphi = \int{\mathrm d^4k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Well, you may notice that here we do not take the symmetric form of the Fourier transformation. Although personally I prefer the symmetric form, but trust me, it can make all the successive discussions awful.</p>
 </div>
 <p>Take the above expression back into the equation, we get the dispersion relation</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[k^2 + m^2 = 0\]</div>
-<p>This relation serves as a constraint to the wave number <span class="math">\(k^\mu\)</span>. Thus, to gain the solution, all we need to do is to switch the integral measure to <a class="reference external" href="&#64;waiting">delta measure</a></p>
-<div class="math">
+<p>This relation serves as a constraint to the wave number <span class="math notranslate nohighlight">\(k^\mu\)</span>. Thus, to gain the solution, all we need to do is to switch the integral measure to <a class="reference external" href="&#64;waiting">delta measure</a></p>
+<div class="math notranslate nohighlight">
 \[\varphi(x) = \int{\mathrm d^4k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot2\pi\delta(k^2+m^2)\]</div>
-<p>Factor <span class="math">\(2\pi\)</span> is necessary since we are going to perform the integral once, like</p>
-<div class="math">
+<p>Factor <span class="math notranslate nohighlight">\(2\pi\)</span> is necessary since we are going to perform the integral once, like</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\varphi(x) &amp;= \int{\mathrm d\omega \mathrm d^3k\over(2\pi)^4}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot2\pi\delta(-\omega^2 + \vec k^2 + m^2)\\
 &amp;= \int{\mathrm d\omega^2 \mathrm d^3k\over2\omega(2\pi)^3}a(k)\exp\{-\mathrm i k^\mu x_\mu\}\cdot\delta(-\omega^2 + \vec k^2 + m^2)\\
 &amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}a(k)\exp\{\mathrm i(\omega_k t - \vec k \vec x\} + \int{\mathrm d^3k\over(-2\omega_k)(2\pi)^3}a(k)\exp\{\mathrm i(-\omega_k t - \vec k \vec x\}\\
 &amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}a(k)\exp\{\mathrm i(\omega_k t - \vec k \vec x\} + \int{\mathrm d^3k\over(2\omega_k)(2\pi)^3}a(-k)\exp\{\mathrm i(-\omega_k t + \vec k \vec x\}\\
 &amp;= \int{\mathrm d^3k\over2\omega_k(2\pi)^3}\left[a(k)\exp\{-\mathrm i(k^\mu x_\mu\} + a(-k)\exp\{\mathrm i(k^\mu x_\mu\} \right]\end{split}\]</div>
-<p>where <span class="math">\(\omega_k = \sqrt{\vec k^2 + m^2}\)</span>. The fourth equality is nothing other than reversing the direction of <span class="math">\(\vec k\)</span>. Hence, we get the general form of the solution of Klein-Gordon equation.</p>
+<p>where <span class="math notranslate nohighlight">\(\omega_k = \sqrt{\vec k^2 + m^2}\)</span>. The fourth equality is nothing other than reversing the direction of <span class="math notranslate nohighlight">\(\vec k\)</span>. Hence, we get the general form of the solution of Klein-Gordon equation.</p>
 </div>
 <div class="section" id="the-symmetry-of-fields">
 <h1>The Symmetry of Fields<a class="headerlink" href="#the-symmetry-of-fields" title="Permalink to this headline">¶</a></h1>
@@ -365,12 +365,12 @@
 </div>
 <p>Currently, we are talking about classical fields. The classical field is a kind of physical object. Therefore, despite that we can develop some tools (e.g. coordinate system or basis) to describe it, it should in a whole remain unchanged after certain manual transformation (e.g. re-selection of the basis).</p>
 <p>However, this does not mean that the components of the field will remain invariant. In fact, except for the scalar field (we will analyse this later), many other types of fields will encounter a component change after the change of basis or coordinate system. Hence, based on the behaviour of the variation of components, we can classify the physical fields.</p>
-<p>A conclusion is needed: it is possible to naturally set up an <span class="math">\(n\)</span>-dim vector space associated to every point in an <span class="math">\(n\)</span>-dim manifold. The basis of this specific vector space is called <strong>tetrad</strong> (or <span class="math">\(n\)</span>-<strong>frame</strong>, <strong>veirbein</strong> in some references).</p>
+<p>A conclusion is needed: it is possible to naturally set up an <span class="math notranslate nohighlight">\(n\)</span>-dim vector space associated to every point in an <span class="math notranslate nohighlight">\(n\)</span>-dim manifold. The basis of this specific vector space is called <strong>tetrad</strong> (or <span class="math notranslate nohighlight">\(n\)</span>-<strong>frame</strong>, <strong>veirbein</strong> in some references).</p>
 <blockquote>
 <div>We are not going to elucidate this conclusion since it would be a harangue. If you are interested, please referred to textbooks on Differential Geometry for further details.</div></blockquote>
-<p>In Quantum Field Theory, we care about three types of fields &#8212; scalar field, spinor field and vector field. Please notice that the term &#8220;scalar&#8221; and &#8220;vector&#8221; here are domain specific, which means that they might have a similar but essentially different meaning in other contexts.</p>
+<p>In Quantum Field Theory, we care about three types of fields — scalar field, spinor field and vector field. Please notice that the term “scalar” and “vector” here are domain specific, which means that they might have a similar but essentially different meaning in other contexts.</p>
 <p><strong>Scalar field</strong> is a kind of field which does not change under any transformation of tetrad; <strong>spinor field</strong> transforms according to spinor representation of the Lorentz group, and <strong>vector field</strong> transforms according to the vector representation.</p>
-<p>I know you don&#8217;t understand. But don&#8217;t worry, it is going to be illustrated next.</p>
+<p>I know you don’t understand. But don’t worry, it is going to be illustrated next.</p>
 </div>
 <div class="section" id="representation-of-lorentz-group">
 <h1>Representation of Lorentz Group<a class="headerlink" href="#representation-of-lorentz-group" title="Permalink to this headline">¶</a></h1>
@@ -379,8 +379,8 @@
 <p class="first admonition-title">Note</p>
 <p class="last">Before Continuing, you need to cover at least <a class="reference external" href="./bg_liegp.html">Basic Group Theory</a>.</p>
 </div>
-<p>Usually, a Lorentz transformation can be divided to boost and rotation. The boost along the <span class="math">\(x\)</span>-axis can be written as</p>
-<div class="math">
+<p>Usually, a Lorentz transformation can be divided to boost and rotation. The boost along the <span class="math notranslate nohighlight">\(x\)</span>-axis can be written as</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}K_x =
 \left[
 \begin{matrix}
@@ -390,8 +390,8 @@
 0 &amp; 0 &amp; 0 &amp; 1
 \end{matrix}
 \right]\end{split}\]</div>
-<p>where <span class="math">\(\mathrm{ch}\lambda\)</span> is the hyperbolic cosine and <span class="math">\(\mathrm{sh}\lambda\)</span> is the hyperbolic sine. It is easy to verify that this is equivalent to the normal form of Lorentz transformation once notice that <span class="math">\(\mathrm{ch}\lambda = \gamma, \mathrm{sh}\lambda = \gamma v, \mathrm{th}\lambda = v\)</span>. Also, for the rotation along the <span class="math">\(z\)</span>-axis, we have</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\mathrm{ch}\lambda\)</span> is the hyperbolic cosine and <span class="math notranslate nohighlight">\(\mathrm{sh}\lambda\)</span> is the hyperbolic sine. It is easy to verify that this is equivalent to the normal form of Lorentz transformation once notice that <span class="math notranslate nohighlight">\(\mathrm{ch}\lambda = \gamma, \mathrm{sh}\lambda = \gamma v, \mathrm{th}\lambda = v\)</span>. Also, for the rotation along the <span class="math notranslate nohighlight">\(z\)</span>-axis, we have</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}J_z =
 \left[
 \begin{matrix}
@@ -403,7 +403,7 @@
 \right]\end{split}\]</div>
 <p>which should be familiar to all. You should be able to write down the boosts and rotations along the other axis. All the Lorentz transformation can be formed by these boosts and rotations.</p>
 <p>We now want to find out the generators of the above boost. According to the form of infinitesimal transformation, the generator should be the first order derivative of the transformation at identity point, namely</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\vec K_x = \left.\frac{\partial K_x}{\partial\lambda}\right|_{\lambda=0} =
 \left[
 \begin{matrix}
@@ -413,43 +413,43 @@
 0 &amp; 0 &amp; 0 &amp; 0
 \end{matrix}
 \right]\end{split}\]</div>
-<p>You are encouraged to write down the generators for the other boosts and rotations. Moreover, you can also calculate explicitly <span class="math">\(\exp\{\lambda\vec K_x\}\)</span> as described in Basic Group Theory and verify that it equals <span class="math">\(K_x(\lambda)\)</span>.</p>
+<p>You are encouraged to write down the generators for the other boosts and rotations. Moreover, you can also calculate explicitly <span class="math notranslate nohighlight">\(\exp\{\lambda\vec K_x\}\)</span> as described in Basic Group Theory and verify that it equals <span class="math notranslate nohighlight">\(K_x(\lambda)\)</span>.</p>
 <p>Now that we have the generators, the infinitesimal transformation will have the form</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[1 + \eta_x\vec K_x + \eta_y \vec K_y + ...\]</div>
-<p>To simplify the formulation, we introduce a anti-symmetric lists of matrix <span class="math">\(L_{ab}\)</span> as</p>
-<div class="math">
+<p>To simplify the formulation, we introduce a anti-symmetric lists of matrix <span class="math notranslate nohighlight">\(L_{ab}\)</span> as</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}L_{01} &amp;= -L_{10} = \mathrm{i}\vec K_x,\ \ \ L_{02} = -L_{20} = \mathrm{i}\vec K_y,\ \ \ L_{03} = -L_{30} = \mathrm{i}\vec K_z\\
 L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\vec J_x,\ \ \ L_{13} = -L_{31} = \mathrm{i}\vec J_y\\\end{split}\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Anti-symmetric means <span class="math">\(L_{ab} = -L_{ba}\)</span>, which implies the diagonal elements <span class="math">\(L_{ii} = 0\)</span>.</p>
+<p class="last">Anti-symmetric means <span class="math notranslate nohighlight">\(L_{ab} = -L_{ba}\)</span>, which implies the diagonal elements <span class="math notranslate nohighlight">\(L_{ii} = 0\)</span>.</p>
 </div>
 <p>Therefore, the infinitesimal transformation is simplified to</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[1 - \frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\]</div>
-<p>where <span class="math">\(\epsilon^{ab}\)</span> is the corresponding parameters (<span class="math">\(\epsilon^{01} = \eta_x\)</span> for example), and it is also anti-symmetric. The <span class="math">\(1/2\)</span> is necessary because we need to eliminate the factor <span class="math">\(2\)</span> in <span class="math">\(\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}\)</span>.</p>
+<p>where <span class="math notranslate nohighlight">\(\epsilon^{ab}\)</span> is the corresponding parameters (<span class="math notranslate nohighlight">\(\epsilon^{01} = \eta_x\)</span> for example), and it is also anti-symmetric. The <span class="math notranslate nohighlight">\(1/2\)</span> is necessary because we need to eliminate the factor <span class="math notranslate nohighlight">\(2\)</span> in <span class="math notranslate nohighlight">\(\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}\)</span>.</p>
 <p>Consequently, all Lorentz transformation can be written under the form</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\}\]</div>
 <p>This formula is called the <strong>vector representation</strong> of the Lorentz Group. This is the default representation for the tetrad.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Rigorously speaking, the representation should be a map from the group element to the automorphism of a vector space. Thus, the above equation should be viewed as a map to map the group element (LHS) to an automorphism (RHS).</p>
 </div>
-<p>As we know, the generators <span class="math">\(L_{ab}\)</span> can be viewed as a &#8220;basis&#8221; of the Lorentz group. However, this is not the only &#8220;basis&#8221;. Next, we are going to find out another one.</p>
-<p>Before continuing, let&#8217;s first define four matrices <span class="math">\(\gamma_a, a=0,1,2,3\)</span> that satisfy</p>
-<div class="math">
+<p>As we know, the generators <span class="math notranslate nohighlight">\(L_{ab}\)</span> can be viewed as a “basis” of the Lorentz group. However, this is not the only “basis”. Next, we are going to find out another one.</p>
+<p>Before continuing, let’s first define four matrices <span class="math notranslate nohighlight">\(\gamma_a, a=0,1,2,3\)</span> that satisfy</p>
+<div class="math notranslate nohighlight">
 \[\{\gamma_a, \gamma_b\} = \gamma_a\gamma_b + \gamma_b\gamma_a = -2\eta_{ab}\]</div>
-<p>where <span class="math">\(\eta_{ab}\)</span> is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\eta_{ab}\)</span> is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group</p>
+<div class="math notranslate nohighlight">
 \[S_{ab} = \frac{1}{4}\mathrm{i}[\gamma_a, \gamma_b]\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Why? Well, we are not able to explain now since it needs Lie algebra theory. Go and find a reference about Lie algebra if you really wonder why.</p>
 </div>
 <p>Therefore, we can express the Lorentz transformation as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}\}\]</div>
 <p>This formulation is called <strong>spinor representation</strong> of the Lorentz group.</p>
 <p>Finished. But I do want to add that the representation theory of Lorentz group is quite a enchanting theory. So I suggest a careful review on this theory if you are able. It will greatly deepen your understanding through the algebraic structure of the physical field.</p>
@@ -460,23 +460,23 @@ L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\v
 <p class="first admonition-title">Note</p>
 <p class="last">Please make sure you have covered the previous section <a class="reference external" href="./repr_lg.html">Representation of Lorentz Group</a>.</p>
 </div>
-<p>This section will tell you how to define the scalar, spinor and vector (tensor) field. But before that, it is suggested to cover <a class="reference external" href="./bg_linalg.html">Basic Linear Algebra</a> for clarification of possible ambiguity of &#8220;vector&#8221;. To avoid this ambiguity, we use term <strong>linear space</strong> for the <em>vector space</em> in <a class="reference external" href="./bg_linalg.html">Linear Algebra</a>.</p>
+<p>This section will tell you how to define the scalar, spinor and vector (tensor) field. But before that, it is suggested to cover <a class="reference external" href="./bg_linalg.html">Basic Linear Algebra</a> for clarification of possible ambiguity of “vector”. To avoid this ambiguity, we use term <strong>linear space</strong> for the <em>vector space</em> in <a class="reference external" href="./bg_linalg.html">Linear Algebra</a>.</p>
 <div class="section" id="physical-field">
 <h2>Physical Field<a class="headerlink" href="#physical-field" title="Permalink to this headline">¶</a></h2>
-<p>In Quantum Field Theory, <strong>field</strong> is a central concept. In general, field is a map from the spacetime point to some object (numbers, arrows, etc.). All fields can form a linear space if the <em>object</em> also forms a linear space (as a practice, think about how to define that space). Although looked trivial, there is one thing that makes this concept intriguing &#8212; spacetime point. Spacetime point can be too abstract for analysis such that, like what we do in Group Theory, we should set up a manifold for it. With a manifold, every spacetime point has its unique coordinates, which is a powerful tool for analysis.</p>
+<p>In Quantum Field Theory, <strong>field</strong> is a central concept. In general, field is a map from the spacetime point to some object (numbers, arrows, etc.). All fields can form a linear space if the <em>object</em> also forms a linear space (as a practice, think about how to define that space). Although looked trivial, there is one thing that makes this concept intriguing — spacetime point. Spacetime point can be too abstract for analysis such that, like what we do in Group Theory, we should set up a manifold for it. With a manifold, every spacetime point has its unique coordinates, which is a powerful tool for analysis.</p>
 <p>However, the choice of coordinate system is artificial, and a law of nature should never depend on such an artificial object. Thus, it is crucial that the field should not vary after a change of coordinate system (and anything possibly related, basis of the field for example).</p>
-<p>But that does not mean that the components of the field will also be invariant. In fact, <strong>based on the different behaviour of the field components under transformations, we divide the physical field into several types</strong> &#8212; scalar field, spinor field and vector (tensor) field. Specifically, any field (as an element of a linear space) can be written as</p>
-<div class="math">
+<p>But that does not mean that the components of the field will also be invariant. In fact, <strong>based on the different behaviour of the field components under transformations, we divide the physical field into several types</strong> — scalar field, spinor field and vector (tensor) field. Specifically, any field (as an element of a linear space) can be written as</p>
+<div class="math notranslate nohighlight">
 \[\phi = \phi_i \cdot e^i\]</div>
-<p>where <span class="math">\(\phi_i\)</span> is the components of the field and <span class="math">\(e^i\)</span> is a basis for the linear space. Now, if we perform a transformation <span class="math">\(g\)</span> to the basis, the components should transform inversely in order to make the combination invariant, i.e.</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\phi_i\)</span> is the components of the field and <span class="math notranslate nohighlight">\(e^i\)</span> is a basis for the linear space. Now, if we perform a transformation <span class="math notranslate nohighlight">\(g\)</span> to the basis, the components should transform inversely in order to make the combination invariant, i.e.</p>
+<div class="math notranslate nohighlight">
 \[\phi = g^{-1}(\phi_i)\cdot g(e^i)\]</div>
-<p>Nonetheless, the above expression is meaningless. As we have pointed out, the transformation is usually constructed using Lie group. And in Quantum Field Theory, it is Lorentz Group. However, we find that the expression <span class="math">\(g^{-1}(\phi_i)\)</span> and <span class="math">\(g(e^i)\)</span> undefined, since there is no definition indicating how to apply an element of Lie group to the components and basis of the field. Thus, to let the expression make sense, we need additional information of how the group element acts on the components and the basis. This designation is called <strong>representation</strong> of Lie group.</p>
+<p>Nonetheless, the above expression is meaningless. As we have pointed out, the transformation is usually constructed using Lie group. And in Quantum Field Theory, it is Lorentz Group. However, we find that the expression <span class="math notranslate nohighlight">\(g^{-1}(\phi_i)\)</span> and <span class="math notranslate nohighlight">\(g(e^i)\)</span> undefined, since there is no definition indicating how to apply an element of Lie group to the components and basis of the field. Thus, to let the expression make sense, we need additional information of how the group element acts on the components and the basis. This designation is called <strong>representation</strong> of Lie group.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Important Notice: the dot in the previous two equations may not have the significance of certain &#8220;product&#8221;. You will see this later.</p>
+<p class="last">Important Notice: the dot in the previous two equations may not have the significance of certain “product”. You will see this later.</p>
 </div>
-<p>A simple example is when the Lie group is <span class="math">\(\mathrm{GL}(n)\)</span>. Then a trivial representation is just to define the action as the matrix multiplication. In Quantum Field Theory, the representation of Lorentz Group on the basis is always this trivial one, but that on the components can be various. Therefore, we give this representation a name: <strong>field representation</strong>.</p>
+<p>A simple example is when the Lie group is <span class="math notranslate nohighlight">\(\mathrm{GL}(n)\)</span>. Then a trivial representation is just to define the action as the matrix multiplication. In Quantum Field Theory, the representation of Lorentz Group on the basis is always this trivial one, but that on the components can be various. Therefore, we give this representation a name: <strong>field representation</strong>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Just a reminder, although you might not notice, you are actually using the idea of Fibre Bundle. If you would like, try to find some basic tutorial on principal bundle and fibre bundle associated to a principal bundle. And you will then be able to feel the elegance.</p>
@@ -485,55 +485,55 @@ L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\v
 <div class="section" id="scalar-field">
 <h2>Scalar Field<a class="headerlink" href="#scalar-field" title="Permalink to this headline">¶</a></h2>
 <p>The scalar field is the field whose field representation is scalar representation. The <strong>scalar representation</strong> is defined as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(\phi_i) = \phi_i\]</div>
 <p>which means the components of the field does not change at all under the transformation.</p>
 </div>
 <div class="section" id="vector-field">
 <h2>Vector Field<a class="headerlink" href="#vector-field" title="Permalink to this headline">¶</a></h2>
 <p>The vector field is the field whose field representation is vector representation. Thus, the components transform as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^jA_j\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">To understand the above equation, you need <a class="reference external" href="./bg_liegp.html">Basic Group Theory</a> and <a class="reference external" href="./repr_lg.html">Representation of Lorentz Group</a>.</p>
 </div>
-<p>First let&#8217;s examine the above expression. First, you have to recall what is the exponential map. Remember that the result of the exponential map (<span class="math">\(\exp\{...\}\)</span>) is a matrix, and thus <span class="math">\(\exp\{...{\}_i}^j\phi_j\)</span> is nothing but a matrix multiply a column vector.</p>
+<p>First let’s examine the above expression. First, you have to recall what is the exponential map. Remember that the result of the exponential map (<span class="math notranslate nohighlight">\(\exp\{...\}\)</span>) is a matrix, and thus <span class="math notranslate nohighlight">\(\exp\{...{\}_i}^j\phi_j\)</span> is nothing but a matrix multiply a column vector.</p>
 <p>Next, remember that we have said the transformation of the basis follows the trivial representation which is defined just as the matrix product</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^je_j\]</div>
 <p>Therefore we have</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k = A^j\cdot e_j\]</div>
-<p>Now you can see why we write a dot <span class="math">\(\cdot\)</span> between the components and the basis &#8212; under vector representation (where some triviality applies), the <span class="math">\(\cdot\)</span> in the above derivation can be &#8220;viewed&#8221; as the matrix product. However, this &#8220;view&#8221; will fail in some other non-trivial situations &#8212; as described any minute next.</p>
+<p>Now you can see why we write a dot <span class="math notranslate nohighlight">\(\cdot\)</span> between the components and the basis — under vector representation (where some triviality applies), the <span class="math notranslate nohighlight">\(\cdot\)</span> in the above derivation can be “viewed” as the matrix product. However, this “view” will fail in some other non-trivial situations — as described any minute next.</p>
 </div>
 <div class="section" id="spinor-field">
 <h2>Spinor Field<a class="headerlink" href="#spinor-field" title="Permalink to this headline">¶</a></h2>
 <p>The spinor field is the field whose field representation is spinor representation. The <strong>spinor representation</strong> is define as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\}\]</div>
 <p>Just like what we have done in the previous section, write down explicitly</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k =  A^j\cdot e_j ???\]</div>
-<p>We see that the parameters <span class="math">\(\epsilon^{ab}\)</span> are the same in the two sides of “<span class="math">\(\cdot\)</span>”, but the &#8220;basis&#8221; is different. Thus, if we still view <span class="math">\(\cdot\)</span> as the matrix product, the equality will no longer hold.</p>
+<p>We see that the parameters <span class="math notranslate nohighlight">\(\epsilon^{ab}\)</span> are the same in the two sides of “<span class="math notranslate nohighlight">\(\cdot\)</span>”, but the “basis” is different. Thus, if we still view <span class="math notranslate nohighlight">\(\cdot\)</span> as the matrix product, the equality will no longer hold.</p>
 <p>Hence, we need a new definition in this case, which means under the new product, there is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\} \rightarrow \text{identity matrix}\]</div>
-<p>In Fibre Bundle theory, we achieve this by introducing an equivalence class. Yes, it looks like that we are &#8220;brute-forcely&#8221; identify the the above result as an identity matrix. But as a matter of fact, there is no preliminary intentions to make <span class="math">\(\cdot\)</span> here as a product &#8212; it just looks like that in vector field. In Fibre Bundle theory, fields of all kinds are described universally using the equivalence class.</p>
+<p>In Fibre Bundle theory, we achieve this by introducing an equivalence class. Yes, it looks like that we are “brute-forcely” identify the the above result as an identity matrix. But as a matter of fact, there is no preliminary intentions to make <span class="math notranslate nohighlight">\(\cdot\)</span> here as a product — it just looks like that in vector field. In Fibre Bundle theory, fields of all kinds are described universally using the equivalence class.</p>
 </div>
 <div class="section" id="tensor-field">
 <h2>Tensor Field<a class="headerlink" href="#tensor-field" title="Permalink to this headline">¶</a></h2>
-<p>The tensor of order <span class="math">\(n\)</span> is nothing but a quantity <span class="math">\(T_{\mu_1\cdots \mu_n}\)</span> of <span class="math">\(n\)</span> indices with each of them transforming like the vector. For instance, if you put two vectors <span class="math">\(A_\mu\)</span> and <span class="math">\(B_\nu\)</span> together, i.e. <span class="math">\(A_\mu B_\nu\)</span>, the result will be a tensor.</p>
+<p>The tensor of order <span class="math notranslate nohighlight">\(n\)</span> is nothing but a quantity <span class="math notranslate nohighlight">\(T_{\mu_1\cdots \mu_n}\)</span> of <span class="math notranslate nohighlight">\(n\)</span> indices with each of them transforming like the vector. For instance, if you put two vectors <span class="math notranslate nohighlight">\(A_\mu\)</span> and <span class="math notranslate nohighlight">\(B_\nu\)</span> together, i.e. <span class="math notranslate nohighlight">\(A_\mu B_\nu\)</span>, the result will be a tensor.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Actually it is a tough decision for me to write down the above &#8220;non-sense&#8221;. Yes, rigorously speaking, the above descriptions are total non-sense &#8212; but they appear in many textbooks. In fact, there is no indices which are able to &#8220;transform like vector&#8221;, and there is no way to &#8220;put vectors together&#8221; (It has its name &#8212; tensor product!). Unfortunately it will make our introduction to QFT too cumbersome so we decide not to cover Tensor Analysis. However! You are strongly suggested to try your best to cover that &#8212; it is as essential, and beautiful, and powerful as any other wonderful theories you met before.</p>
+<p class="last">Actually it is a tough decision for me to write down the above “non-sense”. Yes, rigorously speaking, the above descriptions are total non-sense — but they appear in many textbooks. In fact, there is no indices which are able to “transform like vector”, and there is no way to “put vectors together” (It has its name — tensor product!). Unfortunately it will make our introduction to QFT too cumbersome so we decide not to cover Tensor Analysis. However! You are strongly suggested to try your best to cover that — it is as essential, and beautiful, and powerful as any other wonderful theories you met before.</p>
 </div>
 <p>Although we do not cover Tensor Analysis, we will provide a list for you to determine whether you have mastered it.</p>
 <blockquote>
 <div><ul class="simple">
-<li>Tensor of type <span class="math">\((k, l)\)</span> is a multi-linear map from the Cartesian product of <span class="math">\(k\)</span> dual vector spaces and <span class="math">\(l\)</span> vector spaces.</li>
-<li>The tensor product of a tensor of type <span class="math">\((k, l)\)</span> and a tensor of type <span class="math">\((k', l')\)</span> is a tensor of type <span class="math">\((k+k', l+l')\)</span>.</li>
-<li>The dimension of the space of tensor of type <span class="math">\((k, l)\)</span> is <span class="math">\(n^{(k+l)}\)</span>, where <span class="math">\(n\)</span> is the dimension of the vector space in the definition of the tensor.</li>
+<li>Tensor of type <span class="math notranslate nohighlight">\((k, l)\)</span> is a multi-linear map from the Cartesian product of <span class="math notranslate nohighlight">\(k\)</span> dual vector spaces and <span class="math notranslate nohighlight">\(l\)</span> vector spaces.</li>
+<li>The tensor product of a tensor of type <span class="math notranslate nohighlight">\((k, l)\)</span> and a tensor of type <span class="math notranslate nohighlight">\((k', l')\)</span> is a tensor of type <span class="math notranslate nohighlight">\((k+k', l+l')\)</span>.</li>
+<li>The dimension of the space of tensor of type <span class="math notranslate nohighlight">\((k, l)\)</span> is <span class="math notranslate nohighlight">\(n^{(k+l)}\)</span>, where <span class="math notranslate nohighlight">\(n\)</span> is the dimension of the vector space in the definition of the tensor.</li>
 <li>The act of the tensor on a vector (or dual vector) is equivalent to the composite of tensor product and tensor contraction.</li>
 </ul>
 </div></blockquote>
@@ -550,60 +550,60 @@ L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\v
 - It can imply Klein-Gordon equation
 - It remains unchanged under the Lorentz transformation
 The first requirement is due to the fact that the Klein-Gordon equation will imply the relativistic energy-momentum relation. Historically, Dirac put forward the equation under the consideration of performing the formal square root of the Klein-Gordon equation. The Dirac equation reads</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\mathrm{i}\gamma^\mu\!\partial_\mu\psi - m\psi = 0\]</div>
-<p>where <span class="math">\(\gamma_\mu = \gamma^a e_a^\mu\)</span> and <span class="math">\(e_a^\mu\)</span> is the tetrad. Next we briefly confirm that the equation does comply with the requirements.</p>
+<p>where <span class="math notranslate nohighlight">\(\gamma_\mu = \gamma^a e_a^\mu\)</span> and <span class="math notranslate nohighlight">\(e_a^\mu\)</span> is the tetrad. Next we briefly confirm that the equation does comply with the requirements.</p>
 <p>It is easy to see that the first requirement is met once notice</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}(\mathrm{i}\gamma^\mu\!\partial_\mu + m)(\mathrm{i}\gamma^\nu\!\partial_\nu - m)\psi = -(\gamma^\mu\gamma^\nu\partial_\mu\partial_\nu + m^2)&amp;\psi\\
 = (g^{\mu\nu}\partial_\mu\partial_\nu - m^2)\psi = (\partial^\mu\partial_\mu - m^2)&amp;\psi = 0\end{split}\]</div>
 <p>The second condition requires</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\mathrm{i}\gamma'^\mu\!\partial_\mu\psi' - m\psi' = 0\]</div>
-<p>where <span class="math">\(\psi' = S\psi\)</span>, <span class="math">\(S\)</span> is the matrix of spinor representation of Lorentz transformation and <span class="math">\(\psi\)</span> satisfies the Dirac equation. This could be achieved if</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\psi' = S\psi\)</span>, <span class="math notranslate nohighlight">\(S\)</span> is the matrix of spinor representation of Lorentz transformation and <span class="math notranslate nohighlight">\(\psi\)</span> satisfies the Dirac equation. This could be achieved if</p>
+<div class="math notranslate nohighlight">
 \[S\gamma'^\mu S^{-1} = \gamma^\mu\]</div>
-<p>We shall not prove the above identity but to provide a sketch of the proof. Since <span class="math">\(\gamma^\mu = \gamma^a e_a^\mu\)</span>, the above equation would require</p>
-<div class="math">
+<p>We shall not prove the above identity but to provide a sketch of the proof. Since <span class="math notranslate nohighlight">\(\gamma^\mu = \gamma^a e_a^\mu\)</span>, the above equation would require</p>
+<div class="math notranslate nohighlight">
 \[S\gamma^a S^{-1} = \varLambda^a_b\gamma^b\]</div>
-<p>This relation can be verified if take <span class="math">\(S\)</span> and <span class="math">\(\varLambda\)</span> to be infinitesimal transformation. And you will find the following trick useful</p>
-<div class="math">
+<p>This relation can be verified if take <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(\varLambda\)</span> to be infinitesimal transformation. And you will find the following trick useful</p>
+<div class="math notranslate nohighlight">
 \[[A, BC] = \{A,B\}C - \{B, A\}C\]</div>
-<p>Next, we construct the Lagrangian of the spinor field. An intuitive construction is just to multiply the Dirac equation by the Hermitian conjugate <span class="math">\(\psi^\dagger\)</span> of the spinor field</p>
-<div class="math">
+<p>Next, we construct the Lagrangian of the spinor field. An intuitive construction is just to multiply the Dirac equation by the Hermitian conjugate <span class="math notranslate nohighlight">\(\psi^\dagger\)</span> of the spinor field</p>
+<div class="math notranslate nohighlight">
 \[\mathcal{L}_{\text{tmp}} = -\psi^\dagger(\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi\]</div>
 <p>However, this Lagrangian is not invariant under the Lorentz transformation, since</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\mathcal{L'}_{\text{tmp}} = -\psi^\dagger [S^\dagger S](\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi\]</div>
-<p>The representation <span class="math">\(S\)</span> is not necessarily unitary and thus <span class="math">\(S^\dagger S\)</span> is not necessarily identity. Therefore, we construct the Dirac conjugate of spinor field as</p>
-<div class="math">
+<p>The representation <span class="math notranslate nohighlight">\(S\)</span> is not necessarily unitary and thus <span class="math notranslate nohighlight">\(S^\dagger S\)</span> is not necessarily identity. Therefore, we construct the Dirac conjugate of spinor field as</p>
+<div class="math notranslate nohighlight">
 \[\bar{\psi} = \psi^\dagger\gamma^0\]</div>
 <p>and construct the Lagrangian as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\mathcal{L} = -\bar{\psi}(\mathrm{i}\gamma^\mu\!\partial_\mu - m)\psi\]</div>
 <p>Now you can verify that this Lagrangian is Lorentz invariant if notice</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\gamma^0\cdot\gamma^0 = I,\ \ \ \gamma^0 S^\dagger\gamma^0 = S^{-1}\]</div>
 <p>The theory of spinor field is somehow abundant, and this section only covers very basic conclusion about it. Therefore, you are suggested to refer to other textbooks about the Quantum Field Theory or spinor geometry for further information about spinor field theory.</p>
 </div>
 <div class="section" id="maxwells-equations">
 <h1>Maxwell’s Equations<a class="headerlink" href="#maxwells-equations" title="Permalink to this headline">¶</a></h1>
 <p>This is only a summary of the Maxwell’s equations under the language of Differential Geometry. There is no intention to introduce in detail — you are expected to cover them in your Electrodynamics courses.</p>
-<p>First, we have the electromagnetic tensor <span class="math">\(F_{\mu\nu}\)</span> satisfying</p>
-<div class="math">
+<p>First, we have the electromagnetic tensor <span class="math notranslate nohighlight">\(F_{\mu\nu}\)</span> satisfying</p>
+<div class="math notranslate nohighlight">
 \[E_i = F_{0i}, \ \ \ \ \ B_i = -\frac{1}{2}\varepsilon_{ijk}F^{jk}\]</div>
-<p>The Maxwell’s equations can be expressed using <span class="math">\(F_{\mu\nu}\)</span> as</p>
-<div class="math">
+<p>The Maxwell’s equations can be expressed using <span class="math notranslate nohighlight">\(F_{\mu\nu}\)</span> as</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\partial^\mu &amp;F_{\mu\nu} = 0\\
 \partial_{[\mu} &amp;F_{\rho\sigma]} = 0\end{split}\]</div>
-<p>You can verify that the above equations indeed imply the ordinary form of Maxwell’s equation. The second equality should imply that the tensor <span class="math">\(F_{\mu\nu}\)</span> can be expressed as</p>
-<div class="math">
+<p>You can verify that the above equations indeed imply the ordinary form of Maxwell’s equation. The second equality should imply that the tensor <span class="math notranslate nohighlight">\(F_{\mu\nu}\)</span> can be expressed as</p>
+<div class="math notranslate nohighlight">
 \[F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu\]</div>
-<p>where <span class="math">\(A_\mu\)</span> is a “vector” (dual vector or 1-form to be precise). It is easily identified that <span class="math">\(A_\mu\)</span> represents the electromagnetic potential. With the above construction, the second equation of the Maxwell’s equations automatically holds, and hence the Maxwell’s equations is reduced to</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(A_\mu\)</span> is a “vector” (dual vector or 1-form to be precise). It is easily identified that <span class="math notranslate nohighlight">\(A_\mu\)</span> represents the electromagnetic potential. With the above construction, the second equation of the Maxwell’s equations automatically holds, and hence the Maxwell’s equations is reduced to</p>
+<div class="math notranslate nohighlight">
 \[\partial^\mu F_{\mu\nu} = 0\]</div>
 <p>It is easily verified that the Lagrangian of the electromagnetic field is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}\]</div>
 <p>If you find any of the above content unfamiliar, please find and review a textbook about Electrodynamics, and make sure you have fully understood all the contents before proceeding.</p>
 </div>
@@ -626,137 +626,137 @@ The first requirement is due to the fact that the Klein-Gordon equation will imp
 <h1>Path Integral and Propagator<a class="headerlink" href="#path-integral-and-propagator" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">This section requires knowledge on Green&#8217;s function. Although we will briefly review some basics, you are still suggested to pick up a textbook on Mathematical Methods of Physics for a careful review.</p>
+<p class="last">This section requires knowledge on Green’s function. Although we will briefly review some basics, you are still suggested to pick up a textbook on Mathematical Methods of Physics for a careful review.</p>
 </div>
 <p>In this section, you will make your first acquaintance with path integral. In quantum theory, path integral is a method of constructing the <strong>propagator</strong>. So we begin with the propagator.</p>
 <div class="section" id="schrodingers-equation-and-propagator">
 <h2>Schrödinger’s Equation and Propagator<a class="headerlink" href="#schrodingers-equation-and-propagator" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">The symbols invoked in this section (e.g. <span class="math">\(\psi\)</span>) have a dedicated meaning, which will be different from other sections in this project.</p>
+<p class="last">The symbols invoked in this section (e.g. <span class="math notranslate nohighlight">\(\psi\)</span>) have a dedicated meaning, which will be different from other sections in this project.</p>
 </div>
-<p>First, we need to recall <strong>Green&#8217;s function</strong>. Mathematically, Green&#8217;s function <span class="math">\(G(x;x')\)</span> of an operator <span class="math">\(L\)</span> is defined as</p>
-<div class="math">
+<p>First, we need to recall <strong>Green’s function</strong>. Mathematically, Green’s function <span class="math notranslate nohighlight">\(G(x;x')\)</span> of an operator <span class="math notranslate nohighlight">\(L\)</span> is defined as</p>
+<div class="math notranslate nohighlight">
 \[LG(x;x') = \delta(x;x')\]</div>
 <p>This method is very useful to solve equations like</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[L\varphi(x) = J(x)\]</div>
-<p>since if we know the Green&#8217;s function <span class="math">\(G(x;x')\)</span> of <span class="math">\(L\)</span>, the solution is simply</p>
-<div class="math">
+<p>since if we know the Green’s function <span class="math notranslate nohighlight">\(G(x;x')\)</span> of <span class="math notranslate nohighlight">\(L\)</span>, the solution is simply</p>
+<div class="math notranslate nohighlight">
 \[\varphi(x) = \int G(x;x') J(x')\,\mathrm{d}x'\]</div>
 <p>One can easily verify if notice</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}L\varphi(x) &amp;= L\int G(x;x') J(x')\,\mathrm{d}x' \\
 &amp;= \int LG(x;x') J(x')\,\mathrm{d}x' = \int \delta(x;x') J(x')\,\mathrm{d}x' = J(x)\end{split}\]</div>
-<p>where the second equality is due to the fact that <span class="math">\(L\)</span> consists only operation on <span class="math">\(x\)</span> and is totally irrelevant to <span class="math">\(x'\)</span>.</p>
+<p>where the second equality is due to the fact that <span class="math notranslate nohighlight">\(L\)</span> consists only operation on <span class="math notranslate nohighlight">\(x\)</span> and is totally irrelevant to <span class="math notranslate nohighlight">\(x'\)</span>.</p>
 <p>In Quantum Mechanics, we have the Schrödinger’s equation</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\left[\mathrm{i}\frac{\partial}{\partial t} + \frac{1}{2m}\nabla^2\right]|\psi\rangle = 0\]</div>
-<p>All within the bracket can be viewed as an operator, and thus possesses a Green&#8217;s function</p>
-<div class="math">
+<p>All within the bracket can be viewed as an operator, and thus possesses a Green’s function</p>
+<div class="math notranslate nohighlight">
 \[\left[\mathrm{i}\frac{\partial}{\partial t} + \frac{1}{2m}\nabla^2\right]K(t,x;t',x') = \delta(x;x')\delta(t;t')\]</div>
 <p>With this propagator, we can calculate the state of anytime after from an initial state</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[|\psi(t')\rangle = \int K(x,t;x',t')|\psi(t)\rangle\mathrm{d}x\mathrm{d}t\]</div>
-<p>Therefore, the initial state <span class="math">\(|\psi(t)\rangle\)</span> <em>propagates</em> to the final state <span class="math">\(|\psi(t')\rangle\)</span> with the help of <span class="math">\(K(x,t;x',t')\)</span>. As a consequence, <span class="math">\(K(x,t;x',t')\)</span> is called the <strong>propagator</strong>.</p>
+<p>Therefore, the initial state <span class="math notranslate nohighlight">\(|\psi(t)\rangle\)</span> <em>propagates</em> to the final state <span class="math notranslate nohighlight">\(|\psi(t')\rangle\)</span> with the help of <span class="math notranslate nohighlight">\(K(x,t;x',t')\)</span>. As a consequence, <span class="math notranslate nohighlight">\(K(x,t;x',t')\)</span> is called the <strong>propagator</strong>.</p>
 </div>
 <div class="section" id="path-integral">
 <h2>Path Integral<a class="headerlink" href="#path-integral" title="Permalink to this headline">¶</a></h2>
 <p>The previous argument is only one way to construct Quantum Mechanics, i.e. suppose the Schrödinger equation holds -&gt; derivation of the propagator. In 1948, Feynman proposed another way of reasoning: path integral -&gt; propagator -&gt; Schrödinger equation.</p>
 <p>Feynman suggest the propagator takes the form</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[K = \int \mathcal{D}x \exp\{\mathrm{i}S[x]\}\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Rigorously speaking, we should use <span class="math">\(\propto\)</span> instead of <span class="math">\(=\)</span> in the above equation, since the RHS may produce annoying constant factors. However, this factor can be eliminated through normalisation. Therefore, all the subsequent path integral will automatically carry this normalisation process.</p>
+<p class="last">Rigorously speaking, we should use <span class="math notranslate nohighlight">\(\propto\)</span> instead of <span class="math notranslate nohighlight">\(=\)</span> in the above equation, since the RHS may produce annoying constant factors. However, this factor can be eliminated through normalisation. Therefore, all the subsequent path integral will automatically carry this normalisation process.</p>
 </div>
-<p>where <span class="math">\(S[x]\)</span> is the action of the system, and <span class="math">\(\int\mathcal{D}x\)</span> is the so-called path integral. Next, we carefully examine the above equation.</p>
+<p>where <span class="math notranslate nohighlight">\(S[x]\)</span> is the action of the system, and <span class="math notranslate nohighlight">\(\int\mathcal{D}x\)</span> is the so-called path integral. Next, we carefully examine the above equation.</p>
 <p>Take 1D free particle for example. The Lagrangian of 1D free particle is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[L = \frac{1}{2}m\dot{x}^2\]</div>
 <p>Thus, the action is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[S[x] = \int\mathrm{d}t\,\frac{1}{2}m\dot{x}^2\]</div>
-<p>Suppose we now work on the start point <span class="math">\(x, t\)</span> and end point <span class="math">\(x', t'\)</span>. The path integral requires &#8220;integrating along all paths&#8221;. However, the &#8220;all path&#8221; can be hard to manipulate, since it is something uncountable. More specifically, it should be something like</p>
-<div class="math">
+<p>Suppose we now work on the start point <span class="math notranslate nohighlight">\(x, t\)</span> and end point <span class="math notranslate nohighlight">\(x', t'\)</span>. The path integral requires “integrating along all paths”. However, the “all path” can be hard to manipulate, since it is something uncountable. More specifically, it should be something like</p>
+<div class="math notranslate nohighlight">
 \[\int [...]\mathrm{d}[x(t_1)]\int [...]\mathrm{d}[x(t_2)]\int [...]\mathrm{d}[x(t_3)]...\]</div>
-<p>where every point within interval <span class="math">\((t,t')\)</span> needs an integration. This is clearly impossible since there are uncountable elements within <span class="math">\((t,t')\)</span>. Hence, we come up with the idea of a kind of &#8220;sampling&#8221;.</p>
-<p>For an arbitrary large number (<span class="math">\(n\)</span>) of points within <span class="math">\((t,t')\)</span> (the &#8220;sample&#8221; of <span class="math">\(n\)</span> points), the following formula</p>
-<div class="math">
+<p>where every point within interval <span class="math notranslate nohighlight">\((t,t')\)</span> needs an integration. This is clearly impossible since there are uncountable elements within <span class="math notranslate nohighlight">\((t,t')\)</span>. Hence, we come up with the idea of a kind of “sampling”.</p>
+<p>For an arbitrary large number (<span class="math notranslate nohighlight">\(n\)</span>) of points within <span class="math notranslate nohighlight">\((t,t')\)</span> (the “sample” of <span class="math notranslate nohighlight">\(n\)</span> points), the following formula</p>
+<div class="math notranslate nohighlight">
 \[\int [...]\mathrm{d}[x(t_1)] \int [...]\mathrm{d}[x(t_2)] ... \int [...]\mathrm{d}[x(t_n)]\]</div>
-<p>exists, we <em>define</em> this result as the integration of all path, i.e. the path integral of <span class="math">\([...]\)</span>. The fact that the size of the &#8220;sample&#8221; can be <em>arbitrarily</em> large insures that the integral actually goes over <em>every path</em>.</p>
+<p>exists, we <em>define</em> this result as the integration of all path, i.e. the path integral of <span class="math notranslate nohighlight">\([...]\)</span>. The fact that the size of the “sample” can be <em>arbitrarily</em> large insures that the integral actually goes over <em>every path</em>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The trick to turn some infinite objects to something arbitrary can be very common in Mathematics. For instance, the concept <em>infinitely large</em> can be in fact <em>arbitrarily large</em> or <em>no upper bound</em>. The limit in Mathematics also follows similar idea.</p>
 </div>
-<p>To formally implement this, insert <span class="math">\(n\)</span> points into <span class="math">\((t,t')\)</span> and perform <span class="math">\(n\)</span> integrations</p>
-<div class="math">
+<p>To formally implement this, insert <span class="math notranslate nohighlight">\(n\)</span> points into <span class="math notranslate nohighlight">\((t,t')\)</span> and perform <span class="math notranslate nohighlight">\(n\)</span> integrations</p>
+<div class="math notranslate nohighlight">
 \[\prod_{i=1}^{n}\int\exp\{\mathrm{i}\frac{1}{2}m\frac{[x(t_i)-x(t_{i-1})]^2}{\epsilon}\}\mathrm{d}[x(t_i)]\]</div>
-<p>where we also expand the integration in the action into discrete form, and <span class="math">\(\epsilon = (t'-t)/(n+1)\)</span> is the size of each small interval. Then, ask the &#8220;sample size&#8221; <span class="math">\(n\)</span> to go to infinity</p>
-<div class="math">
+<p>where we also expand the integration in the action into discrete form, and <span class="math notranslate nohighlight">\(\epsilon = (t'-t)/(n+1)\)</span> is the size of each small interval. Then, ask the “sample size” <span class="math notranslate nohighlight">\(n\)</span> to go to infinity</p>
+<div class="math notranslate nohighlight">
 \[\lim_{n\rightarrow\infty}\int C(\epsilon)\prod_{i=1}^{n}\mathrm{d}[x(t_i)]\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{1}{2}m\frac{[x(t_i)-x(t_{i-1})]^2}{\epsilon}\}\]</div>
-<p>where we also adjust the order and introduce a normalisation factor <span class="math">\(C(\epsilon)\)</span> to ensure the convergence. You should be able to prove this adjustment once notice that all <span class="math">\(x(t_i)\)</span> are independent variables. The above formula is the definition of the path integral</p>
-<div class="math">
+<p>where we also adjust the order and introduce a normalisation factor <span class="math notranslate nohighlight">\(C(\epsilon)\)</span> to ensure the convergence. You should be able to prove this adjustment once notice that all <span class="math notranslate nohighlight">\(x(t_i)\)</span> are independent variables. The above formula is the definition of the path integral</p>
+<div class="math notranslate nohighlight">
 \[\int\mathcal{D}x\exp\{\mathrm{i}\int\mathrm{d}t\frac{1}{2}m\dot{x}\}\]</div>
 <p>As a practice, you should try to write down the definition of a general path integral</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\int\mathcal{D}x\exp\{\mathrm{i}\int\mathrm{d}t L\}\]</div>
-<p>You may find the above elucidation hard to comprehend. That&#8217;s normal. Try to draw some diagrams or analyse step by step. It might help.</p>
+<p>You may find the above elucidation hard to comprehend. That’s normal. Try to draw some diagrams or analyse step by step. It might help.</p>
 </div>
 </div>
 <div class="section" id="evaluation-of-path-integral">
 <h1>Evaluation of Path Integral<a class="headerlink" href="#evaluation-of-path-integral" title="Permalink to this headline">¶</a></h1>
 <p>This section will tell you how to explicitly calculate the propagator using path integral. Take the free particle for example (you should try to generalise the calculation into other situations). The propagator of the free particle is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[K = \lim_{n\rightarrow\infty}\int C(\epsilon)\prod_{i=1}^{n}\mathrm{d}[x(t_i)]\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{1}{2}m\frac{[x(t_i)-x(t_{i-1})]^2}{\epsilon}\}\]</div>
-<p>To simplify the expression, denote <span class="math">\(x_i\equiv x(t_i)\)</span> and let <span class="math">\(m=2\)</span>. As a result, the integral simplifies to</p>
-<div class="math">
+<p>To simplify the expression, denote <span class="math notranslate nohighlight">\(x_i\equiv x(t_i)\)</span> and let <span class="math notranslate nohighlight">\(m=2\)</span>. As a result, the integral simplifies to</p>
+<div class="math notranslate nohighlight">
 \[K = \lim_{n\rightarrow\infty}\int C(\epsilon)\prod_{i=1}^{n}\mathrm{d}x_i\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{(x_i-x_{i-1})^2}{\epsilon}\}\]</div>
-<p>Before trying to actually evaluate the above expression, we should first find out the normalisation factor <span class="math">\(C(\epsilon)\)</span>.</p>
+<p>Before trying to actually evaluate the above expression, we should first find out the normalisation factor <span class="math notranslate nohighlight">\(C(\epsilon)\)</span>.</p>
 <div class="section" id="determination-of-normalisation-factor">
 <h2>Determination of Normalisation Factor<a class="headerlink" href="#determination-of-normalisation-factor" title="Permalink to this headline">¶</a></h2>
-<p>The normalisation factor can be constrained under the infinitesimal evolvement. Suppose we now work on the interval <span class="math">\((t, t+\epsilon)\)</span> where <span class="math">\(\epsilon\)</span> is an infinitesimal time step. Therefore, the normalisation condition requires</p>
-<div class="math">
+<p>The normalisation factor can be constrained under the infinitesimal evolvement. Suppose we now work on the interval <span class="math notranslate nohighlight">\((t, t+\epsilon)\)</span> where <span class="math notranslate nohighlight">\(\epsilon\)</span> is an infinitesimal time step. Therefore, the normalisation condition requires</p>
+<div class="math notranslate nohighlight">
 \[K(t; t+\epsilon) = \int c\,\mathrm{d}y \exp\{-\frac{(y-x)^2}{\mathrm{i}\epsilon}\} = 1\]</div>
-<p>where <span class="math">\(y\)</span> is the position at <span class="math">\(t+\epsilon\)</span> and <span class="math">\(x\)</span> is the position at <span class="math">\(t\)</span>. Perform the integration and we get</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(y\)</span> is the position at <span class="math notranslate nohighlight">\(t+\epsilon\)</span> and <span class="math notranslate nohighlight">\(x\)</span> is the position at <span class="math notranslate nohighlight">\(t\)</span>. Perform the integration and we get</p>
+<div class="math notranslate nohighlight">
 \[c\cdot \sqrt{\mathrm{i}\pi\epsilon} = 1 \ \ \Rightarrow\ \ c = \frac{1}{\sqrt{\mathrm{i}\pi\epsilon}}\]</div>
-<p>This normalisation factor emerges whenever we the time moves forward the amount <span class="math">\(\epsilon\)</span>. In our previous expression, we insert <span class="math">\(n\)</span> point into the interval <span class="math">\((t,t')\)</span> which means we move forward <span class="math">\(n+1\)</span> steps. Therefore</p>
-<div class="math">
+<p>This normalisation factor emerges whenever we the time moves forward the amount <span class="math notranslate nohighlight">\(\epsilon\)</span>. In our previous expression, we insert <span class="math notranslate nohighlight">\(n\)</span> point into the interval <span class="math notranslate nohighlight">\((t,t')\)</span> which means we move forward <span class="math notranslate nohighlight">\(n+1\)</span> steps. Therefore</p>
+<div class="math notranslate nohighlight">
 \[C(\epsilon) = c^{n+1} = (\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\]</div>
 <p>The normalisation factor of the other forms of Lagrangian can be derived through a similar way.</p>
 </div>
 <div class="section" id="expand-according-to-classical-path">
 <h2>Expand according to Classical Path<a class="headerlink" href="#expand-according-to-classical-path" title="Permalink to this headline">¶</a></h2>
-<p>Usually, the path integral will have an upper and lower boundary, i.e. <span class="math">\(x'\)</span> and <span class="math">\(x_0\)</span>, which brings some trouble during the evaluation. Hence, we want to eliminate this trouble. The best way is to introduce a <em>relative</em> variable, i.e. select a certain path <span class="math">\(x_c\)</span> with <span class="math">\(x_c(t_0) = x_0\)</span> and <span class="math">\(x_c(t') = x'\)</span> and perform the path integral according to <span class="math">\(y\equiv x - x_c\)</span>. Of course, you can choose whatever path <span class="math">\(x_c\)</span> you like, but there is one path that will make the evaluation less miserable &#8212; the classical path.</p>
+<p>Usually, the path integral will have an upper and lower boundary, i.e. <span class="math notranslate nohighlight">\(x'\)</span> and <span class="math notranslate nohighlight">\(x_0\)</span>, which brings some trouble during the evaluation. Hence, we want to eliminate this trouble. The best way is to introduce a <em>relative</em> variable, i.e. select a certain path <span class="math notranslate nohighlight">\(x_c\)</span> with <span class="math notranslate nohighlight">\(x_c(t_0) = x_0\)</span> and <span class="math notranslate nohighlight">\(x_c(t') = x'\)</span> and perform the path integral according to <span class="math notranslate nohighlight">\(y\equiv x - x_c\)</span>. Of course, you can choose whatever path <span class="math notranslate nohighlight">\(x_c\)</span> you like, but there is one path that will make the evaluation less miserable — the classical path.</p>
 <p>According to the variation principle, the classical path is defined as the path which satisfies</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\left.\frac{\delta S}{\delta x}\right|_{x=x_c} = 0\]</div>
 <p>Expand the action according to the classical path and we get</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[S = S_c + \left.\frac{\delta S}{\delta x}\right|_{x=x_c} y + \left.\frac{\delta^2 S}{\delta x^2}\right|_{x=x_c}y^2\]</div>
-<p>This is nothing but a functional version of Taylor expansion. The expansion ends at second order since for most systems, the Lagrangian is quadratic. It is clear that the second term is zero. For the third term, it is exactly the same as <span class="math">\(S_c\)</span> for free particle situation. Therefore, we separate the action into the addition of a classical action and an action of <span class="math">\(y\)</span> which satisfies <span class="math">\(y_0 = y' = 0\)</span>.</p>
+<p>This is nothing but a functional version of Taylor expansion. The expansion ends at second order since for most systems, the Lagrangian is quadratic. It is clear that the second term is zero. For the third term, it is exactly the same as <span class="math notranslate nohighlight">\(S_c\)</span> for free particle situation. Therefore, we separate the action into the addition of a classical action and an action of <span class="math notranslate nohighlight">\(y\)</span> which satisfies <span class="math notranslate nohighlight">\(y_0 = y' = 0\)</span>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The above derivation will invoke functional Taylor expansion. If you can not yet accept this, it won&#8217;t be miserable just to substitute <span class="math">\(x = x_c + y\)</span> into the original path integral and get the same result.</p>
+<p class="last">The above derivation will invoke functional Taylor expansion. If you can not yet accept this, it won’t be miserable just to substitute <span class="math notranslate nohighlight">\(x = x_c + y\)</span> into the original path integral and get the same result.</p>
 </div>
 </div>
 <div class="section" id="evaluation-by-quadratic-form">
 <h2>Evaluation by Quadratic Form<a class="headerlink" href="#evaluation-by-quadratic-form" title="Permalink to this headline">¶</a></h2>
 <p>Our path integral now becomes</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[K = K_c \cdot \lim_{n\rightarrow\infty}\int (\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\prod_{i=1}^{n}\mathrm{d}y_i\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{(y_i-y_{i-1})^2}{\epsilon}\}\]</div>
 <p>where</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[K_c = \exp\{\mathrm{i}S_c\}\]</div>
-<p>is the &#8220;classical&#8221; part of the propagator.</p>
-<p>A naive way of evaluating this integral is to follow the definition &#8212; perform <span class="math">\(n\)</span> integration and then take the limit. However, recall that most of the physical models, the Lagrangian is quadratic. This provides another way of evaluating the path integral, which brings much ease.</p>
+<p>is the “classical” part of the propagator.</p>
+<p>A naive way of evaluating this integral is to follow the definition — perform <span class="math notranslate nohighlight">\(n\)</span> integration and then take the limit. However, recall that most of the physical models, the Lagrangian is quadratic. This provides another way of evaluating the path integral, which brings much ease.</p>
 <p>To begin with, expand the summation</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}&amp;y_1^2 + y_1^2 - 2y_1y_2 + y_2^2 + y_2^2 - 2y_2 y_3 + y_3^2 + ...\\
 =\ &amp;2y_1^2 - y_1y_2 - y_1y_2 + 2y_2^2 - 2y_2 y_3 - 2y_2 y_3 + ...\end{split}\]</div>
 <p>The reason for a rearrangement of the terms can be seen if we write the expansion in matrix form</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}[y_1\ y_2\ y_3 \ldots y_n]
 \left[
 \begin{matrix}
@@ -778,37 +778,37 @@ y_n\\
 \end{matrix}
 \right]
 \equiv \eta^T M \eta\end{split}\]</div>
-<p>where <span class="math">\(\eta\)</span> is an <span class="math">\(n\)</span>-dim vector and <span class="math">\(M\)</span> is the matrix in the middle. Therefore, the integral becomes</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\eta\)</span> is an <span class="math notranslate nohighlight">\(n\)</span>-dim vector and <span class="math notranslate nohighlight">\(M\)</span> is the matrix in the middle. Therefore, the integral becomes</p>
+<div class="math notranslate nohighlight">
 \[\lim_{n\rightarrow\infty}(\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\int \mathrm{d}\eta\exp\{-\eta^T A \eta\}\]</div>
-<p>where <span class="math">\(\mathrm d\eta\)</span> is just the abbreviation of <span class="math">\(\prod\mathrm dy\)</span> and <span class="math">\(A\equiv M/\mathrm i\epsilon\)</span>.</p>
+<p>where <span class="math notranslate nohighlight">\(\mathrm d\eta\)</span> is just the abbreviation of <span class="math notranslate nohighlight">\(\prod\mathrm dy\)</span> and <span class="math notranslate nohighlight">\(A\equiv M/\mathrm i\epsilon\)</span>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">It is a fairly common thing to transform something with multiple summation into the matrix form. You are suggested to have the vigilance about the summation which is possible to be transformed to matrix form since it may bring surprising extra clearance.</p>
 </div>
 <p>The integral is nothing other than a multi-dimensional Gaussian integral. We will directly invoke the result of the integral as there have been numerous materials on how to do the multi-dimensional Gaussian integral online. The result is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\int \mathrm{d}\eta\exp\{-\eta^T A \eta\} = \sqrt{\frac{\pi^n}{\det(A)_n}}\]</div>
-<p>This inspires us to calculate the determinant of the matrix <span class="math">\(M\)</span> (and thus matrix <span class="math">\(A\)</span>). To do this, expand the determinant along the first row and we get the following recurrence relation</p>
-<div class="math">
+<p>This inspires us to calculate the determinant of the matrix <span class="math notranslate nohighlight">\(M\)</span> (and thus matrix <span class="math notranslate nohighlight">\(A\)</span>). To do this, expand the determinant along the first row and we get the following recurrence relation</p>
+<div class="math notranslate nohighlight">
 \[\det(M)_{n+1} = 2\det(M)_n - \det(M)_{n-1}\]</div>
-<p>It is easy to see that this recurrence relation implies that the sequence <span class="math">\(\det(M)_n\)</span> is actually a arithmetic sequence. Therefore, an evaluation of the first two elements of the sequence will bring you</p>
-<div class="math">
+<p>It is easy to see that this recurrence relation implies that the sequence <span class="math notranslate nohighlight">\(\det(M)_n\)</span> is actually a arithmetic sequence. Therefore, an evaluation of the first two elements of the sequence will bring you</p>
+<div class="math notranslate nohighlight">
 \[\det(M)_n = n+1\]</div>
 <p>Thus</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\det(A)_n = \det(M/\mathrm i\epsilon)_n = (n+1)/(\mathrm i\epsilon)^n\]</div>
 <p>with which the integral is evaluated</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\int \mathrm{d}\eta\exp\{-\eta^T A \eta\} = \sqrt{\frac{(\mathrm i\epsilon\pi)^n}{n+1}}\]</div>
 <p>Combine with the other factors and we have</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[K = K_c\cdot\lim_{n\rightarrow\infty}(\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\sqrt{\frac{(\mathrm i\epsilon\pi)^n}{n+1}} = K_c\cdot\lim_{n\rightarrow\infty}\sqrt{\frac{1}{\mathrm i\pi\epsilon(n+1)}}\]</div>
-<p>Now, an important thing to notice is that <span class="math">\(\epsilon(n+1)\)</span> is actually <span class="math">\(\Delta t = t'-t_0\)</span>. Thus, we have the final formula of the propagator</p>
-<div class="math">
+<p>Now, an important thing to notice is that <span class="math notranslate nohighlight">\(\epsilon(n+1)\)</span> is actually <span class="math notranslate nohighlight">\(\Delta t = t'-t_0\)</span>. Thus, we have the final formula of the propagator</p>
+<div class="math notranslate nohighlight">
 \[K = \frac{1}{\sqrt{\mathrm i\pi\Delta t}}\exp\{\mathrm iS_c\}\]</div>
-<p>You are suggested to explicitly calculate the classical action <span class="math">\(S_c\)</span> (notice that the classical path of a free particle is just a straight line) and compare this result with the one you may encounter in your previous Quantum Mechanics course.</p>
-<p>Originally, we stop here. However, you might be pretty surprised about our later contexts if we do so. Hence, ... we decide to surprise you now.</p>
+<p>You are suggested to explicitly calculate the classical action <span class="math notranslate nohighlight">\(S_c\)</span> (notice that the classical path of a free particle is just a straight line) and compare this result with the one you may encounter in your previous Quantum Mechanics course.</p>
+<p>Originally, we stop here. However, you might be pretty surprised about our later contexts if we do so. Hence, … we decide to surprise you now.</p>
 <blockquote>
 <div>The modern path integral formalism of quantum theory has NOTHING to do with doing the path integral.</div></blockquote>
 <p>Yes, this is true and IMPORTANT. To make this less surprising, recall that we do not do the actual integral of the action in the Lagrangian formalism. Instead, we try to <strong>transform the integration problem into differentiation problem</strong>. So the existence of this section is nothing but to convince you that the integral truly exists and is well-defined.</p>
@@ -818,13 +818,13 @@ y_n\\
 <div class="section" id="path-integral-of-fields">
 <h1>Path Integral of Fields<a class="headerlink" href="#path-integral-of-fields" title="Permalink to this headline">¶</a></h1>
 <p>In previous sections, path integral in Quantum Mechanics has been constructed and evaluated. So we are now sure that the path integral for particles can be well-defined. Thus, to construct Quantum Field Theory, all we need to do is to construct the path integral of physical fields.</p>
-<p>However, this is not something direct and intuitive. As is shown in previous sections, the object to be integrated in Quantum Mechanics, namely <span class="math">\(x(t)\)</span> has only one parameter <span class="math">\(t\)</span>, i.e. it is 1-dimensional. However, we now need to work on fields <span class="math">\(\Phi(x)\)</span> where <span class="math">\(x\)</span> is 4-dimensional (and probably <span class="math">\(d\)</span>-dimensional in the future). This can cause the functional determinant to be divergent and the path integral will go to zero after taking the limit.</p>
+<p>However, this is not something direct and intuitive. As is shown in previous sections, the object to be integrated in Quantum Mechanics, namely <span class="math notranslate nohighlight">\(x(t)\)</span> has only one parameter <span class="math notranslate nohighlight">\(t\)</span>, i.e. it is 1-dimensional. However, we now need to work on fields <span class="math notranslate nohighlight">\(\Phi(x)\)</span> where <span class="math notranslate nohighlight">\(x\)</span> is 4-dimensional (and probably <span class="math notranslate nohighlight">\(d\)</span>-dimensional in the future). This can cause the functional determinant to be divergent and the path integral will go to zero after taking the limit.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">There is no intention to demonstrate explicitly how the determinant goes divergent. But it won&#8217;t be much too complicated just to simply repeat the evaluation process shown in the previous section for, say, 2D field and see its divergence.</p>
+<p class="last">There is no intention to demonstrate explicitly how the determinant goes divergent. But it won’t be much too complicated just to simply repeat the evaluation process shown in the previous section for, say, 2D field and see its divergence.</p>
 </div>
 <p>In this case, methods must be addressed to solve the divergent problem. A straight-forward way is to reduce the path integral of field with multi-dimensional parameters to products of that in 1-dimensional, which is a solved problem. To achieve this, define the path integral of fields as (take 2-dim for example)</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}W &amp;= \int \mathcal{D}\Phi(x,y)\exp\{\mathrm{i}S[\Phi, \partial_\mu\Phi\} \\
 &amp;= \int \mathcal{D}\Phi_x(y)\exp\{\mathrm{i}S[\Phi, \partial_y\Phi\}\int \mathcal{D}\Phi_y(x)\exp\{\mathrm{i}S[\Phi, \partial_x\Phi\}\end{split}\]</div>
 <div class="admonition note">
@@ -838,30 +838,30 @@ y_n\\
 <p>Before we step into the path integral formalism, we give an overall sketch as well as some <em>rules</em> of our construction here. Beware, that the <em>rules</em> are not necessarily accepted or respected by all the academics.</p>
 <div class="section" id="sketch-of-theoretical-construction">
 <h2>Sketch of Theoretical Construction<a class="headerlink" href="#sketch-of-theoretical-construction" title="Permalink to this headline">¶</a></h2>
-<p>The construction will start from analyzing the general path integral of scalar field from some <em>stable state</em> to itself (usually it is <em>vacuum state</em> <span class="math">\(|\Omega\rangle\)</span>)</p>
-<div class="math">
+<p>The construction will start from analyzing the general path integral of scalar field from some <em>stable state</em> to itself (usually it is <em>vacuum state</em> <span class="math notranslate nohighlight">\(|\Omega\rangle\)</span>)</p>
+<div class="math notranslate nohighlight">
 \[\langle \Omega|\Omega\rangle = N\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi[\partial^2-m^2]\varphi\} = 1\]</div>
-<p>where <span class="math">\(N\)</span> is a normalization factor. The last equality comes from the property <em>stable</em>, which means it will not change under the situation of free field, which will determine the normalization factor. Now, we construct a quantity called <strong>generating functional</strong> by adding an arbitrary <em>potential</em> <span class="math">\(J\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(N\)</span> is a normalization factor. The last equality comes from the property <em>stable</em>, which means it will not change under the situation of free field, which will determine the normalization factor. Now, we construct a quantity called <strong>generating functional</strong> by adding an arbitrary <em>potential</em> <span class="math notranslate nohighlight">\(J\)</span></p>
 <blockquote>
 <div><p><strong>Stage 1</strong></p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}W_0[J] = \langle\Omega|\Omega\rangle |_J &amp;= N\int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2-m^2]\varphi - J\varphi\}\\
 &amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_FJ\}\end{split}\]</div>
 </div></blockquote>
-<p>The above generating functional includes merely the scalar field without any other <em>actual</em> interaction terms (the <span class="math">\(J\)</span> term is an auxiliary term with no physical significance). If the Lagrangian includes the interaction terms <span class="math">\(\mathcal{L}_{\text{int}}\)</span>, the generating functional will be</p>
+<p>The above generating functional includes merely the scalar field without any other <em>actual</em> interaction terms (the <span class="math notranslate nohighlight">\(J\)</span> term is an auxiliary term with no physical significance). If the Lagrangian includes the interaction terms <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}\)</span>, the generating functional will be</p>
 <blockquote>
 <div><p><strong>Stage 2</strong></p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}W[J] &amp;= \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\} W_0[J] \\
 &amp;= \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_FJ\}\end{split}\]</div>
 </div></blockquote>
-<p>As is indicated, this expression deals with some <em>stable state</em>. Now we hope to generalized it into other ordinary states, like from state <span class="math">\(\alpha\)</span> to state <span class="math">\(\beta\)</span>. This forms the well-renowned <strong>S-matrix</strong> (scattering matrix)</p>
+<p>As is indicated, this expression deals with some <em>stable state</em>. Now we hope to generalized it into other ordinary states, like from state <span class="math notranslate nohighlight">\(\alpha\)</span> to state <span class="math notranslate nohighlight">\(\beta\)</span>. This forms the well-renowned <strong>S-matrix</strong> (scattering matrix)</p>
 <blockquote>
 <div><p><strong>Stage 3</strong></p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[S = \langle \beta|\alpha\rangle = S[J]|_{J=0} = \left.\exp\{\mathrm{i}\int\varphi_{\text{as}}(\partial^2 - m^2)\frac{\delta}{\delta J}\}W[J]\right|_{J=0}\]</div>
 </div></blockquote>
-<p>where <span class="math">\(\varphi_{\text{as}}\)</span> is the asymptotic field corresponding to the initial and final state. The last equality is the famous <strong>LSZ reduction formula</strong>.</p>
+<p>where <span class="math notranslate nohighlight">\(\varphi_{\text{as}}\)</span> is the asymptotic field corresponding to the initial and final state. The last equality is the famous <strong>LSZ reduction formula</strong>.</p>
 <p>The theoretical construction will end at S-matrix. For a connection with the experiment, scattering <strong>cross-section</strong> can be derived through the S-matrix, which is directly measurable in the scattering experiment.</p>
 </div>
 <div class="section" id="some-rules">
@@ -873,37 +873,37 @@ y_n\\
 <div class="section" id="free-scalar-field-theory">
 <h1>Free Scalar Field Theory<a class="headerlink" href="#free-scalar-field-theory" title="Permalink to this headline">¶</a></h1>
 <p>This section will introduce the free scalar field theory, i.e. stage 1 mentioned in the sketch. Our main goal here is to derive the generating functional of the free scalar field.</p>
-<p>First we need a vacuum state as the initial and final state &#8212; just like the start and end point in path integral of Quantum Mechanics. However, the vacuum is not so straight-forward in Quantum Field Theory. We hereby <em>define</em> the vacuum state <span class="math">\(|\Omega\rangle\)</span> as the configuration of field with the lowest possible energy, which is the general starting point of the term <em>vacuum</em>.</p>
+<p>First we need a vacuum state as the initial and final state — just like the start and end point in path integral of Quantum Mechanics. However, the vacuum is not so straight-forward in Quantum Field Theory. We hereby <em>define</em> the vacuum state <span class="math notranslate nohighlight">\(|\Omega\rangle\)</span> as the configuration of field with the lowest possible energy, which is the general starting point of the term <em>vacuum</em>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">In canonical quantization, there is an annihilation operator <span class="math">\(a\)</span> and thus the vacuum state can be defined as <span class="math">\(a|\Omega\rangle=0\)</span>. However, now we do not have any operators. Therefore, we <em>define</em> the state using the property it needs to satisfy.</p>
+<p class="last">In canonical quantization, there is an annihilation operator <span class="math notranslate nohighlight">\(a\)</span> and thus the vacuum state can be defined as <span class="math notranslate nohighlight">\(a|\Omega\rangle=0\)</span>. However, now we do not have any operators. Therefore, we <em>define</em> the state using the property it needs to satisfy.</p>
 </div>
 <p>Now, we express the probability of the free field from vacuum state to vacuum state in terms of path integral. The probability should be unity since there are no interactions. Therefore</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[W = \langle\Omega|\Omega\rangle = \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi\} = 1\]</div>
-<p>where we now know the normalization factor <span class="math">\(\mathcal{N}\)</span>. We hope that you still remember the Lagrangian for scalar field (If you don&#8217;t, go and review <a class="reference external" href="./clstheo_scalar.html">this</a>). The scalar field is real here, and it won&#8217;t be miserable to generalize this into complex situation.</p>
-<p>This formulation does not tell us anything except for a normalization factor, since it is trivial &#8212; from vacuum to vacuum with no interaction. Now, we want to add some interactions. To achieve this, we introduce an auxiliary potential <span class="math">\(J\)</span> and the Lagrangian becomes</p>
-<div class="math">
+<p>where we now know the normalization factor <span class="math notranslate nohighlight">\(\mathcal{N}\)</span>. We hope that you still remember the Lagrangian for scalar field (If you don’t, go and review <a class="reference external" href="./clstheo_scalar.html">this</a>). The scalar field is real here, and it won’t be miserable to generalize this into complex situation.</p>
+<p>This formulation does not tell us anything except for a normalization factor, since it is trivial — from vacuum to vacuum with no interaction. Now, we want to add some interactions. To achieve this, we introduce an auxiliary potential <span class="math notranslate nohighlight">\(J\)</span> and the Lagrangian becomes</p>
+<div class="math notranslate nohighlight">
 \[\mathcal{L} = -\varphi(\partial^2\!\!-\!m^2)\varphi + J\varphi\]</div>
 <p>and the path integral becomes</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[W[J] = \langle\Omega|\Omega\rangle|_J = \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi-2J\varphi\}\]</div>
-<p>Now, we perform the path integral. As what we have done in Quantum Mechanics, expand the path integral according to the classical path. The classical path <span class="math">\(\varphi_0\)</span> satisfies</p>
-<div class="math">
+<p>Now, we perform the path integral. As what we have done in Quantum Mechanics, expand the path integral according to the classical path. The classical path <span class="math notranslate nohighlight">\(\varphi_0\)</span> satisfies</p>
+<div class="math notranslate nohighlight">
 \[(\partial^2\!\!-\!m^2)\varphi_0 = J,\ \ \text{i.e.}\ \ \varphi_0 = \int \Delta_F J\]</div>
-<p>where <span class="math">\(\Delta_F\)</span> is the Green&#8217;s function satisfying</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\Delta_F\)</span> is the Green’s function satisfying</p>
+<div class="math notranslate nohighlight">
 \[(\partial^2\!\!-\!m^2)\Delta_F(x;x') = -\delta(x;x')\]</div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Please be very careful about the minus sign in the right hand side of the above equation!</p>
 </div>
-<p>Consequently, we perform translation <span class="math">\(\varphi\mapsto\varphi + \varphi_0\)</span>. In path integral, a definite path <span class="math">\(\varphi_0\)</span> acts just like a constant (expand the path integral according to the definition and you will see why). A brief calculation will give</p>
-<div class="math">
+<p>Consequently, we perform translation <span class="math notranslate nohighlight">\(\varphi\mapsto\varphi + \varphi_0\)</span>. In path integral, a definite path <span class="math notranslate nohighlight">\(\varphi_0\)</span> acts just like a constant (expand the path integral according to the definition and you will see why). A brief calculation will give</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}W[J] &amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\cdot \mathcal{N}\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi\}\\
 &amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\end{split}\]</div>
 <p>Since this is the case of free field, we rewrite the conclusion as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[W_0[J] = \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\}\]</div>
 <p>which is the desired result as it is in the sketch.</p>
 <div class="admonition note">
@@ -914,7 +914,7 @@ y_n\\
 <div class="section" id="two-significant-identities">
 <h1>Two Significant Identities<a class="headerlink" href="#two-significant-identities" title="Permalink to this headline">¶</a></h1>
 <p>In this section, you are going to meet two significant identities which play central roles in the following constructions. These identities are</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \int\mathcal{D}\varphi\ \varphi(x)\exp\{\mathrm{i}S\}\\
 (\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = J(x)W_0[J]\end{split}\]</div>
 <div class="admonition note">
@@ -923,203 +923,203 @@ y_n\\
 </div>
 <div class="section" id="first-identity">
 <h2>First Identity<a class="headerlink" href="#first-identity" title="Permalink to this headline">¶</a></h2>
-<p>The first identity can be verified through a calculation of functional derivative of <span class="math">\(W_0[J]\)</span> with respect to <span class="math">\(J(x)\)</span>. Specifically, we have</p>
-<div class="math">
+<p>The first identity can be verified through a calculation of functional derivative of <span class="math notranslate nohighlight">\(W_0[J]\)</span> with respect to <span class="math notranslate nohighlight">\(J(x)\)</span>. Specifically, we have</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\frac{\delta}{\delta J(x)}W_0[J] &amp;= \int\mathcal{D}\varphi\frac{\delta}{\delta J(x)}\left[\exp\{-\frac{1}{2}\mathrm{i}\int\varphi(\partial^2\!\!-\!m^2)\varphi + \mathrm{i}\int J\varphi\}\right]\\
 &amp;= \int\mathcal{D}\varphi\frac{\delta}{\delta J(x)}\left[\mathrm{i}\int J\varphi\}\right]\exp\{\mathrm{i}S\} = \int\mathcal{D}\varphi\ \mathrm{i}\varphi(x)\exp\{\mathrm{i}S\}\end{split}\]</div>
-<p>The right hand side of the identity is sometimes interpreted as the <em>average value</em> of the field <span class="math">\(\varphi(x)\)</span> due to its formal similarities with the definition of average value in statistical mechanics.</p>
+<p>The right hand side of the identity is sometimes interpreted as the <em>average value</em> of the field <span class="math notranslate nohighlight">\(\varphi(x)\)</span> due to its formal similarities with the definition of average value in statistical mechanics.</p>
 </div>
 <div class="section" id="second-identity">
 <h2>Second Identity<a class="headerlink" href="#second-identity" title="Permalink to this headline">¶</a></h2>
 <p>The second identity can be gained through a direct calculation. Specifically, there is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}\exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_F J\} = -\left[\int\Delta_F J(x)\right]\ W_0[J]\]</div>
 <p>Therefore</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = -\left[\int(\partial^2\!\!-\!m^2)\Delta_F J(x)\right]\ W_0[J] = J(x)W_0[J]\]</div>
 <p>You are strongly suggested to remember the two identities since they are the very foundations of the following constructions of interaction theory and S-matrix.</p>
 </div>
 </div>
 <div class="section" id="scalar-field-theory-with-interaction">
 <h1>Scalar Field Theory with Interaction<a class="headerlink" href="#scalar-field-theory-with-interaction" title="Permalink to this headline">¶</a></h1>
-<p>This section introduces the self-interaction theory of scalar field. As usual, the interaction is implemented as an additional interaction term <span class="math">\(\mathcal{L}_{\text{int}}\)</span> in Lagrangian. The interaction discussed here is assumed to satisfy the following condition</p>
+<p>This section introduces the self-interaction theory of scalar field. As usual, the interaction is implemented as an additional interaction term <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}\)</span> in Lagrangian. The interaction discussed here is assumed to satisfy the following condition</p>
 <ul class="simple">
-<li>It is the self-interaction, i.e. <span class="math">\(\mathcal{L}_{\text{int}} = \mathcal{L}_{\text{int}}[\varphi]\)</span></li>
+<li>It is the self-interaction, i.e. <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}} = \mathcal{L}_{\text{int}}[\varphi]\)</span></li>
 <li>It has the form of polynomials.</li>
 </ul>
 <p>Similarly, the construction starts from the generating functional. The generating functional of an interaction theory is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}W[J] &amp;= \int\mathcal{D}\varphi\exp\{\mathrm iS\} = \int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\! + \!\mathcal{L}_{\text{int}}[\varphi]\}\\
 &amp;= \int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}[\varphi]\}\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\end{split}\]</div>
 <p>Next, we expand the first exponential (the one with interaction) according to definition</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[W[J] = \int\mathcal{D}\varphi\sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}[\varphi]\}\right]^n\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\]</div>
 <p>Now, recall our <a class="reference external" href="./qft_ids.html">first identity</a></p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = \int\mathcal{D}\varphi\ \varphi(x)\exp\{\mathrm{i}S\}\]</div>
-<p>Therefore, each <span class="math">\(\varphi(x)\)</span> in <span class="math">\(\mathcal{L}_{\text{int}}[\varphi]\)</span> can be <em>replaced</em> with <span class="math">\(\delta/\mathrm{i}\delta J(x)\)</span>, as long as <span class="math">\(\mathcal{L}_{\text{int}}[\varphi]\)</span> is a pure polynomial of <span class="math">\(\varphi\)</span>. In this case, we can write</p>
-<div class="math">
+<p>Therefore, each <span class="math notranslate nohighlight">\(\varphi(x)\)</span> in <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}[\varphi]\)</span> can be <em>replaced</em> with <span class="math notranslate nohighlight">\(\delta/\mathrm{i}\delta J(x)\)</span>, as long as <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}[\varphi]\)</span> is a pure polynomial of <span class="math notranslate nohighlight">\(\varphi\)</span>. In this case, we can write</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}W[J] = \int\mathcal{D}\varphi\sum_{n=0}^\infty\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\right]^n\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\\
 = \sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm i\!\!\int\!\!\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\right]^n\int\mathcal{D}\varphi\exp\{\mathrm i\!\!\int\!\!\mathcal{L}\}\end{split}\]</div>
-<p>where expression <span class="math">\(\mathcal{L}_{\text{int}}\!\!\left[\delta/\mathrm{i}\delta J\right]\)</span> represents the the expression where all <span class="math">\(\varphi\)</span> in <span class="math">\(\mathcal{L}_{\text{int}}\)</span> is replaced with <span class="math">\(\delta/\mathrm{i}\delta J(x)\)</span>. The terms after the replacement no longer contain <span class="math">\(\varphi\)</span> and thus can be moved out of the path integral. And we find now that the path integral gives the generating functional <span class="math">\(W_0[J]\)</span> of free field. Transform back into the exponential form and we get</p>
-<div class="math">
+<p>where expression <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}\!\!\left[\delta/\mathrm{i}\delta J\right]\)</span> represents the the expression where all <span class="math notranslate nohighlight">\(\varphi\)</span> in <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}\)</span> is replaced with <span class="math notranslate nohighlight">\(\delta/\mathrm{i}\delta J(x)\)</span>. The terms after the replacement no longer contain <span class="math notranslate nohighlight">\(\varphi\)</span> and thus can be moved out of the path integral. And we find now that the path integral gives the generating functional <span class="math notranslate nohighlight">\(W_0[J]\)</span> of free field. Transform back into the exponential form and we get</p>
+<div class="math notranslate nohighlight">
 \[W[J] = \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\} W_0[J]\]</div>
 <p>which is the result of second stage of our construction. The interaction of other kinds of fields (except for vector field in gauge theories) can be performed through similar manner.</p>
 </div>
 <div class="section" id="scattering-matrix">
 <h1>Scattering Matrix<a class="headerlink" href="#scattering-matrix" title="Permalink to this headline">¶</a></h1>
-<p>Scattering matrix, or <strong>S-matrix</strong>, is one of the major and core concept in both Particle and High Energy Physics &#8212; since this is the most straight-forward way to verify the form of interaction.</p>
-<p>The S-matrix is defined as an <em>infinite dimensional matrix</em> with each matrix element <span class="math">\(S_{\beta\alpha}\)</span> being the probability of the state evolving from <span class="math">\(\alpha\)</span> to <span class="math">\(\beta\)</span>, i.e.</p>
-<div class="math">
+<p>Scattering matrix, or <strong>S-matrix</strong>, is one of the major and core concept in both Particle and High Energy Physics — since this is the most straight-forward way to verify the form of interaction.</p>
+<p>The S-matrix is defined as an <em>infinite dimensional matrix</em> with each matrix element <span class="math notranslate nohighlight">\(S_{\beta\alpha}\)</span> being the probability of the state evolving from <span class="math notranslate nohighlight">\(\alpha\)</span> to <span class="math notranslate nohighlight">\(\beta\)</span>, i.e.</p>
+<div class="math notranslate nohighlight">
 \[S_{\beta\alpha} = \langle\beta|\alpha\rangle\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">As a matter of fact, the S-matrix is not a typical &#8220;matrix&#8221;. It is just a quantity with each one of them can be labelled by two indices. Also, in canonical quantization, S-matrix is actually an operator which, if it is finite dimensional, can be expressed as a matrix (but in Quantum Field Theory it is not). Therefore, when you see some concept which is a <em>matrix</em>, it might not mean to be a typical matrix, but some operator or quantity of two indices.</p>
+<p class="last">As a matter of fact, the S-matrix is not a typical “matrix”. It is just a quantity with each one of them can be labelled by two indices. Also, in canonical quantization, S-matrix is actually an operator which, if it is finite dimensional, can be expressed as a matrix (but in Quantum Field Theory it is not). Therefore, when you see some concept which is a <em>matrix</em>, it might not mean to be a typical matrix, but some operator or quantity of two indices.</p>
 </div>
 <p>In Quantum Field Theory (as well as Particle Physics), we are especially interested in the following situation</p>
 <blockquote>
 <div>Two or more beams of free particle are generated and targeted at some point, interact with each other at the limited region near the point, then leave the interaction region, become free particles again and finally detected by the particle detectors.</div></blockquote>
 <p>The key point in the above picture is that the interaction only happens at a restricted region, and the particles are free outside the region. This approximation can be pretty accurate if the region is selected wisely so that the particles are separated by a considerably long distance. And it is prevalently implemented in many particle colliders.</p>
-<p>The above picture suggests us write the field in the path integral as the addition of an &#8220;interact field&#8221; <span class="math">\(\varphi\)</span> and a free asymptotic field <span class="math">\(\varphi_{\text{as}}\)</span>, i.e. perform the following variable translation in the path integral</p>
-<div class="math">
+<p>The above picture suggests us write the field in the path integral as the addition of an “interact field” <span class="math notranslate nohighlight">\(\varphi\)</span> and a free asymptotic field <span class="math notranslate nohighlight">\(\varphi_{\text{as}}\)</span>, i.e. perform the following variable translation in the path integral</p>
+<div class="math notranslate nohighlight">
 \[\varphi \mapsto \varphi + \varphi_{as}\]</div>
-<p>where the asymptotic field <span class="math">\(\varphi_{\text{as}}\)</span> satisfies</p>
-<div class="math">
+<p>where the asymptotic field <span class="math notranslate nohighlight">\(\varphi_{\text{as}}\)</span> satisfies</p>
+<div class="math notranslate nohighlight">
 \[(\partial^2\!\!-\!m^2)\varphi_{\text{as}} = 0\]</div>
-<p>Therefore, the S-matrix with auxiliary field <span class="math">\(J\)</span> supplied is</p>
-<div class="math">
+<p>Therefore, the S-matrix with auxiliary field <span class="math notranslate nohighlight">\(J\)</span> supplied is</p>
+<div class="math notranslate nohighlight">
 \[S_0[J] = \int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2\!\!-\!m^2]\varphi - J\varphi - J\varphi_{\text{as}}\} = \exp\{\mathrm{i}\varphi_{\text{as}}J\}W_0[J]\]</div>
 <p>Similar formula also holds for situation with interaction. Then, just as what we have done in the last section, expand the exponential as Taylor series</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[S[J] = \sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm{i}\varphi_{\text{as}}J\right]^nW[J]\]</div>
 <p>Recall we have our <a class="reference external" href="./qft_ids.html">second identity</a></p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\frac{\delta}{\delta J(x)}W_0[J] = J(x)W_0[J]\]</div>
-<p>This inspires us that we can replace every <span class="math">\(J\)</span> in the Taylor series with <span class="math">\((\partial^2\!\!-\!m^2)\delta/\mathrm{i}\delta J\)</span>. Hence</p>
-<div class="math">
+<p>This inspires us that we can replace every <span class="math notranslate nohighlight">\(J\)</span> in the Taylor series with <span class="math notranslate nohighlight">\((\partial^2\!\!-\!m^2)\delta/\mathrm{i}\delta J\)</span>. Hence</p>
+<div class="math notranslate nohighlight">
 \[S[J] = \sum_{n=0}^\infty\frac{1}{n!}\left[\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]^nW[J] = \exp\{\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\}W[J]\]</div>
-<p>To obtain the S-matrix, simply set the auxiliary field <span class="math">\(J\)</span> as zero</p>
-<div class="math">
+<p>To obtain the S-matrix, simply set the auxiliary field <span class="math notranslate nohighlight">\(J\)</span> as zero</p>
+<div class="math notranslate nohighlight">
 \[S = \left.\exp\{\mathrm{i}\varphi_{\text{as}}(\partial^2\!\!-\!m^2)\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\}W[J]\right|_{J=0}\]</div>
-<p>This is the so-called <strong>LSZ reduction formula</strong>, which gives the S-matrix with inbound and outbound state designated by asymptotic field <span class="math">\(\varphi_{\text{as}}\)</span> from the generating functional.</p>
+<p>This is the so-called <strong>LSZ reduction formula</strong>, which gives the S-matrix with inbound and outbound state designated by asymptotic field <span class="math notranslate nohighlight">\(\varphi_{\text{as}}\)</span> from the generating functional.</p>
 </div>
 <div class="section" id="correlation-function">
 <h1>Correlation Function<a class="headerlink" href="#correlation-function" title="Permalink to this headline">¶</a></h1>
 <p>In both stage 2 and stage 3, we will encounter the following functional derivative</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\tau(x_1,\ldots,x_n) := \left.\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_1)}\cdots\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_n)}W_0[J]\right|_{J=0}\]</div>
-<p>Thus, we give this quantity a name <strong>correlation function</strong>, or <span class="math">\(n\)</span><strong>-point (Green&#8217;s) function</strong>. The origin of this name comes from the similarity of its formulation in canonical quantization and hence this name may look strange here.</p>
-<p>It is not so straight-forward about the <span class="math">\(n\)</span>-point function, and thus we hope to reduce the formula. To do this, let us first evaluate the 2-point function</p>
-<div class="math">
+<p>Thus, we give this quantity a name <strong>correlation function</strong>, or <span class="math notranslate nohighlight">\(n\)</span><strong>-point (Green’s) function</strong>. The origin of this name comes from the similarity of its formulation in canonical quantization and hence this name may look strange here.</p>
+<p>It is not so straight-forward about the <span class="math notranslate nohighlight">\(n\)</span>-point function, and thus we hope to reduce the formula. To do this, let us first evaluate the 2-point function</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\tau(x_1,x_2) &amp;= \left.\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_1)}\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_2)}\exp\{-\frac{1}{2}\mathrm i\!\!\int\!\! J\Delta_FJ\}\right|_{J=0} \\
 &amp;= \left.\mathrm{i}\frac{\delta}{\delta J(x_1)}\int\!\!\Delta_F(x_2;)J\exp\{-\frac{1}{2}\mathrm i\!\!\int \!\!J\Delta_FJ\}\right|_{J=0}\\
 &amp;=\left.\mathrm i\Delta_F(x_1;x_2)W_0[J]\right|_{J=0} + \left.(\int\Delta_F J)^2W_0[J]\right|_{J=0} = \mathrm i\Delta_F(x_1;x_2)\end{split}\]</div>
-<p>It is nothing other than <span class="math">\(\mathrm{i}\)</span> times the ordinary Green&#8217;s function. Next, 3-point function</p>
-<div class="math">
+<p>It is nothing other than <span class="math notranslate nohighlight">\(\mathrm{i}\)</span> times the ordinary Green’s function. Next, 3-point function</p>
+<div class="math notranslate nohighlight">
 \[\tau(x_1,x_2,x_3)\sim \left.\Delta_F\int\Delta_FJ\right|_{J=0} + \left.(\int\Delta_FJ)^3\right|_{J=0} = 0\]</div>
 <p>And 4-point function</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\tau(x_1,x_2.x_3,x_4) &amp;= \mathrm{i}\Delta_F(x_1;x_2)\mathrm{i}\Delta_F(x_3;x_4)\\
 &amp;+ \mathrm{i}\Delta_F(x_1;x_3)\mathrm{i}\Delta_F(x_2;x_4) \\
 &amp;+ \mathrm{i}\Delta_F(x_2;x_3)\mathrm{i}\Delta_F(x_1;x_4)\\
 &amp;= (1\sim2)(3\sim4) + (1\sim3)(2\sim4) + (2\sim3)(1\sim4)\end{split}\]</div>
-<p>where we have used <span class="math">\((1\sim2)\)</span> to represent <span class="math">\(\tau(x_1,x_2)\)</span>. Therefore, we can see the regularity &#8212; the <span class="math">\(n\)</span>-point function is either <span class="math">\(0\)</span> or some combination of two point functions. Specifically, we have by induction</p>
+<p>where we have used <span class="math notranslate nohighlight">\((1\sim2)\)</span> to represent <span class="math notranslate nohighlight">\(\tau(x_1,x_2)\)</span>. Therefore, we can see the regularity — the <span class="math notranslate nohighlight">\(n\)</span>-point function is either <span class="math notranslate nohighlight">\(0\)</span> or some combination of two point functions. Specifically, we have by induction</p>
 <ul class="simple">
-<li>The odd-point function is <span class="math">\(0\)</span>.</li>
+<li>The odd-point function is <span class="math notranslate nohighlight">\(0\)</span>.</li>
 <li>The even-point function is</li>
 </ul>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\tau(x_1,\ldots, x_{2n}) = \sum_{\text{perms}}(p_1\sim p_2)\ldots(p_{2n-1}\sim p_{2n})\]</div>
-<p>which means the summation over all the permutations <span class="math">\(p\)</span>. This is the so-called <strong>Wick&#8217;s Theorem</strong> &#8212; transforming the <span class="math">\(n\)</span>-point function into the combination of 2-point function.</p>
+<p>which means the summation over all the permutations <span class="math notranslate nohighlight">\(p\)</span>. This is the so-called <strong>Wick’s Theorem</strong> — transforming the <span class="math notranslate nohighlight">\(n\)</span>-point function into the combination of 2-point function.</p>
 <p>You are suggested to show yourself that the S-matrix can be written using correlation function as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[S = \sum_{n=0}^\infty\frac{\mathrm i^n}{n!}\prod_x\varphi(x)\prod_x(\partial^2\!\!-\!m^2)\tau(x_1,\ldots,x_n)\]</div>
-<p>where <span class="math">\(x\)</span> takes over <span class="math">\(x_1,\ldots,x_n\)</span>. This formula is the so-called <strong>perturbative expansion</strong> of the S-matrix.</p>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> takes over <span class="math notranslate nohighlight">\(x_1,\ldots,x_n\)</span>. This formula is the so-called <strong>perturbative expansion</strong> of the S-matrix.</p>
 </div>
 <div class="section" id="first-glance-at-infinities">
 <h1>First Glance at Infinities<a class="headerlink" href="#first-glance-at-infinities" title="Permalink to this headline">¶</a></h1>
-<p>This section will show you how the infinities emerge in Quantum Field Theory through a resonated toy of physicists &#8212; <span class="math">\(\varphi^4\)</span> theory. The interaction term of <span class="math">\(\varphi^4\)</span> theory is</p>
-<div class="math">
+<p>This section will show you how the infinities emerge in Quantum Field Theory through a resonated toy of physicists — <span class="math notranslate nohighlight">\(\varphi^4\)</span> theory. The interaction term of <span class="math notranslate nohighlight">\(\varphi^4\)</span> theory is</p>
+<div class="math notranslate nohighlight">
 \[\mathcal{L}_{\text{int}} = -\frac{1}{4!}g\varphi^4\]</div>
 <p>Recall that the generating functional of interaction theory is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[W[J] = \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\} W_0[J]\]</div>
 <p>Suppose the interaction is weak enough for us to neglect all terms of order higher than one. Therefore, the generating functional up to the first order is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[W_\uparrow^{(1)}[J] = (1 - \mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\})W_0[J] = (1 - \frac{\mathrm{i}g}{4!}\int\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]^4\})W_0[J]\]</div>
-<p>Notice that in this case the four functional derivatives are at the same point <span class="math">\(x\)</span>. Therefore, a calculation similar to the previous section will show</p>
-<div class="math">
+<p>Notice that in this case the four functional derivatives are at the same point <span class="math notranslate nohighlight">\(x\)</span>. Therefore, a calculation similar to the previous section will show</p>
+<div class="math notranslate nohighlight">
 \[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}W_0[J] = \tau(x,x) =  \mathrm i\Delta(x;x)\ \ ???\]</div>
-<p>We see that the right hand side contains the value of Green&#8217;s function at <em>zero</em>, which is clearly infinity. With higher order terms which contains even more derivatives, there might be even more infinities.</p>
+<p>We see that the right hand side contains the value of Green’s function at <em>zero</em>, which is clearly infinity. With higher order terms which contains even more derivatives, there might be even more infinities.</p>
 <p>To deal with this infinities, we use a mathematical technique called <strong>renormalization</strong>. Looking back to where the infinities come and we find</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x)}(-\int\Delta_F(x;y)J(y)\mathrm{d}y)\]</div>
-<p>makes no sense, since the functional derivative requires that <span class="math">\(\Delta_F(x;y)\)</span> be a function, but it is essentially a distribution (or generalized function). But things are not so bad. The Green&#8217;s function is a distribution which usually has a function correspondence, and for most of the physical equations that we care, it has.</p>
-<p>Nonetheless, the function corresponding to <span class="math">\(\Delta(x;y)\)</span> <strong>has no definition</strong> on <span class="math">\(x=y\)</span>. Therefore, the above expression hopes to get something <strong>undefined</strong>. This makes things much easier. If it is undefined, the most straight-forward way is to place an additional definition.</p>
-<p>The renormalization procedure does exactly this stuff. Usually, we will impose some conditions (such as define the <em>physical mass</em> as the square-root of minus zero-point of two-point convex function) so that the value <span class="math">\(\Delta(x;x)\)</span> can be defined.</p>
+<p>makes no sense, since the functional derivative requires that <span class="math notranslate nohighlight">\(\Delta_F(x;y)\)</span> be a function, but it is essentially a distribution (or generalized function). But things are not so bad. The Green’s function is a distribution which usually has a function correspondence, and for most of the physical equations that we care, it has.</p>
+<p>Nonetheless, the function corresponding to <span class="math notranslate nohighlight">\(\Delta(x;y)\)</span> <strong>has no definition</strong> on <span class="math notranslate nohighlight">\(x=y\)</span>. Therefore, the above expression hopes to get something <strong>undefined</strong>. This makes things much easier. If it is undefined, the most straight-forward way is to place an additional definition.</p>
+<p>The renormalization procedure does exactly this stuff. Usually, we will impose some conditions (such as define the <em>physical mass</em> as the square-root of minus zero-point of two-point convex function) so that the value <span class="math notranslate nohighlight">\(\Delta(x;x)\)</span> can be defined.</p>
 <p>You are not expected to understand the harangue in the bracket in previous paragraph. The renormalization is a big topic and we will open a new chapter later for a systematically discussion.</p>
 </div>
 <div class="section" id="function-and-image-element">
 <h1>Function and Image Element<a class="headerlink" href="#function-and-image-element" title="Permalink to this headline">¶</a></h1>
-<p>This section is fairly important &#8212; it introduces some important concepts in ... functions. Alright, we just want to tell you that the function and its image elements are not the same thing. Well, you may find this ostensible. However, the denotations of function and its image elements can be really misleading. You may clearly identify that something like <span class="math">\(f\)</span> and <span class="math">\(f(x_0)\)</span> are different things. But can you always notice that <span class="math">\(f\)</span> and <span class="math">\(f(x)\)</span> are different things, especially when <span class="math">\(x\)</span> is some <em>variable</em> instead of <em>constant</em> like <span class="math">\(x_0\)</span>?</p>
-<p>There are no intentions to detailedly discuss the issue, since it will finally becomes a philosophical war between objective and formal Mathematics. Here, we directly take the view of objective Mathematics. Under this philosophy, the function <span class="math">\(f\)</span> is a mathematical object which is a subset of the Cartesian product of domain and image (satisfying some conditions); while <span class="math">\(f(x)\)</span> is an element of image (no matter whether <span class="math">\(x\)</span> is a constant or not). Therefore, they are <em>essentially</em> different objects.</p>
+<p>This section is fairly important — it introduces some important concepts in … functions. Alright, we just want to tell you that the function and its image elements are not the same thing. Well, you may find this ostensible. However, the denotations of function and its image elements can be really misleading. You may clearly identify that something like <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(f(x_0)\)</span> are different things. But can you always notice that <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(f(x)\)</span> are different things, especially when <span class="math notranslate nohighlight">\(x\)</span> is some <em>variable</em> instead of <em>constant</em> like <span class="math notranslate nohighlight">\(x_0\)</span>?</p>
+<p>There are no intentions to detailedly discuss the issue, since it will finally becomes a philosophical war between objective and formal Mathematics. Here, we directly take the view of objective Mathematics. Under this philosophy, the function <span class="math notranslate nohighlight">\(f\)</span> is a mathematical object which is a subset of the Cartesian product of domain and image (satisfying some conditions); while <span class="math notranslate nohighlight">\(f(x)\)</span> is an element of image (no matter whether <span class="math notranslate nohighlight">\(x\)</span> is a constant or not). Therefore, they are <em>essentially</em> different objects.</p>
 <p>To help understand this, especially the differences it causes in Quantum Field Theory, we set up the following examples</p>
 <blockquote>
-<div><p><strong>Example 1.</strong> In Lagrangian formalism and Path Integral Formalism respectively, two kinds of functional derivatives are invoked &#8212; <span class="math">\(\delta/\delta f\)</span> and <span class="math">\(\delta/\delta f(x)\)</span>. The former is the derivative with respect to the function <span class="math">\(f\)</span>, and the latter is the derivative with respect to the element <span class="math">\(f(x)\)</span>. You will see in that it is the definition of the latter one which causes the famous infinity problem in Quantum Field Theory; while nothing happens to the former one.</p>
+<div><p><strong>Example 1.</strong> In Lagrangian formalism and Path Integral Formalism respectively, two kinds of functional derivatives are invoked — <span class="math notranslate nohighlight">\(\delta/\delta f\)</span> and <span class="math notranslate nohighlight">\(\delta/\delta f(x)\)</span>. The former is the derivative with respect to the function <span class="math notranslate nohighlight">\(f\)</span>, and the latter is the derivative with respect to the element <span class="math notranslate nohighlight">\(f(x)\)</span>. You will see in that it is the definition of the latter one which causes the famous infinity problem in Quantum Field Theory; while nothing happens to the former one.</p>
 <p><strong>Example 2.</strong> In some cases, we will write something like</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[f_x(y)=f(x,y)\]</div>
-<p>Although there is a equality sign in the equation, there are essential difference between <span class="math">\(f_x\)</span> and <span class="math">\(f\)</span> &#8212; the former is a family of functions of <span class="math">\(y\)</span> (labelled by <span class="math">\(x\)</span>) and the latter is a function of two variable <span class="math">\(x\)</span> and <span class="math">\(y\)</span>. The equality essentially means solely that the <em>value</em> is the same.</p>
+<p>Although there is a equality sign in the equation, there are essential difference between <span class="math notranslate nohighlight">\(f_x\)</span> and <span class="math notranslate nohighlight">\(f\)</span> — the former is a family of functions of <span class="math notranslate nohighlight">\(y\)</span> (labelled by <span class="math notranslate nohighlight">\(x\)</span>) and the latter is a function of two variable <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>. The equality essentially means solely that the <em>value</em> is the same.</p>
 </div></blockquote>
 </div>
 <div class="section" id="functional-derivative">
 <h1>Functional Derivative<a class="headerlink" href="#functional-derivative" title="Permalink to this headline">¶</a></h1>
-<p>The functional derivative we talk about here is not the same as the variation used widely in Lagrangian formalism &#8212; although they look so much alike formally. To make sure you will not mistake them, we first illustrate what is the variation of a functional.</p>
-<p>The variation of a functional <span class="math">\(F[\phi]\)</span> whose domain is a Banach space <span class="math">\(B\)</span> (a linear space where you can talk about the &#8220;length&#8221; &#8212; norm of its element) is usually implemented as <strong>Gâteaux derivative</strong></p>
-<div class="math">
+<p>The functional derivative we talk about here is not the same as the variation used widely in Lagrangian formalism — although they look so much alike formally. To make sure you will not mistake them, we first illustrate what is the variation of a functional.</p>
+<p>The variation of a functional <span class="math notranslate nohighlight">\(F[\phi]\)</span> whose domain is a Banach space <span class="math notranslate nohighlight">\(B\)</span> (a linear space where you can talk about the “length” — norm of its element) is usually implemented as <strong>Gâteaux derivative</strong></p>
+<div class="math notranslate nohighlight">
 \[\frac{\delta F[\phi]}{\delta\phi} := (\forall \eta) :: \lim_{\varepsilon\rightarrow 0}\frac{F[\phi+\varepsilon\eta]-F[\phi]}{\varepsilon}\]</div>
-<p>which very much resembles the directional derivative in ordinary Calculus. Please notice that the <span class="math">\(\eta\)</span> here is just an arbitrary element of the Banach space, and in its application it is any physical field.</p>
-<p>The variation is the &#8220;derivative&#8221; of the argument <span class="math">\(\phi\)</span> itself, without any designation of it value at some point <span class="math">\(\phi(x)\)</span>; while functional derivative is defined differently. The functional derivative of <span class="math">\(F[\phi(x)]\)</span> with respect to <strong>value</strong> <span class="math">\(\phi(y)\)</span> is</p>
-<div class="math">
+<p>which very much resembles the directional derivative in ordinary Calculus. Please notice that the <span class="math notranslate nohighlight">\(\eta\)</span> here is just an arbitrary element of the Banach space, and in its application it is any physical field.</p>
+<p>The variation is the “derivative” of the argument <span class="math notranslate nohighlight">\(\phi\)</span> itself, without any designation of it value at some point <span class="math notranslate nohighlight">\(\phi(x)\)</span>; while functional derivative is defined differently. The functional derivative of <span class="math notranslate nohighlight">\(F[\phi(x)]\)</span> with respect to <strong>value</strong> <span class="math notranslate nohighlight">\(\phi(y)\)</span> is</p>
+<div class="math notranslate nohighlight">
 \[\frac{\delta F[\phi(x)]}{\delta\phi(y)} = \lim_{\varepsilon\rightarrow 0}\frac{F[\phi(x)+\varepsilon\delta(x;y)]-F[\phi(x)]}{\varepsilon}\]</div>
-<p>Therefore, you shall now see the differences between the variation and the functional derivative &#8212; the variation performs &#8220;derivative&#8221; on <span class="math">\(\phi\)</span> itself, while the functional derivative does so on the value <span class="math">\(\phi(y)\)</span>. And thus a delta function has to be invoked to deal with the different points <span class="math">\(x\)</span> and <span class="math">\(y\)</span>. You will see in chapter Quantum Theory that it is this delta function which brings the infinities into the S-matrix.</p>
+<p>Therefore, you shall now see the differences between the variation and the functional derivative — the variation performs “derivative” on <span class="math notranslate nohighlight">\(\phi\)</span> itself, while the functional derivative does so on the value <span class="math notranslate nohighlight">\(\phi(y)\)</span>. And thus a delta function has to be invoked to deal with the different points <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>. You will see in chapter Quantum Theory that it is this delta function which brings the infinities into the S-matrix.</p>
 </div>
 <div class="section" id="geometric-unit-system">
 <h1>Geometric Unit System<a class="headerlink" href="#geometric-unit-system" title="Permalink to this headline">¶</a></h1>
 <p>This is an introduction to the geometric unit used widely in the theoretical contexts of Physics.</p>
-<p>In Physics, there are many important constants, such as light speed in vacuum <span class="math">\(c\)</span>, (reduced) Plank constant <span class="math">\(\hbar\)</span>, absolute permittivity <span class="math">\(\varepsilon_0\)</span>, etc. If we include all these constants in an equation, the expression can be cumbersome. To solve this problem, the simplest way is to introduce the following convention</p>
-<div class="math">
+<p>In Physics, there are many important constants, such as light speed in vacuum <span class="math notranslate nohighlight">\(c\)</span>, (reduced) Plank constant <span class="math notranslate nohighlight">\(\hbar\)</span>, absolute permittivity <span class="math notranslate nohighlight">\(\varepsilon_0\)</span>, etc. If we include all these constants in an equation, the expression can be cumbersome. To solve this problem, the simplest way is to introduce the following convention</p>
+<div class="math notranslate nohighlight">
 \[c=1,\ \ \ \ \ \hbar=1\]</div>
 <p>Therefore, all multiplication of these constants in the equation will disappear. But wait! You may immediately notice a problem: the dimension! Yes, it seems that the above equation violates a fundamental requirement — balance of dimension. The left hand side is a physical constant with dimension, but the right hand side is a pure number.</p>
-<p>Well, this in fact does not matter so much. You can view it as a redefinition of units. For example, to make light speed <span class="math">\(c=1\)</span>, all we need to do is to redefine the time unit as the time within which light travels a unit length. This is called <strong>Geometric Unit System</strong>. As a result, the convention <span class="math">\(c=1\)</span> will be equivalent to <span class="math">\([L]=[T]\)</span>, where <span class="math">\([L]\)</span> stands for the length dimension and <span class="math">\([T]\)</span> for time dimension. Similarly, it is easy to figure out that <span class="math">\(\hbar=1\)</span> leads to <span class="math">\([L]=[M]^{-1}\)</span>.</p>
-<p>Hope you get the point. Now you should not feel unfamiliar with sentences like “momentum has a dimension of <span class="math">\([L]^{-1}\)</span>”. The theory of dimension analysis guarantees that there will not be a problem with this convention as long as you do a correct calculation.</p>
+<p>Well, this in fact does not matter so much. You can view it as a redefinition of units. For example, to make light speed <span class="math notranslate nohighlight">\(c=1\)</span>, all we need to do is to redefine the time unit as the time within which light travels a unit length. This is called <strong>Geometric Unit System</strong>. As a result, the convention <span class="math notranslate nohighlight">\(c=1\)</span> will be equivalent to <span class="math notranslate nohighlight">\([L]=[T]\)</span>, where <span class="math notranslate nohighlight">\([L]\)</span> stands for the length dimension and <span class="math notranslate nohighlight">\([T]\)</span> for time dimension. Similarly, it is easy to figure out that <span class="math notranslate nohighlight">\(\hbar=1\)</span> leads to <span class="math notranslate nohighlight">\([L]=[M]^{-1}\)</span>.</p>
+<p>Hope you get the point. Now you should not feel unfamiliar with sentences like “momentum has a dimension of <span class="math notranslate nohighlight">\([L]^{-1}\)</span>”. The theory of dimension analysis guarantees that there will not be a problem with this convention as long as you do a correct calculation.</p>
 </div>
 <div class="section" id="einstein-summation-convention">
 <h1>Einstein Summation Convention<a class="headerlink" href="#einstein-summation-convention" title="Permalink to this headline">¶</a></h1>
 <p>This is an introduction to the Einstein summation convention used widely in the theoretical contexts in Physics.</p>
 <p>The definition of the convention is simple: repeating upper and lower indices implies summation, unless stated otherwise, i.e.</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[x^iy_i = \sum_{i\in I}x^iy_i\]</div>
-<p>where set <span class="math">\(I\)</span> is the set of possible values of the indices.</p>
-<p>Please notice that there are other versions of Einstein summation convention. One version may consider all the dummy indices as summation. However, in this context, only the repeated upper and lower indices should be interpreted as summation, expression as <span class="math">\(x_iy_i\)</span> does not apply to the summation convention.</p>
+<p>where set <span class="math notranslate nohighlight">\(I\)</span> is the set of possible values of the indices.</p>
+<p>Please notice that there are other versions of Einstein summation convention. One version may consider all the dummy indices as summation. However, in this context, only the repeated upper and lower indices should be interpreted as summation, expression as <span class="math notranslate nohighlight">\(x_iy_i\)</span> does not apply to the summation convention.</p>
 </div>
 <div class="section" id="basic-differential-geometry">
 <h1>Basic Differential Geometry<a class="headerlink" href="#basic-differential-geometry" title="Permalink to this headline">¶</a></h1>
 <p>Differential Geometry can be one of the most crucial foundations of theoretical Physics. Thus, we suggest everyone who aims at fundamental theoretical Physics to have a detailed review of Differential Geometry. We are not going to introduce thoroughly here, since that would make up another book. You can rely on this if you just want to understand our main context, nevertheless, you are strongly suggested to look for other Differential Geometry introductory for many other important details.</p>
 <div class="section" id="get-started-motivation">
 <h2>Get Started: Motivation<a class="headerlink" href="#get-started-motivation" title="Permalink to this headline">¶</a></h2>
-<p>In Calculus, we have studied many properties of functions, like continuity, differentiability and so on. However, these properties only apply to functions — whose domain is a number set (such as <span class="math">\(\mathbb R^n\)</span>). However, pragmatically we are dealing with ordinary maps — whose domain is an ordinary set (ranging from all particles of the desk in front of you to the spacetime of the universe). At this time, we find that we are lack of the structure (just like a kind of property) on that ordinary set. For example, you can not judge whether a map from the phone to its number is differentiable or not. Hence, extra structures are needed.</p>
-<p>How does this related to Physics? You may consider the electric potential <span class="math">\(\phi\)</span> which is a vector field in spacetime. The vector field is nothing but a map from the set of all points in spacetime to the real number set. And the set of all points in spacetime can be an example of the <em>ordinary set</em> in our previous illustration.</p>
+<p>In Calculus, we have studied many properties of functions, like continuity, differentiability and so on. However, these properties only apply to functions — whose domain is a number set (such as <span class="math notranslate nohighlight">\(\mathbb R^n\)</span>). However, pragmatically we are dealing with ordinary maps — whose domain is an ordinary set (ranging from all particles of the desk in front of you to the spacetime of the universe). At this time, we find that we are lack of the structure (just like a kind of property) on that ordinary set. For example, you can not judge whether a map from the phone to its number is differentiable or not. Hence, extra structures are needed.</p>
+<p>How does this related to Physics? You may consider the electric potential <span class="math notranslate nohighlight">\(\phi\)</span> which is a vector field in spacetime. The vector field is nothing but a map from the set of all points in spacetime to the real number set. And the set of all points in spacetime can be an example of the <em>ordinary set</em> in our previous illustration.</p>
 </div>
 <div class="section" id="prerequisites-topology">
 <h2>Prerequisites: Topology<a class="headerlink" href="#prerequisites-topology" title="Permalink to this headline">¶</a></h2>
-<p>The first structure we need is the topology. The topology of a set will help us define the continuity of the map. In Calculus, a function is continuous if the inverse image of any of the open interval in the image will be an open interval (You can prove that this is equivalent to the <span class="math">\(\varepsilon\)</span>-<span class="math">\(\delta\)</span> form in Calculus). Thus, if we want to define continuity of any map, the only structure we need is to define the “open interval” of the set.</p>
+<p>The first structure we need is the topology. The topology of a set will help us define the continuity of the map. In Calculus, a function is continuous if the inverse image of any of the open interval in the image will be an open interval (You can prove that this is equivalent to the <span class="math notranslate nohighlight">\(\varepsilon\)</span>-<span class="math notranslate nohighlight">\(\delta\)</span> form in Calculus). Thus, if we want to define continuity of any map, the only structure we need is to define the “open interval” of the set.</p>
 <p>This inspires us to manually designate some subsets of the set to be <strong>open</strong> (plus some conditions). And the continuity of the map can be defined in similar way. We are not going to expand here — it can be a long story. The only thing you need to remember is that we can now talk about the openness of the subset and the continuity of a map.</p>
 </div>
 <div class="section" id="set-up-a-coordinate-system">
 <h2>Set up a Coordinate System<a class="headerlink" href="#set-up-a-coordinate-system" title="Permalink to this headline">¶</a></h2>
-<p>Next we move on to the differentiability of a map. To do this, we equip every open subset with an open subset of a number set. To be more specific, construct a continuous bijection <span class="math">\(\psi_\alpha\)</span> for each subset <span class="math">\(U_\alpha\)</span> of set <span class="math">\(M\)</span> to an open subset of <span class="math">\(\mathbb R^n\)</span>.</p>
-<p>To see how this works, let’s look at map <span class="math">\(\psi_\alpha\)</span>. It maps the point <span class="math">\(p\)</span> of set <span class="math">\(M\)</span> into <span class="math">\(n\)</span> numbers in <span class="math">\(\mathbb R^n\)</span>. Or equivalently, it assigns <span class="math">\(n\)</span> numbers to point <span class="math">\(p\)</span>. Yes! Those numbers are nothing other than the <strong>coordinates</strong> of point <span class="math">\(p\)</span>. And, map <span class="math">\(\psi_\alpha\)</span> will then be the <strong>coordinate system</strong> on subset <span class="math">\(U_\alpha\)</span>. Set equipped with the coordinate system is called manifold.</p>
+<p>Next we move on to the differentiability of a map. To do this, we equip every open subset with an open subset of a number set. To be more specific, construct a continuous bijection <span class="math notranslate nohighlight">\(\psi_\alpha\)</span> for each subset <span class="math notranslate nohighlight">\(U_\alpha\)</span> of set <span class="math notranslate nohighlight">\(M\)</span> to an open subset of <span class="math notranslate nohighlight">\(\mathbb R^n\)</span>.</p>
+<p>To see how this works, let’s look at map <span class="math notranslate nohighlight">\(\psi_\alpha\)</span>. It maps the point <span class="math notranslate nohighlight">\(p\)</span> of set <span class="math notranslate nohighlight">\(M\)</span> into <span class="math notranslate nohighlight">\(n\)</span> numbers in <span class="math notranslate nohighlight">\(\mathbb R^n\)</span>. Or equivalently, it assigns <span class="math notranslate nohighlight">\(n\)</span> numbers to point <span class="math notranslate nohighlight">\(p\)</span>. Yes! Those numbers are nothing other than the <strong>coordinates</strong> of point <span class="math notranslate nohighlight">\(p\)</span>. And, map <span class="math notranslate nohighlight">\(\psi_\alpha\)</span> will then be the <strong>coordinate system</strong> on subset <span class="math notranslate nohighlight">\(U_\alpha\)</span>. Set equipped with the coordinate system is called manifold.</p>
 <p>Now, we can define the differentiability of the map between manifolds. Since every point has its coordinates, the map between points becomes functions between coordinates. Thus, the differentiability of the map can be defined as that of those functions, which is well-defined in Calculus.</p>
 <p>Another thing that we would like to mention is the separation of point and its coordinates. In many elementary Physics textbooks, point and coordinates are the <em>same thing</em>. But now, we strongly suggest to distinguish these two entities — you will benefit a lot if you take this seriously in the future.</p>
 </div>
@@ -1127,17 +1127,17 @@ y_n\\
 <h2>Spacetime Geometry<a class="headerlink" href="#spacetime-geometry" title="Permalink to this headline">¶</a></h2>
 <p>Here, we introduce briefly (<em>extremely briefly</em>) about the spacetime geometry. In fact, there is a spectacular construction of spacetime geometry in Differential Geometry theory. So if you are able, try to learn something about it. You will never regret.</p>
 <p>In 3 dimensional Euclidean space, we have Gougu Theorem</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\Delta s^2 = \Delta x^2 + \Delta y^2 + \Delta z^2\]</div>
 <p>In differential form, it is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\mathrm d s^2 = \mathrm d x^2 + \mathrm d y^2 + \mathrm d z^2\]</div>
-<p>Symbol <span class="math">\(\mathrm d s^2\)</span> here is called <strong>line element</strong>. You may notice that the coefficients of the three terms in right hand side are all <span class="math">\(1\)</span>. This is a typical characteristic of flat 3D Euclidean space. Now we think: what if the coefficients are not <span class="math">\(1\)</span>? In fact, the configuration of those coefficients labels a kind of <em>geometry</em>. As an important example, look at</p>
-<div class="math">
+<p>Symbol <span class="math notranslate nohighlight">\(\mathrm d s^2\)</span> here is called <strong>line element</strong>. You may notice that the coefficients of the three terms in right hand side are all <span class="math notranslate nohighlight">\(1\)</span>. This is a typical characteristic of flat 3D Euclidean space. Now we think: what if the coefficients are not <span class="math notranslate nohighlight">\(1\)</span>? In fact, the configuration of those coefficients labels a kind of <em>geometry</em>. As an important example, look at</p>
+<div class="math notranslate nohighlight">
 \[\mathrm d s^2 = -\mathrm d t^2 + \mathrm d x^2 + \mathrm d y^2 + \mathrm d z^2\]</div>
-<p>Clearly this is not the 4D Euclidean space, since there is a <span class="math">\(-1\)</span> here. Actually, this is <strong>Minkowski spacetime</strong> widely used in Special Relativity and Quantum Field Theory. You can also write other numbers or even functions for those coefficients. Certain functions will even let the spacetime to curve. But these are the content of General Relativity which we do not aim at here. (Again if you have time, take a look at it. It’s wonderful.)</p>
+<p>Clearly this is not the 4D Euclidean space, since there is a <span class="math notranslate nohighlight">\(-1\)</span> here. Actually, this is <strong>Minkowski spacetime</strong> widely used in Special Relativity and Quantum Field Theory. You can also write other numbers or even functions for those coefficients. Certain functions will even let the spacetime to curve. But these are the content of General Relativity which we do not aim at here. (Again if you have time, take a look at it. It’s wonderful.)</p>
 <p>We can write the Minkowski line element formally as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\mathrm d s^2 = [\mathrm d t\ \mathrm d x\ \mathrm d y\ \mathrm d z]
 \left[
 \begin{matrix}
@@ -1155,7 +1155,7 @@ y_n\\
 \mathrm d z\\
 \end{matrix}
 \right]\end{split}\]</div>
-<p>The <span class="math">\(4\times 4\)</span> matrix in the above equation, usually denoted by <span class="math">\(\eta_{\mu\nu}\)</span>, is called the <strong>metric</strong> of the spacetime. The sum of all the diagonal element (<span class="math">\(+2\)</span> in this case) is called the <strong>signature</strong> of the metric. Many textbooks of Quantum Field Theory uses Minkowski metric as <span class="math">\(\eta = \mathrm{diag}(1,-1,-1,-1)\)</span>, whose signature is <span class="math">\(-2\)</span>. However, to comply with the convention in the Theory of Relativity, we use the <span class="math">\(+2\)</span> metric.</p>
+<p>The <span class="math notranslate nohighlight">\(4\times 4\)</span> matrix in the above equation, usually denoted by <span class="math notranslate nohighlight">\(\eta_{\mu\nu}\)</span>, is called the <strong>metric</strong> of the spacetime. The sum of all the diagonal element (<span class="math notranslate nohighlight">\(+2\)</span> in this case) is called the <strong>signature</strong> of the metric. Many textbooks of Quantum Field Theory uses Minkowski metric as <span class="math notranslate nohighlight">\(\eta = \mathrm{diag}(1,-1,-1,-1)\)</span>, whose signature is <span class="math notranslate nohighlight">\(-2\)</span>. However, to comply with the convention in the Theory of Relativity, we use the <span class="math notranslate nohighlight">\(+2\)</span> metric.</p>
 </div>
 </div>
 <div class="section" id="lagrangian-dynamics-of-fields">
@@ -1164,19 +1164,19 @@ y_n\\
 <p class="first admonition-title">Note</p>
 <p class="last">Before step into this section, we suggest you review the Lagrangian dynamics of classical point particles, as we are not going to go through that.</p>
 </div>
-<p>The Lagrangian density of a field <span class="math">\(\phi(x)\)</span> is a map <span class="math">\(\mathcal L(\phi,\partial_\mu\phi)\)</span> of field <span class="math">\(\phi\)</span> and its derivative <span class="math">\(\partial_\mu\phi\)</span>. Thus, the action can be constructed as</p>
-<div class="math">
+<p>The Lagrangian density of a field <span class="math notranslate nohighlight">\(\phi(x)\)</span> is a map <span class="math notranslate nohighlight">\(\mathcal L(\phi,\partial_\mu\phi)\)</span> of field <span class="math notranslate nohighlight">\(\phi\)</span> and its derivative <span class="math notranslate nohighlight">\(\partial_\mu\phi\)</span>. Thus, the action can be constructed as</p>
+<div class="math notranslate nohighlight">
 \[\mathcal S = \int \mathcal L(\phi,\partial_\mu\phi)\,\mathrm d^4x\]</div>
 <p>Now, perform the variation of the action</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\delta S &amp;= \int \delta\mathcal L \,\mathrm d^4x\\
 &amp;= \int \left({\partial\mathcal L\over \partial \phi}\delta\phi + {\partial\mathcal L\over\partial\partial_\mu\phi}\delta\partial_\mu\phi\right)\,\mathrm d^4x\\
 &amp;= \int \left({\partial\mathcal L\over \partial \phi}\delta\phi + {\partial\mathcal L\over\partial\partial_\mu\phi}\partial_\mu\delta\phi\right)\,\mathrm d^4x\\
 &amp;= \int \left({\partial\mathcal L\over \partial \phi} - \partial_\mu {\partial\mathcal L\over\partial\partial_\mu\phi}\right)\delta\phi\,\mathrm d^4x + \int \partial_\mu \left({\partial\mathcal L\over\partial\partial_\mu\phi}\delta\phi\right)\,\mathrm d^4x\\
 &amp;= \int \left({\partial\mathcal L\over \partial \phi} - \partial_\mu {\partial\mathcal L\over\partial\partial_\mu\phi}\right)\delta\phi\,\mathrm d^4x = 0\end{split}\]</div>
-<p>The second equality is due to the fact that the variation of <span class="math">\(\phi\)</span> does not change the coordinate system; the fourth equality is because the second integral is a surface term under Stokes theorem, and the variation on the surface is zero.</p>
+<p>The second equality is due to the fact that the variation of <span class="math notranslate nohighlight">\(\phi\)</span> does not change the coordinate system; the fourth equality is because the second integral is a surface term under Stokes theorem, and the variation on the surface is zero.</p>
 <p>Thus, to make the equality hold, the only possible way is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[{\partial\mathcal L\over \partial \phi} - \partial_\mu {\partial\mathcal L\over\partial\partial_\mu\phi} = 0\]</div>
 <p>This is the Lagrangian equation for fields.</p>
 </div>
@@ -1186,21 +1186,21 @@ y_n\\
 <div>There is no intention to introduce Linear Algebra in this section. We have assumed that you have already accomplished training on Linear Algebra. This section serves just as a brief review of the vector space.</div></blockquote>
 <p>The following is the definition of a vector space, or linear space in some references.</p>
 <blockquote>
-<div><p><strong>Definition.</strong> The vector space <span class="math">\(V\)</span> over field <span class="math">\(F\)</span> is a set with two binary operation: <strong>addition</strong> <span class="math">\(+:V\times V\rightarrow V\)</span> and <strong>scalar multiplication</strong> <span class="math">\(\cdot:F\times V\rightarrow V\)</span> satisfying</p>
+<div><p><strong>Definition.</strong> The vector space <span class="math notranslate nohighlight">\(V\)</span> over field <span class="math notranslate nohighlight">\(F\)</span> is a set with two binary operation: <strong>addition</strong> <span class="math notranslate nohighlight">\(+:V\times V\rightarrow V\)</span> and <strong>scalar multiplication</strong> <span class="math notranslate nohighlight">\(\cdot:F\times V\rightarrow V\)</span> satisfying</p>
 <ol class="arabic simple">
-<li>Commutativity: <span class="math">\(v+u=u+v\)</span></li>
-<li>Associativity of addition: <span class="math">\((v+u)+w = v+(u+w)\)</span></li>
-<li>Additive identity: <span class="math">\(\exists 0, \forall v\in V, 0+v=v+0=v\)</span></li>
-<li>Additive inverse: <span class="math">\(\exists (-v), v + (-v) = 0\)</span></li>
-<li>Associativity of scalar multiplication: <span class="math">\(\beta(\alpha v) = (\beta\alpha)v\)</span></li>
-<li>Compatibility of addition and scalar multiplication: <span class="math">\((\alpha+\beta)v = \alpha v + \beta v\)</span>, <span class="math">\(\alpha(v+u) = \alpha v + \alpha u\)</span></li>
-<li>Scalar multiplicative identity: <span class="math">\(\exists 1, 1\cdot v = v\)</span></li>
+<li>Commutativity: <span class="math notranslate nohighlight">\(v+u=u+v\)</span></li>
+<li>Associativity of addition: <span class="math notranslate nohighlight">\((v+u)+w = v+(u+w)\)</span></li>
+<li>Additive identity: <span class="math notranslate nohighlight">\(\exists 0, \forall v\in V, 0+v=v+0=v\)</span></li>
+<li>Additive inverse: <span class="math notranslate nohighlight">\(\exists (-v), v + (-v) = 0\)</span></li>
+<li>Associativity of scalar multiplication: <span class="math notranslate nohighlight">\(\beta(\alpha v) = (\beta\alpha)v\)</span></li>
+<li>Compatibility of addition and scalar multiplication: <span class="math notranslate nohighlight">\((\alpha+\beta)v = \alpha v + \beta v\)</span>, <span class="math notranslate nohighlight">\(\alpha(v+u) = \alpha v + \alpha u\)</span></li>
+<li>Scalar multiplicative identity: <span class="math notranslate nohighlight">\(\exists 1, 1\cdot v = v\)</span></li>
 </ol>
 </div></blockquote>
-<p>There is no need to be so keen on the definition of vector space, but there does exist some important facts worth noticing. From the definition can we discover that the vector space is actually a very general concept &#8212; it would be more appropriate to call it a paradigm. Thus, when facing vector space, one should be very careful to distinguish the general vector space and some specific vector spaces.</p>
-<p>As an example, the real number set over real number field with addition and scalar multiplication as the ordinary addition and multiplication of real numbers forms a vector space. In this case, all real numbers are vectors of real number set &#8212; this is somehow different from our previous intuition, since a real number is widely referred as &#8220;scalar&#8221; instead of a vector.</p>
+<p>There is no need to be so keen on the definition of vector space, but there does exist some important facts worth noticing. From the definition can we discover that the vector space is actually a very general concept — it would be more appropriate to call it a paradigm. Thus, when facing vector space, one should be very careful to distinguish the general vector space and some specific vector spaces.</p>
+<p>As an example, the real number set over real number field with addition and scalar multiplication as the ordinary addition and multiplication of real numbers forms a vector space. In this case, all real numbers are vectors of real number set — this is somehow different from our previous intuition, since a real number is widely referred as “scalar” instead of a vector.</p>
 <p>As another example, the tensor space of any type is a vector space. But in many applicative contexts, the tensor of order one is specifically referred as vector.</p>
-<p>The reason for this section is to remind you that there might be multiple meanings corresponding to the term &#8220;vector&#8221;. Thus, sometimes if you find the argument containing &#8220;vector&#8221; incomprehensible, please remember that there might be the problem of the ambiguity of the term &#8220;vector&#8221;.</p>
+<p>The reason for this section is to remind you that there might be multiple meanings corresponding to the term “vector”. Thus, sometimes if you find the argument containing “vector” incomprehensible, please remember that there might be the problem of the ambiguity of the term “vector”.</p>
 </div>
 <div class="section" id="basics-of-lie-group-theory">
 <h1>Basics of Lie Group Theory<a class="headerlink" href="#basics-of-lie-group-theory" title="Permalink to this headline">¶</a></h1>
@@ -1209,37 +1209,37 @@ y_n\\
 <h2>Group and Lie Group<a class="headerlink" href="#group-and-lie-group" title="Permalink to this headline">¶</a></h2>
 <p>Group structure is an algebraic structure on a set, namely</p>
 <blockquote>
-<div><p><strong>Definition.</strong> Group <span class="math">\(G\)</span> is a set equipped with a binary operation <strong>multiplication</strong>: <span class="math">\(\cdot: G\times G\rightarrow G\)</span> satisfying</p>
+<div><p><strong>Definition.</strong> Group <span class="math notranslate nohighlight">\(G\)</span> is a set equipped with a binary operation <strong>multiplication</strong>: <span class="math notranslate nohighlight">\(\cdot: G\times G\rightarrow G\)</span> satisfying</p>
 <ol class="arabic simple">
-<li>Associativity: <span class="math">\((gh)k = g(hk)\)</span></li>
-<li>Identity Element: <span class="math">\(\exists e, eg = ge = g\)</span></li>
-<li>Inverse Element: <span class="math">\(\forall g, \exists g^{-1}, gg^{-1} = g^{-1}g =e\)</span></li>
+<li>Associativity: <span class="math notranslate nohighlight">\((gh)k = g(hk)\)</span></li>
+<li>Identity Element: <span class="math notranslate nohighlight">\(\exists e, eg = ge = g\)</span></li>
+<li>Inverse Element: <span class="math notranslate nohighlight">\(\forall g, \exists g^{-1}, gg^{-1} = g^{-1}g =e\)</span></li>
 </ol>
 </div></blockquote>
 <p>Translate to human language: group is a set; you can perform multiplication of any two element of the set, and the multiplication satisfies three conditions.</p>
 <p>The reason to invoke group into Physics lies on its similarity to the symmetry. Take translational symmetry for instance. The three translation operation clearly satisfies the associativity. There exists an identity translation (no translation). And for every translation there exists an inverse operation that transforms everything back. Similar argument also holds for rotation and other symmetries.</p>
-<p>But a simple group structure does not provide enough tools for our analysis. We clearly are not satisfied with description as &#8220;translation <span class="math">\(a\)</span>” and &#8220;translation <span class="math">\(b\)</span>”. We hope that we can say &#8220;translation of <span class="math">\(5\)</span> units&#8221;. How can we do that? You got it! We need a manifold.</p>
+<p>But a simple group structure does not provide enough tools for our analysis. We clearly are not satisfied with description as “translation <span class="math notranslate nohighlight">\(a\)</span>” and “translation <span class="math notranslate nohighlight">\(b\)</span>”. We hope that we can say “translation of <span class="math notranslate nohighlight">\(5\)</span> units”. How can we do that? You got it! We need a manifold.</p>
 <p>Now, <strong>Lie group</strong> debuts. Lie group is nothing more complex than a set that is both a group and a manifold. The manifold provides the coordinates for each of the group element, and we can use a variety of tools provided by Differential Geometry.</p>
 </div>
 <div class="section" id="generator-and-exponential-map">
 <h2>Generator and Exponential Map<a class="headerlink" href="#generator-and-exponential-map" title="Permalink to this headline">¶</a></h2>
-<p>One of a very important tool provided by the Differential Geometry is the possibility to analyse the group element through generators. Take the 3D translation as an example. With a differential structure in hand, we can express some group element like &#8220;translation of 5 units along x axis&#8221;. Here, the group element is designated by a parameter &#8220;5 units&#8221; and a <em>direction</em> &#8220;x axis&#8221;. The generator is nothing other than the <em>direction</em> here. Therefore, every group element can be written as a parameter with a <em>direction</em>.</p>
+<p>One of a very important tool provided by the Differential Geometry is the possibility to analyse the group element through generators. Take the 3D translation as an example. With a differential structure in hand, we can express some group element like “translation of 5 units along x axis”. Here, the group element is designated by a parameter “5 units” and a <em>direction</em> “x axis”. The generator is nothing other than the <em>direction</em> here. Therefore, every group element can be written as a parameter with a <em>direction</em>.</p>
 <blockquote>
 <div>Mathematically speaking, the generator is the element of the vector space at identity element of the Lie group. If you can not understand the previous statement, a review of linear structure on manifolds will be beneficial. There is no intention to expand here.</div></blockquote>
 <p>Next, we are going to explicitly illustrate how to the generator <em>generate</em> the group element. Suppose we now have a infinitesimal transformation</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[1+\epsilon A\]</div>
-<p>where <span class="math">\(1\)</span> means the identity element, <span class="math">\(\epsilon\)</span> is a first order infinitesimal parameter and <span class="math">\(A\)</span> is the generator. To generate the element <span class="math">\(g\)</span> with <em>direction</em> <span class="math">\(A\)</span> and parameter <span class="math">\(t\)</span>, divide <span class="math">\(t\)</span> by <span class="math">\(n\)</span> and ask <span class="math">\(n\rightarrow\infty\)</span>. Therefore, the infinitesimal parameter <span class="math">\(\epsilon=t/n\)</span>. Then, apply the transformation <span class="math">\(n\)</span> times to get</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(1\)</span> means the identity element, <span class="math notranslate nohighlight">\(\epsilon\)</span> is a first order infinitesimal parameter and <span class="math notranslate nohighlight">\(A\)</span> is the generator. To generate the element <span class="math notranslate nohighlight">\(g\)</span> with <em>direction</em> <span class="math notranslate nohighlight">\(A\)</span> and parameter <span class="math notranslate nohighlight">\(t\)</span>, divide <span class="math notranslate nohighlight">\(t\)</span> by <span class="math notranslate nohighlight">\(n\)</span> and ask <span class="math notranslate nohighlight">\(n\rightarrow\infty\)</span>. Therefore, the infinitesimal parameter <span class="math notranslate nohighlight">\(\epsilon=t/n\)</span>. Then, apply the transformation <span class="math notranslate nohighlight">\(n\)</span> times to get</p>
+<div class="math notranslate nohighlight">
 \[g = \lim_{n\rightarrow\infty}(1+\frac{t}{n}A)^n\equiv\exp\{tA\}\]</div>
-<p>Symbol <span class="math">\(\equiv\)</span> means &#8220;denoted by&#8221;. The expression <span class="math">\(\exp\{tA\}\)</span> is called the <strong>exponential map</strong> of element <span class="math">\(g\)</span>. The reason for this denotation will be apparent if you notice a conclusion in Calculus</p>
-<div class="math">
+<p>Symbol <span class="math notranslate nohighlight">\(\equiv\)</span> means “denoted by”. The expression <span class="math notranslate nohighlight">\(\exp\{tA\}\)</span> is called the <strong>exponential map</strong> of element <span class="math notranslate nohighlight">\(g\)</span>. The reason for this denotation will be apparent if you notice a conclusion in Calculus</p>
+<div class="math notranslate nohighlight">
 \[\exp\{x\} = (1 + \frac{x}{n})^n\]</div>
 <p>It seems that we have got nothing but a denotation. However, the following theorem will show the power of the exponential map</p>
 <blockquote>
-<div><strong>Theorem.</strong> For matrix group, thre is <span class="math">\(\exp = \mathrm{Exp}\)</span>.</div></blockquote>
-<p>In the above theorem, map <span class="math">\(\mathrm{Exp}\)</span> is defined as</p>
-<div class="math">
+<div><strong>Theorem.</strong> For matrix group, thre is <span class="math notranslate nohighlight">\(\exp = \mathrm{Exp}\)</span>.</div></blockquote>
+<p>In the above theorem, map <span class="math notranslate nohighlight">\(\mathrm{Exp}\)</span> is defined as</p>
+<div class="math notranslate nohighlight">
 \[\mathrm{Exp}(tA) = 1 + tA + \frac{t^2A^2}{2!} + \ldots = \sum_{k=0}^{\infty}\frac{t^kA^k}{k!}\]</div>
 <p>and the matrix group means the group with all elements being square matrix. Notice that most group that are of great concern is the matrix group. There is no doubt that this theorem will provide great convenience.</p>
 <blockquote>
@@ -1247,28 +1247,28 @@ y_n\\
 </div>
 <div class="section" id="special-lie-groups">
 <h2>Special Lie Groups<a class="headerlink" href="#special-lie-groups" title="Permalink to this headline">¶</a></h2>
-<p>This section will introduce several crucial matrix Lie groups that are widely used in physical theories. In fact, in frontier research, there are numerous kinds of Lie groups that frequently appear in the theories. This section will only introduce two of them &#8212; <strong>orthogonal group</strong> (including <strong>Lorentz group</strong>) and <strong>unitary group</strong>.</p>
-<p><strong>General Linear Group</strong> <span class="math">\(\mathrm{GL}(n)\)</span></p>
-<p>We start from the most basic matrix Lie group &#8212; <span class="math">\(n\)</span>-dim General Linear Group, or <span class="math">\(\mathrm{GL}(n)\)</span>, which consists of all bijective linear map from an <span class="math">\(n\)</span>-dim vector space <span class="math">\(V\)</span> to itself, with group multiplication defined as the map composition. If we select a basis of space <span class="math">\(V\)</span>, then the map will become an invertible square matrix of order <span class="math">\(n\)</span>, or square matrix <span class="math">\(A\)</span> of order <span class="math">\(n\)</span> with <span class="math">\(\det(A)\neq0\)</span>.</p>
-<p>There is something &#8220;general&#8221;, then there must be something &#8220;special&#8221;. Yes, if we ask <span class="math">\(\det(A)=1\)</span>, then the matrices form the <span class="math">\(n\)</span>-dim <strong>Special Linear Group</strong>, or <span class="math">\(\mathrm{SL}(n)\)</span>. Moreover, this definition is not only suitable for General Linear Group only. Actually, when we say &#8220;special ... group&#8221;, it just means &#8221;... group&#8221; with the determinant of the group element being <span class="math">\(1\)</span> specifically.</p>
-<p><strong>Orthogonal Group</strong> <span class="math">\(\mathrm{O}(n)\)</span> and <span class="math">\(\mathrm{O}(m,n)\)</span></p>
-<p>When defining <span class="math">\(\mathrm{GL}(n)\)</span>, we have no restriction on the vector space <span class="math">\(V\)</span>. Now, if there is also a metric defined on <span class="math">\(V\)</span>, then we can add more restriction to the transformation &#8212; preserve the &#8220;length&#8221;. More specifically, suppose space <span class="math">\(V\)</span> has a Euclidean metric <span class="math">\(\delta_{\mu\nu}\)</span>. Thus, the preservation of &#8220;length&#8221; can be expressed as</p>
-<div class="math">
+<p>This section will introduce several crucial matrix Lie groups that are widely used in physical theories. In fact, in frontier research, there are numerous kinds of Lie groups that frequently appear in the theories. This section will only introduce two of them — <strong>orthogonal group</strong> (including <strong>Lorentz group</strong>) and <strong>unitary group</strong>.</p>
+<p><strong>General Linear Group</strong> <span class="math notranslate nohighlight">\(\mathrm{GL}(n)\)</span></p>
+<p>We start from the most basic matrix Lie group — <span class="math notranslate nohighlight">\(n\)</span>-dim General Linear Group, or <span class="math notranslate nohighlight">\(\mathrm{GL}(n)\)</span>, which consists of all bijective linear map from an <span class="math notranslate nohighlight">\(n\)</span>-dim vector space <span class="math notranslate nohighlight">\(V\)</span> to itself, with group multiplication defined as the map composition. If we select a basis of space <span class="math notranslate nohighlight">\(V\)</span>, then the map will become an invertible square matrix of order <span class="math notranslate nohighlight">\(n\)</span>, or square matrix <span class="math notranslate nohighlight">\(A\)</span> of order <span class="math notranslate nohighlight">\(n\)</span> with <span class="math notranslate nohighlight">\(\det(A)\neq0\)</span>.</p>
+<p>There is something “general”, then there must be something “special”. Yes, if we ask <span class="math notranslate nohighlight">\(\det(A)=1\)</span>, then the matrices form the <span class="math notranslate nohighlight">\(n\)</span>-dim <strong>Special Linear Group</strong>, or <span class="math notranslate nohighlight">\(\mathrm{SL}(n)\)</span>. Moreover, this definition is not only suitable for General Linear Group only. Actually, when we say “special … group”, it just means “… group” with the determinant of the group element being <span class="math notranslate nohighlight">\(1\)</span> specifically.</p>
+<p><strong>Orthogonal Group</strong> <span class="math notranslate nohighlight">\(\mathrm{O}(n)\)</span> and <span class="math notranslate nohighlight">\(\mathrm{O}(m,n)\)</span></p>
+<p>When defining <span class="math notranslate nohighlight">\(\mathrm{GL}(n)\)</span>, we have no restriction on the vector space <span class="math notranslate nohighlight">\(V\)</span>. Now, if there is also a metric defined on <span class="math notranslate nohighlight">\(V\)</span>, then we can add more restriction to the transformation — preserve the “length”. More specifically, suppose space <span class="math notranslate nohighlight">\(V\)</span> has a Euclidean metric <span class="math notranslate nohighlight">\(\delta_{\mu\nu}\)</span>. Thus, the preservation of “length” can be expressed as</p>
+<div class="math notranslate nohighlight">
 \[\delta_{\mu\nu}Z^\mu_\rho Z^\nu_\sigma v^\rho v^\sigma = \delta_{\mu\nu}v^\mu v^\nu\]</div>
 <p>or written in matrix form</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[v^{\mathrm{T}}Z^{\mathrm{T}}Zv = v^{\mathrm{T}} v = v^{\mathrm{T}}Iv\]</div>
-<p>where <span class="math">\(I\)</span> is the identity matrix. Thus, the preservation of &#8220;length&#8221; will be equivalent to</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(I\)</span> is the identity matrix. Thus, the preservation of “length” will be equivalent to</p>
+<div class="math notranslate nohighlight">
 \[Z^{\mathrm{T}}Z = I\]</div>
-<p>All this kind of matrices form the <span class="math">\(n\)</span>-dim Orthogonal Group, or <span class="math">\(\mathrm{O}(n)\)</span>. And from the illustration of the previous section, you should be able to understand what is <strong>Special Orthogonal Group</strong>, or <span class="math">\(\mathrm{SO}(n)\)</span>.</p>
-<p>The story does not end here. Just now we ask the space <span class="math">\(V\)</span> to have a Euclidean metric. Now we want to ask the metric to be more general &#8212; not necessary to be positively definite. More specifically, the diagonal elements of the metric can have <span class="math">\(m\)</span> occurrences as <span class="math">\(-1\)</span> and <span class="math">\(n\)</span> occurrences as <span class="math">\(1\)</span>. Also ask the matrix to preserve the &#8220;length&#8221;. This kind of matrices form group <span class="math">\(\mathrm{O}(m,n)\)</span>. A famous example of this kind of group is <span class="math">\(\mathrm{O}(1,3)\)</span>. It has a dedicated name <strong>Lorentz Group</strong>, and it can be so vital that we decide to open a new section for it.</p>
-<p><strong>Lorentz Group</strong> <span class="math">\(\mathrm{L}\)</span> or <span class="math">\(\mathrm{O}(1,3)\)</span></p>
-<p>As is introduced in the previous section, the Lorentz Group is the linear group whose vector space <span class="math">\(V\)</span> has a Minkowski metric <span class="math">\(\eta_{\mu\nu}\)</span>. Yes, it is the Minkowski metric that makes it so significant in the physical theories.</p>
-<p>The Lorentz Group has quite a complicated structure which we have no intention to address. But we would like to mention one important thing: the Lorentz Group can be divided into four branches, using the <span class="math">\(\varLambda^0_0\)</span> element (the leftmost and uppermost element) and determinant (either <span class="math">\(+1\)</span> or <span class="math">\(-1\)</span>). We use <span class="math">\(+/-\)</span> and <span class="math">\(\uparrow/\downarrow\)</span> to denote the four branches, e.g. <span class="math">\(\mathrm{L}^\uparrow_+\)</span> means <span class="math">\(\varLambda^0_0\geqslant1\)</span> and <span class="math">\(\det(\varLambda)=+1\)</span>.</p>
-<p>Although there are a massive amount of properties revealed, we stop here &#8212; many interesting facts about the Lorentz Group and its representation will be discussed in the introduction of representation theory.</p>
-<p><strong>Unitary Group</strong> <span class="math">\(\mathrm{U}(n)\)</span></p>
-<p>All our previous groups are based on the vector space <span class="math">\(V\)</span> which is <em>real</em>. Now we ask it to be complex. Then we get the complex General Linear Group <span class="math">\(\mathrm{GL}(n,\mathbb{C})\)</span>. Similarly, if there is an inner product (just like the metric in real space) defined on the complex vector space, we can ask the transformation to preserve &#8220;length&#8221;. Thus, we get the unitary group <span class="math">\(\mathrm{U}(n)\)</span>. Again, we stop here. If you want to know more about the Unitary Group and its similarity or distinction with Orthogonal Group, please refer to the references concerning Lie Group &amp; Lie Algebra.</p>
+<p>All this kind of matrices form the <span class="math notranslate nohighlight">\(n\)</span>-dim Orthogonal Group, or <span class="math notranslate nohighlight">\(\mathrm{O}(n)\)</span>. And from the illustration of the previous section, you should be able to understand what is <strong>Special Orthogonal Group</strong>, or <span class="math notranslate nohighlight">\(\mathrm{SO}(n)\)</span>.</p>
+<p>The story does not end here. Just now we ask the space <span class="math notranslate nohighlight">\(V\)</span> to have a Euclidean metric. Now we want to ask the metric to be more general — not necessary to be positively definite. More specifically, the diagonal elements of the metric can have <span class="math notranslate nohighlight">\(m\)</span> occurrences as <span class="math notranslate nohighlight">\(-1\)</span> and <span class="math notranslate nohighlight">\(n\)</span> occurrences as <span class="math notranslate nohighlight">\(1\)</span>. Also ask the matrix to preserve the “length”. This kind of matrices form group <span class="math notranslate nohighlight">\(\mathrm{O}(m,n)\)</span>. A famous example of this kind of group is <span class="math notranslate nohighlight">\(\mathrm{O}(1,3)\)</span>. It has a dedicated name <strong>Lorentz Group</strong>, and it can be so vital that we decide to open a new section for it.</p>
+<p><strong>Lorentz Group</strong> <span class="math notranslate nohighlight">\(\mathrm{L}\)</span> or <span class="math notranslate nohighlight">\(\mathrm{O}(1,3)\)</span></p>
+<p>As is introduced in the previous section, the Lorentz Group is the linear group whose vector space <span class="math notranslate nohighlight">\(V\)</span> has a Minkowski metric <span class="math notranslate nohighlight">\(\eta_{\mu\nu}\)</span>. Yes, it is the Minkowski metric that makes it so significant in the physical theories.</p>
+<p>The Lorentz Group has quite a complicated structure which we have no intention to address. But we would like to mention one important thing: the Lorentz Group can be divided into four branches, using the <span class="math notranslate nohighlight">\(\varLambda^0_0\)</span> element (the leftmost and uppermost element) and determinant (either <span class="math notranslate nohighlight">\(+1\)</span> or <span class="math notranslate nohighlight">\(-1\)</span>). We use <span class="math notranslate nohighlight">\(+/-\)</span> and <span class="math notranslate nohighlight">\(\uparrow/\downarrow\)</span> to denote the four branches, e.g. <span class="math notranslate nohighlight">\(\mathrm{L}^\uparrow_+\)</span> means <span class="math notranslate nohighlight">\(\varLambda^0_0\geqslant1\)</span> and <span class="math notranslate nohighlight">\(\det(\varLambda)=+1\)</span>.</p>
+<p>Although there are a massive amount of properties revealed, we stop here — many interesting facts about the Lorentz Group and its representation will be discussed in the introduction of representation theory.</p>
+<p><strong>Unitary Group</strong> <span class="math notranslate nohighlight">\(\mathrm{U}(n)\)</span></p>
+<p>All our previous groups are based on the vector space <span class="math notranslate nohighlight">\(V\)</span> which is <em>real</em>. Now we ask it to be complex. Then we get the complex General Linear Group <span class="math notranslate nohighlight">\(\mathrm{GL}(n,\mathbb{C})\)</span>. Similarly, if there is an inner product (just like the metric in real space) defined on the complex vector space, we can ask the transformation to preserve “length”. Thus, we get the unitary group <span class="math notranslate nohighlight">\(\mathrm{U}(n)\)</span>. Again, we stop here. If you want to know more about the Unitary Group and its similarity or distinction with Orthogonal Group, please refer to the references concerning Lie Group &amp; Lie Algebra.</p>
 </div>
 </div>
 
@@ -1317,7 +1317,8 @@ y_n\\
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

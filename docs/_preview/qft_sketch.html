@@ -180,30 +180,30 @@
 <p>Before we step into the path integral formalism, we give an overall sketch as well as some <em>rules</em> of our construction here. Beware, that the <em>rules</em> are not necessarily accepted or respected by all the academics.</p>
 <div class="section" id="sketch-of-theoretical-construction">
 <h2>Sketch of Theoretical Construction<a class="headerlink" href="#sketch-of-theoretical-construction" title="Permalink to this headline">¶</a></h2>
-<p>The construction will start from analyzing the general path integral of scalar field from some <em>stable state</em> to itself (usually it is <em>vacuum state</em> <span class="math">\(|\Omega\rangle\)</span>)</p>
-<div class="math">
+<p>The construction will start from analyzing the general path integral of scalar field from some <em>stable state</em> to itself (usually it is <em>vacuum state</em> <span class="math notranslate nohighlight">\(|\Omega\rangle\)</span>)</p>
+<div class="math notranslate nohighlight">
 \[\langle \Omega|\Omega\rangle = N\int\mathcal{D}\varphi\exp\{-\frac{1}{2}\mathrm{i}\int\varphi[\partial^2-m^2]\varphi\} = 1\]</div>
-<p>where <span class="math">\(N\)</span> is a normalization factor. The last equality comes from the property <em>stable</em>, which means it will not change under the situation of free field, which will determine the normalization factor. Now, we construct a quantity called <strong>generating functional</strong> by adding an arbitrary <em>potential</em> <span class="math">\(J\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(N\)</span> is a normalization factor. The last equality comes from the property <em>stable</em>, which means it will not change under the situation of free field, which will determine the normalization factor. Now, we construct a quantity called <strong>generating functional</strong> by adding an arbitrary <em>potential</em> <span class="math notranslate nohighlight">\(J\)</span></p>
 <blockquote>
 <div><p><strong>Stage 1</strong></p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}W_0[J] = \langle\Omega|\Omega\rangle |_J &amp;= N\int\mathcal{D}\varphi\exp\{-\mathrm{i}\int\frac{1}{2}\varphi[\partial^2-m^2]\varphi - J\varphi\}\\
 &amp;= \exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_FJ\}\end{split}\]</div>
 </div></blockquote>
-<p>The above generating functional includes merely the scalar field without any other <em>actual</em> interaction terms (the <span class="math">\(J\)</span> term is an auxiliary term with no physical significance). If the Lagrangian includes the interaction terms <span class="math">\(\mathcal{L}_{\text{int}}\)</span>, the generating functional will be</p>
+<p>The above generating functional includes merely the scalar field without any other <em>actual</em> interaction terms (the <span class="math notranslate nohighlight">\(J\)</span> term is an auxiliary term with no physical significance). If the Lagrangian includes the interaction terms <span class="math notranslate nohighlight">\(\mathcal{L}_{\text{int}}\)</span>, the generating functional will be</p>
 <blockquote>
 <div><p><strong>Stage 2</strong></p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}W[J] &amp;= \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\} W_0[J] \\
 &amp;= \exp\{-\mathrm{i}\int\mathcal{L}_{\text{int}}\!\!\left[\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J}\right]\}\exp\{-\frac{1}{2}\mathrm{i}\int J\Delta_FJ\}\end{split}\]</div>
 </div></blockquote>
-<p>As is indicated, this expression deals with some <em>stable state</em>. Now we hope to generalized it into other ordinary states, like from state <span class="math">\(\alpha\)</span> to state <span class="math">\(\beta\)</span>. This forms the well-renowned <strong>S-matrix</strong> (scattering matrix)</p>
+<p>As is indicated, this expression deals with some <em>stable state</em>. Now we hope to generalized it into other ordinary states, like from state <span class="math notranslate nohighlight">\(\alpha\)</span> to state <span class="math notranslate nohighlight">\(\beta\)</span>. This forms the well-renowned <strong>S-matrix</strong> (scattering matrix)</p>
 <blockquote>
 <div><p><strong>Stage 3</strong></p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[S = \langle \beta|\alpha\rangle = S[J]|_{J=0} = \left.\exp\{\mathrm{i}\int\varphi_{\text{as}}(\partial^2 - m^2)\frac{\delta}{\delta J}\}W[J]\right|_{J=0}\]</div>
 </div></blockquote>
-<p>where <span class="math">\(\varphi_{\text{as}}\)</span> is the asymptotic field corresponding to the initial and final state. The last equality is the famous <strong>LSZ reduction formula</strong>.</p>
+<p>where <span class="math notranslate nohighlight">\(\varphi_{\text{as}}\)</span> is the asymptotic field corresponding to the initial and final state. The last equality is the famous <strong>LSZ reduction formula</strong>.</p>
 <p>The theoretical construction will end at S-matrix. For a connection with the experiment, scattering <strong>cross-section</strong> can be derived through the S-matrix, which is directly measurable in the scattering experiment.</p>
 </div>
 <div class="section" id="some-rules">
@@ -267,7 +267,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

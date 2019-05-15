@@ -176,19 +176,19 @@
 <p class="first admonition-title">Note</p>
 <p class="last">Before step into this section, we suggest you review the Lagrangian dynamics of classical point particles, as we are not going to go through that.</p>
 </div>
-<p>The Lagrangian density of a field <span class="math">\(\phi(x)\)</span> is a map <span class="math">\(\mathcal L(\phi,\partial_\mu\phi)\)</span> of field <span class="math">\(\phi\)</span> and its derivative <span class="math">\(\partial_\mu\phi\)</span>. Thus, the action can be constructed as</p>
-<div class="math">
+<p>The Lagrangian density of a field <span class="math notranslate nohighlight">\(\phi(x)\)</span> is a map <span class="math notranslate nohighlight">\(\mathcal L(\phi,\partial_\mu\phi)\)</span> of field <span class="math notranslate nohighlight">\(\phi\)</span> and its derivative <span class="math notranslate nohighlight">\(\partial_\mu\phi\)</span>. Thus, the action can be constructed as</p>
+<div class="math notranslate nohighlight">
 \[\mathcal S = \int \mathcal L(\phi,\partial_\mu\phi)\,\mathrm d^4x\]</div>
 <p>Now, perform the variation of the action</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\delta S &amp;= \int \delta\mathcal L \,\mathrm d^4x\\
 &amp;= \int \left({\partial\mathcal L\over \partial \phi}\delta\phi + {\partial\mathcal L\over\partial\partial_\mu\phi}\delta\partial_\mu\phi\right)\,\mathrm d^4x\\
 &amp;= \int \left({\partial\mathcal L\over \partial \phi}\delta\phi + {\partial\mathcal L\over\partial\partial_\mu\phi}\partial_\mu\delta\phi\right)\,\mathrm d^4x\\
 &amp;= \int \left({\partial\mathcal L\over \partial \phi} - \partial_\mu {\partial\mathcal L\over\partial\partial_\mu\phi}\right)\delta\phi\,\mathrm d^4x + \int \partial_\mu \left({\partial\mathcal L\over\partial\partial_\mu\phi}\delta\phi\right)\,\mathrm d^4x\\
 &amp;= \int \left({\partial\mathcal L\over \partial \phi} - \partial_\mu {\partial\mathcal L\over\partial\partial_\mu\phi}\right)\delta\phi\,\mathrm d^4x = 0\end{split}\]</div>
-<p>The second equality is due to the fact that the variation of <span class="math">\(\phi\)</span> does not change the coordinate system; the fourth equality is because the second integral is a surface term under Stokes theorem, and the variation on the surface is zero.</p>
+<p>The second equality is due to the fact that the variation of <span class="math notranslate nohighlight">\(\phi\)</span> does not change the coordinate system; the fourth equality is because the second integral is a surface term under Stokes theorem, and the variation on the surface is zero.</p>
 <p>Thus, to make the equality hold, the only possible way is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[{\partial\mathcal L\over \partial \phi} - \partial_\mu {\partial\mathcal L\over\partial\partial_\mu\phi} = 0\]</div>
 <p>This is the Lagrangian equation for fields.</p>
 </div>
@@ -247,7 +247,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

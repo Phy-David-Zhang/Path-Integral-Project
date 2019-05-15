@@ -176,56 +176,56 @@
   <div class="section" id="evaluation-of-path-integral">
 <h1>Evaluation of Path Integral<a class="headerlink" href="#evaluation-of-path-integral" title="Permalink to this headline">¶</a></h1>
 <p>This section will tell you how to explicitly calculate the propagator using path integral. Take the free particle for example (you should try to generalise the calculation into other situations). The propagator of the free particle is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[K = \lim_{n\rightarrow\infty}\int C(\epsilon)\prod_{i=1}^{n}\mathrm{d}[x(t_i)]\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{1}{2}m\frac{[x(t_i)-x(t_{i-1})]^2}{\epsilon}\}\]</div>
-<p>To simplify the expression, denote <span class="math">\(x_i\equiv x(t_i)\)</span> and let <span class="math">\(m=2\)</span>. As a result, the integral simplifies to</p>
-<div class="math">
+<p>To simplify the expression, denote <span class="math notranslate nohighlight">\(x_i\equiv x(t_i)\)</span> and let <span class="math notranslate nohighlight">\(m=2\)</span>. As a result, the integral simplifies to</p>
+<div class="math notranslate nohighlight">
 \[K = \lim_{n\rightarrow\infty}\int C(\epsilon)\prod_{i=1}^{n}\mathrm{d}x_i\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{(x_i-x_{i-1})^2}{\epsilon}\}\]</div>
-<p>Before trying to actually evaluate the above expression, we should first find out the normalisation factor <span class="math">\(C(\epsilon)\)</span>.</p>
+<p>Before trying to actually evaluate the above expression, we should first find out the normalisation factor <span class="math notranslate nohighlight">\(C(\epsilon)\)</span>.</p>
 <div class="section" id="determination-of-normalisation-factor">
 <h2>Determination of Normalisation Factor<a class="headerlink" href="#determination-of-normalisation-factor" title="Permalink to this headline">¶</a></h2>
-<p>The normalisation factor can be constrained under the infinitesimal evolvement. Suppose we now work on the interval <span class="math">\((t, t+\epsilon)\)</span> where <span class="math">\(\epsilon\)</span> is an infinitesimal time step. Therefore, the normalisation condition requires</p>
-<div class="math">
+<p>The normalisation factor can be constrained under the infinitesimal evolvement. Suppose we now work on the interval <span class="math notranslate nohighlight">\((t, t+\epsilon)\)</span> where <span class="math notranslate nohighlight">\(\epsilon\)</span> is an infinitesimal time step. Therefore, the normalisation condition requires</p>
+<div class="math notranslate nohighlight">
 \[K(t; t+\epsilon) = \int c\,\mathrm{d}y \exp\{-\frac{(y-x)^2}{\mathrm{i}\epsilon}\} = 1\]</div>
-<p>where <span class="math">\(y\)</span> is the position at <span class="math">\(t+\epsilon\)</span> and <span class="math">\(x\)</span> is the position at <span class="math">\(t\)</span>. Perform the integration and we get</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(y\)</span> is the position at <span class="math notranslate nohighlight">\(t+\epsilon\)</span> and <span class="math notranslate nohighlight">\(x\)</span> is the position at <span class="math notranslate nohighlight">\(t\)</span>. Perform the integration and we get</p>
+<div class="math notranslate nohighlight">
 \[c\cdot \sqrt{\mathrm{i}\pi\epsilon} = 1 \ \ \Rightarrow\ \ c = \frac{1}{\sqrt{\mathrm{i}\pi\epsilon}}\]</div>
-<p>This normalisation factor emerges whenever we the time moves forward the amount <span class="math">\(\epsilon\)</span>. In our previous expression, we insert <span class="math">\(n\)</span> point into the interval <span class="math">\((t,t')\)</span> which means we move forward <span class="math">\(n+1\)</span> steps. Therefore</p>
-<div class="math">
+<p>This normalisation factor emerges whenever we the time moves forward the amount <span class="math notranslate nohighlight">\(\epsilon\)</span>. In our previous expression, we insert <span class="math notranslate nohighlight">\(n\)</span> point into the interval <span class="math notranslate nohighlight">\((t,t')\)</span> which means we move forward <span class="math notranslate nohighlight">\(n+1\)</span> steps. Therefore</p>
+<div class="math notranslate nohighlight">
 \[C(\epsilon) = c^{n+1} = (\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\]</div>
 <p>The normalisation factor of the other forms of Lagrangian can be derived through a similar way.</p>
 </div>
 <div class="section" id="expand-according-to-classical-path">
 <h2>Expand according to Classical Path<a class="headerlink" href="#expand-according-to-classical-path" title="Permalink to this headline">¶</a></h2>
-<p>Usually, the path integral will have an upper and lower boundary, i.e. <span class="math">\(x'\)</span> and <span class="math">\(x_0\)</span>, which brings some trouble during the evaluation. Hence, we want to eliminate this trouble. The best way is to introduce a <em>relative</em> variable, i.e. select a certain path <span class="math">\(x_c\)</span> with <span class="math">\(x_c(t_0) = x_0\)</span> and <span class="math">\(x_c(t') = x'\)</span> and perform the path integral according to <span class="math">\(y\equiv x - x_c\)</span>. Of course, you can choose whatever path <span class="math">\(x_c\)</span> you like, but there is one path that will make the evaluation less miserable &#8212; the classical path.</p>
+<p>Usually, the path integral will have an upper and lower boundary, i.e. <span class="math notranslate nohighlight">\(x'\)</span> and <span class="math notranslate nohighlight">\(x_0\)</span>, which brings some trouble during the evaluation. Hence, we want to eliminate this trouble. The best way is to introduce a <em>relative</em> variable, i.e. select a certain path <span class="math notranslate nohighlight">\(x_c\)</span> with <span class="math notranslate nohighlight">\(x_c(t_0) = x_0\)</span> and <span class="math notranslate nohighlight">\(x_c(t') = x'\)</span> and perform the path integral according to <span class="math notranslate nohighlight">\(y\equiv x - x_c\)</span>. Of course, you can choose whatever path <span class="math notranslate nohighlight">\(x_c\)</span> you like, but there is one path that will make the evaluation less miserable — the classical path.</p>
 <p>According to the variation principle, the classical path is defined as the path which satisfies</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\left.\frac{\delta S}{\delta x}\right|_{x=x_c} = 0\]</div>
 <p>Expand the action according to the classical path and we get</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[S = S_c + \left.\frac{\delta S}{\delta x}\right|_{x=x_c} y + \left.\frac{\delta^2 S}{\delta x^2}\right|_{x=x_c}y^2\]</div>
-<p>This is nothing but a functional version of Taylor expansion. The expansion ends at second order since for most systems, the Lagrangian is quadratic. It is clear that the second term is zero. For the third term, it is exactly the same as <span class="math">\(S_c\)</span> for free particle situation. Therefore, we separate the action into the addition of a classical action and an action of <span class="math">\(y\)</span> which satisfies <span class="math">\(y_0 = y' = 0\)</span>.</p>
+<p>This is nothing but a functional version of Taylor expansion. The expansion ends at second order since for most systems, the Lagrangian is quadratic. It is clear that the second term is zero. For the third term, it is exactly the same as <span class="math notranslate nohighlight">\(S_c\)</span> for free particle situation. Therefore, we separate the action into the addition of a classical action and an action of <span class="math notranslate nohighlight">\(y\)</span> which satisfies <span class="math notranslate nohighlight">\(y_0 = y' = 0\)</span>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The above derivation will invoke functional Taylor expansion. If you can not yet accept this, it won&#8217;t be miserable just to substitute <span class="math">\(x = x_c + y\)</span> into the original path integral and get the same result.</p>
+<p class="last">The above derivation will invoke functional Taylor expansion. If you can not yet accept this, it won’t be miserable just to substitute <span class="math notranslate nohighlight">\(x = x_c + y\)</span> into the original path integral and get the same result.</p>
 </div>
 </div>
 <div class="section" id="evaluation-by-quadratic-form">
 <h2>Evaluation by Quadratic Form<a class="headerlink" href="#evaluation-by-quadratic-form" title="Permalink to this headline">¶</a></h2>
 <p>Our path integral now becomes</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[K = K_c \cdot \lim_{n\rightarrow\infty}\int (\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\prod_{i=1}^{n}\mathrm{d}y_i\exp\{\mathrm{i}\sum_{i=1}^{n+1}\frac{(y_i-y_{i-1})^2}{\epsilon}\}\]</div>
 <p>where</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[K_c = \exp\{\mathrm{i}S_c\}\]</div>
-<p>is the &#8220;classical&#8221; part of the propagator.</p>
-<p>A naive way of evaluating this integral is to follow the definition &#8212; perform <span class="math">\(n\)</span> integration and then take the limit. However, recall that most of the physical models, the Lagrangian is quadratic. This provides another way of evaluating the path integral, which brings much ease.</p>
+<p>is the “classical” part of the propagator.</p>
+<p>A naive way of evaluating this integral is to follow the definition — perform <span class="math notranslate nohighlight">\(n\)</span> integration and then take the limit. However, recall that most of the physical models, the Lagrangian is quadratic. This provides another way of evaluating the path integral, which brings much ease.</p>
 <p>To begin with, expand the summation</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}&amp;y_1^2 + y_1^2 - 2y_1y_2 + y_2^2 + y_2^2 - 2y_2 y_3 + y_3^2 + ...\\
 =\ &amp;2y_1^2 - y_1y_2 - y_1y_2 + 2y_2^2 - 2y_2 y_3 - 2y_2 y_3 + ...\end{split}\]</div>
 <p>The reason for a rearrangement of the terms can be seen if we write the expansion in matrix form</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}[y_1\ y_2\ y_3 \ldots y_n]
 \left[
 \begin{matrix}
@@ -247,37 +247,37 @@ y_n\\
 \end{matrix}
 \right]
 \equiv \eta^T M \eta\end{split}\]</div>
-<p>where <span class="math">\(\eta\)</span> is an <span class="math">\(n\)</span>-dim vector and <span class="math">\(M\)</span> is the matrix in the middle. Therefore, the integral becomes</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\eta\)</span> is an <span class="math notranslate nohighlight">\(n\)</span>-dim vector and <span class="math notranslate nohighlight">\(M\)</span> is the matrix in the middle. Therefore, the integral becomes</p>
+<div class="math notranslate nohighlight">
 \[\lim_{n\rightarrow\infty}(\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\int \mathrm{d}\eta\exp\{-\eta^T A \eta\}\]</div>
-<p>where <span class="math">\(\mathrm d\eta\)</span> is just the abbreviation of <span class="math">\(\prod\mathrm dy\)</span> and <span class="math">\(A\equiv M/\mathrm i\epsilon\)</span>.</p>
+<p>where <span class="math notranslate nohighlight">\(\mathrm d\eta\)</span> is just the abbreviation of <span class="math notranslate nohighlight">\(\prod\mathrm dy\)</span> and <span class="math notranslate nohighlight">\(A\equiv M/\mathrm i\epsilon\)</span>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">It is a fairly common thing to transform something with multiple summation into the matrix form. You are suggested to have the vigilance about the summation which is possible to be transformed to matrix form since it may bring surprising extra clearance.</p>
 </div>
 <p>The integral is nothing other than a multi-dimensional Gaussian integral. We will directly invoke the result of the integral as there have been numerous materials on how to do the multi-dimensional Gaussian integral online. The result is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\int \mathrm{d}\eta\exp\{-\eta^T A \eta\} = \sqrt{\frac{\pi^n}{\det(A)_n}}\]</div>
-<p>This inspires us to calculate the determinant of the matrix <span class="math">\(M\)</span> (and thus matrix <span class="math">\(A\)</span>). To do this, expand the determinant along the first row and we get the following recurrence relation</p>
-<div class="math">
+<p>This inspires us to calculate the determinant of the matrix <span class="math notranslate nohighlight">\(M\)</span> (and thus matrix <span class="math notranslate nohighlight">\(A\)</span>). To do this, expand the determinant along the first row and we get the following recurrence relation</p>
+<div class="math notranslate nohighlight">
 \[\det(M)_{n+1} = 2\det(M)_n - \det(M)_{n-1}\]</div>
-<p>It is easy to see that this recurrence relation implies that the sequence <span class="math">\(\det(M)_n\)</span> is actually a arithmetic sequence. Therefore, an evaluation of the first two elements of the sequence will bring you</p>
-<div class="math">
+<p>It is easy to see that this recurrence relation implies that the sequence <span class="math notranslate nohighlight">\(\det(M)_n\)</span> is actually a arithmetic sequence. Therefore, an evaluation of the first two elements of the sequence will bring you</p>
+<div class="math notranslate nohighlight">
 \[\det(M)_n = n+1\]</div>
 <p>Thus</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\det(A)_n = \det(M/\mathrm i\epsilon)_n = (n+1)/(\mathrm i\epsilon)^n\]</div>
 <p>with which the integral is evaluated</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\int \mathrm{d}\eta\exp\{-\eta^T A \eta\} = \sqrt{\frac{(\mathrm i\epsilon\pi)^n}{n+1}}\]</div>
 <p>Combine with the other factors and we have</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[K = K_c\cdot\lim_{n\rightarrow\infty}(\sqrt{\mathrm{i}\pi\epsilon})^{-n-1}\sqrt{\frac{(\mathrm i\epsilon\pi)^n}{n+1}} = K_c\cdot\lim_{n\rightarrow\infty}\sqrt{\frac{1}{\mathrm i\pi\epsilon(n+1)}}\]</div>
-<p>Now, an important thing to notice is that <span class="math">\(\epsilon(n+1)\)</span> is actually <span class="math">\(\Delta t = t'-t_0\)</span>. Thus, we have the final formula of the propagator</p>
-<div class="math">
+<p>Now, an important thing to notice is that <span class="math notranslate nohighlight">\(\epsilon(n+1)\)</span> is actually <span class="math notranslate nohighlight">\(\Delta t = t'-t_0\)</span>. Thus, we have the final formula of the propagator</p>
+<div class="math notranslate nohighlight">
 \[K = \frac{1}{\sqrt{\mathrm i\pi\Delta t}}\exp\{\mathrm iS_c\}\]</div>
-<p>You are suggested to explicitly calculate the classical action <span class="math">\(S_c\)</span> (notice that the classical path of a free particle is just a straight line) and compare this result with the one you may encounter in your previous Quantum Mechanics course.</p>
-<p>Originally, we stop here. However, you might be pretty surprised about our later contexts if we do so. Hence, ... we decide to surprise you now.</p>
+<p>You are suggested to explicitly calculate the classical action <span class="math notranslate nohighlight">\(S_c\)</span> (notice that the classical path of a free particle is just a straight line) and compare this result with the one you may encounter in your previous Quantum Mechanics course.</p>
+<p>Originally, we stop here. However, you might be pretty surprised about our later contexts if we do so. Hence, … we decide to surprise you now.</p>
 <blockquote>
 <div>The modern path integral formalism of quantum theory has NOTHING to do with doing the path integral.</div></blockquote>
 <p>Yes, this is true and IMPORTANT. To make this less surprising, recall that we do not do the actual integral of the action in the Lagrangian formalism. Instead, we try to <strong>transform the integration problem into differentiation problem</strong>. So the existence of this section is nothing but to convince you that the integral truly exists and is well-defined.</p>
@@ -339,7 +339,8 @@ y_n\\
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

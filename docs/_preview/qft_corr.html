@@ -174,35 +174,35 @@
   <div class="section" id="correlation-function">
 <h1>Correlation Function<a class="headerlink" href="#correlation-function" title="Permalink to this headline">¶</a></h1>
 <p>In both stage 2 and stage 3, we will encounter the following functional derivative</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\tau(x_1,\ldots,x_n) := \left.\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_1)}\cdots\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_n)}W_0[J]\right|_{J=0}\]</div>
-<p>Thus, we give this quantity a name <strong>correlation function</strong>, or <span class="math">\(n\)</span><strong>-point (Green&#8217;s) function</strong>. The origin of this name comes from the similarity of its formulation in canonical quantization and hence this name may look strange here.</p>
-<p>It is not so straight-forward about the <span class="math">\(n\)</span>-point function, and thus we hope to reduce the formula. To do this, let us first evaluate the 2-point function</p>
-<div class="math">
+<p>Thus, we give this quantity a name <strong>correlation function</strong>, or <span class="math notranslate nohighlight">\(n\)</span><strong>-point (Green’s) function</strong>. The origin of this name comes from the similarity of its formulation in canonical quantization and hence this name may look strange here.</p>
+<p>It is not so straight-forward about the <span class="math notranslate nohighlight">\(n\)</span>-point function, and thus we hope to reduce the formula. To do this, let us first evaluate the 2-point function</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}\tau(x_1,x_2) &amp;= \left.\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_1)}\frac{1}{\mathrm{i}}\!\frac{\delta}{\delta J(x_2)}\exp\{-\frac{1}{2}\mathrm i\!\!\int\!\! J\Delta_FJ\}\right|_{J=0} \\
 &amp;= \left.\mathrm{i}\frac{\delta}{\delta J(x_1)}\int\!\!\Delta_F(x_2;)J\exp\{-\frac{1}{2}\mathrm i\!\!\int \!\!J\Delta_FJ\}\right|_{J=0}\\
 &amp;=\left.\mathrm i\Delta_F(x_1;x_2)W_0[J]\right|_{J=0} + \left.(\int\Delta_F J)^2W_0[J]\right|_{J=0} = \mathrm i\Delta_F(x_1;x_2)\end{split}\]</div>
-<p>It is nothing other than <span class="math">\(\mathrm{i}\)</span> times the ordinary Green&#8217;s function. Next, 3-point function</p>
-<div class="math">
+<p>It is nothing other than <span class="math notranslate nohighlight">\(\mathrm{i}\)</span> times the ordinary Green’s function. Next, 3-point function</p>
+<div class="math notranslate nohighlight">
 \[\tau(x_1,x_2,x_3)\sim \left.\Delta_F\int\Delta_FJ\right|_{J=0} + \left.(\int\Delta_FJ)^3\right|_{J=0} = 0\]</div>
 <p>And 4-point function</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\tau(x_1,x_2.x_3,x_4) &amp;= \mathrm{i}\Delta_F(x_1;x_2)\mathrm{i}\Delta_F(x_3;x_4)\\
 &amp;+ \mathrm{i}\Delta_F(x_1;x_3)\mathrm{i}\Delta_F(x_2;x_4) \\
 &amp;+ \mathrm{i}\Delta_F(x_2;x_3)\mathrm{i}\Delta_F(x_1;x_4)\\
 &amp;= (1\sim2)(3\sim4) + (1\sim3)(2\sim4) + (2\sim3)(1\sim4)\end{split}\]</div>
-<p>where we have used <span class="math">\((1\sim2)\)</span> to represent <span class="math">\(\tau(x_1,x_2)\)</span>. Therefore, we can see the regularity &#8212; the <span class="math">\(n\)</span>-point function is either <span class="math">\(0\)</span> or some combination of two point functions. Specifically, we have by induction</p>
+<p>where we have used <span class="math notranslate nohighlight">\((1\sim2)\)</span> to represent <span class="math notranslate nohighlight">\(\tau(x_1,x_2)\)</span>. Therefore, we can see the regularity — the <span class="math notranslate nohighlight">\(n\)</span>-point function is either <span class="math notranslate nohighlight">\(0\)</span> or some combination of two point functions. Specifically, we have by induction</p>
 <ul class="simple">
-<li>The odd-point function is <span class="math">\(0\)</span>.</li>
+<li>The odd-point function is <span class="math notranslate nohighlight">\(0\)</span>.</li>
 <li>The even-point function is</li>
 </ul>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\tau(x_1,\ldots, x_{2n}) = \sum_{\text{perms}}(p_1\sim p_2)\ldots(p_{2n-1}\sim p_{2n})\]</div>
-<p>which means the summation over all the permutations <span class="math">\(p\)</span>. This is the so-called <strong>Wick&#8217;s Theorem</strong> &#8212; transforming the <span class="math">\(n\)</span>-point function into the combination of 2-point function.</p>
+<p>which means the summation over all the permutations <span class="math notranslate nohighlight">\(p\)</span>. This is the so-called <strong>Wick’s Theorem</strong> — transforming the <span class="math notranslate nohighlight">\(n\)</span>-point function into the combination of 2-point function.</p>
 <p>You are suggested to show yourself that the S-matrix can be written using correlation function as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[S = \sum_{n=0}^\infty\frac{\mathrm i^n}{n!}\prod_x\varphi(x)\prod_x(\partial^2\!\!-\!m^2)\tau(x_1,\ldots,x_n)\]</div>
-<p>where <span class="math">\(x\)</span> takes over <span class="math">\(x_1,\ldots,x_n\)</span>. This formula is the so-called <strong>perturbative expansion</strong> of the S-matrix.</p>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> takes over <span class="math notranslate nohighlight">\(x_1,\ldots,x_n\)</span>. This formula is the so-called <strong>perturbative expansion</strong> of the S-matrix.</p>
 </div>
 
 
@@ -259,7 +259,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

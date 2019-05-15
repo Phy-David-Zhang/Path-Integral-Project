@@ -171,13 +171,13 @@
   <div class="section" id="path-integral-of-fields">
 <h1>Path Integral of Fields<a class="headerlink" href="#path-integral-of-fields" title="Permalink to this headline">¶</a></h1>
 <p>In previous sections, path integral in Quantum Mechanics has been constructed and evaluated. So we are now sure that the path integral for particles can be well-defined. Thus, to construct Quantum Field Theory, all we need to do is to construct the path integral of physical fields.</p>
-<p>However, this is not something direct and intuitive. As is shown in previous sections, the object to be integrated in Quantum Mechanics, namely <span class="math">\(x(t)\)</span> has only one parameter <span class="math">\(t\)</span>, i.e. it is 1-dimensional. However, we now need to work on fields <span class="math">\(\Phi(x)\)</span> where <span class="math">\(x\)</span> is 4-dimensional (and probably <span class="math">\(d\)</span>-dimensional in the future). This can cause the functional determinant to be divergent and the path integral will go to zero after taking the limit.</p>
+<p>However, this is not something direct and intuitive. As is shown in previous sections, the object to be integrated in Quantum Mechanics, namely <span class="math notranslate nohighlight">\(x(t)\)</span> has only one parameter <span class="math notranslate nohighlight">\(t\)</span>, i.e. it is 1-dimensional. However, we now need to work on fields <span class="math notranslate nohighlight">\(\Phi(x)\)</span> where <span class="math notranslate nohighlight">\(x\)</span> is 4-dimensional (and probably <span class="math notranslate nohighlight">\(d\)</span>-dimensional in the future). This can cause the functional determinant to be divergent and the path integral will go to zero after taking the limit.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">There is no intention to demonstrate explicitly how the determinant goes divergent. But it won&#8217;t be much too complicated just to simply repeat the evaluation process shown in the previous section for, say, 2D field and see its divergence.</p>
+<p class="last">There is no intention to demonstrate explicitly how the determinant goes divergent. But it won’t be much too complicated just to simply repeat the evaluation process shown in the previous section for, say, 2D field and see its divergence.</p>
 </div>
 <p>In this case, methods must be addressed to solve the divergent problem. A straight-forward way is to reduce the path integral of field with multi-dimensional parameters to products of that in 1-dimensional, which is a solved problem. To achieve this, define the path integral of fields as (take 2-dim for example)</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}W &amp;= \int \mathcal{D}\Phi(x,y)\exp\{\mathrm{i}S[\Phi, \partial_\mu\Phi\} \\
 &amp;= \int \mathcal{D}\Phi_x(y)\exp\{\mathrm{i}S[\Phi, \partial_y\Phi\}\int \mathcal{D}\Phi_y(x)\exp\{\mathrm{i}S[\Phi, \partial_x\Phi\}\end{split}\]</div>
 <div class="admonition note">
@@ -241,7 +241,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

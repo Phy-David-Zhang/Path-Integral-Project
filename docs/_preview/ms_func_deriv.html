@@ -168,15 +168,15 @@
             
   <div class="section" id="functional-derivative">
 <h1>Functional Derivative<a class="headerlink" href="#functional-derivative" title="Permalink to this headline">¶</a></h1>
-<p>The functional derivative we talk about here is not the same as the variation used widely in Lagrangian formalism &#8212; although they look so much alike formally. To make sure you will not mistake them, we first illustrate what is the variation of a functional.</p>
-<p>The variation of a functional <span class="math">\(F[\phi]\)</span> whose domain is a Banach space <span class="math">\(B\)</span> (a linear space where you can talk about the &#8220;length&#8221; &#8212; norm of its element) is usually implemented as <strong>Gâteaux derivative</strong></p>
-<div class="math">
+<p>The functional derivative we talk about here is not the same as the variation used widely in Lagrangian formalism — although they look so much alike formally. To make sure you will not mistake them, we first illustrate what is the variation of a functional.</p>
+<p>The variation of a functional <span class="math notranslate nohighlight">\(F[\phi]\)</span> whose domain is a Banach space <span class="math notranslate nohighlight">\(B\)</span> (a linear space where you can talk about the “length” — norm of its element) is usually implemented as <strong>Gâteaux derivative</strong></p>
+<div class="math notranslate nohighlight">
 \[\frac{\delta F[\phi]}{\delta\phi} := (\forall \eta) :: \lim_{\varepsilon\rightarrow 0}\frac{F[\phi+\varepsilon\eta]-F[\phi]}{\varepsilon}\]</div>
-<p>which very much resembles the directional derivative in ordinary Calculus. Please notice that the <span class="math">\(\eta\)</span> here is just an arbitrary element of the Banach space, and in its application it is any physical field.</p>
-<p>The variation is the &#8220;derivative&#8221; of the argument <span class="math">\(\phi\)</span> itself, without any designation of it value at some point <span class="math">\(\phi(x)\)</span>; while functional derivative is defined differently. The functional derivative of <span class="math">\(F[\phi(x)]\)</span> with respect to <strong>value</strong> <span class="math">\(\phi(y)\)</span> is</p>
-<div class="math">
+<p>which very much resembles the directional derivative in ordinary Calculus. Please notice that the <span class="math notranslate nohighlight">\(\eta\)</span> here is just an arbitrary element of the Banach space, and in its application it is any physical field.</p>
+<p>The variation is the “derivative” of the argument <span class="math notranslate nohighlight">\(\phi\)</span> itself, without any designation of it value at some point <span class="math notranslate nohighlight">\(\phi(x)\)</span>; while functional derivative is defined differently. The functional derivative of <span class="math notranslate nohighlight">\(F[\phi(x)]\)</span> with respect to <strong>value</strong> <span class="math notranslate nohighlight">\(\phi(y)\)</span> is</p>
+<div class="math notranslate nohighlight">
 \[\frac{\delta F[\phi(x)]}{\delta\phi(y)} = \lim_{\varepsilon\rightarrow 0}\frac{F[\phi(x)+\varepsilon\delta(x;y)]-F[\phi(x)]}{\varepsilon}\]</div>
-<p>Therefore, you shall now see the differences between the variation and the functional derivative &#8212; the variation performs &#8220;derivative&#8221; on <span class="math">\(\phi\)</span> itself, while the functional derivative does so on the value <span class="math">\(\phi(y)\)</span>. And thus a delta function has to be invoked to deal with the different points <span class="math">\(x\)</span> and <span class="math">\(y\)</span>. You will see in chapter Quantum Theory that it is this delta function which brings the infinities into the S-matrix.</p>
+<p>Therefore, you shall now see the differences between the variation and the functional derivative — the variation performs “derivative” on <span class="math notranslate nohighlight">\(\phi\)</span> itself, while the functional derivative does so on the value <span class="math notranslate nohighlight">\(\phi(y)\)</span>. And thus a delta function has to be invoked to deal with the different points <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>. You will see in chapter Quantum Theory that it is this delta function which brings the infinities into the S-matrix.</p>
 </div>
 
 
@@ -233,7 +233,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

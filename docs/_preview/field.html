@@ -184,23 +184,23 @@
 <p class="first admonition-title">Note</p>
 <p class="last">Please make sure you have covered the previous section <a class="reference external" href="./repr_lg.html">Representation of Lorentz Group</a>.</p>
 </div>
-<p>This section will tell you how to define the scalar, spinor and vector (tensor) field. But before that, it is suggested to cover <a class="reference external" href="./bg_linalg.html">Basic Linear Algebra</a> for clarification of possible ambiguity of &#8220;vector&#8221;. To avoid this ambiguity, we use term <strong>linear space</strong> for the <em>vector space</em> in <a class="reference external" href="./bg_linalg.html">Linear Algebra</a>.</p>
+<p>This section will tell you how to define the scalar, spinor and vector (tensor) field. But before that, it is suggested to cover <a class="reference external" href="./bg_linalg.html">Basic Linear Algebra</a> for clarification of possible ambiguity of “vector”. To avoid this ambiguity, we use term <strong>linear space</strong> for the <em>vector space</em> in <a class="reference external" href="./bg_linalg.html">Linear Algebra</a>.</p>
 <div class="section" id="physical-field">
 <h2>Physical Field<a class="headerlink" href="#physical-field" title="Permalink to this headline">¶</a></h2>
-<p>In Quantum Field Theory, <strong>field</strong> is a central concept. In general, field is a map from the spacetime point to some object (numbers, arrows, etc.). All fields can form a linear space if the <em>object</em> also forms a linear space (as a practice, think about how to define that space). Although looked trivial, there is one thing that makes this concept intriguing &#8212; spacetime point. Spacetime point can be too abstract for analysis such that, like what we do in Group Theory, we should set up a manifold for it. With a manifold, every spacetime point has its unique coordinates, which is a powerful tool for analysis.</p>
+<p>In Quantum Field Theory, <strong>field</strong> is a central concept. In general, field is a map from the spacetime point to some object (numbers, arrows, etc.). All fields can form a linear space if the <em>object</em> also forms a linear space (as a practice, think about how to define that space). Although looked trivial, there is one thing that makes this concept intriguing — spacetime point. Spacetime point can be too abstract for analysis such that, like what we do in Group Theory, we should set up a manifold for it. With a manifold, every spacetime point has its unique coordinates, which is a powerful tool for analysis.</p>
 <p>However, the choice of coordinate system is artificial, and a law of nature should never depend on such an artificial object. Thus, it is crucial that the field should not vary after a change of coordinate system (and anything possibly related, basis of the field for example).</p>
-<p>But that does not mean that the components of the field will also be invariant. In fact, <strong>based on the different behaviour of the field components under transformations, we divide the physical field into several types</strong> &#8212; scalar field, spinor field and vector (tensor) field. Specifically, any field (as an element of a linear space) can be written as</p>
-<div class="math">
+<p>But that does not mean that the components of the field will also be invariant. In fact, <strong>based on the different behaviour of the field components under transformations, we divide the physical field into several types</strong> — scalar field, spinor field and vector (tensor) field. Specifically, any field (as an element of a linear space) can be written as</p>
+<div class="math notranslate nohighlight">
 \[\phi = \phi_i \cdot e^i\]</div>
-<p>where <span class="math">\(\phi_i\)</span> is the components of the field and <span class="math">\(e^i\)</span> is a basis for the linear space. Now, if we perform a transformation <span class="math">\(g\)</span> to the basis, the components should transform inversely in order to make the combination invariant, i.e.</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\phi_i\)</span> is the components of the field and <span class="math notranslate nohighlight">\(e^i\)</span> is a basis for the linear space. Now, if we perform a transformation <span class="math notranslate nohighlight">\(g\)</span> to the basis, the components should transform inversely in order to make the combination invariant, i.e.</p>
+<div class="math notranslate nohighlight">
 \[\phi = g^{-1}(\phi_i)\cdot g(e^i)\]</div>
-<p>Nonetheless, the above expression is meaningless. As we have pointed out, the transformation is usually constructed using Lie group. And in Quantum Field Theory, it is Lorentz Group. However, we find that the expression <span class="math">\(g^{-1}(\phi_i)\)</span> and <span class="math">\(g(e^i)\)</span> undefined, since there is no definition indicating how to apply an element of Lie group to the components and basis of the field. Thus, to let the expression make sense, we need additional information of how the group element acts on the components and the basis. This designation is called <strong>representation</strong> of Lie group.</p>
+<p>Nonetheless, the above expression is meaningless. As we have pointed out, the transformation is usually constructed using Lie group. And in Quantum Field Theory, it is Lorentz Group. However, we find that the expression <span class="math notranslate nohighlight">\(g^{-1}(\phi_i)\)</span> and <span class="math notranslate nohighlight">\(g(e^i)\)</span> undefined, since there is no definition indicating how to apply an element of Lie group to the components and basis of the field. Thus, to let the expression make sense, we need additional information of how the group element acts on the components and the basis. This designation is called <strong>representation</strong> of Lie group.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Important Notice: the dot in the previous two equations may not have the significance of certain &#8220;product&#8221;. You will see this later.</p>
+<p class="last">Important Notice: the dot in the previous two equations may not have the significance of certain “product”. You will see this later.</p>
 </div>
-<p>A simple example is when the Lie group is <span class="math">\(\mathrm{GL}(n)\)</span>. Then a trivial representation is just to define the action as the matrix multiplication. In Quantum Field Theory, the representation of Lorentz Group on the basis is always this trivial one, but that on the components can be various. Therefore, we give this representation a name: <strong>field representation</strong>.</p>
+<p>A simple example is when the Lie group is <span class="math notranslate nohighlight">\(\mathrm{GL}(n)\)</span>. Then a trivial representation is just to define the action as the matrix multiplication. In Quantum Field Theory, the representation of Lorentz Group on the basis is always this trivial one, but that on the components can be various. Therefore, we give this representation a name: <strong>field representation</strong>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Just a reminder, although you might not notice, you are actually using the idea of Fibre Bundle. If you would like, try to find some basic tutorial on principal bundle and fibre bundle associated to a principal bundle. And you will then be able to feel the elegance.</p>
@@ -209,55 +209,55 @@
 <div class="section" id="scalar-field">
 <h2>Scalar Field<a class="headerlink" href="#scalar-field" title="Permalink to this headline">¶</a></h2>
 <p>The scalar field is the field whose field representation is scalar representation. The <strong>scalar representation</strong> is defined as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(\phi_i) = \phi_i\]</div>
 <p>which means the components of the field does not change at all under the transformation.</p>
 </div>
 <div class="section" id="vector-field">
 <h2>Vector Field<a class="headerlink" href="#vector-field" title="Permalink to this headline">¶</a></h2>
 <p>The vector field is the field whose field representation is vector representation. Thus, the components transform as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(A_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^jA_j\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">To understand the above equation, you need <a class="reference external" href="./bg_liegp.html">Basic Group Theory</a> and <a class="reference external" href="./repr_lg.html">Representation of Lorentz Group</a>.</p>
 </div>
-<p>First let&#8217;s examine the above expression. First, you have to recall what is the exponential map. Remember that the result of the exponential map (<span class="math">\(\exp\{...\}\)</span>) is a matrix, and thus <span class="math">\(\exp\{...{\}_i}^j\phi_j\)</span> is nothing but a matrix multiply a column vector.</p>
+<p>First let’s examine the above expression. First, you have to recall what is the exponential map. Remember that the result of the exponential map (<span class="math notranslate nohighlight">\(\exp\{...\}\)</span>) is a matrix, and thus <span class="math notranslate nohighlight">\(\exp\{...{\}_i}^j\phi_j\)</span> is nothing but a matrix multiply a column vector.</p>
 <p>Next, remember that we have said the transformation of the basis follows the trivial representation which is defined just as the matrix product</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(e_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^je_j\]</div>
 <p>Therefore we have</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[A = \varLambda^{-1}(A^i)\cdot\varLambda(e_i) = A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k = A^j\cdot e_j\]</div>
-<p>Now you can see why we write a dot <span class="math">\(\cdot\)</span> between the components and the basis &#8212; under vector representation (where some triviality applies), the <span class="math">\(\cdot\)</span> in the above derivation can be &#8220;viewed&#8221; as the matrix product. However, this &#8220;view&#8221; will fail in some other non-trivial situations &#8212; as described any minute next.</p>
+<p>Now you can see why we write a dot <span class="math notranslate nohighlight">\(\cdot\)</span> between the components and the basis — under vector representation (where some triviality applies), the <span class="math notranslate nohighlight">\(\cdot\)</span> in the above derivation can be “viewed” as the matrix product. However, this “view” will fail in some other non-trivial situations — as described any minute next.</p>
 </div>
 <div class="section" id="spinor-field">
 <h2>Spinor Field<a class="headerlink" href="#spinor-field" title="Permalink to this headline">¶</a></h2>
 <p>The spinor field is the field whose field representation is spinor representation. The <strong>spinor representation</strong> is define as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(\psi_i) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j\psi_j, \ \ \text{where}\ \ \varLambda = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\}\]</div>
 <p>Just like what we have done in the previous section, write down explicitly</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[A^i \exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}{\}_i}^j \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}{\}_j}^k e_k =  A^j\cdot e_j ???\]</div>
-<p>We see that the parameters <span class="math">\(\epsilon^{ab}\)</span> are the same in the two sides of “<span class="math">\(\cdot\)</span>”, but the &#8220;basis&#8221; is different. Thus, if we still view <span class="math">\(\cdot\)</span> as the matrix product, the equality will no longer hold.</p>
+<p>We see that the parameters <span class="math notranslate nohighlight">\(\epsilon^{ab}\)</span> are the same in the two sides of “<span class="math notranslate nohighlight">\(\cdot\)</span>”, but the “basis” is different. Thus, if we still view <span class="math notranslate nohighlight">\(\cdot\)</span> as the matrix product, the equality will no longer hold.</p>
 <p>Hence, we need a new definition in this case, which means under the new product, there is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\exp\{\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}\} \cdot \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\} \rightarrow \text{identity matrix}\]</div>
-<p>In Fibre Bundle theory, we achieve this by introducing an equivalence class. Yes, it looks like that we are &#8220;brute-forcely&#8221; identify the the above result as an identity matrix. But as a matter of fact, there is no preliminary intentions to make <span class="math">\(\cdot\)</span> here as a product &#8212; it just looks like that in vector field. In Fibre Bundle theory, fields of all kinds are described universally using the equivalence class.</p>
+<p>In Fibre Bundle theory, we achieve this by introducing an equivalence class. Yes, it looks like that we are “brute-forcely” identify the the above result as an identity matrix. But as a matter of fact, there is no preliminary intentions to make <span class="math notranslate nohighlight">\(\cdot\)</span> here as a product — it just looks like that in vector field. In Fibre Bundle theory, fields of all kinds are described universally using the equivalence class.</p>
 </div>
 <div class="section" id="tensor-field">
 <h2>Tensor Field<a class="headerlink" href="#tensor-field" title="Permalink to this headline">¶</a></h2>
-<p>The tensor of order <span class="math">\(n\)</span> is nothing but a quantity <span class="math">\(T_{\mu_1\cdots \mu_n}\)</span> of <span class="math">\(n\)</span> indices with each of them transforming like the vector. For instance, if you put two vectors <span class="math">\(A_\mu\)</span> and <span class="math">\(B_\nu\)</span> together, i.e. <span class="math">\(A_\mu B_\nu\)</span>, the result will be a tensor.</p>
+<p>The tensor of order <span class="math notranslate nohighlight">\(n\)</span> is nothing but a quantity <span class="math notranslate nohighlight">\(T_{\mu_1\cdots \mu_n}\)</span> of <span class="math notranslate nohighlight">\(n\)</span> indices with each of them transforming like the vector. For instance, if you put two vectors <span class="math notranslate nohighlight">\(A_\mu\)</span> and <span class="math notranslate nohighlight">\(B_\nu\)</span> together, i.e. <span class="math notranslate nohighlight">\(A_\mu B_\nu\)</span>, the result will be a tensor.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Actually it is a tough decision for me to write down the above &#8220;non-sense&#8221;. Yes, rigorously speaking, the above descriptions are total non-sense &#8212; but they appear in many textbooks. In fact, there is no indices which are able to &#8220;transform like vector&#8221;, and there is no way to &#8220;put vectors together&#8221; (It has its name &#8212; tensor product!). Unfortunately it will make our introduction to QFT too cumbersome so we decide not to cover Tensor Analysis. However! You are strongly suggested to try your best to cover that &#8212; it is as essential, and beautiful, and powerful as any other wonderful theories you met before.</p>
+<p class="last">Actually it is a tough decision for me to write down the above “non-sense”. Yes, rigorously speaking, the above descriptions are total non-sense — but they appear in many textbooks. In fact, there is no indices which are able to “transform like vector”, and there is no way to “put vectors together” (It has its name — tensor product!). Unfortunately it will make our introduction to QFT too cumbersome so we decide not to cover Tensor Analysis. However! You are strongly suggested to try your best to cover that — it is as essential, and beautiful, and powerful as any other wonderful theories you met before.</p>
 </div>
 <p>Although we do not cover Tensor Analysis, we will provide a list for you to determine whether you have mastered it.</p>
 <blockquote>
 <div><ul class="simple">
-<li>Tensor of type <span class="math">\((k, l)\)</span> is a multi-linear map from the Cartesian product of <span class="math">\(k\)</span> dual vector spaces and <span class="math">\(l\)</span> vector spaces.</li>
-<li>The tensor product of a tensor of type <span class="math">\((k, l)\)</span> and a tensor of type <span class="math">\((k', l')\)</span> is a tensor of type <span class="math">\((k+k', l+l')\)</span>.</li>
-<li>The dimension of the space of tensor of type <span class="math">\((k, l)\)</span> is <span class="math">\(n^{(k+l)}\)</span>, where <span class="math">\(n\)</span> is the dimension of the vector space in the definition of the tensor.</li>
+<li>Tensor of type <span class="math notranslate nohighlight">\((k, l)\)</span> is a multi-linear map from the Cartesian product of <span class="math notranslate nohighlight">\(k\)</span> dual vector spaces and <span class="math notranslate nohighlight">\(l\)</span> vector spaces.</li>
+<li>The tensor product of a tensor of type <span class="math notranslate nohighlight">\((k, l)\)</span> and a tensor of type <span class="math notranslate nohighlight">\((k', l')\)</span> is a tensor of type <span class="math notranslate nohighlight">\((k+k', l+l')\)</span>.</li>
+<li>The dimension of the space of tensor of type <span class="math notranslate nohighlight">\((k, l)\)</span> is <span class="math notranslate nohighlight">\(n^{(k+l)}\)</span>, where <span class="math notranslate nohighlight">\(n\)</span> is the dimension of the vector space in the definition of the tensor.</li>
 <li>The act of the tensor on a vector (or dual vector) is equivalent to the composite of tensor product and tensor contraction.</li>
 </ul>
 </div></blockquote>
@@ -319,7 +319,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 

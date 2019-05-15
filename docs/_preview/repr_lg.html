@@ -178,8 +178,8 @@
 <p class="first admonition-title">Note</p>
 <p class="last">Before Continuing, you need to cover at least <a class="reference external" href="./bg_liegp.html">Basic Group Theory</a>.</p>
 </div>
-<p>Usually, a Lorentz transformation can be divided to boost and rotation. The boost along the <span class="math">\(x\)</span>-axis can be written as</p>
-<div class="math">
+<p>Usually, a Lorentz transformation can be divided to boost and rotation. The boost along the <span class="math notranslate nohighlight">\(x\)</span>-axis can be written as</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}K_x =
 \left[
 \begin{matrix}
@@ -189,8 +189,8 @@
 0 &amp; 0 &amp; 0 &amp; 1
 \end{matrix}
 \right]\end{split}\]</div>
-<p>where <span class="math">\(\mathrm{ch}\lambda\)</span> is the hyperbolic cosine and <span class="math">\(\mathrm{sh}\lambda\)</span> is the hyperbolic sine. It is easy to verify that this is equivalent to the normal form of Lorentz transformation once notice that <span class="math">\(\mathrm{ch}\lambda = \gamma, \mathrm{sh}\lambda = \gamma v, \mathrm{th}\lambda = v\)</span>. Also, for the rotation along the <span class="math">\(z\)</span>-axis, we have</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\mathrm{ch}\lambda\)</span> is the hyperbolic cosine and <span class="math notranslate nohighlight">\(\mathrm{sh}\lambda\)</span> is the hyperbolic sine. It is easy to verify that this is equivalent to the normal form of Lorentz transformation once notice that <span class="math notranslate nohighlight">\(\mathrm{ch}\lambda = \gamma, \mathrm{sh}\lambda = \gamma v, \mathrm{th}\lambda = v\)</span>. Also, for the rotation along the <span class="math notranslate nohighlight">\(z\)</span>-axis, we have</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}J_z =
 \left[
 \begin{matrix}
@@ -202,7 +202,7 @@
 \right]\end{split}\]</div>
 <p>which should be familiar to all. You should be able to write down the boosts and rotations along the other axis. All the Lorentz transformation can be formed by these boosts and rotations.</p>
 <p>We now want to find out the generators of the above boost. According to the form of infinitesimal transformation, the generator should be the first order derivative of the transformation at identity point, namely</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\vec K_x = \left.\frac{\partial K_x}{\partial\lambda}\right|_{\lambda=0} =
 \left[
 \begin{matrix}
@@ -212,43 +212,43 @@
 0 &amp; 0 &amp; 0 &amp; 0
 \end{matrix}
 \right]\end{split}\]</div>
-<p>You are encouraged to write down the generators for the other boosts and rotations. Moreover, you can also calculate explicitly <span class="math">\(\exp\{\lambda\vec K_x\}\)</span> as described in Basic Group Theory and verify that it equals <span class="math">\(K_x(\lambda)\)</span>.</p>
+<p>You are encouraged to write down the generators for the other boosts and rotations. Moreover, you can also calculate explicitly <span class="math notranslate nohighlight">\(\exp\{\lambda\vec K_x\}\)</span> as described in Basic Group Theory and verify that it equals <span class="math notranslate nohighlight">\(K_x(\lambda)\)</span>.</p>
 <p>Now that we have the generators, the infinitesimal transformation will have the form</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[1 + \eta_x\vec K_x + \eta_y \vec K_y + ...\]</div>
-<p>To simplify the formulation, we introduce a anti-symmetric lists of matrix <span class="math">\(L_{ab}\)</span> as</p>
-<div class="math">
+<p>To simplify the formulation, we introduce a anti-symmetric lists of matrix <span class="math notranslate nohighlight">\(L_{ab}\)</span> as</p>
+<div class="math notranslate nohighlight">
 \[\begin{split}L_{01} &amp;= -L_{10} = \mathrm{i}\vec K_x,\ \ \ L_{02} = -L_{20} = \mathrm{i}\vec K_y,\ \ \ L_{03} = -L_{30} = \mathrm{i}\vec K_z\\
 L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\vec J_x,\ \ \ L_{13} = -L_{31} = \mathrm{i}\vec J_y\\\end{split}\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Anti-symmetric means <span class="math">\(L_{ab} = -L_{ba}\)</span>, which implies the diagonal elements <span class="math">\(L_{ii} = 0\)</span>.</p>
+<p class="last">Anti-symmetric means <span class="math notranslate nohighlight">\(L_{ab} = -L_{ba}\)</span>, which implies the diagonal elements <span class="math notranslate nohighlight">\(L_{ii} = 0\)</span>.</p>
 </div>
 <p>Therefore, the infinitesimal transformation is simplified to</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[1 - \frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\]</div>
-<p>where <span class="math">\(\epsilon^{ab}\)</span> is the corresponding parameters (<span class="math">\(\epsilon^{01} = \eta_x\)</span> for example), and it is also anti-symmetric. The <span class="math">\(1/2\)</span> is necessary because we need to eliminate the factor <span class="math">\(2\)</span> in <span class="math">\(\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}\)</span>.</p>
+<p>where <span class="math notranslate nohighlight">\(\epsilon^{ab}\)</span> is the corresponding parameters (<span class="math notranslate nohighlight">\(\epsilon^{01} = \eta_x\)</span> for example), and it is also anti-symmetric. The <span class="math notranslate nohighlight">\(1/2\)</span> is necessary because we need to eliminate the factor <span class="math notranslate nohighlight">\(2\)</span> in <span class="math notranslate nohighlight">\(\epsilon^{01}L_{01} + \epsilon^{10}L_{10} = 2\epsilon^{01}L_{01}\)</span>.</p>
 <p>Consequently, all Lorentz transformation can be written under the form</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}L_{ab}\}\]</div>
 <p>This formula is called the <strong>vector representation</strong> of the Lorentz Group. This is the default representation for the tetrad.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Rigorously speaking, the representation should be a map from the group element to the automorphism of a vector space. Thus, the above equation should be viewed as a map to map the group element (LHS) to an automorphism (RHS).</p>
 </div>
-<p>As we know, the generators <span class="math">\(L_{ab}\)</span> can be viewed as a &#8220;basis&#8221; of the Lorentz group. However, this is not the only &#8220;basis&#8221;. Next, we are going to find out another one.</p>
-<p>Before continuing, let&#8217;s first define four matrices <span class="math">\(\gamma_a, a=0,1,2,3\)</span> that satisfy</p>
-<div class="math">
+<p>As we know, the generators <span class="math notranslate nohighlight">\(L_{ab}\)</span> can be viewed as a “basis” of the Lorentz group. However, this is not the only “basis”. Next, we are going to find out another one.</p>
+<p>Before continuing, let’s first define four matrices <span class="math notranslate nohighlight">\(\gamma_a, a=0,1,2,3\)</span> that satisfy</p>
+<div class="math notranslate nohighlight">
 \[\{\gamma_a, \gamma_b\} = \gamma_a\gamma_b + \gamma_b\gamma_a = -2\eta_{ab}\]</div>
-<p>where <span class="math">\(\eta_{ab}\)</span> is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\eta_{ab}\)</span> is the Minkowski metrics. Then, we would like to point out that the following matrices are also generators of Lorentz group</p>
+<div class="math notranslate nohighlight">
 \[S_{ab} = \frac{1}{4}\mathrm{i}[\gamma_a, \gamma_b]\]</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Why? Well, we are not able to explain now since it needs Lie algebra theory. Go and find a reference about Lie algebra if you really wonder why.</p>
 </div>
 <p>Therefore, we can express the Lorentz transformation as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\varLambda(\epsilon) = \exp\{-\frac{1}{2}\mathrm{i}\epsilon^{ab}S_{ab}\}\]</div>
 <p>This formulation is called <strong>spinor representation</strong> of the Lorentz group.</p>
 <p>Finished. But I do want to add that the representation theory of Lorentz group is quite a enchanting theory. So I suggest a careful review on this theory if you are able. It will greatly deepen your understanding through the algebraic structure of the physical field.</p>
@@ -308,7 +308,8 @@ L_{12} &amp;= -L_{21} = \mathrm{i}\vec J_z,\ \ \ L_{23} = -L_{32} = \mathrm{i}\v
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
 
   
 
